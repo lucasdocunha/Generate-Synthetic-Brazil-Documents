@@ -1,0 +1,39 @@
+# Esquema declarativo do DANFE (PLANO_GERADOR.md secao 6.3).
+#
+# PoC v0: este arquivo documenta o mapeamento campo -> caminho XML -> gerador,
+# mas a orquestração real (ordem de geração, grupos de consistência como
+# CNPJ<->chave de acesso, e soma dos totais) ainda é código em
+# generator/danfe.py, não puramente dirigida por este YAML — o motor
+# genérico 100% dirigido por config é um alvo para a próxima iteração
+# (ver PLANO_GERADOR.md, "Questões em aberto").
+doctype: danfe
+namespace: "http://www.portalfiscal.inf.br/nfe"
+template_root: generator/templates/danfe/v1
+
+fields:
+  - {name: emit_cnpj, xpath: infNFe/emit/CNPJ, generator: fake_data.cnpj, consistency_group: emitente}
+  - {name: emit_xNome, xpath: infNFe/emit/xNome, generator: fake_data.company_name, consistency_group: emitente}
+  - {name: emit_xFant, xpath: infNFe/emit/xFant, generator: fake_data.company_name, consistency_group: emitente}
+  - {name: emit_endereco, xpath: infNFe/emit/enderEmit, generator: fake_data.address, consistency_group: emitente}
+  - {name: emit_IE, xpath: infNFe/emit/IE, generator: fake_data.ie_stub, consistency_group: emitente}
+  - {name: dest_cpf, xpath: infNFe/dest/CPF, generator: fake_data.cpf, consistency_group: destinatario}
+  - {name: dest_xNome, xpath: infNFe/dest/xNome, generator: fake_data.person_name, consistency_group: destinatario}
+  - {name: dest_endereco, xpath: infNFe/dest/enderDest, generator: fake_data.address, consistency_group: destinatario}
+  - {name: dest_email, xpath: infNFe/dest/email, generator: fake_data.email, consistency_group: destinatario}
+
+repeatable:
+  - name: det
+    parent_path: infNFe
+    item_tag: det
+    count_range: [1, 8]
+    generator: fake_data.product_line
+
+consistency_groups:
+  identificacao:
+    - "chave_acesso (Id, cDV) derivada de emit_cnpj + ide/cUF real + cNF + serie + nNF + AAMM"
+    - "cUF embutido na chave e deliberadamente '00' (fora da tabela real), distinto do ide/cUF real"
+
+anti_validity:
+  tpAmb: "always 2 - PLANO_GERADOR.md secao 9.5"
+  checksum_mode: "always_invalid - PLANO_GERADOR.md secao 9.1"
+  access_key_cuf: "00 - PLANO_GERADOR.md secao 9.2"

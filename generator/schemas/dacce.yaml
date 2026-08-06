@@ -1,0 +1,17 @@
+# Esquema declarativo do DACCe (PLANO_GERADOR.md secao 6.3) — documentação;
+# orquestração real em generator/dacce.py.
+#
+# DACCe e o tipo mais atipico: sem classe de Config, sem paginacao, e SEM
+# nenhum mecanismo de watermark (PLANO_GERADOR.md secao 9.5) — a protecao
+# anti-validade recai inteiramente sobre a chave de acesso (chNFe) ter
+# checksum corrompido (secao 9.1/9.2), unico documento nessa situacao.
+doctype: dacce
+namespace: "http://www.portalfiscal.inf.br/nfe"
+template_root: generator/templates/dacce/v1
+
+constructor: "DaCCe(xml=xml_str, emitente=dict, image=None) - diferente dos outros 4"
+
+anti_validity:
+  checksum_mode: "always_invalid - PLANO_GERADOR.md secao 9.1 (CNPJ do autor do evento, CNPJ destinatario, chave chNFe)"
+  access_key_cuf: "00 - PLANO_GERADOR.md secao 9.2 (modelo=55, reaproveitando NF-e)"
+  watermark: "nao existe no renderer - protecao vem inteiramente do identificador invalido"
