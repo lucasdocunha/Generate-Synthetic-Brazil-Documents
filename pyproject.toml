@@ -3,81 +3,43 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["brazilfiscalreport*"]
+include = ["brazilfiscalreport*", "generator*"]
 
 [tool.setuptools.package-data]
 "brazilfiscalreport.danfse" = ["*.png", "*.csv"]
 
 [project]
-name = "BrazilFiscalReport"
+name = "brazilfiscalreport"
 dynamic = ["version"]
-description = "Python library for generating Brazilian auxiliary fiscal documents in PDF from XML documents."
-authors = [{ name = "Engenere" }]
-keywords = [
-    "nfe", "nf-e", "danfe", "cte", "ct-e", "dacte", "mdfe", "mdf-e", "damdfe",
-    "cce", "cc-e", "dacce", "nfse", "nfs-e", "danfse",
-    "xml", "pdf", "sefaz", "brazil", "brasil", "nota-fiscal-eletronica",
-    "documento", "fiscal", "auxiliar", "converter", "generator"
-]
+description = "Synthetic-data generator backend for Brazilian auxiliary fiscal documents (DANFE, DACTE, DAMDFE, DANFSE, DACCe), forked from BrazilFiscalReport."
+authors = [{ name = "Lucas" }]
 license = { file = "LICENSE" }
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU Affero General Public License v3",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "Topic :: Software Development :: Libraries :: Python Modules"
-]
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 dependencies = [
     "fpdf2>=2.8.3",
     "phonenumbers",
-    "python-barcode"
-]
-
-# DACTE specific dependencies
-[project.optional-dependencies]
-dacte = [
+    "python-barcode",
     "qrcode",
-]
-# DAMDFE specific dependencies
-damdfe = [
-    "qrcode",
-]
-# DANFSE specific dependencies
-danfse = [
-    "qrcode",
-]
-# Dependencies CLI
-cli = [
-    "click",
+    "Faker",
     "PyYAML",
+    "PyMuPDF",
+    "albumentations",
+    "pyarrow",
+    "joblib",
+    "typer",
+    "pydantic",
+    "Pillow",
 ]
-
 
 [project.readme]
 file = "README.md"
 content-type = "text/markdown"
 
-[project.urls]
-homepage = "https://github.com/Engenere/BrazilFiscalReport"
-
-[project.scripts]
-bfrep = "brazilfiscalreport.__main__:cli"
-
 [tool.setuptools.dynamic]
 version = {attr = "brazilfiscalreport.__version__"}
 
 [tool.ruff]
-target-version = "py38"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = [

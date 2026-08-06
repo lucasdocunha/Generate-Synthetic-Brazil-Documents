@@ -1,0 +1,19 @@
+# Esquema declarativo do DACTE (PLANO_GERADOR.md secao 6.3) — documentação;
+# orquestração real em generator/dacte.py (ver nota equivalente em danfe.yaml).
+doctype: dacte
+namespace: "http://www.portalfiscal.inf.br/cte"
+template_root: generator/templates/dacte/v1
+
+parties:
+  - emit (emitente, sem email no template)
+  - rem (remetente)
+  - exped (expedidor)
+  - receb (recebedor)
+  - dest (destinatario)
+
+anti_validity:
+  tpAmb: "always 2 - PLANO_GERADOR.md secao 9.5"
+  checksum_mode: "always_invalid - PLANO_GERADOR.md secao 9.1"
+  access_key_cuf: "00 - PLANO_GERADOR.md secao 9.2 (modelo=57 para CTe)"
+  qr_domain: "dominio-sintetico.invalid - PLANO_GERADOR.md secao 9.4 (gerador controla 100% do payload)"
+  protocolo: "template tpl_001 nao tem protCTe - nada a fingir"

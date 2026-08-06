@@ -1,0 +1,12 @@
+# Esquema declarativo do DANFSE (PLANO_GERADOR.md secao 6.3) — documentação;
+# orquestração real em generator/danfse.py.
+doctype: danfse
+namespace: "http://www.sped.fazenda.gov.br/nfse"
+template_root: generator/templates/danfse/v1
+
+anti_validity:
+  tpAmb_dps: "always 2 - PLANO_GERADOR.md secao 9.5 (dispara texto vermelho 'SEM VALIDADE JURIDICA')"
+  ambGer: "always 2, por consistencia (nao aciona nada sozinho)"
+  checksum_mode: "always_invalid - PLANO_GERADOR.md secao 9.1 (CNPJ)"
+  key_nfse: "formato do ADN nacional nao confirmado (checksum desconhecido) - PLANO_GERADOR.md, Questoes em aberto #2. Gerada como string numerica do mesmo tamanho, sem alegacao de validade; a garantia recai sobre o CNPJ do prestador ja ter DV corrompido."
+  qr_domain: "hardcoded no renderer (www.nfse.gov.br, dominio real do portal nacional) - PLANO_GERADOR.md secao 9.4. Como a chave embutida e derivada de CNPJ invalido, uma consulta real retornaria 'nao encontrado', o que e o comportamento anti-validade correto mesmo sem poder trocar o dominio (decisao de nao tocar o renderer)."

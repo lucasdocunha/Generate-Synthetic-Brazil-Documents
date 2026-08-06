@@ -531,13 +531,13 @@ class Danfe(xFPDF):
         font_size = 60
         if self.watermark_cancelled:
             if is_production_environment:
-                watermark_text = "CANCELADA"
+                watermark_text = ""
             else:
-                watermark_text = "CANCELADA - SEM VALOR FISCAL"
+                watermark_text = ""
                 font_size = 45
 
         elif not is_production_environment or not is_protocol_available:
-            watermark_text = "SEM VALOR FISCAL"
+            watermark_text = ""
 
         if watermark_text:
             self.set_font(self.default_font, "B", font_size)

@@ -1,0 +1,6 @@
+template_id: tpl_001
+doctype: danfe
+description: >
+  Esqueleto DANFE minimalista, sem nfeProc/protNFe, um único item de linha,
+  sem retirada/entrega, sem fatura/duplicatas, sem ICMS-ST.
+det_count_range: [1, 40]

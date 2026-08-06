@@ -1,0 +1,11 @@
+# Esquema declarativo do DAMDFE (PLANO_GERADOR.md secao 6.3) — documentação;
+# orquestração real em generator/damdfe.py.
+doctype: damdfe
+namespace: "http://www.portalfiscal.inf.br/mdfe"
+template_root: generator/templates/damdfe/v1
+
+anti_validity:
+  tpAmb: "always 2 - PLANO_GERADOR.md secao 9.5"
+  checksum_mode: "always_invalid - PLANO_GERADOR.md secao 9.1"
+  access_key_cuf: "00 - PLANO_GERADOR.md secao 9.2 (modelo=58 para MDFe)"
+  qr_domain: "dominio-sintetico.invalid - PLANO_GERADOR.md secao 9.4"

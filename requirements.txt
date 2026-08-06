@@ -1,2 +1,3 @@
-streamlit[pdf]>=1.50
-.[dacte,damdfe,danfse]
+-e .
+pytest
+pytest-cov
