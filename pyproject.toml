@@ -29,6 +29,7 @@ dependencies = [
     "typer",
     "pydantic",
     "Pillow",
+    "nfselib-legacy>=1.0.0",
 ]
 
 [project.readme]
