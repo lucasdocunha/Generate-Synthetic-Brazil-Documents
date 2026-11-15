@@ -1062,6 +1062,7 @@ def generate_danfe(
     num_items=None,
     profile_overrides=None,
     cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO,
+    erp_preset=None,
 ):
     rng = random.Random(seed)
     faker = Faker("pt_BR")
@@ -1071,6 +1072,14 @@ def generate_danfe(
     overrides = dict(profile_overrides or {})
     if num_items is not None:
         overrides["n_items"] = num_items
+    if erp_preset is not None:
+        overrides.setdefault("erp_style", erp_preset)
+        overrides.setdefault("has_logo", True)
+        if erp_preset == "classic_landscape":
+            overrides.setdefault("landscape", True)
+            overrides.setdefault("vertical_block_labels", True)
+        else:
+            overrides.setdefault("landscape", False)
     profile = sample_profile(rng, overrides)
 
     root = xml_builder.load_template(_TEMPLATE_PATH).getroot()
