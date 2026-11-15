@@ -19,16 +19,21 @@ app = typer.Typer()
 
 @app.command()
 def generate(
-    doctype: Optional[str] = typer.Option(None, help="danfe|dacte|damdfe|danfse|dacce"),
-    all: bool = typer.Option(False, "--all", help="gera os 5 tipos"),
+    doctype: Optional[str] = typer.Option(None, help="danfe|nfe_portal|dacte|damdfe|danfse|dacce"),
+    all: bool = typer.Option(False, "--all", help="gera todos os tipos registrados"),
     count: int = 100,
     seed: int = 42,
     workers: int = 4,
     out: str = "dataset",
+    cnpj_alnum_ratio: float = typer.Option(
+        0.3, help="fração de CNPJs alfanuméricos (IN RFB 2.229/2024), 0.0-1.0"
+    ),
 ):
     from pipeline.batch import run_batch, run_batch_all
 
-    cfg = RunConfig(count=count, seed=seed, workers=workers, out_dir=out)
+    cfg = RunConfig(
+        count=count, seed=seed, workers=workers, out_dir=out, cnpj_alnum_ratio=cnpj_alnum_ratio
+    )
     if all:
         run_batch_all(cfg)
     elif doctype:

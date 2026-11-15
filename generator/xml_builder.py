@@ -106,3 +106,34 @@ def set_address(
 def to_string(tree_or_root) -> str:
     root = tree_or_root.getroot() if hasattr(tree_or_root, "getroot") else tree_or_root
     return ET.tostring(root, encoding="unicode")
+
+
+def find_optional(root: ET.Element, relative_path: str, namespace_uri: str):
+    return root.find(qualify(relative_path, namespace_uri), {"ns": namespace_uri})
+
+
+def remove(root: ET.Element, relative_path: str, namespace_uri: str) -> None:
+    """Remove o elemento em `relative_path` (poda de template maximal).
+    Silencioso se o caminho não existir. O pai é localizado pelo prefixo
+    do caminho, ou é o próprio `root` para caminhos de um nível."""
+    parts = [p for p in relative_path.split("/") if p]
+    parent = find_optional(root, "/".join(parts[:-1]), namespace_uri) if len(parts) > 1 else root
+    if parent is None:
+        return
+    child = parent.find(f"{{{namespace_uri}}}{parts[-1]}")
+    if child is not None:
+        parent.remove(child)
+
+
+def sub(parent: ET.Element, tag: str, namespace_uri: str, text=None) -> ET.Element:
+    """Cria <tag> filho de `parent` (no namespace), com texto opcional."""
+    el = ET.SubElement(parent, f"{{{namespace_uri}}}{tag}")
+    if text is not None:
+        el.text = str(text)
+    return el
+
+
+def sub_fields(parent: ET.Element, namespace_uri: str, pairs) -> None:
+    """Atalho: cria filhos em ordem a partir de [(tag, texto), ...]."""
+    for tag, text in pairs:
+        sub(parent, tag, namespace_uri, text)

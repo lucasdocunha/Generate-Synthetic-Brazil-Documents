@@ -11,7 +11,7 @@ import tempfile
 import traceback
 from pathlib import Path
 
-from augmentation.pipeline import augment_clean, augment_geometric_variant
+from augmentation.pipeline import augment_document, augment_geometric_variant
 from export.sharding import sample_id
 from export.writer import is_sample_done, write_sample
 from pipeline.registry import DOCTYPES
@@ -37,6 +37,7 @@ def generate_one(
     generate_geometric_variant: bool = True,
     force: bool = False,
     _retry: bool = False,
+    gen_opts: dict = None,
 ):
     out_dir = Path(out_dir)
     sid = sample_id(doctype, split, index)
@@ -46,7 +47,9 @@ def generate_one(
 
     seed = derive_seed(run_seed, doctype, split, index)
     try:
-        return _generate_one_inner(doctype, split, index, sid, seed, out_dir, dpi_options, generate_geometric_variant)
+        return _generate_one_inner(
+            doctype, split, index, sid, seed, out_dir, dpi_options, generate_geometric_variant, gen_opts or {}
+        )
     except Exception:
         if _retry:
             _log_failure(out_dir, doctype, split, index, seed, traceback.format_exc())
@@ -54,17 +57,17 @@ def generate_one(
         # 1 nova tentativa com seed derivado diferente (PLANO_GERADOR.md secao 3.2)
         return generate_one(
             doctype, split, index, run_seed + 1_000_000_007, out_dir, dpi_options,
-            generate_geometric_variant, force=True, _retry=True,
+            generate_geometric_variant, force=True, _retry=True, gen_opts=gen_opts,
         )
 
 
-def _generate_one_inner(doctype, split, index, sid, seed, out_dir, dpi_options, gen_geo):
+def _generate_one_inner(doctype, split, index, sid, seed, out_dir, dpi_options, gen_geo, gen_opts):
     import random
 
     rng = random.Random(seed)
     spec = DOCTYPES[doctype]
 
-    xml_str, field_values, render_kwargs = spec.generate(seed)
+    xml_str, field_values, render_kwargs = spec.generate(seed, **gen_opts)
     field_errors = validate_field_values(doctype, field_values)  # log-only, ver validation/schemas.py
 
     pdf_obj = spec.render(xml_str, render_kwargs)
@@ -76,17 +79,13 @@ def _generate_one_inner(doctype, split, index, sid, seed, out_dir, dpi_options, 
 
         dpi = rng.choice(list(dpi_options))
         images = rasterize(tmp.name, dpi=dpi)
-        image_clean, aug_params = augment_clean(images[0], seed=seed)
-        image_geo = None
-        if gen_geo:
-            image_geo, geo_params = augment_geometric_variant(images[0], seed=seed)
 
         from generator.labels.layout import build_label
 
         source = {
             "xml_path": f"xml/{index // 10_000:04d}/{sid}.xml",
             "pdf_path": f"pdfs/{index // 10_000:04d}/{sid}.pdf",
-            "fixture_template": "tpl_001",
+            "fixture_template": field_values.get("_template_id", "tpl_001"),
             "generation_seed": seed,
         }
         label = build_label(
@@ -95,6 +94,13 @@ def _generate_one_inner(doctype, split, index, sid, seed, out_dir, dpi_options, 
         )
         label["kie"] = spec.kie_builder(field_values, label.pop("field_id_to_element"))
         label["dpi"] = dpi
+
+        image_clean, label, aug_params = augment_document(
+            images[0], label, field_values, seed=seed
+        )
+        image_geo = None
+        if gen_geo:
+            image_geo, geo_params = augment_geometric_variant(images[0], seed=seed)
 
     try:
         LabelRecord(**label)
@@ -111,7 +117,13 @@ def _generate_one_inner(doctype, split, index, sid, seed, out_dir, dpi_options, 
         "dpi": dpi,
         "field_errors": field_errors,
         "label_schema_ok": label_schema_ok,
+        "augmentation": aug_params,
     }
+    # Variante estrutural (quando o gerador expõe): perfil sorteado, config do
+    # renderer e formato de CNPJ por parte — para estratificar splits/avaliação.
+    for key in ("_template_id", "_profile", "_render", "_doc_formats"):
+        if key in field_values:
+            meta[key.lstrip("_")] = field_values[key]
 
     write_sample(out_dir, doctype, index, sid, xml_str, pdf_bytes, image_clean, image_geo, label, meta)
 

@@ -26,9 +26,9 @@ with open(_SCHEMA_PATH, encoding="utf8") as _f:
 _NS = _SCHEMA["namespace"]
 
 
-def _party(rng, faker, with_email=True):
+def _party(rng, faker, with_email=True, alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO):
     return {
-        "cnpj": fake_data.cnpj(rng),
+        "cnpj": fake_data.cnpj(rng, alnum_ratio=alnum_ratio),
         "ie": fake_data.ie_stub(rng),
         "xNome": fake_data.company_name(rng, faker),
         "fone": fake_data.phone_number(rng, mobile=rng.random() < 0.5),
@@ -54,7 +54,11 @@ def _fill_party(
             pass
 
 
-def generate_dacte(seed=None, num_documents=None):
+def generate_dacte(
+    seed=None,
+    num_documents=None,
+    cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO,
+):
     rng = random.Random(seed)
     faker = Faker("pt_BR")
     faker.seed_instance(seed)
@@ -65,7 +69,7 @@ def generate_dacte(seed=None, num_documents=None):
 
     field_values = {}
 
-    emit = _party(rng, faker, with_email=False)
+    emit = _party(rng, faker, with_email=False, alnum_ratio=cnpj_alnum_ratio)
     emit["xFant"] = fake_data.company_name(rng, faker)
     _fill_party(
         root,
@@ -79,21 +83,21 @@ def generate_dacte(seed=None, num_documents=None):
     xml_builder.set_text(root, "infCte/emit/xFant", ns, emit["xFant"])
     field_values["emit"] = emit
 
-    rem = _party(rng, faker)
+    rem = _party(rng, faker, alnum_ratio=cnpj_alnum_ratio)
     _fill_party(root, "infCte/rem", "infCte/rem/enderReme", rem, ns)
     rem["xFant"] = fake_data.company_name(rng, faker)
     xml_builder.set_text(root, "infCte/rem/xFant", ns, rem["xFant"])
     field_values["rem"] = rem
 
-    exped = _party(rng, faker)
+    exped = _party(rng, faker, alnum_ratio=cnpj_alnum_ratio)
     _fill_party(root, "infCte/exped", "infCte/exped/enderExped", exped, ns)
     field_values["exped"] = exped
 
-    receb = _party(rng, faker)
+    receb = _party(rng, faker, alnum_ratio=cnpj_alnum_ratio)
     _fill_party(root, "infCte/receb", "infCte/receb/enderReceb", receb, ns)
     field_values["receb"] = receb
 
-    dest = _party(rng, faker)
+    dest = _party(rng, faker, alnum_ratio=cnpj_alnum_ratio)
     _fill_party(root, "infCte/dest", "infCte/dest/enderDest", dest, ns)
     field_values["dest"] = dest
 
@@ -166,6 +170,10 @@ def generate_dacte(seed=None, num_documents=None):
     )
     xml_builder.set_text(root, "infCTeSupl/qrCodCTe", ns, qr_payload)
     field_values["qr_payload"] = qr_payload
+    field_values["_doc_formats"] = {
+        role: ("cnpj_alnum" if fake_data.is_alnum_cnpj(field_values[role]["cnpj"]) else "cnpj_numeric")
+        for role in ("emit", "rem", "exped", "receb", "dest")
+    }
 
     xml_str = xml_builder.to_string(root)
     return xml_str, field_values

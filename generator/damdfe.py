@@ -25,7 +25,7 @@ _NS = _SCHEMA["namespace"]
 _AIRCRAFT_PREFIXES = ["PP", "PR", "PT", "PS"]
 
 
-def generate_damdfe(seed=None):
+def generate_damdfe(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO):
     rng = random.Random(seed)
     faker = Faker("pt_BR")
     faker.seed_instance(seed)
@@ -36,7 +36,7 @@ def generate_damdfe(seed=None):
 
     field_values = {}
 
-    emit_cnpj = fake_data.cnpj(rng)
+    emit_cnpj = fake_data.cnpj(rng, alnum_ratio=cnpj_alnum_ratio)
     emit_nome = fake_data.company_name(rng, faker)
     emit_fantasia = fake_data.company_name(rng, faker)
     emit_ie = fake_data.ie_stub(rng)
@@ -104,7 +104,11 @@ def generate_damdfe(seed=None):
     xml_builder.set_text(root, "infMDFe/infDoc/infMunDescarga/xMunDescarga", ns, dest_mun_name)
 
     chave_nfe_vinculada = fake_data.access_key(
-        rng, cnpj_digits=fake_data.cnpj(rng), serie="1", numero=str(rng.randint(1, 999999)), emissao_aamm=aamm
+        rng,
+        cnpj_digits=fake_data.cnpj(rng, alnum_ratio=cnpj_alnum_ratio),
+        serie="1",
+        numero=str(rng.randint(1, 999999)),
+        emissao_aamm=aamm,
     )
     xml_builder.set_text(root, "infMDFe/infDoc/infMunDescarga/infNFe/chNFe", ns, chave_nfe_vinculada)
     field_values["chave_nfe_vinculada"] = chave_nfe_vinculada
@@ -123,6 +127,9 @@ def generate_damdfe(seed=None):
     )
     xml_builder.set_text(root, "infMDFeSupl/qrCodMDFe", ns, qr_payload)
     field_values["qr_payload"] = qr_payload
+    field_values["_doc_formats"] = {
+        "emit": "cnpj_alnum" if fake_data.is_alnum_cnpj(emit_cnpj) else "cnpj_numeric",
+    }
 
     xml_str = xml_builder.to_string(root)
     return xml_str, field_values

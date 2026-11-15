@@ -132,6 +132,7 @@ dataset/*/xml/*/*
 dataset/*/labels/*/*
 dataset/*/metadata/*/*
 dataset/*/*.parquet
+dataset/examples_showcase/
 !dataset/*/images/*/.gitkeep
 !dataset/*/images_geo/*/.gitkeep
 !dataset/*/pdfs/*/.gitkeep

@@ -34,7 +34,7 @@ _CORRECAO_MOTIVOS = [
 ]
 
 
-def generate_dacce(seed=None):
+def generate_dacce(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO):
     rng = random.Random(seed)
     faker = Faker("pt_BR")
     faker.seed_instance(seed)
@@ -45,8 +45,8 @@ def generate_dacce(seed=None):
 
     field_values = {}
 
-    autor_cnpj = fake_data.cnpj(rng)
-    dest_cnpj = fake_data.cnpj(rng)
+    autor_cnpj = fake_data.cnpj(rng, alnum_ratio=cnpj_alnum_ratio)
+    dest_cnpj = fake_data.cnpj(rng, alnum_ratio=cnpj_alnum_ratio)
 
     emissao = fake_data.recent_datetime(rng)
     dh_evento = emissao.strftime("%Y-%m-%dT%H:%M:%S-03:00")
@@ -95,6 +95,10 @@ def generate_dacce(seed=None):
         "fone": fake_data.phone_number(rng, mobile=True),
     }
     field_values["emitente"] = emitente
+    field_values["_doc_formats"] = {
+        "autor": "cnpj_alnum" if fake_data.is_alnum_cnpj(autor_cnpj) else "cnpj_numeric",
+        "dest": "cnpj_alnum" if fake_data.is_alnum_cnpj(dest_cnpj) else "cnpj_numeric",
+    }
 
     xml_str = xml_builder.to_string(root)
     return xml_str, emitente, field_values

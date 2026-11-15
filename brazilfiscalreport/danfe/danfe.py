@@ -20,7 +20,14 @@ from ..utils import (
     merge_if_different,
 )
 from ..xfpdf import xFPDF
-from .config import DanfeConfig, FontSize, InvoiceDisplay, ReceiptPosition
+from .config import (
+    DanfeConfig,
+    FontSize,
+    InvoiceDisplay,
+    ProductColumnsPreset,
+    ProductTableStyle,
+    ReceiptPosition,
+)
 from .danfe_basic_field import DanfeBasicField
 from .danfe_block import DanfeBlock
 from .danfe_code import DanfeCode
@@ -57,7 +64,10 @@ class Danfe(xFPDF):
             left=config.margins.left, top=config.margins.top, right=config.margins.right
         )
         self.footer_stamp = config.footer_stamp
-        self._has_footer_stamp = bool(self.footer_stamp.logo or self.footer_stamp.text)
+        self.footer_left_text = config.footer_left_text
+        self._has_footer_stamp = bool(
+            self.footer_stamp.logo or self.footer_stamp.text or self.footer_left_text
+        )
         # Reserve space for the footer stamp inside the bottom margin so the
         # content area (eph) shrinks automatically and never overlaps the stamp.
         bottom_margin = config.margins.bottom
@@ -70,7 +80,7 @@ class Danfe(xFPDF):
         self.default_font = config.font_type.value
         self.default_font_factor = (
             config.font_size.value
-            if self.default_font == "Times"
+            if self.default_font in ("Times", "Helvetica")
             else config.font_size.SMALL.value
         )
         self.price_precision = config.decimal_config.price_precision
@@ -80,6 +90,14 @@ class Danfe(xFPDF):
         self.infcpl_semicolon_newline = config.infcpl_semicolon_newline
         self.product_description_config = config.product_description_config
         self.watermark_cancelled = config.watermark_cancelled
+        self.display_homologation_dest_warning = (
+            config.display_homologation_dest_warning
+        )
+        self.product_table_style = config.product_table_style
+        self.product_columns_preset = config.product_columns_preset
+        self.vertical_block_labels = config.vertical_block_labels
+        self.sub_emit_credit = config.sub_emit_credit
+        self.mid_page_credit = config.mid_page_credit
 
         root = ET.fromstring(xml)
         self.inf_nfe = root.find(f"{URL}infNFe")
@@ -746,6 +764,8 @@ class Danfe(xFPDF):
             f"{extract_text(self.emit,'UF')}\n"
             f"{cep}\nFone: {fone}"
         )
+        if self.sub_emit_credit:
+            address += f"\n{self.sub_emit_credit}"
         b_emit = DanfeBlock(pdf=self)
         e_emit_info = DanfeEmitInfo(
             h=h_emit_box,
@@ -837,7 +857,10 @@ class Danfe(xFPDF):
 
     def _draw_recipient_sender(self):
         # get content data
-        if extract_text(self.ide, "tpAmb") == "1":
+        if (
+            extract_text(self.ide, "tpAmb") == "1"
+            or not self.display_homologation_dest_warning
+        ):
             dest_name = extract_text(self.dest, "xNome")
         else:
             dest_name = "NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL"
@@ -1379,25 +1402,57 @@ class Danfe(xFPDF):
             # Regime Simples Nacional
             cst_label = "CSOSN"
             cst_width = 8
-        colunas = [
-            "CÓDIGO",
-            "DESCRIÇÃO DOS PRODUTOS / SERVIÇOS",
-            "NCM/SH",
-            cst_label,
-            "CFOP",
-            "UN.",
-            "QTD.",
-            "V.UNIT.",
-            # "DESCONTO",
-            "V.TOTAL",
-            "BC.ICMS",
-            # "B.CÁLC.ICMS ST",
-            # "VALOR ICMS ST",
-            "V.ICMS",
-            "V.IPI",
-            "%ICMS",
-            "%IPI",
-        ]
+        if self.product_columns_preset == ProductColumnsPreset.FUEL_ANP:
+            colunas = [
+                "CÓD. PROD.",
+                "DESCRIÇÃO DO PRODUTO/SERVIÇO",
+                "CÓD. NCM",
+                cst_label,
+                "CFOP",
+                "UND",
+                "QUANTIDADE",
+                "V. UNITÁRIO",
+                "V. TOTAL",
+                "BC ICMS",
+                "V. ICMS",
+                "V. IPI",
+                "ALIQ. ICMS",
+                "ALIQ. IPI",
+            ]
+        elif self.product_columns_preset == ProductColumnsPreset.DISCOUNT_LIQUID:
+            colunas = [
+                "CÓDIGO",
+                "DESCRIÇÃO DO PRODUTO / SERVIÇO",
+                "NCM/SH",
+                cst_label,
+                "CFOP",
+                "UNID.",
+                "QTDE.",
+                "VALOR UNIT.",
+                "VALOR LÍQ.",
+                "B. CÁLC. ICMS",
+                "VALOR ICMS",
+                "VALOR IPI",
+                "ALIQ. ICMS",
+                "ALIQ. IPI",
+            ]
+        else:
+            colunas = [
+                "CÓDIGO",
+                "DESCRIÇÃO DOS PRODUTOS / SERVIÇOS",
+                "NCM/SH",
+                cst_label,
+                "CFOP",
+                "UN.",
+                "QTD.",
+                "V.UNIT.",
+                "V.TOTAL",
+                "BC.ICMS",
+                "V.ICMS",
+                "V.IPI",
+                "%ICMS",
+                "%IPI",
+            ]
         monetary_fields_index = [6, 7, 8, 9, 10, 11, 12, 13]
         col_widths = self._product_col_widths(cst_width)
         defined_width = sum(filter(None, col_widths))
@@ -1442,7 +1497,13 @@ class Danfe(xFPDF):
             add_info_lines = add_info_field.get_content_lines()
             max_add_info_lines = add_info_field.get_max_content_lines()
         else:
-            self.rect(x=self.x, y=self.y, w=self.edw, h=h)
+            if self.product_table_style != ProductTableStyle.OPEN_BOTTOM and h > 0:
+                self.rect(x=self.x, y=self.y, w=self.edw, h=h)
+                if self.product_table_style == ProductTableStyle.FULL_VERTICAL_GRID:
+                    cx = self.x
+                    for cw in fixed_col_widths[:-1]:
+                        cx += cw
+                        self.line(cx, old_y, cx, old_y + h)
         self.y = old_y + h
         self.x = x_before
 
@@ -1474,6 +1535,13 @@ class Danfe(xFPDF):
         block_issqn.render()
 
     def _draw_additional_data(self, additional_data, continuation_height=None):
+        if self.mid_page_credit and not continuation_height:
+            y_cur = self.get_y()
+            x_cur = self.get_x()
+            self.set_font(self.default_font, "B", 6)
+            self.set_xy(x_cur, y_cur)
+            self.cell(w=self.edw, h=HEIGHT_FONT_BLOCK_DESC, text=self.mid_page_credit, align="C")
+            self.set_xy(x_cur, y_cur)
         block_adic = DanfeBlock(
             description="DADOS ADICIONAIS",
             pdf=self,
@@ -1520,14 +1588,15 @@ class Danfe(xFPDF):
         logo_box_w = stamp.logo_max_width if stamp.logo else 0
         x_logo = self.w - self.r_margin - logo_box_w
 
+        if self.footer_left_text:
+            self.set_font(self.default_font, style="", size=6.5)
+            self.set_xy(self.l_margin, y_top)
+            self.cell(self.edw * 0.65, stamp.height, self.footer_left_text, align="L")
+
         if stamp.text:
             self.set_font(self.default_font, style="B", size=7)
             text_w = self.get_string_width(stamp.text)
             text_gap = 2 if stamp.logo else 0
-            # cell() reserves c_margin padding inside the cell on both sides;
-            # size the cell to include it and right-align so the text right
-            # edge lands exactly at (x_logo - text_gap) without overflowing
-            # the right margin.
             cell_w = text_w + 2 * self.c_margin
             cell_x = x_logo - text_gap - text_w - self.c_margin
             self.set_xy(cell_x, y_top)
