@@ -108,6 +108,7 @@ def augment_document(
     artifact_preset: str = None,
     scan_mode: str = None,
     angle_deg: float = None,
+    tilt_deg: float = None,
 ) -> tuple[Image.Image, dict, dict]:
     """Pipeline unificado:
     1. Sobrepõe carimbos, assinaturas, comprovante POS e riscos, adicionando
@@ -115,6 +116,8 @@ def augment_document(
     2. Rotaciona ("deixa um pouco de lado") e reprojeta todas as bboxes em `mm`;
     3. Aplica modo fotométrico de scanner (`clean_digital`, `color_scan`, `bw_binarized_scan`).
     """
+    if angle_deg is None and tilt_deg is not None:
+        angle_deg = tilt_deg
     _seed_all(seed)
     rng = _random.Random(seed)
 
