@@ -19,6 +19,19 @@ class InvoiceDisplay(Enum):
 class FontType(Enum):
     COURIER = "Courier"
     TIMES = "Times"
+    HELVETICA = "Helvetica"
+
+
+class ProductTableStyle(Enum):
+    FULL_FRAME = "full_frame"
+    FULL_VERTICAL_GRID = "full_vertical_grid"
+    OPEN_BOTTOM = "open_bottom"
+
+
+class ProductColumnsPreset(Enum):
+    STANDARD = "standard"
+    FUEL_ANP = "fuel_anp"
+    DISCOUNT_LIQUID = "discount_liquid"
 
 
 class FontSize(Enum):
@@ -82,3 +95,10 @@ class DanfeConfig:
         default_factory=ProductDescriptionConfig
     )
     footer_stamp: FooterStamp = field(default_factory=FooterStamp)
+    display_homologation_dest_warning: bool = True
+    product_table_style: ProductTableStyle = ProductTableStyle.FULL_FRAME
+    product_columns_preset: ProductColumnsPreset = ProductColumnsPreset.STANDARD
+    vertical_block_labels: bool = False
+    sub_emit_credit: str = ""
+    mid_page_credit: str = ""
+    footer_left_text: str = ""

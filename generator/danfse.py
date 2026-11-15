@@ -37,7 +37,7 @@ _SERVICE_CATALOG = [
 ]
 
 
-def generate_danfse(seed=None):
+def generate_danfse(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO):
     rng = random.Random(seed)
     faker = Faker("pt_BR")
     faker.seed_instance(seed)
@@ -48,7 +48,7 @@ def generate_danfse(seed=None):
 
     field_values = {}
 
-    cnpj = fake_data.cnpj(rng)
+    cnpj = fake_data.cnpj(rng, alnum_ratio=cnpj_alnum_ratio)
     nome = fake_data.company_name(rng, faker)
     _, municipality_name, _ = rng.choice(fake_data.load_municipios())
 
@@ -99,6 +99,9 @@ def generate_danfse(seed=None):
             "xDescServ": x_desc_serv,
             "vServ": v_serv,
             "key_nfse": key_nfse,
+            "_doc_formats": {
+                "emit": "cnpj_alnum" if fake_data.is_alnum_cnpj(cnpj) else "cnpj_numeric",
+            },
         }
     )
 

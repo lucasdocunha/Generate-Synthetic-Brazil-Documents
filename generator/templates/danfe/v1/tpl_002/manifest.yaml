@@ -1,0 +1,11 @@
+template_id: tpl_002
+doctype: danfe
+description: >
+  Template MAXIMAL da NF-e 4.00: contém todos os blocos opcionais (dest PF e
+  PJ, retirada, entrega, ISSQNtot, IBSCBSTot, transportadora + veículo +
+  volumes, cobrança com duplicatas, infAdProd, infAdic). O adaptador
+  generator/danfe.py sorteia um perfil (generator/nfe_profile.py) e PODA os
+  blocos ausentes, preservando a ordem do leiaute. Os grupos de imposto do
+  item (ICMS/IPI/PIS/COFINS/ISSQN/IBSCBS) e rastro/comb/med são construídos
+  por código, pois a tag varia com o CST/CSOSN.
+det_count_range: [1, 40]

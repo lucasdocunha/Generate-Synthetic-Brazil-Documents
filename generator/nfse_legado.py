@@ -44,12 +44,12 @@ _SERVICE_CATALOG = [
 ]
 
 
-def generate_nfse_legado(seed=None):
+def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO):
     rng = random.Random(seed)
     faker = Faker("pt_BR")
     faker.seed_instance(seed)
 
-    cnpj_prestador = fake_data.cnpj(rng)
+    cnpj_prestador = fake_data.cnpj(rng, alnum_ratio=cnpj_alnum_ratio)
     inscricao_municipal = str(rng.randint(1, 99999999))
     numero_rps = str(rng.randint(1, 999999))
 
@@ -59,7 +59,7 @@ def generate_nfse_legado(seed=None):
         cpf_cnpj = TcCpfCnpj(Cpf=cpf_cnpj_tomador)
         razao_social_tomador = fake_data.person_name(rng, faker)
     else:
-        cpf_cnpj_tomador = fake_data.cnpj(rng)
+        cpf_cnpj_tomador = fake_data.cnpj(rng, alnum_ratio=cnpj_alnum_ratio)
         cpf_cnpj = TcCpfCnpj(Cnpj=cpf_cnpj_tomador)
         razao_social_tomador = fake_data.company_name(rng, faker)
 

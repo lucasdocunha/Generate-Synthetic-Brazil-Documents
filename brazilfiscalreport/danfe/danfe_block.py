@@ -27,6 +27,11 @@ class DanfeBlock:
         self.fields = []
         self.pdf = pdf
         self.border = border
+        self.is_vertical_label = bool(
+            description and getattr(pdf, "vertical_block_labels", False)
+        )
+        self.label_strip_w = 4.0 if self.is_vertical_label else 0.0
+        self.w = pdf.edw - self.label_strip_w
         self.offset_x = 0.0
         self.offset_y = 0.0
         self.rows_heights = rows_heights
@@ -55,7 +60,12 @@ class DanfeBlock:
                 )
 
     def render(self):
-        self.render_description()
+        use_vert = self.is_vertical_label and bool(self.fields)
+        if use_vert:
+            self.offset_x = self.label_strip_w
+            self.offset_y = 0.4
+        else:
+            self.render_description()
         x = self.x + self.offset_x
         y = self.y + self.offset_y
         self.pdf.set_xy(x=x, y=y)
@@ -68,6 +78,26 @@ class DanfeBlock:
             # set final position
             # necessary to know where the next block should start
             self.pdf.set_xy(x=x, y=y)
+        if use_vert:
+            y_top = self.y + self.offset_y
+            block_h = max(y - y_top, 4.0)
+            self.pdf.rect(x=self.x, y=y_top, w=self.label_strip_w, h=block_h)
+            self.pdf.set_font(self.pdf.default_font, "B", 4.2)
+            short_map = {
+                "DESTINATÁRIO / REMETENTE": "DESTINATÁRIO",
+                "FATURA / DUPLICATAS": "FATURA",
+                "CÁLCULO DO IMPOSTO": "IMPOSTO",
+                "TRANSPORTADOR / VOLUMES TRANSPORTADOS": "TRANSPORTE",
+                "CÁLCULO DO ISSQN": "ISSQN",
+                "DADOS ADICIONAIS": "DADOS ADIC.",
+            }
+            lbl = short_map.get(self.description, self.description[:14])
+            tw = self.pdf.get_string_width(lbl)
+            tx = self.x + 2.7
+            ty = y_top + (block_h + tw) / 2
+            with self.pdf.rotation(90, tx, ty):
+                self.pdf.text(tx, ty, lbl)
+            self.pdf.set_xy(x=self.x, y=y)
 
     def render_description(self):
         if self.description:
@@ -81,6 +111,7 @@ class DanfeBlock:
     def get_new_position(self, field):
         new_pos_x = 0.0
         new_pos_y = 0.0
+        left_edge = self.x + self.offset_x
 
         # X Axis
         if field.new_x == "LEFT":
@@ -89,9 +120,9 @@ class DanfeBlock:
             # default
             new_pos_x = field.x + field.w
         if field.new_x == "L_BLOCK":
-            new_pos_x = self.x
+            new_pos_x = left_edge
         if field.new_x == "R_BLOCK":
-            new_pos_x = self.x + self.w
+            new_pos_x = left_edge + self.w
 
         # Y Axis
         if field.new_y == "TOP":
@@ -105,8 +136,8 @@ class DanfeBlock:
             new_pos_y = self.y + self.h
 
         # fix outside position
-        if new_pos_x >= (self.x + self.w - 1):
-            new_pos_x = self.x
+        if new_pos_x >= (left_edge + self.w - 1):
+            new_pos_x = left_edge
             new_pos_y = field.y + field.h
 
         return new_pos_x, new_pos_y

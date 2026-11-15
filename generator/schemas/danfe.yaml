@@ -8,7 +8,7 @@
 # (ver PLANO_GERADOR.md, "Questões em aberto").
 doctype: danfe
 namespace: "http://www.portalfiscal.inf.br/nfe"
-template_root: generator/templates/danfe/v1
+template_root: generator/templates/danfe/v1   # gerador usa tpl_002 (maximal + poda); tpl_001 mantido como referência
 
 fields:
   - {name: emit_cnpj, xpath: infNFe/emit/CNPJ, generator: fake_data.cnpj, consistency_group: emitente}
@@ -16,7 +16,7 @@ fields:
   - {name: emit_xFant, xpath: infNFe/emit/xFant, generator: fake_data.company_name, consistency_group: emitente}
   - {name: emit_endereco, xpath: infNFe/emit/enderEmit, generator: fake_data.address, consistency_group: emitente}
   - {name: emit_IE, xpath: infNFe/emit/IE, generator: fake_data.ie_stub, consistency_group: emitente}
-  - {name: dest_cpf, xpath: infNFe/dest/CPF, generator: fake_data.cpf, consistency_group: destinatario}
+  - {name: dest_doc, xpath: "infNFe/dest/CNPJ | infNFe/dest/CPF", generator: "fake_data.cnpj (PJ, pode ser alfanumérico) | fake_data.cpf (PF)", consistency_group: destinatario}
   - {name: dest_xNome, xpath: infNFe/dest/xNome, generator: fake_data.person_name, consistency_group: destinatario}
   - {name: dest_endereco, xpath: infNFe/dest/enderDest, generator: fake_data.address, consistency_group: destinatario}
   - {name: dest_email, xpath: infNFe/dest/email, generator: fake_data.email, consistency_group: destinatario}
@@ -37,3 +37,48 @@ anti_validity:
   tpAmb: "always 2 - PLANO_GERADOR.md secao 9.5"
   checksum_mode: "always_invalid - PLANO_GERADOR.md secao 9.1"
   access_key_cuf: "00 - PLANO_GERADOR.md secao 9.2"
+
+# Pesos do perfil estrutural sorteado por amostra (generator/nfe_profile.py).
+# Usado pelo template tpl_002 (maximal + poda). Valores são probabilidades
+# independentes por eixo; `regime` e `items` são distribuições categóricas.
+profiles:
+  template: tpl_002
+  regime: {normal: 0.55, simples: 0.35, mei: 0.10}
+  dest_pj: 0.60
+  transporta: 0.50
+  veiculo: 0.50          # condicional a transporta
+  cobr: 0.45
+  retirada: 0.10
+  entrega: 0.15
+  frete_seguro_outros: 0.35   # vFrete/vSeg/vOutro > 0 (rateado por item)
+  desconto: 0.25
+  ipi_tributado: 0.40    # só regime normal
+  special_items: 0.20    # chance de o doc ter itens ANP/ANVISA
+  issqn: 0.05            # doc mistura itens de serviço (ISSQN) e ISSQNtot
+  ibs_cbs: 0.20          # grupos IBSCBS/IBSCBSTot (reforma tributária; não aparece no DANFE)
+  inf_ad_prod: 0.30      # por item
+  inf_cpl: 0.70
+  nfe_proc: 0.60         # envelope nfeProc + protNFe
+  # nº de itens: faixas e pesos (cauda longa -> DANFEs multipágina)
+  items:
+    - {range: [1, 3], weight: 0.45}
+    - {range: [4, 10], weight: 0.35}
+    - {range: [11, 25], weight: 0.15}
+    - {range: [26, 40], weight: 0.05}
+  render:
+    landscape: 0.25            # tpImp=2 (escrito no XML)
+    receipt_bottom: 0.25       # retrato apenas
+    font_courier: 0.0
+    font_helvetica: 0.45       # Helvetica (sans-serif, ex.: Linx/Galago) vs Times (serif, ex.: Xpert)
+    font_big: 0.15
+    display_pis_cofins: 0.30
+    duplicates_only: 0.30
+    decimals_2: 0.40           # price/quantity precision 2 vs 4
+    has_logo: 0.65             # logotipo procedural no cabeçalho
+    erp_styles:
+      standard: 0.20
+      linx_autosystem: 0.20
+      xpert: 0.20
+      galago: 0.15
+      minimal_open: 0.15
+      classic_landscape: 0.10

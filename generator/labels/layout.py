@@ -105,21 +105,46 @@ def extract_image_bboxes(pdf_path):
     return images
 
 
+def _nonzero(flat, key, value):
+    """Só inclui totais > 0: '0.00' casa com dezenas de spans e polui o bbox."""
+    if value:
+        flat[key] = f"{value:.2f}"
+
+
+def _flatten_party(flat, prefix, party):
+    end = party["endereco"]
+    flat[f"{prefix}_cnpj_cpf"] = party["doc"]
+    flat[f"{prefix}_xNome"] = party["xNome"]
+    flat[f"{prefix}_endereco_logradouro"] = end["street"]
+    flat[f"{prefix}_endereco_bairro"] = end["neighborhood"]
+    flat[f"{prefix}_endereco_municipio"] = end["municipality_name"]
+    flat[f"{prefix}_endereco_cep"] = end["cep"]
+    flat[f"{prefix}_fone"] = party["fone"]
+    if party.get("IE"):
+        flat[f"{prefix}_IE"] = party["IE"]
+
+
 def flatten_danfe_fields(field_values: dict) -> dict:
     """Achata field_values num dict {field_id: valor_bruto_como_string},
     incluindo uma versão 'exibível' para datas (dd/mm/aaaa), já que o
     casamento é feito por normalização (remove pontuação), não por
     reprodução exata da formatação do renderer.
+
+    Blocos opcionais (transportadora, duplicatas, retirada/entrega,
+    protocolo, ISSQN) só entram quando presentes no perfil sorteado.
     """
     flat = {}
     e = field_values["emit_endereco"]
     d = field_values["dest_endereco"]
+    totals = field_values.get("totals", {})
+    decimals = field_values.get("_render", {}).get("decimals", 4)
 
     flat.update(
         {
             "emit_cnpj_cpf": field_values["emit_cnpj"],
             "emit_xNome": field_values["emit_xNome"],
-            "emit_xFant": field_values["emit_xFant"],
+            # emit_xFant e dest_email ficam fora: o renderer DANFE não os imprime
+            # (seguem no KIE com bbox_ref nulo).
             "emit_IE": field_values["emit_IE"],
             "emit_endereco_logradouro": e["street"],
             "emit_endereco_bairro": e["neighborhood"],
@@ -127,7 +152,7 @@ def flatten_danfe_fields(field_values: dict) -> dict:
             "emit_endereco_uf": e["uf"],
             "emit_endereco_cep": e["cep"],
             "emit_fone": field_values["emit_fone"],
-            "dest_cnpj_cpf": field_values["dest_cpf"],
+            "dest_cnpj_cpf": field_values.get("dest_doc", field_values.get("dest_cpf")),
             "dest_xNome": field_values["dest_xNome"],
             "dest_endereco_logradouro": d["street"],
             "dest_endereco_bairro": d["neighborhood"],
@@ -135,20 +160,59 @@ def flatten_danfe_fields(field_values: dict) -> dict:
             "dest_endereco_uf": d["uf"],
             "dest_endereco_cep": d["cep"],
             "dest_fone": field_values["dest_fone"],
-            "dest_email": field_values["dest_email"],
             "chave_acesso": field_values["chave_acesso"],
             "ident_numero": field_values["nNF"],
             "ident_serie": field_values["serie"],
             "natureza_operacao": field_values["natOp"],
             "total_vnf": f"{field_values['total_vNF']:.2f}",
-            "total_vicms": f"{field_values['total_vICMS']:.2f}",
         }
     )
+    if field_values.get("dest_IE"):
+        flat["dest_IE"] = field_values["dest_IE"]
+    _nonzero(flat, "total_vicms", field_values["total_vICMS"])
+    for key in ("vBC", "vBCST", "vST", "vProd", "vFrete", "vSeg", "vDesc", "vOutro", "vIPI", "vTotTrib"):
+        _nonzero(flat, f"total_{key.lower()}", totals.get(key, 0.0))
+    _nonzero(flat, "issqn_vserv", totals.get("vServ", 0.0))
+    _nonzero(flat, "issqn_viss", totals.get("vISS", 0.0))
 
-    dh_emi = field_values["dhEmi"]
-    date_part = dh_emi.split("T")[0]
-    yyyy, mm, dd = date_part.split("-")
-    flat["data_emissao"] = f"{dd}/{mm}/{yyyy}"
+    flat["data_emissao"] = _iso_to_br_date(field_values["dhEmi"])
+
+    prot = field_values.get("protocolo")
+    if prot:
+        flat["protocolo_autorizacao"] = prot["nProt"]
+
+    for role in ("retirada", "entrega"):
+        if field_values.get(role):
+            _flatten_party(flat, role, field_values[role])
+
+    transp = field_values.get("transp")
+    if transp:
+        flat["transp_cnpj_cpf"] = transp["doc"]
+        flat["transp_xNome"] = transp["xNome"]
+        flat["transp_xEnder"] = transp["xEnder"]
+        flat["transp_xMun"] = transp["xMun"]
+        if transp["IE"]:
+            flat["transp_IE"] = transp["IE"]
+        if transp["veiculo"]:
+            flat["transp_placa"] = transp["veiculo"]["placa"]
+            flat["transp_rntc"] = transp["veiculo"]["RNTC"]
+        vol = transp["vol"]
+        flat["vol_qvol"] = vol["qVol"]
+        flat["vol_especie"] = vol["esp"]
+        flat["vol_peso_bruto"] = vol["pesoB"]
+        flat["vol_peso_liquido"] = vol["pesoL"]
+        if vol["marca"]:
+            flat["vol_marca"] = vol["marca"]
+        if vol["nVol"]:
+            flat["vol_numeracao"] = vol["nVol"]
+
+    cobr = field_values.get("cobr")
+    if cobr and cobr["dups"]:
+        flat["fatura_numero"] = cobr["nFat"]
+        for k, dup in enumerate(cobr["dups"], start=1):
+            flat[f"dup_{k}_numero_venc_valor"] = (
+                f"{dup['nDup']} {_iso_to_br_date(dup['dVenc'])} {dup['vDup']}"
+            )
 
     for idx, item in enumerate(field_values["items"], start=1):
         prefix = f"item_{idx}_"
@@ -158,15 +222,16 @@ def flatten_danfe_fields(field_values: dict) -> dict:
         flat[prefix + "cfop"] = item["CFOP"]
         # qCom/vUnCom são armazenados no XML com muitas casas decimais (o
         # schema da NF-e pede isso), mas o DANFE exibe arredondado em
-        # `quantity_precision`/`price_precision` (4 casas por padrão) — usar
-        # o valor bruto de muitas casas como chave de busca falha (é mais
-        # longo que o texto exibido, então nunca é "contido" nele). Usa-se
-        # aqui o float já calculado (item["_qtd"]/["_preco_unit"])
-        # arredondado na mesma precisão exibida pelo renderer.
-        flat[prefix + "qtd"] = f"{item['_qtd']:.4f}"
-        flat[prefix + "vunit"] = f"{item['_preco_unit']:.4f}"
+        # `quantity_precision`/`price_precision` (sorteado: 2 ou 4 casas) —
+        # usar o valor bruto como chave de busca falha (é mais longo que o
+        # texto exibido). Usa-se o float arredondado na precisão exibida.
+        flat[prefix + "qtd"] = f"{item['_qtd']:.{decimals}f}"
+        flat[prefix + "vunit"] = f"{item['_preco_unit']:.{decimals}f}"
         flat[prefix + "vtotal"] = item["vProd"]
-        flat[prefix + "vicms"] = item["vICMS"]
+        if item.get("_vICMS", float(item.get("vICMS", 0) or 0)):
+            flat[prefix + "vicms"] = item["vICMS"]
+        if item.get("CST"):
+            flat[prefix + "cst"] = f"{item.get('orig', '')}{item['CST']}"
 
     return flat
 
@@ -263,6 +328,32 @@ def flatten_dacce_fields(field_values: dict) -> dict:
         "emitente_uf": emitente["uf"],
         "emitente_fone": emitente["fone"],
     }
+
+
+def flatten_portal_nfe_fields(field_values: dict) -> dict:
+    variant = (field_values.get("_render") or {}).get("portal_variant", "modern_svrs")
+    if variant == "classic_fazenda":
+        flat = {
+            "emit_cnpj_cpf": field_values["emit_cnpj"],
+            "emit_xNome": field_values["emit_xNome"],
+            "emit_IE": field_values["emit_IE"],
+            "emit_endereco_uf": field_values["emit_endereco"]["uf"],
+            "dest_cnpj_cpf": field_values.get("dest_doc", field_values.get("dest_cpf")),
+            "dest_xNome": field_values["dest_xNome"],
+            "dest_endereco_uf": field_values["dest_endereco"]["uf"],
+            "chave_acesso": field_values["chave_acesso"],
+            "ident_numero": field_values["nNF"],
+            "ident_serie": field_values["serie"],
+            "natureza_operacao": field_values["natOp"],
+            "total_vnf": f"{field_values['total_vNF']:.2f}",
+            "data_emissao": _iso_to_br_date(field_values["dhEmi"]),
+        }
+        if field_values.get("dest_IE"):
+            flat["dest_IE"] = field_values["dest_IE"]
+        if field_values.get("protocolo"):
+            flat["protocolo_autorizacao"] = field_values["protocolo"]["nProt"]
+        return flat
+    return flatten_danfe_fields(field_values)
 
 
 def match_fields(spans, flat_field_values):
@@ -372,15 +463,18 @@ def build_label(
 
     for img in extract_image_bboxes(pdf_path):
         x0, y0, x1, y1 = img["bbox_pt"]
+        w_mm = _pt_to_mm(x1 - x0)
+        h_mm = _pt_to_mm(y1 - y0)
+        obj_type = "logo" if (doc_type in ("DANFE", "DACCE") or _pt_to_mm(x0) < 55.0) else "qrcode"
         special_objects.append(
             {
-                "type": "qrcode_or_logo",
+                "type": obj_type,
                 "page": img["page"],
                 "bbox": {
                     "x": _pt_to_mm(x0),
                     "y": _pt_to_mm(y0),
-                    "w": _pt_to_mm(x1 - x0),
-                    "h": _pt_to_mm(y1 - y0),
+                    "w": w_mm,
+                    "h": h_mm,
                     "unit": "mm",
                 },
                 "field_id": None,
@@ -397,7 +491,7 @@ def build_label(
     return {
         "doc_id": doc_id,
         "doc_type": doc_type,
-        "schema_version": "0.2-poc-postproc-bbox",
+        "schema_version": "0.3-nfe-variants-alnum-cnpj",
         "source": source,
         "pages": pages,
         "elements": elements,
