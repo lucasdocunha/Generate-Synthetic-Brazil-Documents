@@ -12,8 +12,8 @@ import random
 from PIL import Image
 
 from augmentation.pipeline import augment_document
-from brazilfiscalreport.danfe import Danfe
-from brazilfiscalreport.portal_nfe import PortalNfe
+from renderers.danfe import Danfe
+from renderers.portal_nfe import PortalNfe
 from generator.branding.logo_factory import generate_company_logo
 from generator.dacce import generate_dacce
 from generator.dacte import generate_dacte

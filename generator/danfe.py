@@ -972,7 +972,9 @@ def _render_spec(profile, emissao=None, seed=None) -> dict:
     return {
         "receipt_pos": "bottom" if profile.receipt_bottom else "top",
         "font_type": font_type,
-        "font_size": "BIG" if profile.font_big else "SMALL",
+        # fonte grande só com Times: em Helvetica/Courier os números da tabela de
+        # itens quebram no meio ("610 / 2"), o que não ocorre em DANFE real
+        "font_size": "BIG" if (profile.font_big and font_type == "Times") else "SMALL",
         "display_pis_cofins": profile.display_pis_cofins,
         "invoice_display": "duplicates_only" if profile.duplicates_only else "full",
         "decimals": profile.decimals,
@@ -992,7 +994,7 @@ def _render_spec(profile, emissao=None, seed=None) -> dict:
 
 def render_kwargs(field_values: dict) -> dict:
     """field_values["_render"] -> kwargs de `Danfe(xml, **kwargs)`."""
-    from brazilfiscalreport.danfe.config import (
+    from renderers.danfe.config import (
         DanfeConfig,
         DecimalConfig,
         FontSize,

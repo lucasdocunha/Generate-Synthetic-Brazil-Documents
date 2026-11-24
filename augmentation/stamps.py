@@ -18,7 +18,7 @@ import random
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-from brazilfiscalreport.utils import format_cep, format_cpf_cnpj
+from renderers.utils import format_cep, format_cpf_cnpj
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SIGNATURE_SHEET = _REPO_ROOT / "Teste2.png"
@@ -213,7 +213,9 @@ def render_receipt_stamp(
     yy = parts[2][-2:] if len(parts) == 3 else "24"
     yyyy = parts[2] if len(parts) == 3 else "2024"
 
+    transcript: list[str] = []
     if style == "blue_recebemos":
+        transcript = ["RECEBEMOS", f"{dd}/{mm}/{yy}", company_name.upper()[:34]]
         # Estilo 7381676.pdf: RECEBEMOS grande + data __/__/__ + assinatura + empresa na base
         w, h = 420, 210
         img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
@@ -241,6 +243,7 @@ def render_receipt_stamp(
         img.alpha_composite(sig, dest=(90, 92))
 
     elif style == "classic_em_de":
+        transcript = ["Recebemos", f"Em {dd} de {mm} de {yyyy[:3]}{yy[-1]}"]
         # Estilo 5569594.pdf: "Recebemos / Em __ de __ de 20__ / [rubrica]"
         w, h = 390, 195
         img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
@@ -274,12 +277,15 @@ def render_receipt_stamp(
         label = rng.choice(["PAGO", "CONFERIDO", "LANÇADO", " LIQUIDADO "])
         draw.rectangle((10, 10, w - 10, h - 10), outline=col, width=5)
         draw.rectangle((17, 17, w - 17, h - 17), outline=col, width=2)
+        transcript = [label.strip(), f"DATA: {date_br}"]
         draw.text((w // 2, 48), label, fill=col, font=_font("sans_bold", 34), anchor="mm")
         draw.text((w // 2, 92), f"DATA: {date_br}", fill=col, font=_font("sans_bold", 18), anchor="mm")
         img = _apply_ink_wear(img, rng, fade_range=(0.50, 0.85))
 
     angle = rng.uniform(-11.0, 11.0)
-    return img.rotate(angle, expand=True, resample=Image.Resampling.BICUBIC)
+    out = img.rotate(angle, expand=True, resample=Image.Resampling.BICUBIC)
+    out.info["transcript"] = transcript
+    return out
 
 
 def render_cnpj_stamp(
@@ -321,7 +327,9 @@ def render_cnpj_stamp(
 
     img = _apply_ink_wear(img, rng, fade_range=(0.38, 0.76))
     angle = rng.uniform(-6.5, 6.5)
-    return img.rotate(angle, expand=True, resample=Image.Resampling.BICUBIC)
+    out = img.rotate(angle, expand=True, resample=Image.Resampling.BICUBIC)
+    out.info["transcript"] = [f"[{cnpj_fmt}]", company_name.upper()[:30], street_line, bairro_cep, mun_uf]
+    return out
 
 
 def render_pos_receipt(
@@ -388,7 +396,9 @@ def render_pos_receipt(
 
     img.alpha_composite(slip, dest=(4, 4))
     angle = rng.uniform(-4.5, 4.5)
-    return img.rotate(angle, expand=True, resample=Image.Resampling.BICUBIC)
+    out = img.rotate(angle, expand=True, resample=Image.Resampling.BICUBIC)
+    out.info["transcript"] = [acquirer, f"REDE {acquirer.upper()} - Via Cliente", *[ln.strip() for ln in lines]]
+    return out
 
 
 def apply_scratches_and_scan_borders(
@@ -469,9 +479,16 @@ def compose_document_artifacts(
     page_size_mm: dict,
     rng: random.Random,
     preset: str = None,
+    context: dict = None,
+    label: dict = None,
 ) -> tuple[Image.Image, list[dict]]:
     """Aplica carimbos, assinaturas, comprovantes POS e riscos sobre a página 1
     e retorna `(image_rgb, special_objects_mm)`.
+
+    `context` (ver `augmentation/context.py`) diz quem é o emitente, data, valor
+    (None = sem comprovante POS), `field_id` do CNPJ e se há canhoto; sem ele
+    cai na adivinhação de chaves de `field_values` (compatibilidade).
+    `label` permite posicionar artefatos na área livre abaixo do conteúdo.
     """
     canvas = image.convert("RGBA")
     w_px, h_px = canvas.size
@@ -493,59 +510,47 @@ def compose_document_artifacts(
             "unit": "mm",
         }
 
-    # Extrair dados do emitente da nota para coerência
-    emit_cnpj = (
-        field_values.get("emit_cnpj")
-        or (field_values.get("emit") or {}).get("cnpj")
-        or field_values.get("autor_cnpj")
-        or "02963955000170"
-    )
-    emit_nome = (
-        field_values.get("emit_xNome")
-        or (field_values.get("emit") or {}).get("xNome")
-        or (field_values.get("emitente") or {}).get("nome")
-        or "AUTO POSTO BRASIL LTDA"
-    )
-    emit_end = (
-        field_values.get("emit_endereco")
-        or (field_values.get("emit") or {}).get("endereco")
-        or {
-            "street": "AV. RIO BAHIA",
-            "number": "8600",
-            "neighborhood": "CENTRO",
-            "cep": "36880000",
-            "municipality_name": "MURIAE",
-            "uf": "MG",
-        }
-    )
-    dh_emi = field_values.get("dhEmi") or field_values.get("dh_evento") or "2024-04-27T14:00:00"
-    ymd = dh_emi.split("T")[0].split("-")
-    date_br = f"{ymd[2]}/{ymd[1]}/{ymd[0]}" if len(ymd) == 3 else "27/04/2024"
-    valor_nf = float(
-        field_values.get("total_vNF")
-        or field_values.get("v_frete")
-        or field_values.get("vServ")
-        or field_values.get("v_carga")
-        or 150.00
-    )
+    from augmentation.context import guess_context
+
+    ctx = context or guess_context(field_values)
+    emit_cnpj, emit_nome, emit_end = ctx["cnpj"], ctx["name"], ctx["address"]
+    date_br, valor_nf, has_receipt = ctx["date_br"], ctx["amount"], ctx["has_receipt"]
+
+    # Área livre abaixo do último texto (em px): onde carimbos "cabem" sem
+    # cobrir o documento. None quando o conteúdo ocupa a folha (ex.: DANFE).
+    _els = [e for e in (label or {}).get("elements", []) if e.get("page", 1) == 1 and "bbox" in e]
+    bottom_mm = max((e["bbox"]["y"] + e["bbox"]["h"] for e in _els), default=None)
+
+    def _free_band(obj_h):
+        if bottom_mm is None:
+            return None
+        top, low = (bottom_mm + 3.0) * sy, h_px - obj_h - 8
+        return (top, low) if low - top > 4 else None
 
     if preset is None:
         # Sorteio do combo de artefatos físicos para o dataset geral
-        preset = rng.choices(
-            ["none", "stamps_only", "stamp_and_cnpj", "pos_overlay", "signature_and_scratches"],
-            weights=[0.20, 0.30, 0.20, 0.15, 0.15],
-            k=1,
-        )[0]
+        presets = ["none", "stamps_only", "stamp_and_cnpj", "pos_overlay", "signature_and_scratches"]
+        weights = [0.20, 0.30, 0.20, 0.15, 0.15]
+        if valor_nf is None:  # sem valor monetário (ex.: CC-e): sem comprovante POS
+            weights[3] = 0.0
+        preset = rng.choices(presets, weights=weights, k=1)[0]
+    if valor_nf is None and preset in ("pos_overlay", "pos_and_stamp"):
+        preset = "stamps_only"
 
     special_objs = []
 
     if preset in ("stamps_only", "stamp_and_cnpj", "all_stamps", "pos_and_stamp"):
         st_img = render_receipt_stamp(rng, emit_nome, date_br=date_br)
+        st_text = st_img.info.get("transcript", [])
         target_w = int(w_px * rng.uniform(0.22, 0.28))
         target_h = int(st_img.height * (target_w / st_img.width))
         st_img = st_img.resize((target_w, target_h), Image.Resampling.BICUBIC)
         # Posiciona no quadro Reservado ao Fisco (inferior direito) ou espaço de produtos
-        if rng.random() < 0.55:
+        band = _free_band(target_h)
+        if band is not None and rng.random() < 0.85:
+            px = int(w_px * rng.uniform(0.10, 0.62))
+            py = int(rng.uniform(*band))
+        elif rng.random() < 0.55:
             px = int(w_px * rng.uniform(0.62, 0.70))
             py = int(h_px * rng.uniform(0.82, 0.87))
         else:
@@ -561,16 +566,21 @@ def compose_document_artifacts(
                 "page": 1,
                 "bbox": _px_to_bbox_mm(px, py, target_w, target_h),
                 "field_id": None,
+                "text": st_text,
             }
         )
 
     if preset in ("stamp_and_cnpj", "cnpj_stamp", "all_stamps"):
         c_img = render_cnpj_stamp(rng, emit_cnpj, emit_nome, emit_end)
+        c_text = c_img.info.get("transcript", [])
         target_w = int(w_px * rng.uniform(0.24, 0.30))
         target_h = int(c_img.height * (target_w / c_img.width))
         c_img = c_img.resize((target_w, target_h), Image.Resampling.BICUBIC)
+        band = _free_band(target_h)
         px = min(int(w_px * rng.uniform(0.56, 0.68)), w_px - target_w - 8)
         py = min(int(h_px * rng.uniform(0.60, 0.72)), h_px - target_h - 8)
+        if band is not None and rng.random() < 0.85:
+            py = int(rng.uniform(*band))
         canvas.alpha_composite(c_img, dest=(px, py))
         special_objs.append(
             {
@@ -578,17 +588,22 @@ def compose_document_artifacts(
                 "subtype": "cnpj_stamp",
                 "page": 1,
                 "bbox": _px_to_bbox_mm(px, py, target_w, target_h),
-                "field_id": "emit_cnpj_cpf",
+                "field_id": ctx["cnpj_field_id"],
+                "text": c_text,
             }
         )
 
     if preset in ("pos_overlay", "pos_and_stamp"):
         pos_img = render_pos_receipt(rng, emit_cnpj, emit_nome, emit_end, date_br, valor_nf)
+        pos_text = pos_img.info.get("transcript", [])
         target_w = int(w_px * rng.uniform(0.23, 0.27))
         target_h = int(pos_img.height * (target_w / pos_img.width))
         pos_img = pos_img.resize((target_w, target_h), Image.Resampling.BICUBIC)
+        band = _free_band(target_h)
         px = min(int(w_px * rng.uniform(0.60, 0.68)), w_px - target_w - 10)
         py = min(int(h_px * rng.uniform(0.55, 0.63)), h_px - target_h - 10)
+        if band is not None and rng.random() < 0.85:
+            py = int(rng.uniform(*band))
         canvas.alpha_composite(pos_img, dest=(px, py))
         special_objs.append(
             {
@@ -596,6 +611,7 @@ def compose_document_artifacts(
                 "page": 1,
                 "bbox": _px_to_bbox_mm(px, py, target_w, target_h),
                 "field_id": None,
+                "text": pos_text,
             }
         )
 
@@ -604,9 +620,13 @@ def compose_document_artifacts(
         target_w = int(w_px * rng.uniform(0.14, 0.20))
         target_h = int(sig_img.height * (target_w / sig_img.width))
         sig_img = sig_img.resize((target_w, target_h), Image.Resampling.BICUBIC)
-        # No canhoto superior
-        px = int(w_px * rng.uniform(0.28, 0.52))
-        py = int(h_px * rng.uniform(0.035, 0.055))
+        if has_receipt:  # canhoto superior (DANFE/DACTE)
+            px = int(w_px * rng.uniform(0.28, 0.52))
+            py = int(h_px * rng.uniform(0.035, 0.055))
+        else:  # rubrica no fim do conteúdo (sem canhoto, o topo é o cabeçalho)
+            band = _free_band(target_h)
+            px = int(w_px * rng.uniform(0.50, 0.75))
+            py = int(rng.uniform(*band)) if band is not None else int(h_px * rng.uniform(0.80, 0.90))
         canvas.alpha_composite(sig_img, dest=(px, py))
         special_objs.append(
             {

@@ -1,7 +1,7 @@
 """Tabelas de códigos fiscais (NCM/CFOP/CST).
 
 PoC v0: conjunto pequeno e curado, extraído/inspirado nos XMLs de fixture já
-existentes em tests/fixtures/ — suficiente para gerar DANFEs plausíveis e
+existentes em generator/templates/upstream_fixtures/ — suficiente para gerar DANFEs plausíveis e
 estruturalmente coerentes.
 
 Isso NÃO substitui a decisão registrada em PLANO_GERADOR.md (secao 5.1) de

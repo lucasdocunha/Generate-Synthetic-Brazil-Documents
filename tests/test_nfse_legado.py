@@ -1,3 +1,4 @@
+import json
 from decimal import Decimal
 from xml.etree import ElementTree as ET
 
@@ -75,3 +76,60 @@ def test_generate_nfse_legado_covers_pessoa_fisica_e_juridica():
 def test_generate_nfse_legado_prestador_cnpj_tem_14_digitos():
     _, field_values = generate_nfse_legado(seed=5)
     assert len(field_values["cnpj_prestador"]) == 14
+
+
+# --- renderizador PDF, labels e pipeline ------------------------------------
+
+from pipeline.registry import DOCTYPES  # noqa: E402
+
+
+def test_renderer_produces_single_page_pdf():
+    spec = DOCTYPES["nfse_legado"]
+    xml_str, _, render_kwargs = spec.generate(4)
+    pdf = bytes(spec.render(xml_str, render_kwargs).output())
+    assert pdf.startswith(b"%PDF")
+    import fitz
+
+    doc = fitz.open(stream=pdf, filetype="pdf")
+    assert doc.page_count == 1
+    assert "SEM VALIDADE FISCAL" in doc[0].get_text()
+
+
+def test_flatten_matches_pdf_text_for_every_field():
+    import fitz
+
+    from generator.labels.layout import flatten_nfse_legado_fields
+
+    spec = DOCTYPES["nfse_legado"]
+    xml_str, field_values, render_kwargs = spec.generate(4)
+    pdf = bytes(spec.render(xml_str, render_kwargs).output())
+    text = fitz.open(stream=pdf, filetype="pdf")[0].get_text()
+    for field_id, value in flatten_nfse_legado_fields(field_values).items():
+        assert value in text, f"{field_id}={value!r} não aparece no PDF"
+
+
+def test_cep_keeps_leading_zero():
+    from renderers.nfse_legado import format_cep_nfse
+
+    assert format_cep_nfse("1310100") == "01310-100"
+    assert format_cep_nfse(36880000) == "36880-000"
+
+
+def test_pipeline_nfse_legado_fully_matched(tmp_path):
+    from pipeline.single import generate_one
+
+    row = generate_one("nfse_legado", "train", 0, 9, tmp_path, dpi_options=(110,), force=True)
+    assert row and row["match_rate"] == 1.0 and row["n_pages"] == 1
+    assert row["has_html"] is False
+    label = json.loads(next((tmp_path / "nfse_legado" / "labels").rglob("*.json")).read_text())
+    assert label["doc_type"] == "NFSE_LEGADO"
+    assert label["kie"]["provider"]["tax_id_type"] in ("cnpj", "cnpj_alnum")
+    assert label["kie"]["service"]["code"]["value"]
+
+
+def test_pipeline_nfse_legado_html_derived(tmp_path):
+    from pipeline.single import generate_one
+
+    row = generate_one("nfse_legado", "train", 1, 9, tmp_path, dpi_options=(110,), html=True, force=True)
+    assert row["has_html"] and row["text_fidelity"] >= 0.95
+    assert list((tmp_path / "nfse_legado" / "md_visible").rglob("*.md"))

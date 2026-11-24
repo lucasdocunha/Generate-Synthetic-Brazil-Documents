@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 
 import pytest
 
-from brazilfiscalreport.danfe import Danfe
+from renderers.danfe import Danfe
 from generator.danfe import generate_danfe, render_kwargs
 from generator.labels.kie import build_kie_danfe
 from validation.schemas import validate_field_values

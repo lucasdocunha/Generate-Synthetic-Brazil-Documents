@@ -12,7 +12,7 @@ from pathlib import Path
 from generator.danfe import generate_danfe
 from generator.labels.kie import build_kie_danfe
 from generator.labels.layout import build_label
-from brazilfiscalreport.danfe import Danfe
+from renderers.danfe import Danfe
 
 
 def generate_one(seed: int, out_dir: Path) -> dict:
@@ -40,7 +40,7 @@ def generate_one(seed: int, out_dir: Path) -> dict:
         "fixture_template": "tpl_001",
         "generation_seed": seed,
     }
-    # Extração pós-renderização (sem tocar brazilfiscalreport/), ver
+    # Extração pós-renderização (sem tocar renderers/), ver
     # generator/labels/layout.py e PLANO_GERADOR.md, Questões em aberto #1.
     label = build_label(pdf_path, field_values, doc_type="DANFE", doc_id=sample_id, source=source)
     label["kie"] = build_kie_danfe(field_values, label.pop("field_id_to_element"))

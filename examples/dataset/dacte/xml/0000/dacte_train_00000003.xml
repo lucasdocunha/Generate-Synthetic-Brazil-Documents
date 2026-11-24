@@ -1,0 +1,192 @@
+<ns0:CTe xmlns:ns0="http://www.portalfiscal.inf.br/cte">
+  <ns0:infCte versao="4.00" Id="CTe002406A6T2KDVT000131570010009627501298344404">
+    <ns0:ide>
+      <ns0:cUF>35</ns0:cUF>
+      <ns0:cCT>57000111</ns0:cCT>
+      <ns0:CFOP>5352</ns0:CFOP>
+      <ns0:natOp>Transferência</ns0:natOp>
+      <ns0:mod>57</ns0:mod>
+      <ns0:serie>1</ns0:serie>
+      <ns0:nCT>962750</ns0:nCT>
+      <ns0:dhEmi>2024-06-24T12:08:03-03:00</ns0:dhEmi>
+      <ns0:tpImp>1</ns0:tpImp>
+      <ns0:tpEmis>1</ns0:tpEmis>
+      <ns0:cDV>4</ns0:cDV>
+      <ns0:tpAmb>2</ns0:tpAmb>
+      <ns0:tpCTe>0</ns0:tpCTe>
+      <ns0:procEmi>0</ns0:procEmi>
+      <ns0:verProc>Odoo Brasil OCA v14</ns0:verProc>
+      <ns0:cMunEnv>3550308</ns0:cMunEnv>
+      <ns0:xMunEnv>São Paulo</ns0:xMunEnv>
+      <ns0:UFEnv>SP</ns0:UFEnv>
+      <ns0:modal>05</ns0:modal>
+      <ns0:tpServ>0</ns0:tpServ>
+      <ns0:cMunIni>3508801</ns0:cMunIni>
+      <ns0:xMunIni>Cafelândia</ns0:xMunIni>
+      <ns0:UFIni>SP</ns0:UFIni>
+      <ns0:cMunFim>2409308</ns0:cMunFim>
+      <ns0:xMunFim>Patu</ns0:xMunFim>
+      <ns0:UFFim>RN</ns0:UFFim>
+      <ns0:retira>1</ns0:retira>
+      <ns0:indIEToma>1</ns0:indIEToma>
+      <ns0:toma3>
+        <ns0:toma>3</ns0:toma>
+      </ns0:toma3>
+    </ns0:ide>
+    <ns0:compl>
+      <ns0:xObs>Documento emitido por: Marc Demo</ns0:xObs>
+      <ns0:ObsFisco xCampo="Usuário emissor">
+        <ns0:xTexto>Documento emitido por: Marc Demo</ns0:xTexto>
+      </ns0:ObsFisco>
+    </ns0:compl>
+    <ns0:emit>
+      <ns0:CNPJ>A6T2KDVT000131</ns0:CNPJ>
+      <ns0:IE>201719311331</ns0:IE>
+      <ns0:xNome>Comércio de Costela EIRELI</ns0:xNome>
+      <ns0:xFant>Indústria e Comércio de Caldeira MEI</ns0:xFant>
+      <ns0:enderEmit>
+        <ns0:xLgr>Vila de Cavalcante</ns0:xLgr>
+        <ns0:nro>594</ns0:nro>
+        <ns0:xBairro>Vila Nova</ns0:xBairro>
+        <ns0:cMun>3508801</ns0:cMun>
+        <ns0:xMun>Cafelândia</ns0:xMun>
+        <ns0:CEP>15955270</ns0:CEP>
+        <ns0:UF>SP</ns0:UF>
+        <ns0:fone>7152084658</ns0:fone>
+      </ns0:enderEmit>
+      <ns0:CRT>3</ns0:CRT>
+    </ns0:emit>
+    <ns0:rem>
+      <ns0:CNPJ>17777739041647</ns0:CNPJ>
+      <ns0:IE>366017993444</ns0:IE>
+      <ns0:xNome>Comércio de Marques LTDA</ns0:xNome>
+      <ns0:xFant>Transportes da Rocha LTDA</ns0:xFant>
+      <ns0:fone>4852851007</ns0:fone>
+      <ns0:enderReme>
+        <ns0:xLgr>Área de Nunes</ns0:xLgr>
+        <ns0:nro>598</ns0:nro>
+        <ns0:xBairro>Lajedo</ns0:xBairro>
+        <ns0:cMun>2920452</ns0:cMun>
+        <ns0:xMun>Mansidão</ns0:xMun>
+        <ns0:CEP>24750767</ns0:CEP>
+        <ns0:UF>BA</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderReme>
+      <ns0:email>marianavasconcelos@fernandes.com</ns0:email>
+    </ns0:rem>
+    <ns0:exped>
+      <ns0:CNPJ>W4VOB9R1000123</ns0:CNPJ>
+      <ns0:IE>707626784708</ns0:IE>
+      <ns0:xNome>Indústria e Comércio de Cirino ME</ns0:xNome>
+      <ns0:fone>3121417198</ns0:fone>
+      <ns0:enderExped>
+        <ns0:xLgr>Via Brito</ns0:xLgr>
+        <ns0:nro>79</ns0:nro>
+        <ns0:xBairro>Vila Nova Gameleira 1ª Seção</ns0:xBairro>
+        <ns0:cMun>3527603</ns0:cMun>
+        <ns0:xMun>Luís Antônio</ns0:xMun>
+        <ns0:CEP>12115562</ns0:CEP>
+        <ns0:UF>SP</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderExped>
+      <ns0:email>sviana@da.com</ns0:email>
+    </ns0:exped>
+    <ns0:receb>
+      <ns0:CNPJ>72270007195477</ns0:CNPJ>
+      <ns0:IE>843171557261</ns0:IE>
+      <ns0:xNome>Transportes Viana LTDA</ns0:xNome>
+      <ns0:fone>85995504683</ns0:fone>
+      <ns0:enderReceb>
+        <ns0:xLgr>Jardim da Costa</ns0:xLgr>
+        <ns0:nro>1826</ns0:nro>
+        <ns0:xCpl>Fundos</ns0:xCpl>
+        <ns0:xBairro>Indaiá</ns0:xBairro>
+        <ns0:cMun>2500908</ns0:cMun>
+        <ns0:xMun>Arara</ns0:xMun>
+        <ns0:CEP>43207066</ns0:CEP>
+        <ns0:UF>PB</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderReceb>
+      <ns0:email>souzafrancisco@mendes.br</ns0:email>
+    </ns0:receb>
+    <ns0:dest>
+      <ns0:CNPJ>98471359936328</ns0:CNPJ>
+      <ns0:IE>344719061650</ns0:IE>
+      <ns0:xNome>Comercial Siqueira ME</ns0:xNome>
+      <ns0:fone>3158464164</ns0:fone>
+      <ns0:ISUF>101362102</ns0:ISUF>
+      <ns0:enderDest>
+        <ns0:xLgr>Vila Maitê da Conceição</ns0:xLgr>
+        <ns0:nro>1424</ns0:nro>
+        <ns0:xCpl>Bloco B</ns0:xCpl>
+        <ns0:xBairro>Solimoes</ns0:xBairro>
+        <ns0:cMun>2409308</ns0:cMun>
+        <ns0:xMun>Patu</ns0:xMun>
+        <ns0:CEP>76422778</ns0:CEP>
+        <ns0:UF>RN</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderDest>
+      <ns0:email>da-luzhenry@camara.br</ns0:email>
+    </ns0:dest>
+    <ns0:vPrest>
+      <ns0:vTPrest>4014.08</ns0:vTPrest>
+      <ns0:vRec>4014.08</ns0:vRec>
+      <ns0:Comp>
+        <ns0:xNome>Frete</ns0:xNome>
+        <ns0:vComp>4014.08</ns0:vComp>
+      </ns0:Comp>
+    </ns0:vPrest>
+    <ns0:imp>
+      <ns0:ICMS>
+        <ns0:ICMS00>
+          <ns0:CST>00</ns0:CST>
+          <ns0:vBC>4014.08</ns0:vBC>
+          <ns0:pICMS>7.00</ns0:pICMS>
+          <ns0:vICMS>280.99</ns0:vICMS>
+        </ns0:ICMS00>
+      </ns0:ICMS>
+    </ns0:imp>
+    <ns0:infCTeNorm>
+      <ns0:infCarga>
+        <ns0:vCarga>39416.61</ns0:vCarga>
+        <ns0:proPred>Autopeças</ns0:proPred>
+        <ns0:xOutCat>Other Product Data</ns0:xOutCat>
+        <ns0:infQ>
+          <ns0:cUnid>00</ns0:cUnid>
+          <ns0:tpMed>Volume</ns0:tpMed>
+          <ns0:qCarga>1000.0000</ns0:qCarga>
+        </ns0:infQ>
+        <ns0:infQ>
+          <ns0:cUnid>01</ns0:cUnid>
+          <ns0:tpMed>Peso Bruto</ns0:tpMed>
+          <ns0:qCarga>500.0000</ns0:qCarga>
+        </ns0:infQ>
+        <ns0:infQ>
+          <ns0:cUnid>03</ns0:cUnid>
+          <ns0:tpMed>Unidade</ns0:tpMed>
+          <ns0:qCarga>2.0000</ns0:qCarga>
+        </ns0:infQ>
+        <ns0:vCargaAverb>39416.61</ns0:vCargaAverb>
+      </ns0:infCarga>
+      <ns0:infDoc>
+        <ns0:infNFe>
+          <ns0:chave>41190806117473000150550010000586251016759484</ns0:chave>
+        </ns0:infNFe>
+      </ns0:infDoc>
+      <ns0:infModal versaoModal="4.00">
+        <ns0:duto>
+          <ns0:vTar>1500.000000</ns0:vTar>
+          <ns0:dIni>2024-01-01</ns0:dIni>
+          <ns0:dFim>2024-12-31</ns0:dFim>
+        </ns0:duto>
+      </ns0:infModal>
+    </ns0:infCTeNorm>
+  </ns0:infCte>
+  <ns0:infCTeSupl>
+    <ns0:qrCodCTe>https://consulta.dominio-sintetico.invalid/cte?chCTe=002406A6T2KDVT000131570010009627501298344404&amp;tpAmb=2&amp;nProt=776408130132592</ns0:qrCodCTe>
+  </ns0:infCTeSupl>
+</ns0:CTe>

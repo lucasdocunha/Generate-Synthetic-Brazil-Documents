@@ -302,6 +302,42 @@ def build_kie_danfse(field_values: dict, field_id_to_element: dict = None) -> di
     }
 
 
+def build_kie_nfse_legado(field_values: dict, field_id_to_element: dict = None) -> dict:
+    m = field_id_to_element
+    tomador = field_values["cpf_cnpj_tomador"]
+    return {
+        "provider": {
+            "cnpj": _leaf(field_values["cnpj_prestador"], "prestador_cnpj", m),
+            "tax_id_type": _tax_id_type(field_values["cnpj_prestador"], "cnpj"),
+            "name": _leaf(field_values["razao_social_prestador"], "prestador_razao_social", m),
+            "inscricao_municipal": _leaf(field_values["inscricao_municipal"], "prestador_inscricao_municipal", m),
+            "municipality": _leaf(field_values["municipality_name"], "municipio", m),
+        },
+        "taker": {
+            "document": _leaf(tomador, "tomador_documento", m),
+            "tax_id_type": _tax_id_type(tomador, "cpf" if len(tomador) == 11 else "cnpj"),
+            "name": _leaf(field_values["razao_social_tomador"], "tomador_razao_social", m),
+        },
+        "document": {
+            "rps_number": _leaf(field_values["numero_rps"], "ident_numero", m),
+            "batch_number": _leaf(str(field_values["numero_lote"]), "ident_lote", m),
+            "issue_date": _leaf(field_values["dEmissao"], "data_emissao", m),
+            "environment": _leaf("homologacao", "__no_bbox__", m),
+        },
+        "service": {
+            "code": _leaf(field_values["item_lista_servico"], "servico_codigo", m),
+            "description": _leaf(field_values["discriminacao"], "servico_descricao", m),
+            "value": _leaf(
+                f"{field_values['v_serv']:.2f}", "valor_servicos", m, raw_value=field_values["v_serv"]
+            ),
+            "iss_rate": _leaf(f"{field_values['aliquota']:.2f}", "aliquota", m, raw_value=field_values["aliquota"]),
+            "iss_value": _leaf(
+                f"{field_values['v_iss']:.2f}", "valor_iss", m, raw_value=field_values["v_iss"]
+            ),
+        },
+    }
+
+
 def build_kie_dacce(field_values: dict, field_id_to_element: dict = None) -> dict:
     m = field_id_to_element
     emitente = field_values["emitente"]

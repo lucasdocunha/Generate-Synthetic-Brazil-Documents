@@ -6,12 +6,13 @@ label em `generator/labels/` + uma entrada aqui — nenhum outro código do
 
 import inspect
 
-from brazilfiscalreport.dacce import DaCCe
-from brazilfiscalreport.dacte import Dacte
-from brazilfiscalreport.damdfe import Damdfe
-from brazilfiscalreport.danfe import Danfe
-from brazilfiscalreport.danfse import Danfse
-from brazilfiscalreport.portal_nfe import PortalNfe
+from renderers.dacce import DaCCe
+from renderers.dacte import Dacte
+from renderers.damdfe import Damdfe
+from renderers.danfe import Danfe
+from renderers.danfse import Danfse
+from renderers.nfse_legado import NfseLegado
+from renderers.portal_nfe import PortalNfe
 from generator.dacce import generate_dacce
 from generator.dacte import generate_dacte
 from generator.damdfe import generate_damdfe
@@ -19,8 +20,17 @@ from generator.danfe import generate_danfe
 from generator.danfe import render_kwargs as danfe_render_kwargs
 from generator.danfse import generate_danfse
 from generator.labels import kie, layout
+from generator.nfse_legado import generate_nfse_legado
 from generator.portal_nfe import generate_portal_nfe
 from generator.portal_nfe import render_kwargs as portal_nfe_render_kwargs
+
+
+def nfse_legado_render_kwargs(field_values):
+    # o envelope Ginfes não traz razão social do prestador nem o nome do município
+    return {
+        "razao_social_prestador": field_values["razao_social_prestador"],
+        "municipality_name": field_values["municipality_name"],
+    }
 
 
 class DoctypeSpec:
@@ -35,6 +45,10 @@ class DoctypeSpec:
         needs_emitente_dict=False,
         render_kwargs_fn=None,
     ):
+        from augmentation.context import CONTEXT_FNS
+
+        # field_values -> contexto de augmentation (emitente, data, valor, canhoto)
+        self.augment_context_fn = CONTEXT_FNS[name]
         self.name = name
         self.generate_fn = generate_fn
         self.render_class = render_class
@@ -44,6 +58,15 @@ class DoctypeSpec:
         self.needs_emitente_dict = needs_emitente_dict
         # field_values -> kwargs extras do renderer (ex.: DanfeConfig sorteado)
         self.render_kwargs_fn = render_kwargs_fn
+
+    def html_spec(self):
+        """Spec de HTML do tipo (htmlgen), ou None se ainda não suportado."""
+        from htmlgen.registry import html_specs
+
+        return html_specs().get(self.name)
+
+    def augment_context(self, field_values):
+        return self.augment_context_fn(field_values)
 
     def generate(self, seed, **opts):
         """Retorna (xml_str, field_values, render_kwargs).
@@ -88,5 +111,9 @@ DOCTYPES = {
     "nfe_portal": DoctypeSpec(
         "nfe_portal", generate_portal_nfe, PortalNfe, layout.flatten_portal_nfe_fields, kie.build_kie_danfe,
         has_vector_barcode=False, render_kwargs_fn=portal_nfe_render_kwargs,
+    ),
+    "nfse_legado": DoctypeSpec(
+        "nfse_legado", generate_nfse_legado, NfseLegado, layout.flatten_nfse_legado_fields,
+        kie.build_kie_nfse_legado, has_vector_barcode=False, render_kwargs_fn=nfse_legado_render_kwargs,
     ),
 }

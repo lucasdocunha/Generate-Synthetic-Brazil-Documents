@@ -1,0 +1,251 @@
+{#- DANFE em HTML com a MESMA estrutura de blocos do DANFE real (ordem, campos e
+    larguras em mm da lib renderers). Marcação semântica: section/h2 +
+    dl de campos + table. O "HTML limpo" é esta árvore sem class/style/id. -#}
+{%- macro field(label, value, w=0, cls='') -%}
+<div class="f{% if cls %} {{ cls }}{% endif %}"{% if w %} style="width: {{ w }}mm"{% endif %}><dt>{{ label }}</dt><dd>{{ value }}</dd></div>
+{%- endmacro -%}
+
+{%- macro receipt(extra='') -%}
+<section class="receipt {{ extra }}">
+  <div class="r-main">
+    <p>{{ d.receipt_text }}</p>
+    <dl class="r-sign">
+      {{ field('DATA DE RECEBIMENTO', '') }}
+      {{ field('IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR', '') }}
+    </dl>
+  </div>
+  <div class="r-num"><p>NF-e</p><p>Nº{{ d.numero }}</p><p>SÉRIE {{ d.serie }}</p></div>
+</section>
+{%- endmacro -%}
+
+{%- macro loc_block(title, l) -%}
+<section>
+  <h2>{{ title }}</h2>
+  <dl class="row">
+    {{ field('NOME / RAZÃO SOCIAL', l.name) }}
+    {{ field('CNPJ / CPF', l.doc, 35) }}
+    {{ field('INSCRIÇÃO ESTADUAL', l.ie, 30) }}
+  </dl>
+  <dl class="row">
+    {{ field('ENDEREÇO', l.street) }}
+    {{ field('BAIRRO / DISTRITO', l.district, 75) }}
+    {{ field('CEP', l.cep, 30) }}
+  </dl>
+  <dl class="row">
+    {{ field('MUNICÍPIO', l.city) }}
+    {{ field('UF', l.uf, 10) }}
+    {{ field('FONE', l.phone, 30) }}
+  </dl>
+</section>
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>DANFE {{ d.numero }} - Série {{ d.serie }}</title>
+{%- if css %}
+<style>{{ css|safe }}</style>
+{%- endif %}
+</head>
+<body>
+<article>
+{%- if style.receipt_pos == 'top' %}
+{{ receipt() }}
+<hr class="dash" data-decor>
+{%- elif style.receipt_pos == 'left' %}
+{{ receipt('left') }}
+{%- endif %}
+
+<header>
+  <div class="emit{% if logo_uri %} has-logo{% endif %}">
+    <h1>{{ d.emit.name }}</h1>
+    {%- if logo_uri %}<img src="{{ logo_uri }}" alt="Logotipo de {{ d.emit.name }}">{% endif %}
+    <p class="addr">{% for l in d.emit.address_lines %}{{ l }}<br>{% endfor %}{% if style.sub_emit_credit %}{{ style.sub_emit_credit }}{% endif %}</p>
+  </div>
+  <div class="ident">
+    <h2>DANFE</h2>
+    <p class="sub">DOCUMENTO AUXILIAR<br>DA NOTA FISCAL<br>ELETRÔNICA</p>
+    <p class="io">0-ENTRADA<br>1-SAÍDA<b>{{ d.tp_nf }}</b></p>
+    <p class="num">Nº {{ d.numero }}</p>
+    <p class="sf">SÉRIE {{ d.serie }}</p>
+    <p class="sf">FOLHA {{ page_label }}</p>
+  </div>
+  <div class="code">
+    <div class="bars">{% if barcode_uri %}<img src="{{ barcode_uri }}" alt="Código de barras da chave de acesso">{% endif %}</div>
+    <dl>{{ field('CHAVE DE ACESSO', d.chave, 0, 'b') }}</dl>
+    <p class="verify">Consulta de autenticidade no portal nacional da NF-e www.nfe.fazenda.gov.br/portal ou no site da Sefaz autorizadora</p>
+  </div>
+</header>
+<dl class="row">
+  {{ field('NATUREZA DA OPERAÇÃO', d.natop) }}
+  {{ field('PROTOCOLO DE AUTORIZAÇÃO DE USO', d.protocolo, 88, 'b') }}
+</dl>
+<dl class="row">
+  {{ field('INSCRIÇÃO ESTADUAL', d.emit.ie) }}
+  {{ field('INSCRIÇÃO ESTADUAL DO SUBST. TRIB', d.emit.iest) }}
+  {{ field('CNPJ / CPF', d.emit.doc) }}
+</dl>
+
+<section>
+  <h2>Destinatário / Remetente</h2>
+  <dl class="row">
+    {{ field('NOME / RAZÃO SOCIAL', d.dest.name) }}
+    {{ field('CNPJ / CPF', d.dest.doc, 35) }}
+    {{ field('DATA DA EMISSÃO', d.emissao, 30) }}
+  </dl>
+  <dl class="row">
+    {{ field('ENDEREÇO', d.dest.street) }}
+    {{ field('BAIRRO / DISTRITO', d.dest.district, 50) }}
+    {{ field('CEP', d.dest.cep, 25) }}
+    {{ field('DATA DA ENTRADA / SAÍDA', d.saida, 30) }}
+  </dl>
+  <dl class="row">
+    {{ field('MUNICÍPIO', d.dest.city) }}
+    {{ field('FONE / FAX', d.dest.phone, 40) }}
+    {{ field('UF', d.dest.uf, 10) }}
+    {{ field('INSCRIÇÃO ESTADUAL', d.dest.ie, 50) }}
+    {{ field('HORA DE ENTRADA / SAÍDA', d.hora_saida, 30) }}
+  </dl>
+</section>
+
+{%- if d.entrega %}{{ loc_block('Local de entrega', d.entrega) }}{% endif %}
+{%- if d.retirada %}{{ loc_block('Local de retirada', d.retirada) }}{% endif %}
+
+{%- if d.fatura or d.duplicatas %}
+<section>
+  <h2>Fatura / Duplicatas</h2>
+  {%- if d.fatura and style.invoice_display == 'full' %}
+  <dl class="row">
+    {{ field('NÚMERO', d.fatura.n) }}
+    {{ field('VALOR ORIGINAL', d.fatura.orig, 0, 'r') }}
+    {{ field('VALOR DO DESCONTO', d.fatura.desc, 0, 'r') }}
+    {{ field('VALOR LÍQUIDO', d.fatura.liq, 0, 'r') }}
+  </dl>
+  {%- endif %}
+  {%- if dup_rows %}
+  <table class="dups">
+    <tbody>
+    {%- for row in dup_rows %}
+      <tr>{% for c in row %}<td{% if not c %} class="pad" data-decor{% endif %}>{{ c }}</td>{% endfor %}</tr>
+    {%- endfor %}
+    </tbody>
+  </table>
+  {%- endif %}
+</section>
+{%- endif %}
+
+<section>
+  <h2>Cálculo do imposto</h2>
+  <dl class="row">
+    {{ field('BASE DE CÁLCULO DO ICMS', d.totals.bc_icms, 30, 'r') }}
+    {{ field('VALOR DO ICMS', d.totals.icms, 30, 'r') }}
+    {{ field('BASE DE CÁLCULO DO ICMS ST', d.totals.bc_st, 30, 'r') }}
+    {{ field('VALOR DO ICMS ST', d.totals.st, 30, 'r') }}
+    {{ field('VALOR APROX. TRIBUTOS', d.totals.trib, 30, 'r') }}
+    {%- if style.display_pis_cofins %}{{ field('VALOR DO PIS', d.totals.pis, 22, 'r') }}{% endif %}
+    {{ field('VALOR TOTAL DOS PRODUTOS', d.totals.prod, 0, 'r') }}
+  </dl>
+  <dl class="row">
+    {{ field('VALOR DO FRETE', d.totals.frete, 30, 'r') }}
+    {{ field('VALOR DO SEGURO', d.totals.seguro, 30, 'r') }}
+    {{ field('DESCONTO', d.totals.desc, 30, 'r') }}
+    {{ field('OUTRAS DESPESAS ACESSÓRIAS', d.totals.outras, 30, 'r') }}
+    {{ field('VALOR DO IPI', d.totals.ipi, 30, 'r') }}
+    {%- if style.display_pis_cofins %}{{ field('VALOR DO COFINS', d.totals.cofins, 22, 'r') }}{% endif %}
+    {{ field('VALOR TOTAL DA NOTA', d.totals.nf, 0, 'r') }}
+  </dl>
+</section>
+
+<section>
+  {%- set t = d.transport %}
+  <h2>Transportador / Volumes transportados</h2>
+  <dl class="row">
+    {{ field('NOME / RAZÃO SOCIAL', t.name) }}
+    {{ field('FRETE POR CONTA', t.mod, 28) }}
+    {{ field('CÓDIGO ANTT', t.antt, 18) }}
+    {{ field('PLACA DO VEÍCULO', t.plate, 23) }}
+    {{ field('UF', t.plate_uf, 8) }}
+    {{ field('CNPJ / CPF', t.doc, 30) }}
+  </dl>
+  <dl class="row">
+    {{ field('ENDEREÇO', t.address) }}
+    {{ field('MUNICÍPIO', t.city, 69) }}
+    {{ field('UF', t.uf, 8) }}
+    {{ field('INSCRIÇÃO ESTADUAL', t.ie, 30) }}
+  </dl>
+  <dl class="row">
+    {{ field('QUANTIDADE', t.qvol, 25) }}
+    {{ field('ESPÉCIE', t.esp, 30) }}
+    {{ field('MARCA', t.marca, 30) }}
+    {{ field('NUMERAÇÃO', t.nvol, 45) }}
+    {{ field('PESO BRUTO', t.peso_b) }}
+    {{ field('PESO LÍQUIDO', t.peso_l) }}
+  </dl>
+</section>
+
+<section>
+  <h2>Dados do produto / serviço</h2>
+  <table class="items">
+    <colgroup data-decor>
+      {%- for c in cols %}<col{% if c.w %} style="width: {{ c.w }}mm"{% endif %}>{% endfor %}
+    </colgroup>
+    <thead><tr>
+      {%- for c in cols %}<th>{{ c.label }}</th>{% endfor -%}
+    </tr></thead>
+    <tbody>
+    {%- for it in d.products %}
+      <tr>
+      {%- for c in cols %}
+        {%- if c.key == 'desc' %}
+        <td>{{ it.desc }}{% for e in it.extra %}<br>{{ e }}{% endfor %}</td>
+        {%- else %}
+        <td{% if c.align %} class="{{ c.align }}"{% endif %}>{{ it[c.key] }}</td>
+        {%- endif %}
+      {%- endfor %}
+      </tr>
+    {%- endfor %}
+    {%- if fill_mm > 0 %}
+      {%- if style.product_table_style == 'full_vertical_grid' %}
+      <tr class="fill" data-decor>{% for c in cols %}<td class="fill"></td>{% endfor %}</tr>
+      {%- else %}
+      <tr class="fill" data-decor><td class="fill" colspan="{{ cols|length }}"></td></tr>
+      {%- endif %}
+    {%- endif %}
+    </tbody>
+  </table>
+</section>
+
+{%- if d.issqn %}
+<section>
+  <h2>Cálculo do ISSQN</h2>
+  <dl class="row">
+    {{ field('INSCRIÇÃO MUNICIPAL', d.emit.im) }}
+    {{ field('VALOR TOTAL DOS SERVIÇOS', d.issqn.serv, 45, 'r') }}
+    {{ field('BASE DO CÁLCULO DO ISSQN', d.issqn.bc, 45, 'r') }}
+    {{ field('VALOR DO ISSQN', d.issqn.iss, 45, 'r') }}
+  </dl>
+</section>
+{%- endif %}
+
+{%- if style.mid_page_credit %}
+<p class="credit">{{ style.mid_page_credit }}</p>
+{%- endif %}
+<section>
+  <h2>Dados adicionais</h2>
+  <dl class="row">
+    {{ field('INFORMAÇÕES COMPLEMENTARES', d.inf_cpl_full, 0, 'h20') }}
+    {{ field('RESERVADO AO FISCO', '', 70, 'h20') }}
+  </dl>
+</section>
+
+{%- if style.receipt_pos == 'bottom' %}
+<hr class="dash" data-decor>
+{{ receipt() }}
+{%- endif %}
+
+{%- if style.footer_left_text or style.footer_right_text %}
+<footer><span class="l">{{ style.footer_left_text }}</span><span class="rt">{{ style.footer_right_text }}</span></footer>
+{%- endif %}
+</article>
+</body>
+</html>

@@ -123,22 +123,6 @@ xml_cce_1.pdf
 AUDIT_NT008.md
 nt-008-se-cgnfse-danfse-20260505.pdf
 
-# Dataset gerado (imagens/pdfs/xml/labels/metadata) — muito grande para versionar.
-# Mantemos apenas um exemplo de cada imagem/pdf por tipo de documento e os .gitkeep.
-dataset/*/images/*/*
-dataset/*/images_geo/*/*
-dataset/*/pdfs/*/*
-dataset/*/xml/*/*
-dataset/*/labels/*/*
-dataset/*/metadata/*/*
-dataset/*/*.parquet
-dataset/examples_showcase/
-!dataset/*/images/*/.gitkeep
-!dataset/*/images_geo/*/.gitkeep
-!dataset/*/pdfs/*/.gitkeep
-!dataset/*/xml/*/.gitkeep
-!dataset/*/labels/*/.gitkeep
-!dataset/*/metadata/*/.gitkeep
-!dataset/*/images/*/*_test_00000000.png
-!dataset/*/images_geo/*/*_test_00000000.png
-!dataset/*/pdfs/*/*_test_00000000.pdf
+# Datasets gerados (muito grandes): só os exemplos pequenos em examples/dataset/ são versionados
+/dataset/
+/dataset_html/

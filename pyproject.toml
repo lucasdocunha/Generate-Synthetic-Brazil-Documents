@@ -3,15 +3,20 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["brazilfiscalreport*", "generator*"]
+include = [
+    "renderers*", "generator*", "augmentation*", "pipeline*",
+    "export*", "validation*", "rasterization*", "htmlgen*",
+]
 
 [tool.setuptools.package-data]
-"brazilfiscalreport.danfse" = ["*.png", "*.csv"]
+"renderers.danfse" = ["*.png", "*.csv"]
+"htmlgen" = ["templates/*.j2"]
+"generator" = ["templates/**/*.xml", "templates/**/*.yaml", "schemas/*.yaml"]
 
 [project]
-name = "brazilfiscalreport"
-dynamic = ["version"]
-description = "Synthetic-data generator backend for Brazilian auxiliary fiscal documents (DANFE, DACTE, DAMDFE, DANFSE, DACCe), forked from BrazilFiscalReport."
+name = "generate-synthetic-brazil-documents"
+version = "0.1.0"
+description = "Gerador de datasets sintéticos de documentos fiscais brasileiros (DANFE, DACTE, DAMDFE, DANFSE, DACCe, Portal NF-e) com XML, PDF, imagens degradadas, HTML/Markdown e anotações. Renderizadores PDF derivados de BrazilFiscalReport (LGPL-3.0), ver renderers/NOTICE.md."
 authors = [{ name = "Lucas" }]
 license = { file = "LICENSE" }
 requires-python = ">=3.11"
@@ -30,14 +35,14 @@ dependencies = [
     "pydantic",
     "Pillow",
     "nfselib-legacy>=1.0.0",
+    "Jinja2",
+    "lxml",
+    "playwright",
 ]
 
 [project.readme]
 file = "README.md"
 content-type = "text/markdown"
-
-[tool.setuptools.dynamic]
-version = {attr = "brazilfiscalreport.__version__"}
 
 [tool.ruff]
 target-version = "py311"
@@ -60,7 +65,7 @@ select = [
     "I",
 ]
 
-isort = { known-first-party = ['brazilfiscalreport', 'test'] }
+isort = { known-first-party = ['renderers', 'generator', 'augmentation', 'pipeline', 'export', 'validation', 'rasterization', 'htmlgen'] }
 
 [tool.doc8]
 max-line-length = 88

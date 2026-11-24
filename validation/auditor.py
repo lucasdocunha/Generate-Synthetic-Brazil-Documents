@@ -30,12 +30,19 @@ def audit_doctype(out_dir: Path, doctype: str) -> dict:
                 results["schema_errors"].append((str(label_path), str(e)))
                 continue
 
-            for ref_key in ("xml_path", "pdf_path"):
+            for ref_key in ("xml_path", "pdf_path", "html_path", "md_path", "html_visible_path"):
                 ref = record.source.get(ref_key)
                 if ref and not (out_dir / doctype / ref).exists():
                     results["missing_files"].append((str(label_path), ref_key, ref))
 
-            if not results["missing_files"] or results["missing_files"][-1][0] != str(label_path):
+            # imagens (limpas por página e degradada)
+            stem = label_path.stem
+            shard = label_path.parent.name
+            for rel in (f"images/{shard}/{stem}_p1.png", f"images_aug/{shard}/{stem}.png"):
+                if not (out_dir / doctype / rel).exists():
+                    results["missing_files"].append((str(label_path), "image", rel))
+
+            if not any(m[0] == str(label_path) for m in results["missing_files"]):
                 results["valid"] += 1
 
     return results

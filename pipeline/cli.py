@@ -1,7 +1,7 @@
 """CLI do gerador (PLANO_GERADOR.md secao 4.5).
 
     python -m pipeline.cli generate --doctype danfe --count 100 --workers 4
-    python -m pipeline.cli generate --all --count 100
+    python -m pipeline.cli generate --all --count 100 --html
     python -m pipeline.cli validate --doctype danfe
     python -m pipeline.cli stats --doctype danfe
 """
@@ -19,7 +19,7 @@ app = typer.Typer()
 
 @app.command()
 def generate(
-    doctype: Optional[str] = typer.Option(None, help="danfe|nfe_portal|dacte|damdfe|danfse|dacce"),
+    doctype: Optional[str] = typer.Option(None, help="danfe|nfe_portal|dacte|damdfe|danfse|dacce|nfse_legado"),
     all: bool = typer.Option(False, "--all", help="gera todos os tipos registrados"),
     count: int = 100,
     seed: int = 42,
@@ -28,11 +28,14 @@ def generate(
     cnpj_alnum_ratio: float = typer.Option(
         0.3, help="fração de CNPJs alfanuméricos (IN RFB 2.229/2024), 0.0-1.0"
     ),
+    html: bool = typer.Option(False, "--html", help="gera também HTML/Markdown (html_clean, md, html_visible, md_visible)"),
+    image_source: str = typer.Option("lib_pdf", help="lib_pdf (PDF real da lib) | html (render do próprio HTML)"),
 ):
     from pipeline.batch import run_batch, run_batch_all
 
     cfg = RunConfig(
-        count=count, seed=seed, workers=workers, out_dir=out, cnpj_alnum_ratio=cnpj_alnum_ratio
+        count=count, seed=seed, workers=workers, out_dir=out, cnpj_alnum_ratio=cnpj_alnum_ratio,
+        html=html, image_source=image_source,
     )
     if all:
         run_batch_all(cfg)

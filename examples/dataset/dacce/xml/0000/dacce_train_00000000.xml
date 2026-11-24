@@ -1,0 +1,58 @@
+<procEventoNFe xmlns="http://www.portalfiscal.inf.br/nfe" xmlns:ns1="http://www.w3.org/2000/09/xmldsig#" versao="1.00">
+    <evento versao="1.00">
+        <infEvento Id="ID1101104224020831351700014255001000015293">
+            <cOrgao>99</cOrgao>
+            <tpAmb>2</tpAmb>
+            <CNPJ>50660135108788</CNPJ>
+            <chNFe>00250262814843476348550010001033361294331987</chNFe>
+            <dhEvento>2025-02-18T07:49:10-03:00</dhEvento>
+            <tpEvento>110110</tpEvento>
+            <nSeqEvento>99</nSeqEvento>
+            <verEvento>9.99</verEvento>
+            <detEvento versao="1.00">
+                <descEvento>Evento Fictício</descEvento>
+                <xCorrecao>Correção do endereço do destinatário informado na nota original.</xCorrecao>
+                <xCondUso>Este é um evento fictício criado para fins de teste.</xCondUso>
+            </detEvento>
+        </infEvento>
+        <ns1:Signature>
+            <ns1:SignedInfo>
+                <ns1:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                <ns1:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+                <ns1:Reference URI="#ID1101104224020831351700014255001000015293100778546001">
+                    <ns1:Transforms>
+                        <ns1:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                        <ns1:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                    </ns1:Transforms>
+                    <ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                    <ns1:DigestValue>ABCDEFGHIJKL1234567890</ns1:DigestValue>
+                </ns1:Reference>
+            </ns1:SignedInfo>
+            <ns1:SignatureValue>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+            </ns1:SignatureValue>
+            <ns1:KeyInfo>
+                <ns1:X509Data>
+                    <ns1:X509Certificate>
+                        MIICajCCAdOgAwIBAgIUQ6/XzCZBXXu0VzLOKOSz9v0yiJswCgYIKoZIzj0EAwIw
+                    </ns1:X509Certificate>
+                </ns1:X509Data>
+            </ns1:KeyInfo>
+        </ns1:Signature>
+    </evento>
+    <retEvento versao="1.00">
+        <infEvento>
+            <tpAmb>2</tpAmb>
+            <verAplic>TESTE202401251654</verAplic>
+            <cOrgao>99</cOrgao>
+            <cStat>999</cStat>
+            <xMotivo>Evento fictício registrado e vinculado a NF-e de teste</xMotivo>
+            <chNFe>00250262814843476348550010001033361294331987</chNFe>
+            <tpEvento>110110</tpEvento>
+            <nSeqEvento>99</nSeqEvento>
+            <dhRegEvento>2025-02-18T07:49:10-03:00</dhRegEvento>
+            <nProt>864176409713431</nProt>
+            <CNPJDest>62814843476348</CNPJDest>
+        </infEvento>
+    </retEvento>
+</procEventoNFe>

@@ -70,6 +70,7 @@ def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNU
     v_serv = round(rng.uniform(200, 30000), 2)
     aliquota = rng.choice([Decimal("2.00"), Decimal("3.00"), Decimal("5.00")])
     v_iss = round(v_serv * float(aliquota) / 100, 2)
+    optante_simples = rng.choice(["1", "2"])
 
     endereco_kwargs = {
         "Endereco": endereco_tomador["street"],
@@ -89,7 +90,7 @@ def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNU
             ),
             DataEmissao=emissao.strftime("%Y-%m-%dT%H:%M:%S"),
             NaturezaOperacao="1",
-            OptanteSimplesNacional=rng.choice(["1", "2"]),
+            OptanteSimplesNacional=optante_simples,
             IncentivadorCultural="2",
             Status="1",
             Servico=TcDadosServico(
@@ -115,9 +116,12 @@ def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNU
         )
     )
 
+    numero_lote = rng.randint(1, 999999)
+    razao_social_prestador = fake_data.company_name(rng, faker)
+
     envio = EnviarLoteRpsEnvio(
         LoteRps=TcLoteRps(
-            NumeroLote=rng.randint(1, 999999),
+            NumeroLote=numero_lote,
             Cnpj=cnpj_prestador,
             InscricaoMunicipal=inscricao_municipal,
             QuantidadeRps=1,
@@ -130,14 +134,19 @@ def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNU
 
     field_values = {
         "cnpj_prestador": cnpj_prestador,
+        "razao_social_prestador": razao_social_prestador,
         "inscricao_municipal": inscricao_municipal,
         "numero_rps": numero_rps,
+        "numero_lote": numero_lote,
+        "optante_simples": optante_simples,
         "cpf_cnpj_tomador": cpf_cnpj_tomador,
         "razao_social_tomador": razao_social_tomador,
+        "endereco_tomador": endereco_tomador,
         "municipality_name": endereco_tomador["municipality_name"],
         "dEmissao": emissao.isoformat(),
         "item_lista_servico": item_lista_servico,
         "discriminacao": discriminacao,
+        "aliquota": float(aliquota),
         "v_serv": v_serv,
         "v_iss": v_iss,
     }

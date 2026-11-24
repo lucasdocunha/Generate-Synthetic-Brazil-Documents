@@ -1,0 +1,1013 @@
+{
+  "doc_id": "nfse_legado_train_00000001",
+  "doc_type": "NFSE_LEGADO",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/nfse_legado_train_00000001.xml",
+    "pdf_path": "pdfs/0000/nfse_legado_train_00000001.pdf",
+    "fixture_template": "tpl_001",
+    "generation_seed": 6924886768563786940,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/nfse_legado_train_00000001.html",
+    "md_path": "md/0000/nfse_legado_train_00000001.md",
+    "html_visible_path": "html_visible/0000/nfse_legado_train_00000001.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.0,
+        "y": 11.557,
+        "w": 58.21,
+        "h": 4.372,
+        "unit": "mm"
+      },
+      "text": "PREFEITURA MUNICIPAL DE FERROS"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.0,
+        "y": 17.826,
+        "w": 68.837,
+        "h": 3.886,
+        "unit": "mm"
+      },
+      "text": "NOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.0,
+        "y": 23.824,
+        "w": 61.94,
+        "h": 3.151,
+        "unit": "mm"
+      },
+      "text": "Padrão municipal legado (Ginfes v03) - envio de lote de RPS"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.0,
+        "y": 27.024,
+        "w": 68.177,
+        "h": 3.151,
+        "unit": "mm"
+      },
+      "text": "Recibo Provisório de Serviços convertido em NFS-e pela prefeitura"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 132.5,
+        "y": 10.807,
+        "w": 6.638,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "Nº RPS"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [
+        "ident_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 132.5,
+        "y": 13.825,
+        "w": 9.415,
+        "h": 3.886,
+        "unit": "mm"
+      },
+      "text": "752570"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 167.499,
+        "y": 10.807,
+        "w": 5.175,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "LOTE"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [
+        "ident_lote"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 167.499,
+        "y": 13.811,
+        "w": 9.415,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "927553"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 132.5,
+        "y": 25.807,
+        "w": 18.111,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "DATA DE EMISSÃO"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [
+        "data_emissao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 132.5,
+        "y": 28.811,
+        "w": 14.122,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "26/03/2024"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.002,
+        "y": 43.649,
+        "w": 33.068,
+        "h": 3.4,
+        "unit": "mm"
+      },
+      "text": "PRESTADOR DE SERVIÇOS"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 48.805,
+        "w": 14.767,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "RAZÃO SOCIAL"
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [
+        "prestador_razao_social"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 51.812,
+        "w": 50.032,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Indústria e Comércio de Oliveira EIRELI"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 142.501,
+        "y": 48.805,
+        "w": 9.595,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "CPF/CNPJ"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [
+        "prestador_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 142.501,
+        "y": 51.812,
+        "w": 26.199,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "JQ.90J.3VK/0001-23"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 59.805,
+        "w": 22.205,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "INSCRIÇÃO MUNICIPAL"
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [
+        "prestador_inscricao_municipal"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 62.812,
+        "w": 12.553,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "65309223"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.499,
+        "y": 59.805,
+        "w": 10.241,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [
+        "municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 72.499,
+        "y": 62.812,
+        "w": 8.153,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Ferros"
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.002,
+        "y": 71.649,
+        "w": 30.322,
+        "h": 3.4,
+        "unit": "mm"
+      },
+      "text": "TOMADOR DE SERVIÇOS"
+    },
+    {
+      "element_id": "e00020",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 76.805,
+        "w": 22.206,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "RAZÃO SOCIAL / NOME"
+    },
+    {
+      "element_id": "e00021",
+      "field_ids": [
+        "tomador_razao_social"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 79.812,
+        "w": 31.84,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Serviços de da Costa ME"
+    },
+    {
+      "element_id": "e00022",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 142.501,
+        "y": 76.805,
+        "w": 9.595,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "CPF/CNPJ"
+    },
+    {
+      "element_id": "e00023",
+      "field_ids": [
+        "tomador_documento"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 142.501,
+        "y": 79.812,
+        "w": 25.262,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "44.835.783/1971-33"
+    },
+    {
+      "element_id": "e00024",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 87.805,
+        "w": 10.996,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00025",
+      "field_ids": [
+        "tomador_endereco_logradouro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 90.812,
+        "w": 33.415,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Lagoa Laura Casa Grande"
+    },
+    {
+      "element_id": "e00026",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 122.499,
+        "y": 87.805,
+        "w": 8.623,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "NÚMERO"
+    },
+    {
+      "element_id": "e00027",
+      "field_ids": [
+        "tomador_endereco_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 122.499,
+        "y": 90.812,
+        "w": 4.707,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "849"
+    },
+    {
+      "element_id": "e00028",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 147.5,
+        "y": 87.805,
+        "w": 7.652,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "BAIRRO"
+    },
+    {
+      "element_id": "e00029",
+      "field_ids": [
+        "tomador_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 147.5,
+        "y": 90.812,
+        "w": 15.215,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Vista Alegre"
+    },
+    {
+      "element_id": "e00030",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 98.804,
+        "w": 3.989,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00031",
+      "field_ids": [
+        "tomador_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 101.812,
+        "w": 13.493,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "87367-286"
+    },
+    {
+      "element_id": "e00032",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 52.5,
+        "y": 98.804,
+        "w": 2.586,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "UF"
+    },
+    {
+      "element_id": "e00033",
+      "field_ids": [
+        "tomador_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 52.5,
+        "y": 101.812,
+        "w": 4.547,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "MG"
+    },
+    {
+      "element_id": "e00034",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.499,
+        "y": 98.804,
+        "w": 10.241,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00035",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.499,
+        "y": 101.812,
+        "w": 8.153,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Ferros"
+    },
+    {
+      "element_id": "e00036",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.002,
+        "y": 110.649,
+        "w": 36.358,
+        "h": 3.4,
+        "unit": "mm"
+      },
+      "text": "DISCRIMINAÇÃO DO SERVIÇO"
+    },
+    {
+      "element_id": "e00037",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 115.805,
+        "w": 26.628,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "ITEM DA LISTA DE SERVIÇO"
+    },
+    {
+      "element_id": "e00038",
+      "field_ids": [
+        "servico_codigo"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 118.812,
+        "w": 7.061,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "14.01"
+    },
+    {
+      "element_id": "e00039",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 62.502,
+        "y": 115.805,
+        "w": 26.302,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO DA PRESTAÇÃO"
+    },
+    {
+      "element_id": "e00040",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 62.502,
+        "y": 118.812,
+        "w": 8.153,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Ferros"
+    },
+    {
+      "element_id": "e00041",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 127.005,
+        "w": 15.844,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "DISCRIMINAÇÃO"
+    },
+    {
+      "element_id": "e00042",
+      "field_ids": [
+        "servico_descricao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 130.612,
+        "w": 36.079,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Manutencao e reparo predial"
+    },
+    {
+      "element_id": "e00043",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.002,
+        "y": 150.65,
+        "w": 11.937,
+        "h": 3.4,
+        "unit": "mm"
+      },
+      "text": "VALORES"
+    },
+    {
+      "element_id": "e00044",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 155.806,
+        "w": 26.413,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "VALOR DOS SERVIÇOS (R$)"
+    },
+    {
+      "element_id": "e00045",
+      "field_ids": [
+        "valor_servicos"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 158.814,
+        "w": 12.553,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "22.963,56"
+    },
+    {
+      "element_id": "e00046",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 60.0,
+        "y": 155.806,
+        "w": 22.959,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "BASE DE CÁLCULO (R$)"
+    },
+    {
+      "element_id": "e00047",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 60.0,
+        "y": 158.814,
+        "w": 12.553,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "22.963,56"
+    },
+    {
+      "element_id": "e00048",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 107.498,
+        "y": 155.806,
+        "w": 13.689,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "ALÍQUOTA (%)"
+    },
+    {
+      "element_id": "e00049",
+      "field_ids": [
+        "aliquota"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 107.498,
+        "y": 158.814,
+        "w": 5.492,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "5,00"
+    },
+    {
+      "element_id": "e00050",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 155.0,
+        "y": 155.806,
+        "w": 18.219,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "VALOR DO ISS (R$)"
+    },
+    {
+      "element_id": "e00051",
+      "field_ids": [
+        "valor_iss"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 155.0,
+        "y": 158.828,
+        "w": 10.984,
+        "h": 3.886,
+        "unit": "mm"
+      },
+      "text": "1.148,18"
+    },
+    {
+      "element_id": "e00052",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 166.806,
+        "w": 10.997,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "ISS RETIDO"
+    },
+    {
+      "element_id": "e00053",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 169.813,
+        "w": 5.176,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Não"
+    },
+    {
+      "element_id": "e00054",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 107.498,
+        "y": 166.806,
+        "w": 19.727,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "VALOR LÍQUIDO (R$)"
+    },
+    {
+      "element_id": "e00055",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 107.498,
+        "y": 169.827,
+        "w": 12.553,
+        "h": 3.886,
+        "unit": "mm"
+      },
+      "text": "22.963,56"
+    },
+    {
+      "element_id": "e00056",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 177.805,
+        "w": 34.929,
+        "h": 2.672,
+        "unit": "mm"
+      },
+      "text": "OPTANTE PELO SIMPLES NACIONAL"
+    },
+    {
+      "element_id": "e00057",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.499,
+        "y": 180.813,
+        "w": 5.176,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Não"
+    },
+    {
+      "element_id": "e00058",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 66.104,
+        "y": 200.057,
+        "w": 77.791,
+        "h": 4.372,
+        "unit": "mm"
+      },
+      "text": "DOCUMENTO SINTÉTICO - SEM VALIDADE FISCAL"
+    }
+  ],
+  "layout": {
+    "special_objects": [
+      {
+        "type": "stamp",
+        "subtype": "receipt_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 89.856,
+          "y": 258.732,
+          "w": 51.781,
+          "h": 29.463,
+          "unit": "mm"
+        },
+        "field_id": null,
+        "text": [
+          "Recebemos",
+          "Em 26 de 03 de 2024"
+        ]
+      }
+    ]
+  },
+  "ocr": {
+    "full_text": "PREFEITURA MUNICIPAL DE FERROS\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\nPadrão municipal legado (Ginfes v03) - envio de lote de RPS\nRecibo Provisório de Serviços convertido em NFS-e pela prefeitura\nNº RPS\n752570\nLOTE\n927553\nDATA DE EMISSÃO\n26/03/2024\nPRESTADOR DE SERVIÇOS\nRAZÃO SOCIAL\nIndústria e Comércio de Oliveira EIRELI\nCPF/CNPJ\nJQ.90J.3VK/0001-23\nINSCRIÇÃO MUNICIPAL\n65309223\nMUNICÍPIO\nFerros\nTOMADOR DE SERVIÇOS\nRAZÃO SOCIAL / NOME\nServiços de da Costa ME\nCPF/CNPJ\n44.835.783/1971-33\nENDEREÇO\nLagoa Laura Casa Grande\nNÚMERO\n849\nBAIRRO\nVista Alegre\nCEP\n87367-286\nUF\nMG\nMUNICÍPIO\nFerros\nDISCRIMINAÇÃO DO SERVIÇO\nITEM DA LISTA DE SERVIÇO\n14.01\nMUNICÍPIO DA PRESTAÇÃO\nFerros\nDISCRIMINAÇÃO\nManutencao e reparo predial\nVALORES\nVALOR DOS SERVIÇOS (R$)\n22.963,56\nBASE DE CÁLCULO (R$)\n22.963,56\nALÍQUOTA (%)\n5,00\nVALOR DO ISS (R$)\n1.148,18\nISS RETIDO\nNão\nVALOR LÍQUIDO (R$)\n22.963,56\nOPTANTE PELO SIMPLES NACIONAL\nNão\nDOCUMENTO SINTÉTICO - SEM VALIDADE FISCAL\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "PREFEITURA MUNICIPAL DE FERROS\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\nPadrão municipal legado (Ginfes v03) - envio de lote de RPS\nRecibo Provisório de Serviços convertido em NFS-e pela prefeitura\nNº RPS\n752570\nLOTE\n927553\nDATA DE EMISSÃO\n26/03/2024\nPRESTADOR DE SERVIÇOS\nRAZÃO SOCIAL\nIndústria e Comércio de Oliveira EIRELI\nCPF/CNPJ\nJQ.90J.3VK/0001-23\nINSCRIÇÃO MUNICIPAL\n65309223\nMUNICÍPIO\nFerros\nTOMADOR DE SERVIÇOS\nRAZÃO SOCIAL / NOME\nServiços de da Costa ME\nCPF/CNPJ\n44.835.783/1971-33\nENDEREÇO\nLagoa Laura Casa Grande\nNÚMERO\n849\nBAIRRO\nVista Alegre\nCEP\n87367-286\nUF\nMG\nMUNICÍPIO\nFerros\nDISCRIMINAÇÃO DO SERVIÇO\nITEM DA LISTA DE SERVIÇO\n14.01\nMUNICÍPIO DA PRESTAÇÃO\nFerros\nDISCRIMINAÇÃO\nManutencao e reparo predial\nVALORES\nVALOR DOS SERVIÇOS (R$)\n22.963,56\nBASE DE CÁLCULO (R$)\n22.963,56\nALÍQUOTA (%)\n5,00\nVALOR DO ISS (R$)\n1.148,18\nISS RETIDO\nNão\nVALOR LÍQUIDO (R$)\n22.963,56\nOPTANTE PELO SIMPLES NACIONAL\nNão\nDOCUMENTO SINTÉTICO - SEM VALIDADE FISCAL\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 19,
+    "fields_matched_to_bbox": 19,
+    "match_rate": 1.0
+  },
+  "kie": {
+    "provider": {
+      "cnpj": {
+        "value": "JQ90J3VK000123",
+        "raw_value": "JQ90J3VK000123",
+        "bbox_ref": "e00014"
+      },
+      "tax_id_type": "cnpj_alnum",
+      "name": {
+        "value": "Indústria e Comércio de Oliveira EIRELI",
+        "raw_value": "Indústria e Comércio de Oliveira EIRELI",
+        "bbox_ref": "e00012"
+      },
+      "inscricao_municipal": {
+        "value": "65309223",
+        "raw_value": "65309223",
+        "bbox_ref": "e00016"
+      },
+      "municipality": {
+        "value": "Ferros",
+        "raw_value": "Ferros",
+        "bbox_ref": "e00018"
+      }
+    },
+    "taker": {
+      "document": {
+        "value": "44835783197133",
+        "raw_value": "44835783197133",
+        "bbox_ref": "e00023"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Serviços de da Costa ME",
+        "raw_value": "Serviços de da Costa ME",
+        "bbox_ref": "e00021"
+      }
+    },
+    "document": {
+      "rps_number": {
+        "value": "752570",
+        "raw_value": "752570",
+        "bbox_ref": "e00005"
+      },
+      "batch_number": {
+        "value": "927553",
+        "raw_value": "927553",
+        "bbox_ref": "e00007"
+      },
+      "issue_date": {
+        "value": "2024-03-26T11:30:14",
+        "raw_value": "2024-03-26T11:30:14",
+        "bbox_ref": "e00009"
+      },
+      "environment": {
+        "value": "homologacao",
+        "raw_value": "homologacao",
+        "bbox_ref": null
+      }
+    },
+    "service": {
+      "code": {
+        "value": "14.01",
+        "raw_value": "14.01",
+        "bbox_ref": "e00038"
+      },
+      "description": {
+        "value": "Manutencao e reparo predial",
+        "raw_value": "Manutencao e reparo predial",
+        "bbox_ref": "e00042"
+      },
+      "value": {
+        "value": "22963.56",
+        "raw_value": 22963.56,
+        "bbox_ref": "e00045"
+      },
+      "iss_rate": {
+        "value": "5.00",
+        "raw_value": 5.0,
+        "bbox_ref": "e00049"
+      },
+      "iss_value": {
+        "value": "1148.18",
+        "raw_value": 1148.18,
+        "bbox_ref": "e00051"
+      }
+    }
+  },
+  "dpi": 150
+}

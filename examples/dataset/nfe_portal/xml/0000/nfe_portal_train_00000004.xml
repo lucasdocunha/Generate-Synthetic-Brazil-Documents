@@ -1,0 +1,140 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe>
+    <infNFe versao="4.00" Id="NFe002407Q7SGDVYH000143550100005119101800505379">
+        <ide>
+            <cUF>25</cUF>
+            <cNF>96229058</cNF>
+            <natOp>Venda</natOp>
+            <mod>55</mod>
+            <serie>10</serie>
+            <nNF>511910</nNF>
+            <dhEmi>2024-07-17T00:28:32-03:00</dhEmi>
+            <dhSaiEnt>2024-07-17T00:28:32-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>1</idDest>
+            <cMunFG>2509602</cMunFG>
+            <tpImp>2</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>9</cDV>
+            <tpAmb>2</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>1</indFinal>
+            <indPres>0</indPres>
+            <procEmi>0</procEmi>
+            <verProc>SYNTH-GEN 1.0</verProc>
+        </ide>
+        <emit>
+            <CNPJ>Q7SGDVYH000143</CNPJ>
+            <xNome>Distribuidora de Viana ME</xNome>
+            <xFant>Atacado de Marques LTDA</xFant>
+            <enderEmit>
+                <xLgr>Colônia Pacheco</xLgr>
+                <nro>1201</nro>
+                <xCpl>Bloco B</xCpl>
+                <xBairro>Mineirão</xBairro>
+                <cMun>2509602</cMun>
+                <xMun>Monte Horebe</xMun>
+                <UF>PB</UF>
+                <CEP>88900018</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>1944672648</fone>
+            </enderEmit>
+            <IE>315097067284</IE>
+            <CRT>1</CRT>
+        </emit>
+        <dest>
+            <CPF>74793669576</CPF>
+            <xNome>Felipe Correia</xNome>
+            <enderDest>
+                <xLgr>Ladeira Marques</xLgr>
+                <nro>385</nro>
+                <xCpl>Ao lado do mercado</xCpl>
+                <xBairro>Granja De Freitas</xBairro>
+                <cMun>2512721</cMun>
+                <xMun>Pedro Régis</xMun>
+                <UF>PB</UF>
+                <CEP>63368633</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>7156860597</fone>
+            </enderDest>
+            <indIEDest>9</indIEDest>
+            <email>pimentaclara@cassiano.com.br</email>
+        </dest>
+        <entrega>
+            <CNPJ>23579130547161</CNPJ>
+            <xNome>Atacado de Fonseca ME</xNome>
+            <xLgr>Largo Martins</xLgr>
+            <nro>1354</nro>
+            <xCpl>Bloco B</xCpl>
+            <xBairro>Minas Caixa</xBairro>
+            <cMun>3544103</cMun>
+            <xMun>Rio Grande da Serra</xMun>
+            <UF>SP</UF>
+            <CEP>02078782</CEP>
+            <cPais>1058</cPais>
+            <xPais>Brasil</xPais>
+            <fone>1922749245</fone>
+            <IE>861902619122</IE>
+        </entrega>
+        <det nItem="1">
+            <prod>
+                <cProd>1413252</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Cabo elétrico 50m</xProd>
+                <NCM>85444339</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>UN</uCom>
+                <qCom>23.0000</qCom>
+                <vUnCom>667.6500000000</vUnCom>
+                <vProd>15355.95</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>UN</uTrib>
+                <qTrib>23.0000</qTrib>
+                <vUnTrib>667.6500000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>4549.89</vTotTrib>
+            <ICMS><ICMSSN102><orig>1</orig><CSOSN>103</CSOSN></ICMSSN102></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS></imposto>
+            <infAdProd>Cor: Cinza. Embalagem com 13 unidades.</infAdProd>
+        </det>
+        <total>
+            <ICMSTot>
+                <vBC>0.00</vBC>
+                <vICMS>0.00</vICMS>
+                <vICMSDeson>0.00</vICMSDeson>
+                <vFCP>0.00</vFCP>
+                <vBCST>0.00</vBCST>
+                <vST>0.00</vST>
+                <vFCPST>0.00</vFCPST>
+                <vFCPSTRet>0.00</vFCPSTRet>
+                <vProd>15355.95</vProd>
+                <vFrete>0.00</vFrete>
+                <vSeg>0.00</vSeg>
+                <vDesc>0.00</vDesc>
+                <vII>0.00</vII>
+                <vIPI>0.00</vIPI>
+                <vIPIDevol>0.00</vIPIDevol>
+                <vPIS>0.00</vPIS>
+                <vCOFINS>0.00</vCOFINS>
+                <vOutro>0.00</vOutro>
+                <vNF>15355.95</vNF>
+                <vTotTrib>4549.89</vTotTrib>
+            </ICMSTot>
+            </total>
+        <transp>
+            <modFrete>9</modFrete>
+            </transp>
+        <pag>
+            <detPag>
+                <indPag>0</indPag>
+                <tPag>01</tPag>
+                <vPag>15355.95</vPag>
+            </detPag>
+        </pag>
+        <infAdic>
+            <infCpl>Documento emitido por ME ou EPP optante pelo Simples Nacional. Valor aproximado dos tributos conforme Lei 12.741/2012. Não gera direito a crédito fiscal de IPI.</infCpl>
+        </infAdic>
+    </infNFe>
+</NFe><protNFe versao="4.00"><infProt><tpAmb>2</tpAmb><verAplic>SYNTH-HOM</verAplic><chNFe>002407Q7SGDVYH000143550100005119101800505379</chNFe><dhRecbto>2024-07-17T00:35:59-03:00</dhRecbto><nProt>100246179473987</nProt><digVal>H+uWoZQ7LeMo/uIqxp3AKl7XawJ=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

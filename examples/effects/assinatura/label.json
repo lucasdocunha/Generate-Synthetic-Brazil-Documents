@@ -1,0 +1,27 @@
+{
+  "preset": "signature_and_scratches",
+  "seed": 2026,
+  "augmentation": {
+    "seed": 2026,
+    "angle_deg": 0.0,
+    "scan_mode": "clean_digital",
+    "special_objects_added": [
+      "signature"
+    ],
+    "boxes_valid": true
+  },
+  "special_objects": [
+    {
+      "type": "signature",
+      "page": 1,
+      "bbox": {
+        "x": 105.463,
+        "y": 15.0,
+        "w": 41.539,
+        "h": 16.154,
+        "unit": "mm"
+      },
+      "field_id": null
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "seed": 2800412875698104570,
+  "doctype": "danfe",
+  "split": "train",
+  "index": 5,
+  "dpi": 300,
+  "image_source": "lib_pdf",
+  "n_pages": 1,
+  "field_errors": [],
+  "label_schema_ok": true,
+  "augmentation": {
+    "seed": 2800412875698104570,
+    "angle_deg": -1.99,
+    "scan_mode": "color_scan",
+    "special_objects_added": [
+      "stamp",
+      "stamp"
+    ],
+    "boxes_valid": true
+  },
+  "template_id": "tpl_002",
+  "profile": {
+    "regime": "simples",
+    "dest_pj": false,
+    "transporta": true,
+    "veiculo": false,
+    "cobr": false,
+    "retirada": false,
+    "entrega": false,
+    "frete_seguro_outros": false,
+    "desconto": false,
+    "ipi_tributado": false,
+    "special_items": false,
+    "issqn": false,
+    "ibs_cbs": false,
+    "inf_ad_prod_rate": 0.3,
+    "inf_cpl": true,
+    "nfe_proc": true,
+    "n_items": 4,
+    "landscape": true,
+    "receipt_bottom": false,
+    "font_courier": false,
+    "font_helvetica": true,
+    "font_big": false,
+    "display_pis_cofins": true,
+    "duplicates_only": true,
+    "decimals": 4,
+    "has_logo": false,
+    "erp_style": "linx_autosystem",
+    "vertical_block_labels": true
+  },
+  "render": {
+    "receipt_pos": "top",
+    "font_type": "Helvetica",
+    "font_size": "SMALL",
+    "display_pis_cofins": true,
+    "invoice_display": "duplicates_only",
+    "decimals": 4,
+    "landscape": true,
+    "erp_style": "linx_autosystem",
+    "has_logo": false,
+    "logo_seed": 2800412875698104570,
+    "product_table_style": "full_vertical_grid",
+    "product_columns_preset": "fuel_anp",
+    "vertical_block_labels": true,
+    "sub_emit_credit": "",
+    "mid_page_credit": "",
+    "footer_left_text": "LINX SISTEMAS E CONSULTORIA LTDA - AutoSystem 3.2.5.12 - www.linx.invalid",
+    "footer_right_text": ""
+  },
+  "doc_formats": {
+    "emit": "cnpj_numeric",
+    "dest": "cpf",
+    "transp": "cnpj_numeric"
+  },
+  "html": {
+    "n_pages_html": 1,
+    "text_fidelity": 0.9694,
+    "style": {
+      "font_type": "helvetica",
+      "big": false,
+      "receipt_pos": "left",
+      "landscape": true,
+      "product_table_style": "full_vertical_grid",
+      "product_columns_preset": "fuel_anp",
+      "has_logo": false,
+      "logo_style": "fuel_shield",
+      "display_pis_cofins": true,
+      "invoice_display": "duplicates_only",
+      "decimals": 4,
+      "sub_emit_credit": "",
+      "mid_page_credit": "",
+      "footer_left_text": "LINX SISTEMAS E CONSULTORIA LTDA - AutoSystem 3.2.5.12 - www.linx.invalid",
+      "footer_right_text": "",
+      "erp_style": "linx_autosystem",
+      "margin_mm": 5.0,
+      "md_style": "table"
+    },
+    "occlusion": {
+      "artifacts": [
+        "stamp",
+        "stamp"
+      ],
+      "occluded_nodes": 1
+    }
+  }
+}

@@ -109,6 +109,7 @@ def augment_document(
     scan_mode: str = None,
     angle_deg: float = None,
     tilt_deg: float = None,
+    context: dict = None,
 ) -> tuple[Image.Image, dict, dict]:
     """Pipeline unificado:
     1. Sobrepõe carimbos, assinaturas, comprovante POS e riscos, adicionando
@@ -128,7 +129,7 @@ def augment_document(
     )
 
     img_art, added_objs = compose_document_artifacts(
-        image, field_values, page_size_mm, rng, preset=artifact_preset
+        image, field_values, page_size_mm, rng, preset=artifact_preset, context=context, label=label
     )
     updated_label = copy.deepcopy(label)
     updated_label.setdefault("layout", {}).setdefault("special_objects", []).extend(added_objs)

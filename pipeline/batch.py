@@ -36,6 +36,7 @@ def run_batch(doctype: str, cfg, log=print):
             delayed(generate_one)(
                 doctype, split, i, cfg.seed, out_dir, cfg.dpi_options, cfg.generate_geometric_variant,
                 gen_opts={"cnpj_alnum_ratio": cfg.cnpj_alnum_ratio},
+                html=cfg.html, image_source=cfg.image_source,
             )
             for i in range(n)
         )

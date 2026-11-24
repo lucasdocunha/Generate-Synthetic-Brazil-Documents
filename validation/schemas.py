@@ -46,14 +46,14 @@ class ExtractionStats(BaseModel):
 
 class LabelRecord(BaseModel):
     doc_id: str
-    doc_type: Literal["DANFE", "DACTE", "DAMDFE", "DANFSE", "DACCE", "NFE_PORTAL"]
+    doc_type: Literal["DANFE", "DACTE", "DAMDFE", "DANFSE", "DACCE", "NFE_PORTAL", "NFSE_LEGADO"]
     schema_version: str
     source: dict
     pages: list[Page]
     elements: list[Element]
     layout: dict
     ocr: dict
-    kie: dict
+    kie: dict = {}  # opcional: tipos sem KIE (ex.: NFS-e legada) deixam vazio
     extraction_stats: ExtractionStats
 
     @field_validator("pages")
@@ -86,18 +86,18 @@ def validate_field_values(doctype: str, field_values: dict) -> list:
         errors.extend(validate_danfe_consistency(field_values))
     elif doctype == "dacte":
         for role in ("emit", "rem", "exped", "receb", "dest"):
-            _check_doc(errors, f"{role}.cnpj", field_values.get(role, {}).get("cnpj"), "cnpj")
+            _check_doc(errors, f"{role}.cnpj", field_values.get(role, {}).get("cnpj"), "cnpj", doctype)
         if not ACCESS_KEY_RE.match(field_values.get("chave_acesso", "")):
             errors.append("dacte: chave_acesso inválida")
     elif doctype == "damdfe":
-        _check_doc(errors, "emit_cnpj", field_values.get("emit_cnpj"), "cnpj")
+        _check_doc(errors, "emit_cnpj", field_values.get("emit_cnpj"), "cnpj", doctype)
         if not ACCESS_KEY_RE.match(field_values.get("chave_acesso", "")):
             errors.append("damdfe: chave_acesso inválida")
     elif doctype == "danfse":
-        _check_doc(errors, "emit_cnpj", field_values.get("emit_cnpj"), "cnpj")
+        _check_doc(errors, "emit_cnpj", field_values.get("emit_cnpj"), "cnpj", doctype)
     elif doctype == "dacce":
-        _check_doc(errors, "autor_cnpj", field_values.get("autor_cnpj"), "cnpj")
-        _check_doc(errors, "dest_cnpj", field_values.get("dest_cnpj"), "cnpj")
+        _check_doc(errors, "autor_cnpj", field_values.get("autor_cnpj"), "cnpj", doctype)
+        _check_doc(errors, "dest_cnpj", field_values.get("dest_cnpj"), "cnpj", doctype)
         if not ACCESS_KEY_RE.match(field_values.get("chave_nfe", "")):
             errors.append("dacce: chave_nfe inválida")
     return errors
@@ -116,10 +116,10 @@ CPF_RE = re.compile(r"^[0-9]{11}$")
 ACCESS_KEY_RE = re.compile(r"^[0-9]{6}[0-9A-Z]{12}[0-9]{26}$")
 
 
-def _check_doc(errors, label, doc, doc_type):
+def _check_doc(errors, label, doc, doc_type, doctype="danfe"):
     regex = CPF_RE if doc_type == "cpf" else CNPJ_RE
     if not doc or not regex.match(doc):
-        errors.append(f"danfe: {label} com formato inválido para {doc_type}: {doc!r}")
+        errors.append(f"{doctype}: {label} com formato inválido para {doc_type}: {doc!r}")
 
 
 def validate_danfe_consistency(fv: dict) -> list:

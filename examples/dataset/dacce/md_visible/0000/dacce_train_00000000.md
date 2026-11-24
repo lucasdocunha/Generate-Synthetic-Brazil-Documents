@@ -1,0 +1,34 @@
+Comercial Viana ME<br>Parque de Dias, 1793<br>Alpes<br>Machadinho - RS 71989375812
+
+Representação Gráfica de CC-e<br>(Carta de Correção Eletrônica)
+
+- **ID do Evento::** 1101104224020831351700014255001000015293
+- **Criado em::** 18/02/2025 07:49:10
+
+Protocolo: 864176409713431 - Registrado na SEFAZ em: 18/02/2025 07:49:10
+
+De acordo com as determinações legais vigentes, vimos por meio desta comunicar-lhe que a Nota Fiscal, abaixo referenciada, contêm<br>irregularidades que estão destacadas e suas respectivas correções, solicitamos que sejam aplicadas essas correções ao executar seus<br>lançamentos fiscais.
+
+- **CNPJ Destinatário::** 62.814.843/4763-48
+- **Nota Fiscal::** 000.103.336 - Série: 001
+
+0025 0262 8148 4347 6348 5500 1000 1033 3612 9433 1987
+
+![Código de barras]()
+
+- Este é um evento fictício criado para fins de teste.
+
+CORREÇÕES A SEREM CONSIDERADAS
+
+Correção do endereço do destinatário informado na nota original.<br>Este documento é uma representação gráfica da CC-e e foi impresso apenas para sua informação e não possue validade fiscal.<br>A CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos portais das SEFAZ.
+
+> **Carimbo (receipt_stamp)**
+> Recebemos
+> Em 18 de 02 de 2025
+
+> **Carimbo (cnpj_stamp)**
+> [50.660.135/1087-88]
+> COMERCIAL VIANA ME
+> PARQUE DE DIAS, 1793, 8600
+> ALPES - CEP 36880-000
+> MACHADINHO - RS

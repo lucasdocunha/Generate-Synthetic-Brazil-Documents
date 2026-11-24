@@ -1,0 +1,7 @@
+{
+  "artifacts": [
+    "pos_receipt",
+    "signature"
+  ],
+  "occluded_nodes": 11
+}

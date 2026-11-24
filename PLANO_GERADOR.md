@@ -1,5 +1,8 @@
 # Plano — Gerador de Dataset Sintético de Documentos Fiscais Brasileiros
 
+> **Nota (atualização):** a pasta `brazilfiscalreport/` citada neste plano foi renomeada para `renderers/` e passou a ser mantida neste projeto (testes e fixtures da lib removidos; ver `renderers/NOTICE.md`). A decisão original de manter os renderizadores "intocados" vale como histórico.
+
+
 ## Contexto
 
 Este documento responde ao pedido em `gerador.md`: um plano completo (arquitetura, pastas, fluxo, stack, bibliotecas, templates, formato de labels, e estratégias de geração/anti-validade/OCR/layout/KIE/VQA/expansão/dificuldades) para transformar o fork `brazilfiscalreport` — já limpo na Fase 1 anterior (docs/CLI/Streamlit removidos, só o pacote renderizador + testes permanecem) — em um framework de geração de dataset sintético de 10.000+ documentos por tipo (DANFE, DACTE, DAMDFE, DANFSE, DACCe), com ground truth completo para OCR, Layout Analysis, KIE e VQA. **Nada foi implementado ainda** — este é só o plano para validação, conforme pedido explicitamente no `gerador.md`.
@@ -150,12 +153,12 @@ Um "template" = **(um XML de fixture real como esqueleto) + (um manifesto descre
 
 ```
 generator/templates/danfe/v1/tpl_001/
-  source.xml        # idêntico/derivado de tests/fixtures/danfe/*.xml
+  source.xml        # idêntico/derivado de generator/templates/upstream_fixtures/danfe/*.xml
   manifest.yaml       # overrides específicos deste template (faixa de repetição de <det>, blocos opcionais presentes)
   PROVENANCE.md        # de qual fixture original veio, quando importado
 ```
 
-`tests/fixtures/` continua sendo só a suíte de regressão dos renderizadores — não é reaproveitada em runtime, é **copiada** para `generator/templates/` na criação inicial (podendo divergir depois, ex. para marcar regiões repetíveis), para nunca arriscar as baselines de teste existentes.
+`tests/fixtures/` (removido; os XMLs foram para `generator/templates/upstream_fixtures/`) era a suíte de regressão dos renderizadores — não é reaproveitada em runtime, é **copiada** para `generator/templates/` na criação inicial (podendo divergir depois, ex. para marcar regiões repetíveis), para nunca arriscar as baselines de teste existentes.
 
 ### O mecanismo que de fato entrega "sem código por tipo de documento"
 

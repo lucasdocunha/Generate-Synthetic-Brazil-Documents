@@ -1,0 +1,3338 @@
+{
+  "doc_id": "dacte_train_00000003",
+  "doc_type": "DACTE",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/dacte_train_00000003.xml",
+    "pdf_path": "pdfs/0000/dacte_train_00000003.pdf",
+    "fixture_template": "tpl_001",
+    "generation_seed": 5667503717658605908,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/dacte_train_00000003.html",
+    "md_path": "md/0000/dacte_train_00000003.md",
+    "html_visible_path": "html_visible/0000/dacte_train_00000003.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 4.642,
+        "w": 185.821,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "DECLARO QUE RECEBI OS VOLUMES DESTE CONHECIMENTO EM PERFEITO ESTADO PELO QUE DOU POR CUMPRIDO O PRESENTE CONTRATO DE TRANSPORTE"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.001,
+        "y": 10.399,
+        "w": 8.78,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "NOME"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.001,
+        "y": 18.4,
+        "w": 4.233,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "RG"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 63.5,
+        "y": 21.399,
+        "w": 34.493,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "ASSINATURA / CARIMBO"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 116.0,
+        "y": 10.399,
+        "w": 32.377,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "CHEGADA DATA/HORA"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 116.0,
+        "y": 18.4,
+        "w": 26.732,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "SAÍDA DATA/HORA"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 178.999,
+        "y": 7.874,
+        "w": 8.428,
+        "h": 4.886,
+        "unit": "mm"
+      },
+      "text": "CT-E"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 161.001,
+        "y": 12.64,
+        "w": 22.223,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "NRO. DOCUMENTO"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 161.001,
+        "y": 18.64,
+        "w": 6.86,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "SÉRIE"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [
+        "ident_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 191.001,
+        "y": 12.662,
+        "w": 7.408,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "962750"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [
+        "ident_serie"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 194.0,
+        "y": 18.663,
+        "w": 1.235,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "1"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [
+        "emit_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 18.528,
+        "y": 29.137,
+        "w": 39.948,
+        "h": 4.397,
+        "unit": "mm"
+      },
+      "text": "Comércio de Costela EIRELI"
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [
+        "emit_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.552,
+        "y": 34.373,
+        "w": 55.894,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "CNPJ: A6.T2K.DVT/0001-31 IE: 201719311331"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [
+        "emit_endereco_logradouro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 26.942,
+        "y": 37.375,
+        "w": 27.119,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "Vila de Cavalcante, 594"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [
+        "emit_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 34.66,
+        "y": 40.374,
+        "w": 11.678,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "Vila Nova"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [
+        "emit_endereco_municipio",
+        "emit_endereco_uf",
+        "exped_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 31.644,
+        "y": 43.376,
+        "w": 17.715,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "Cafelândia - SP"
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [
+        "emit_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 34.385,
+        "y": 46.375,
+        "w": 12.229,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "15955-270"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [
+        "emit_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 28.116,
+        "y": 49.373,
+        "w": 24.771,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "Fone: (71) 5208-4658"
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 92.826,
+        "y": 27.376,
+        "w": 12.347,
+        "h": 4.886,
+        "unit": "mm"
+      },
+      "text": "DACTE"
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 76.338,
+        "y": 31.405,
+        "w": 45.324,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "DOCUMENTO AUXILIAR DO CONHECIMENTO"
+    },
+    {
+      "element_id": "e00020",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 83.598,
+        "y": 33.405,
+        "w": 30.808,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "DE TRANSPORTE ELETRÔNICO"
+    },
+    {
+      "element_id": "e00021",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 135.329,
+        "y": 27.374,
+        "w": 10.346,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "MODAL"
+    },
+    {
+      "element_id": "e00022",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 131.173,
+        "y": 32.402,
+        "w": 18.658,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "DUTOVIÁRIO"
+    },
+    {
+      "element_id": "e00023",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 76.02,
+        "y": 38.639,
+        "w": 10.562,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "MODELO"
+    },
+    {
+      "element_id": "e00024",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 80.066,
+        "y": 43.664,
+        "w": 2.469,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "57"
+    },
+    {
+      "element_id": "e00025",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 92.671,
+        "y": 38.639,
+        "w": 6.86,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "SÉRIE"
+    },
+    {
+      "element_id": "e00026",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 95.483,
+        "y": 43.664,
+        "w": 1.235,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "1"
+    },
+    {
+      "element_id": "e00027",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 107.551,
+        "y": 38.639,
+        "w": 10.7,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "NÚMERO"
+    },
+    {
+      "element_id": "e00028",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 109.195,
+        "y": 43.664,
+        "w": 7.408,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "962750"
+    },
+    {
+      "element_id": "e00029",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 124.4,
+        "y": 39.391,
+        "w": 16.597,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "DATA E HORA"
+    },
+    {
+      "element_id": "e00030",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 125.328,
+        "y": 41.892,
+        "w": 14.748,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "DE EMISSÃO"
+    },
+    {
+      "element_id": "e00031",
+      "field_ids": [
+        "data_emissao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 122.241,
+        "y": 44.662,
+        "w": 20.921,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "24/06/2024 12:08:03"
+    },
+    {
+      "element_id": "e00032",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 149.26,
+        "y": 39.14,
+        "w": 2.882,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "FL"
+    },
+    {
+      "element_id": "e00033",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 149.387,
+        "y": 43.664,
+        "w": 3.156,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "1/1"
+    },
+    {
+      "element_id": "e00034",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 100.845,
+        "y": 58.874,
+        "w": 25.713,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "CHAVE DE ACESSO"
+    },
+    {
+      "element_id": "e00035",
+      "field_ids": [
+        "chave_acesso"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 80.853,
+        "y": 64.399,
+        "w": 65.696,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "002406A6T2KDVT000131570010009627501298344404"
+    },
+    {
+      "element_id": "e00036",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 85.496,
+        "y": 71.899,
+        "w": 58.008,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "CONSULTA EM http://www.cte.fazenda.gov.br"
+    },
+    {
+      "element_id": "e00037",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 87.849,
+        "y": 77.874,
+        "w": 53.303,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "PROTOCOLO DE AUTORIZAÇÃO DE USO"
+    },
+    {
+      "element_id": "e00038",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 53.875,
+        "w": 18.028,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "TIPO DO CT-E"
+    },
+    {
+      "element_id": "e00039",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 56.899,
+        "w": 12.855,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "NORMAL"
+    },
+    {
+      "element_id": "e00040",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 61.876,
+        "w": 23.831,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "TIPO DO SERVIÇO"
+    },
+    {
+      "element_id": "e00041",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 64.9,
+        "w": 12.855,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "NORMAL"
+    },
+    {
+      "element_id": "e00042",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 69.873,
+        "w": 31.826,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "TOMADOR DO SERVIÇO"
+    },
+    {
+      "element_id": "e00043",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 72.901,
+        "w": 21.796,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "DESTINATÁRIO"
+    },
+    {
+      "element_id": "e00044",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 78.876,
+        "w": 46.567,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "CFOP - NATUREZA DA PRESTAÇÃO"
+    },
+    {
+      "element_id": "e00045",
+      "field_ids": [
+        "natureza_operacao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 82.413,
+        "w": 21.81,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "5352 - Transferência"
+    },
+    {
+      "element_id": "e00046",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 87.876,
+        "w": 30.728,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "INÍCIO DA PRESTAÇÃO"
+    },
+    {
+      "element_id": "e00047",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 90.9,
+        "w": 18.816,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "Cafelândia - SP"
+    },
+    {
+      "element_id": "e00048",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 87.876,
+        "w": 34.806,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "TÉRMINO DA PRESTAÇÃO"
+    },
+    {
+      "element_id": "e00049",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 90.9,
+        "w": 12.071,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "Patu - RN"
+    },
+    {
+      "element_id": "e00050",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 95.641,
+        "w": 15.296,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "REMETENTE"
+    },
+    {
+      "element_id": "e00051",
+      "field_ids": [
+        "rem_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 95.663,
+        "w": 30.932,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Comércio de Marques LTDA"
+    },
+    {
+      "element_id": "e00052",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 98.64,
+        "w": 13.787,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00053",
+      "field_ids": [
+        "rem_endereco_logradouro",
+        "rem_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 98.662,
+        "w": 29.083,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Área de Nunes, Lajedo, 598"
+    },
+    {
+      "element_id": "e00054",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 102.139,
+        "w": 13.649,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00055",
+      "field_ids": [
+        "rem_endereco_municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 102.162,
+        "w": 15.916,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Mansidão - BA"
+    },
+    {
+      "element_id": "e00056",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 105.639,
+        "w": 11.461,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CNPJ/CPF"
+    },
+    {
+      "element_id": "e00057",
+      "field_ids": [
+        "rem_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 105.661,
+        "w": 20.03,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "17.777.739/0416-47"
+    },
+    {
+      "element_id": "e00058",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 108.641,
+        "w": 5.969,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "PAÍS"
+    },
+    {
+      "element_id": "e00059",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 108.663,
+        "w": 6.312,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Brasil"
+    },
+    {
+      "element_id": "e00060",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 75.999,
+        "y": 100.64,
+        "w": 5.146,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00061",
+      "field_ids": [
+        "rem_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 83.002,
+        "y": 100.662,
+        "w": 10.7,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "24750-767"
+    },
+    {
+      "element_id": "e00062",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 75.999,
+        "y": 103.642,
+        "w": 2.949,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "IE"
+    },
+    {
+      "element_id": "e00063",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 103.664,
+        "w": 14.817,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "366017993444"
+    },
+    {
+      "element_id": "e00064",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 71.998,
+        "y": 107.142,
+        "w": 7.065,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "FONE"
+    },
+    {
+      "element_id": "e00065",
+      "field_ids": [
+        "rem_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 107.164,
+        "w": 15.432,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "(48) 5285-1007"
+    },
+    {
+      "element_id": "e00066",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 95.641,
+        "w": 18.723,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "DESTINATÁRIO"
+    },
+    {
+      "element_id": "e00067",
+      "field_ids": [
+        "dest_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 123.0,
+        "y": 95.663,
+        "w": 25.104,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Comercial Siqueira ME"
+    },
+    {
+      "element_id": "e00068",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 98.64,
+        "w": 13.787,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00069",
+      "field_ids": [
+        "dest_endereco_logradouro",
+        "dest_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 123.0,
+        "y": 98.662,
+        "w": 42.595,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Vila Maitê da Conceição, Solimoes, 1424"
+    },
+    {
+      "element_id": "e00070",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 102.139,
+        "w": 13.649,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00071",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 123.0,
+        "y": 102.162,
+        "w": 10.562,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Patu - RN"
+    },
+    {
+      "element_id": "e00072",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 105.639,
+        "w": 11.461,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CNPJ/CPF"
+    },
+    {
+      "element_id": "e00073",
+      "field_ids": [
+        "dest_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 123.0,
+        "y": 105.661,
+        "w": 20.03,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "98.471.359/9363-28"
+    },
+    {
+      "element_id": "e00074",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 108.641,
+        "w": 5.969,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "PAÍS"
+    },
+    {
+      "element_id": "e00075",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 123.0,
+        "y": 108.663,
+        "w": 6.312,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Brasil"
+    },
+    {
+      "element_id": "e00076",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 170.998,
+        "y": 100.64,
+        "w": 5.146,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00077",
+      "field_ids": [
+        "dest_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 178.001,
+        "y": 100.662,
+        "w": 10.7,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "76422-778"
+    },
+    {
+      "element_id": "e00078",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 170.998,
+        "y": 103.642,
+        "w": 2.949,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "IE"
+    },
+    {
+      "element_id": "e00079",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 176.001,
+        "y": 103.664,
+        "w": 14.817,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "344719061650"
+    },
+    {
+      "element_id": "e00080",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 161.001,
+        "y": 107.142,
+        "w": 7.065,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "FONE"
+    },
+    {
+      "element_id": "e00081",
+      "field_ids": [
+        "dest_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 168.0,
+        "y": 107.164,
+        "w": 15.432,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "(31) 5846-4164"
+    },
+    {
+      "element_id": "e00082",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 112.141,
+        "w": 14.681,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "RECEBEDOR"
+    },
+    {
+      "element_id": "e00083",
+      "field_ids": [
+        "receb_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 120.999,
+        "y": 112.163,
+        "w": 27.302,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Transportes Viana LTDA"
+    },
+    {
+      "element_id": "e00084",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 115.64,
+        "w": 13.17,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00085",
+      "field_ids": [
+        "receb_endereco_logradouro",
+        "receb_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 120.999,
+        "y": 115.962,
+        "w": 30.596,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Jardim da Costa Indaiá 1826"
+    },
+    {
+      "element_id": "e00086",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 119.14,
+        "w": 13.031,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00087",
+      "field_ids": [
+        "receb_endereco_municipio",
+        "receb_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 120.999,
+        "y": 119.762,
+        "w": 11.658,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Arara - PB"
+    },
+    {
+      "element_id": "e00088",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 123.14,
+        "w": 10.843,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CNPJ/CPF"
+    },
+    {
+      "element_id": "e00089",
+      "field_ids": [
+        "receb_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 120.999,
+        "y": 123.561,
+        "w": 20.03,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "72.270.007/1954-77"
+    },
+    {
+      "element_id": "e00090",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 126.64,
+        "w": 5.351,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "PAÍS"
+    },
+    {
+      "element_id": "e00091",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 120.999,
+        "y": 126.863,
+        "w": 6.312,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Brasil"
+    },
+    {
+      "element_id": "e00092",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 170.998,
+        "y": 120.639,
+        "w": 4.529,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00093",
+      "field_ids": [
+        "receb_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 178.001,
+        "y": 120.661,
+        "w": 10.7,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "43207-066"
+    },
+    {
+      "element_id": "e00094",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 170.998,
+        "y": 124.142,
+        "w": 2.331,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "IE"
+    },
+    {
+      "element_id": "e00095",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 176.001,
+        "y": 123.963,
+        "w": 14.817,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "843171557261"
+    },
+    {
+      "element_id": "e00096",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 161.001,
+        "y": 127.141,
+        "w": 6.448,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "FONE"
+    },
+    {
+      "element_id": "e00097",
+      "field_ids": [
+        "receb_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 167.448,
+        "y": 127.163,
+        "w": 17.218,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "(85) 99550-4683"
+    },
+    {
+      "element_id": "e00098",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 112.141,
+        "w": 13.992,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "EXPEDIDOR"
+    },
+    {
+      "element_id": "e00099",
+      "field_ids": [
+        "exped_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 112.163,
+        "w": 37.657,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Indústria e Comércio de Cirino ME"
+    },
+    {
+      "element_id": "e00100",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 115.64,
+        "w": 13.17,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00101",
+      "field_ids": [
+        "exped_endereco_logradouro",
+        "exped_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 115.962,
+        "w": 44.981,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Via Brito Vila Nova Gameleira 1ª Seção 79"
+    },
+    {
+      "element_id": "e00102",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 119.14,
+        "w": 13.031,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00103",
+      "field_ids": [
+        "exped_endereco_municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 119.762,
+        "w": 18.731,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Luís Antônio - SP"
+    },
+    {
+      "element_id": "e00104",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 123.14,
+        "w": 10.843,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CNPJ/CPF"
+    },
+    {
+      "element_id": "e00105",
+      "field_ids": [
+        "exped_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 123.561,
+        "w": 23.46,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "W4.VOB.9R1/0001-23"
+    },
+    {
+      "element_id": "e00106",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 126.64,
+        "w": 5.351,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "PAÍS"
+    },
+    {
+      "element_id": "e00107",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 126.863,
+        "w": 6.312,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "Brasil"
+    },
+    {
+      "element_id": "e00108",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 75.999,
+        "y": 120.639,
+        "w": 4.529,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00109",
+      "field_ids": [
+        "exped_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 83.002,
+        "y": 120.661,
+        "w": 10.7,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "12115-562"
+    },
+    {
+      "element_id": "e00110",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 75.999,
+        "y": 124.142,
+        "w": 2.331,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "IE"
+    },
+    {
+      "element_id": "e00111",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 124.164,
+        "w": 14.817,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "707626784708"
+    },
+    {
+      "element_id": "e00112",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 71.998,
+        "y": 127.141,
+        "w": 6.448,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "FONE"
+    },
+    {
+      "element_id": "e00113",
+      "field_ids": [
+        "exped_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 127.163,
+        "w": 15.432,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "(31) 2141-7198"
+    },
+    {
+      "element_id": "e00114",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 131.141,
+        "w": 29.974,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "PRODUTO PREDOMINATE"
+    },
+    {
+      "element_id": "e00115",
+      "field_ids": [
+        "descricao_carga"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 38.001,
+        "y": 131.295,
+        "w": 10.19,
+        "h": 3.176,
+        "unit": "mm"
+      },
+      "text": "Autopeças"
+    },
+    {
+      "element_id": "e00116",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 141.002,
+        "y": 131.141,
+        "w": 30.658,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "VALOR TOTAL DA CARGA"
+    },
+    {
+      "element_id": "e00117",
+      "field_ids": [
+        "v_carga"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 172.999,
+        "y": 131.163,
+        "w": 13.513,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "R$ 39.416,61"
+    },
+    {
+      "element_id": "e00118",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 135.981,
+        "w": 30.905,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "TOMADOR DO SERVIÇO"
+    },
+    {
+      "element_id": "e00119",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 38.001,
+        "y": 136.005,
+        "w": 27.256,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "Comercial Siqueira ME"
+    },
+    {
+      "element_id": "e00120",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 138.983,
+        "w": 14.969,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00121",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 21.999,
+        "y": 139.007,
+        "w": 46.246,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "Vila Maitê da Conceição  1424  Solimoes"
+    },
+    {
+      "element_id": "e00122",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 141.981,
+        "w": 12.443,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "CNPJ/CPF"
+    },
+    {
+      "element_id": "e00123",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 19.999,
+        "y": 142.006,
+        "w": 21.747,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "98.471.359/9363-28"
+    },
+    {
+      "element_id": "e00124",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 90.999,
+        "y": 141.981,
+        "w": 3.201,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "IE"
+    },
+    {
+      "element_id": "e00125",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 95.0,
+        "y": 142.006,
+        "w": 16.087,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "344719061650"
+    },
+    {
+      "element_id": "e00126",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 120.999,
+        "y": 141.981,
+        "w": 6.48,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "PAÍS"
+    },
+    {
+      "element_id": "e00127",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 127.998,
+        "y": 142.006,
+        "w": 6.853,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "Brasil"
+    },
+    {
+      "element_id": "e00128",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 155.998,
+        "y": 141.981,
+        "w": 7.671,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "FONE"
+    },
+    {
+      "element_id": "e00129",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 163.999,
+        "y": 142.006,
+        "w": 16.754,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "(31) 5846-4164"
+    },
+    {
+      "element_id": "e00130",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 135.981,
+        "w": 14.819,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00131",
+      "field_ids": [
+        "dest_endereco_municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 122.001,
+        "y": 136.005,
+        "w": 5.362,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "Patu"
+    },
+    {
+      "element_id": "e00132",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 155.998,
+        "y": 135.981,
+        "w": 4.097,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "UF"
+    },
+    {
+      "element_id": "e00133",
+      "field_ids": [
+        "dest_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 159.999,
+        "y": 136.005,
+        "w": 3.872,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "RN"
+    },
+    {
+      "element_id": "e00134",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 166.0,
+        "y": 135.981,
+        "w": 5.587,
+        "h": 3.577,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00135",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 172.0,
+        "y": 136.005,
+        "w": 11.617,
+        "h": 3.713,
+        "unit": "mm"
+      },
+      "text": "76422-778"
+    },
+    {
+      "element_id": "e00136",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 146.904,
+        "w": 13.697,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TIPO MEDIDA"
+    },
+    {
+      "element_id": "e00137",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 38.068,
+        "y": 146.904,
+        "w": 8.524,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "QTD/UN."
+    },
+    {
+      "element_id": "e00138",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 55.333,
+        "y": 146.904,
+        "w": 13.697,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TIPO MEDIDA"
+    },
+    {
+      "element_id": "e00139",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 87.401,
+        "y": 146.904,
+        "w": 8.524,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "QTD/UN."
+    },
+    {
+      "element_id": "e00140",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 104.669,
+        "y": 146.904,
+        "w": 13.697,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TIPO MEDIDA"
+    },
+    {
+      "element_id": "e00141",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 136.733,
+        "y": 146.904,
+        "w": 8.524,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "QTD/UN."
+    },
+    {
+      "element_id": "e00142",
+      "field_ids": [
+        "rem_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 154.002,
+        "y": 146.904,
+        "w": 15.039,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "CUBAGEM (M³)"
+    },
+    {
+      "element_id": "e00143",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 174.001,
+        "y": 146.904,
+        "w": 18.459,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "QTD DE VOLUMES"
+    },
+    {
+      "element_id": "e00144",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 150.176,
+        "w": 7.055,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "Volume"
+    },
+    {
+      "element_id": "e00145",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 38.068,
+        "y": 150.176,
+        "w": 12.581,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "1000.0000 M3"
+    },
+    {
+      "element_id": "e00146",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 153.676,
+        "w": 9.936,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "Peso Bruto"
+    },
+    {
+      "element_id": "e00147",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 38.068,
+        "y": 153.676,
+        "w": 11.76,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "500.0000 KG"
+    },
+    {
+      "element_id": "e00148",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 55.333,
+        "y": 150.176,
+        "w": 7.645,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "Unidade"
+    },
+    {
+      "element_id": "e00149",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 87.401,
+        "y": 150.176,
+        "w": 9.406,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "2.0000 UN"
+    },
+    {
+      "element_id": "e00150",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 174.001,
+        "y": 150.176,
+        "w": 9.406,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "2.0000 UN"
+    },
+    {
+      "element_id": "e00151",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 69.3,
+        "y": 156.773,
+        "w": 61.401,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "COMPONENTES DO VALOR DA PRESTAÇÃO DO SERVIÇO"
+    },
+    {
+      "element_id": "e00152",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 161.874,
+        "w": 8.309,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "NOME"
+    },
+    {
+      "element_id": "e00153",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 29.75,
+        "y": 161.874,
+        "w": 9.72,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "VALOR"
+    },
+    {
+      "element_id": "e00154",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 53.499,
+        "y": 161.874,
+        "w": 8.309,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "NOME"
+    },
+    {
+      "element_id": "e00155",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 77.251,
+        "y": 161.874,
+        "w": 9.72,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "VALOR"
+    },
+    {
+      "element_id": "e00156",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 161.874,
+        "w": 8.309,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "NOME"
+    },
+    {
+      "element_id": "e00157",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 124.749,
+        "y": 161.874,
+        "w": 9.72,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "VALOR"
+    },
+    {
+      "element_id": "e00158",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 165.875,
+        "w": 5.8,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "Frete"
+    },
+    {
+      "element_id": "e00159",
+      "field_ids": [
+        "v_frete"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 29.75,
+        "y": 165.875,
+        "w": 9.172,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "4014.08"
+    },
+    {
+      "element_id": "e00160",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 148.502,
+        "y": 159.874,
+        "w": 37.234,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "VALOR TOTAL DO SERVIÇO"
+    },
+    {
+      "element_id": "e00161",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 148.502,
+        "y": 163.9,
+        "w": 14.032,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "R$ 4.014,08"
+    },
+    {
+      "element_id": "e00162",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 148.502,
+        "y": 170.874,
+        "w": 35.825,
+        "h": 3.765,
+        "unit": "mm"
+      },
+      "text": "VALOR TOTAL A RECEBER"
+    },
+    {
+      "element_id": "e00163",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 148.502,
+        "y": 174.399,
+        "w": 14.032,
+        "h": 3.909,
+        "unit": "mm"
+      },
+      "text": "R$ 4.014,08"
+    },
+    {
+      "element_id": "e00164",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 77.869,
+        "y": 177.774,
+        "w": 44.267,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES RELATIVAS AO IMPOSTO"
+    },
+    {
+      "element_id": "e00165",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 181.273,
+        "w": 26.049,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "SITUAÇÃO TRIBUTÁRIA"
+    },
+    {
+      "element_id": "e00166",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 185.426,
+        "w": 28.397,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "00 - TRIBUTAÇÃO NORMAL"
+    },
+    {
+      "element_id": "e00167",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 189.426,
+        "w": 5.527,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "ICMS"
+    },
+    {
+      "element_id": "e00168",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 39.25,
+        "y": 181.406,
+        "w": 19.285,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "BASE DE CALCULO"
+    },
+    {
+      "element_id": "e00169",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 39.25,
+        "y": 185.426,
+        "w": 7.408,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "4.014,08"
+    },
+    {
+      "element_id": "e00170",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.499,
+        "y": 181.406,
+        "w": 10.759,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "ALÍQ ICMS"
+    },
+    {
+      "element_id": "e00171",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.499,
+        "y": 185.426,
+        "w": 3.704,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "7,00"
+    },
+    {
+      "element_id": "e00172",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.752,
+        "y": 181.406,
+        "w": 12.994,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "VALOR ICMS"
+    },
+    {
+      "element_id": "e00173",
+      "field_ids": [
+        "v_icms"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 105.752,
+        "y": 185.426,
+        "w": 5.821,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "280,99"
+    },
+    {
+      "element_id": "e00174",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.001,
+        "y": 181.406,
+        "w": 16.112,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "% RED. BC ICMS"
+    },
+    {
+      "element_id": "e00175",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.001,
+        "y": 185.426,
+        "w": 3.704,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00176",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 172.251,
+        "y": 181.406,
+        "w": 8.175,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "ICMS ST"
+    },
+    {
+      "element_id": "e00177",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 172.251,
+        "y": 185.426,
+        "w": 5.821,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "280,99"
+    },
+    {
+      "element_id": "e00178",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 83.093,
+        "y": 195.64,
+        "w": 33.814,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "DOCUMENTOS ORIGINÁRIOS"
+    },
+    {
+      "element_id": "e00179",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 200.407,
+        "w": 9.701,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TIPO DOC"
+    },
+    {
+      "element_id": "e00180",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 19.667,
+        "y": 200.407,
+        "w": 12.819,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "CNPJ/CHAVE"
+    },
+    {
+      "element_id": "e00181",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 69.335,
+        "y": 200.54,
+        "w": 23.39,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "SÉRIE/NRO. DOCUMENTO"
+    },
+    {
+      "element_id": "e00182",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 200.407,
+        "w": 9.701,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TIPO DOC"
+    },
+    {
+      "element_id": "e00183",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 112.667,
+        "y": 200.407,
+        "w": 12.819,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "CNPJ/CHAVE"
+    },
+    {
+      "element_id": "e00184",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 164.334,
+        "y": 200.54,
+        "w": 23.39,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "SÉRIE/NRO. DOCUMENTO"
+    },
+    {
+      "element_id": "e00185",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 203.424,
+        "w": 4.233,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "NFE"
+    },
+    {
+      "element_id": "e00186",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 17.667,
+        "y": 203.424,
+        "w": 46.567,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "41190806117473000150550010000586251016759484"
+    },
+    {
+      "element_id": "e00187",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.334,
+        "y": 203.424,
+        "w": 13.288,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "001/000058625"
+    },
+    {
+      "element_id": "e00188",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 91.084,
+        "y": 238.64,
+        "w": 17.837,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "OBSERVAÇÕES"
+    },
+    {
+      "element_id": "e00189",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 241.642,
+        "w": 37.38,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "Documento emitido por: Marc Demo"
+    },
+    {
+      "element_id": "e00190",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.838,
+        "y": 248.641,
+        "w": 54.323,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "DADOS ESPECÍFICOS DO MODAL DUTOVIÁRIO"
+    },
+    {
+      "element_id": "e00191",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 251.905,
+        "w": 18.047,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "VALOR UNITÁRIO"
+    },
+    {
+      "element_id": "e00192",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 44.002,
+        "y": 251.905,
+        "w": 17.873,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "VALOR DO FRETE"
+    },
+    {
+      "element_id": "e00193",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 82.0,
+        "y": 251.905,
+        "w": 8.467,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "OUTROS"
+    },
+    {
+      "element_id": "e00194",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 120.001,
+        "y": 251.905,
+        "w": 19.285,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "BASE DE CÁLCULO"
+    },
+    {
+      "element_id": "e00195",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 120.001,
+        "y": 254.664,
+        "w": 8.643,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "4.014,08"
+    },
+    {
+      "element_id": "e00196",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 158.002,
+        "y": 251.905,
+        "w": 10.933,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "ALÍQUOTA"
+    },
+    {
+      "element_id": "e00197",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 158.002,
+        "y": 254.664,
+        "w": 4.322,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "7,00"
+    },
+    {
+      "element_id": "e00198",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 257.906,
+        "w": 20.695,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "VALOR DO IMPOSTO"
+    },
+    {
+      "element_id": "e00199",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 37.666,
+        "y": 257.906,
+        "w": 25.339,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "VALOR TOTAL DO FRETE"
+    },
+    {
+      "element_id": "e00200",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 37.666,
+        "y": 260.661,
+        "w": 12.278,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "R$ 4.014,08"
+    },
+    {
+      "element_id": "e00201",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 69.335,
+        "y": 257.906,
+        "w": 15.289,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "OBSERVAÇÕES"
+    },
+    {
+      "element_id": "e00202",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 257.906,
+        "w": 5.88,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "SÉRIE"
+    },
+    {
+      "element_id": "e00203",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 101.0,
+        "y": 260.661,
+        "w": 1.235,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "1"
+    },
+    {
+      "element_id": "e00204",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 132.669,
+        "y": 257.906,
+        "w": 9.172,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "NÚMERO"
+    },
+    {
+      "element_id": "e00205",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 132.669,
+        "y": 260.661,
+        "w": 7.408,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "962750"
+    },
+    {
+      "element_id": "e00206",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 164.334,
+        "y": 257.906,
+        "w": 10.581,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "EMITENTE"
+    },
+    {
+      "element_id": "e00207",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 164.334,
+        "y": 260.924,
+        "w": 26.632,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "Comércio de Costela EIRELI"
+    },
+    {
+      "element_id": "e00208",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 77.332,
+        "y": 263.641,
+        "w": 45.339,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "USO EXCLUSIVO DO EMISSOR DO CT-E"
+    },
+    {
+      "element_id": "e00209",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 32.664,
+        "y": 53.895,
+        "w": 144.76,
+        "h": 189.259,
+        "unit": "mm"
+      },
+      "text": "SEM VALOR FISCAL"
+    }
+  ],
+  "layout": {
+    "special_objects": [
+      {
+        "type": "qrcode",
+        "page": 1,
+        "bbox": {
+          "x": 161.001,
+          "y": 37.998,
+          "w": 38.001,
+          "h": 38.001,
+          "unit": "mm"
+        },
+        "field_id": null
+      },
+      {
+        "type": "stamp",
+        "subtype": "receipt_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 40.613,
+          "y": 270.416,
+          "w": 50.428,
+          "h": 24.722,
+          "unit": "mm"
+        },
+        "field_id": null,
+        "text": [
+          "PAGO",
+          "DATA: 24/06/2024"
+        ]
+      }
+    ]
+  },
+  "ocr": {
+    "full_text": "DECLARO QUE RECEBI OS VOLUMES DESTE CONHECIMENTO EM PERFEITO ESTADO PELO QUE DOU POR CUMPRIDO O PRESENTE CONTRATO DE TRANSPORTE\nNOME\nRG\nASSINATURA / CARIMBO\nCHEGADA DATA/HORA\nSAÍDA DATA/HORA\nCT-E\nNRO. DOCUMENTO\nSÉRIE\n962750\n1\nComércio de Costela EIRELI\nCNPJ: A6.T2K.DVT/0001-31 IE: 201719311331\nVila de Cavalcante, 594\nVila Nova\nCafelândia - SP\n15955-270\nFone: (71) 5208-4658\nDACTE\nDOCUMENTO AUXILIAR DO CONHECIMENTO\nDE TRANSPORTE ELETRÔNICO\nMODAL\nDUTOVIÁRIO\nMODELO\n57\nSÉRIE\n1\nNÚMERO\n962750\nDATA E HORA\nDE EMISSÃO\n24/06/2024 12:08:03\nFL\n1/1\nCHAVE DE ACESSO\n002406A6T2KDVT000131570010009627501298344404\nCONSULTA EM http://www.cte.fazenda.gov.br\nPROTOCOLO DE AUTORIZAÇÃO DE USO\n  \nTIPO DO CT-E\nNORMAL\nTIPO DO SERVIÇO\nNORMAL\nTOMADOR DO SERVIÇO\nDESTINATÁRIO\nCFOP - NATUREZA DA PRESTAÇÃO\n5352 - Transferência\nINÍCIO DA PRESTAÇÃO\nCafelândia - SP\nTÉRMINO DA PRESTAÇÃO\nPatu - RN\nREMETENTE Comércio de Marques LTDA\nENDEREÇO \nÁrea de Nunes, Lajedo, 598\nMUNICÍPIO \nMansidão - BA\nCNPJ/CPF \n17.777.739/0416-47\nPAÍS \nBrasil\nCEP 24750-767\nIE \n366017993444\nFONE (48) 5285-1007\nDESTINATÁRIO \nComercial Siqueira ME\nENDEREÇO \nVila Maitê da Conceição, Solimoes, 1424\nMUNICÍPIO \nPatu - RN\nCNPJ/CPF \n98.471.359/9363-28\nPAÍS \nBrasil\nCEP 76422-778\nIE \n344719061650\nFONE (31) 5846-4164\nRECEBEDOR\nTransportes Viana LTDA\nENDEREÇO\nJardim da Costa Indaiá 1826\nMUNICÍPIO\nArara - PB\nCNPJ/CPF\n72.270.007/1954-77\nPAÍS\nBrasil\nCEP\n43207-066\nIE\n843171557261\nFONE (85) 99550-4683\nEXPEDIDOR\nIndústria e Comércio de Cirino ME\nENDEREÇO\nVia Brito Vila Nova Gameleira 1ª Seção 79\nMUNICÍPIO\nLuís Antônio - SP\nCNPJ/CPF\nW4.VOB.9R1/0001-23\nPAÍS\nBrasil\nCEP\n12115-562\nIE\n707626784708\nFONE\n(31) 2141-7198\nPRODUTO PREDOMINATE\nAutopeças\nVALOR TOTAL DA CARGA R$ 39.416,61\nTOMADOR DO SERVIÇO Comercial Siqueira ME\nENDEREÇO Vila Maitê da Conceição  1424  Solimoes\nCNPJ/CPF 98.471.359/9363-28\nIE 344719061650\nPAÍS Brasil\nFONE (31) 5846-4164\nMUNICÍPIO Patu\nUF RN CEP 76422-778\nTIPO MEDIDA\nQTD/UN.\nTIPO MEDIDA\nQTD/UN.\nTIPO MEDIDA\nQTD/UN.\nCUBAGEM (M³)\nQTD DE VOLUMES\nVolume\n1000.0000 M3\nPeso Bruto\n500.0000 KG\nUnidade\n2.0000 UN\n2.0000 UN\nCOMPONENTES DO VALOR DA PRESTAÇÃO DO SERVIÇO\nNOME\nVALOR\nNOME\nVALOR\nNOME\nVALOR\nFrete\n4014.08\nVALOR TOTAL DO SERVIÇO\nR$ 4.014,08\nVALOR TOTAL A RECEBER\nR$ 4.014,08\nINFORMAÇÕES RELATIVAS AO IMPOSTO\nSITUAÇÃO TRIBUTÁRIA\n00 - TRIBUTAÇÃO NORMAL\nICMS\nBASE DE CALCULO\n4.014,08\nALÍQ ICMS\n7,00\nVALOR ICMS\n280,99\n% RED. BC ICMS\n0,00\nICMS ST\n280,99\nDOCUMENTOS ORIGINÁRIOS\nTIPO DOC\nCNPJ/CHAVE\nSÉRIE/NRO. DOCUMENTO\nTIPO DOC\nCNPJ/CHAVE\nSÉRIE/NRO. DOCUMENTO\nNFE\n41190806117473000150550010000586251016759484\n001/000058625\nOBSERVAÇÕES\n Documento emitido por: Marc Demo\nDADOS ESPECÍFICOS DO MODAL DUTOVIÁRIO\nVALOR UNITÁRIO\nVALOR DO FRETE\nOUTROS\nBASE DE CÁLCULO\n4.014,08\nALÍQUOTA\n7,00\nVALOR DO IMPOSTO\nVALOR TOTAL DO FRETE\nR$ 4.014,08\nOBSERVAÇÕES\nSÉRIE\n1\nNÚMERO\n962750\nEMITENTE\nComércio de Costela EIRELI\nUSO EXCLUSIVO DO EMISSOR DO CT-E\nSEM VALOR FISCAL\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "DECLARO QUE RECEBI OS VOLUMES DESTE CONHECIMENTO EM PERFEITO ESTADO PELO QUE DOU POR CUMPRIDO O PRESENTE CONTRATO DE TRANSPORTE\nNOME\nRG\nASSINATURA / CARIMBO\nCHEGADA DATA/HORA\nSAÍDA DATA/HORA\nCT-E\nNRO. DOCUMENTO\nSÉRIE\n962750\n1\nComércio de Costela EIRELI\nCNPJ: A6.T2K.DVT/0001-31 IE: 201719311331\nVila de Cavalcante, 594\nVila Nova\nCafelândia - SP\n15955-270\nFone: (71) 5208-4658\nDACTE\nDOCUMENTO AUXILIAR DO CONHECIMENTO\nDE TRANSPORTE ELETRÔNICO\nMODAL\nDUTOVIÁRIO\nMODELO\n57\nSÉRIE\n1\nNÚMERO\n962750\nDATA E HORA\nDE EMISSÃO\n24/06/2024 12:08:03\nFL\n1/1\nCHAVE DE ACESSO\n002406A6T2KDVT000131570010009627501298344404\nCONSULTA EM http://www.cte.fazenda.gov.br\nPROTOCOLO DE AUTORIZAÇÃO DE USO\n  \nTIPO DO CT-E\nNORMAL\nTIPO DO SERVIÇO\nNORMAL\nTOMADOR DO SERVIÇO\nDESTINATÁRIO\nCFOP - NATUREZA DA PRESTAÇÃO\n5352 - Transferência\nINÍCIO DA PRESTAÇÃO\nCafelândia - SP\nTÉRMINO DA PRESTAÇÃO\nPatu - RN\nREMETENTE Comércio de Marques LTDA\nENDEREÇO \nÁrea de Nunes, Lajedo, 598\nMUNICÍPIO \nMansidão - BA\nCNPJ/CPF \n17.777.739/0416-47\nPAÍS \nBrasil\nCEP 24750-767\nIE \n366017993444\nFONE (48) 5285-1007\nDESTINATÁRIO \nComercial Siqueira ME\nENDEREÇO \nVila Maitê da Conceição, Solimoes, 1424\nMUNICÍPIO \nPatu - RN\nCNPJ/CPF \n98.471.359/9363-28\nPAÍS \nBrasil\nCEP 76422-778\nIE \n344719061650\nFONE (31) 5846-4164\nRECEBEDOR\nTransportes Viana LTDA\nENDEREÇO\nJardim da Costa Indaiá 1826\nMUNICÍPIO\nArara - PB\nCNPJ/CPF\n72.270.007/1954-77\nPAÍS\nBrasil\nCEP\n43207-066\nIE\n843171557261\nFONE (85) 99550-4683\nEXPEDIDOR\nIndústria e Comércio de Cirino ME\nENDEREÇO\nVia Brito Vila Nova Gameleira 1ª Seção 79\nMUNICÍPIO\nLuís Antônio - SP\nCNPJ/CPF\nW4.VOB.9R1/0001-23\nPAÍS\nBrasil\nCEP\n12115-562\nIE\n707626784708\nFONE\n(31) 2141-7198\nPRODUTO PREDOMINATE\nAutopeças\nVALOR TOTAL DA CARGA R$ 39.416,61\nTOMADOR DO SERVIÇO Comercial Siqueira ME\nENDEREÇO Vila Maitê da Conceição  1424  Solimoes\nCNPJ/CPF 98.471.359/9363-28\nIE 344719061650\nPAÍS Brasil\nFONE (31) 5846-4164\nMUNICÍPIO Patu\nUF RN CEP 76422-778\nTIPO MEDIDA\nQTD/UN.\nTIPO MEDIDA\nQTD/UN.\nTIPO MEDIDA\nQTD/UN.\nCUBAGEM (M³)\nQTD DE VOLUMES\nVolume\n1000.0000 M3\nPeso Bruto\n500.0000 KG\nUnidade\n2.0000 UN\n2.0000 UN\nCOMPONENTES DO VALOR DA PRESTAÇÃO DO SERVIÇO\nNOME\nVALOR\nNOME\nVALOR\nNOME\nVALOR\nFrete\n4014.08\nVALOR TOTAL DO SERVIÇO\nR$ 4.014,08\nVALOR TOTAL A RECEBER\nR$ 4.014,08\nINFORMAÇÕES RELATIVAS AO IMPOSTO\nSITUAÇÃO TRIBUTÁRIA\n00 - TRIBUTAÇÃO NORMAL\nICMS\nBASE DE CALCULO\n4.014,08\nALÍQ ICMS\n7,00\nVALOR ICMS\n280,99\n% RED. BC ICMS\n0,00\nICMS ST\n280,99\nDOCUMENTOS ORIGINÁRIOS\nTIPO DOC\nCNPJ/CHAVE\nSÉRIE/NRO. DOCUMENTO\nTIPO DOC\nCNPJ/CHAVE\nSÉRIE/NRO. DOCUMENTO\nNFE\n41190806117473000150550010000586251016759484\n001/000058625\nOBSERVAÇÕES\n Documento emitido por: Marc Demo\nDADOS ESPECÍFICOS DO MODAL DUTOVIÁRIO\nVALOR UNITÁRIO\nVALOR DO FRETE\nOUTROS\nBASE DE CÁLCULO\n4.014,08\nALÍQUOTA\n7,00\nVALOR DO IMPOSTO\nVALOR TOTAL DO FRETE\nR$ 4.014,08\nOBSERVAÇÕES\nSÉRIE\n1\nNÚMERO\n962750\nEMITENTE\nComércio de Costela EIRELI\nUSO EXCLUSIVO DO EMISSOR DO CT-E\nSEM VALOR FISCAL\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 53,
+    "fields_matched_to_bbox": 49,
+    "match_rate": 0.925
+  },
+  "kie": {
+    "issuer": {
+      "cnpj": {
+        "value": "A6T2KDVT000131",
+        "raw_value": "A6T2KDVT000131",
+        "bbox_ref": "e00012"
+      },
+      "tax_id_type": "cnpj_alnum",
+      "name": {
+        "value": "Comércio de Costela EIRELI",
+        "raw_value": "Comércio de Costela EIRELI",
+        "bbox_ref": "e00011"
+      },
+      "address": {
+        "street": {
+          "value": "Vila de Cavalcante",
+          "raw_value": "Vila de Cavalcante",
+          "bbox_ref": "e00013"
+        },
+        "municipality": {
+          "value": "Cafelândia",
+          "raw_value": "Cafelândia",
+          "bbox_ref": "e00015"
+        },
+        "uf": {
+          "value": "SP",
+          "raw_value": "SP",
+          "bbox_ref": "e00015"
+        },
+        "cep": {
+          "value": "15955270",
+          "raw_value": "15955270",
+          "bbox_ref": "e00016"
+        }
+      }
+    },
+    "sender": {
+      "cnpj": {
+        "value": "17777739041647",
+        "raw_value": "17777739041647",
+        "bbox_ref": "e00057"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Comércio de Marques LTDA",
+        "raw_value": "Comércio de Marques LTDA",
+        "bbox_ref": "e00051"
+      },
+      "address": {
+        "street": {
+          "value": "Área de Nunes",
+          "raw_value": "Área de Nunes",
+          "bbox_ref": "e00053"
+        },
+        "municipality": {
+          "value": "Mansidão",
+          "raw_value": "Mansidão",
+          "bbox_ref": "e00055"
+        },
+        "uf": {
+          "value": "BA",
+          "raw_value": "BA",
+          "bbox_ref": "e00142"
+        },
+        "cep": {
+          "value": "24750767",
+          "raw_value": "24750767",
+          "bbox_ref": "e00061"
+        }
+      }
+    },
+    "shipper": {
+      "cnpj": {
+        "value": "W4VOB9R1000123",
+        "raw_value": "W4VOB9R1000123",
+        "bbox_ref": "e00105"
+      },
+      "tax_id_type": "cnpj_alnum",
+      "name": {
+        "value": "Indústria e Comércio de Cirino ME",
+        "raw_value": "Indústria e Comércio de Cirino ME",
+        "bbox_ref": "e00099"
+      },
+      "address": {
+        "street": {
+          "value": "Via Brito",
+          "raw_value": "Via Brito",
+          "bbox_ref": "e00101"
+        },
+        "municipality": {
+          "value": "Luís Antônio",
+          "raw_value": "Luís Antônio",
+          "bbox_ref": "e00103"
+        },
+        "uf": {
+          "value": "SP",
+          "raw_value": "SP",
+          "bbox_ref": "e00015"
+        },
+        "cep": {
+          "value": "12115562",
+          "raw_value": "12115562",
+          "bbox_ref": "e00109"
+        }
+      }
+    },
+    "receiver": {
+      "cnpj": {
+        "value": "72270007195477",
+        "raw_value": "72270007195477",
+        "bbox_ref": "e00089"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Transportes Viana LTDA",
+        "raw_value": "Transportes Viana LTDA",
+        "bbox_ref": "e00083"
+      },
+      "address": {
+        "street": {
+          "value": "Jardim da Costa",
+          "raw_value": "Jardim da Costa",
+          "bbox_ref": "e00085"
+        },
+        "municipality": {
+          "value": "Arara",
+          "raw_value": "Arara",
+          "bbox_ref": "e00087"
+        },
+        "uf": {
+          "value": "PB",
+          "raw_value": "PB",
+          "bbox_ref": "e00087"
+        },
+        "cep": {
+          "value": "43207066",
+          "raw_value": "43207066",
+          "bbox_ref": "e00093"
+        }
+      }
+    },
+    "recipient": {
+      "cnpj": {
+        "value": "98471359936328",
+        "raw_value": "98471359936328",
+        "bbox_ref": "e00073"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Comercial Siqueira ME",
+        "raw_value": "Comercial Siqueira ME",
+        "bbox_ref": "e00067"
+      },
+      "address": {
+        "street": {
+          "value": "Vila Maitê da Conceição",
+          "raw_value": "Vila Maitê da Conceição",
+          "bbox_ref": "e00069"
+        },
+        "municipality": {
+          "value": "Patu",
+          "raw_value": "Patu",
+          "bbox_ref": "e00131"
+        },
+        "uf": {
+          "value": "RN",
+          "raw_value": "RN",
+          "bbox_ref": "e00133"
+        },
+        "cep": {
+          "value": "76422778",
+          "raw_value": "76422778",
+          "bbox_ref": "e00077"
+        }
+      }
+    },
+    "document": {
+      "number": {
+        "value": "962750",
+        "raw_value": "962750",
+        "bbox_ref": "e00009"
+      },
+      "series": {
+        "value": "1",
+        "raw_value": "1",
+        "bbox_ref": "e00010"
+      },
+      "issue_date": {
+        "value": "2024-06-24T12:08:03-03:00",
+        "raw_value": "2024-06-24T12:08:03-03:00",
+        "bbox_ref": "e00031"
+      },
+      "access_key": {
+        "value": "002406A6T2KDVT000131570010009627501298344404",
+        "raw_value": "002406A6T2KDVT000131570010009627501298344404",
+        "bbox_ref": "e00035"
+      },
+      "environment": {
+        "value": "homologacao",
+        "raw_value": "homologacao",
+        "bbox_ref": null
+      },
+      "nature_of_operation": {
+        "value": "Transferência",
+        "raw_value": "Transferência",
+        "bbox_ref": "e00045"
+      }
+    },
+    "totals": {
+      "freight_value": {
+        "value": "4014.08",
+        "raw_value": 4014.08,
+        "bbox_ref": "e00159"
+      },
+      "icms_value": {
+        "value": "280.99",
+        "raw_value": 280.99,
+        "bbox_ref": "e00173"
+      }
+    },
+    "cargo": {
+      "value": {
+        "value": "39416.61",
+        "raw_value": 39416.61,
+        "bbox_ref": "e00117"
+      },
+      "description": {
+        "value": "Autopeças",
+        "raw_value": "Autopeças",
+        "bbox_ref": "e00115"
+      }
+    }
+  },
+  "dpi": 150
+}

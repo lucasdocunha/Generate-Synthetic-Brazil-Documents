@@ -1,0 +1,105 @@
+{
+  "seed": 8581053033252506032,
+  "doctype": "danfe",
+  "split": "train",
+  "index": 7,
+  "dpi": 300,
+  "image_source": "lib_pdf",
+  "n_pages": 1,
+  "field_errors": [],
+  "label_schema_ok": true,
+  "augmentation": {
+    "seed": 8581053033252506032,
+    "angle_deg": -2.41,
+    "scan_mode": "color_scan",
+    "special_objects_added": [
+      "pos_receipt"
+    ],
+    "boxes_valid": true
+  },
+  "template_id": "tpl_002",
+  "profile": {
+    "regime": "simples",
+    "dest_pj": false,
+    "transporta": false,
+    "veiculo": false,
+    "cobr": false,
+    "retirada": false,
+    "entrega": true,
+    "frete_seguro_outros": true,
+    "desconto": true,
+    "ipi_tributado": false,
+    "special_items": false,
+    "issqn": false,
+    "ibs_cbs": false,
+    "inf_ad_prod_rate": 0.3,
+    "inf_cpl": false,
+    "nfe_proc": true,
+    "n_items": 1,
+    "landscape": true,
+    "receipt_bottom": false,
+    "font_courier": false,
+    "font_helvetica": false,
+    "font_big": false,
+    "display_pis_cofins": true,
+    "duplicates_only": false,
+    "decimals": 4,
+    "has_logo": false,
+    "erp_style": "classic_landscape",
+    "vertical_block_labels": true
+  },
+  "render": {
+    "receipt_pos": "top",
+    "font_type": "Times",
+    "font_size": "SMALL",
+    "display_pis_cofins": true,
+    "invoice_display": "full",
+    "decimals": 4,
+    "landscape": true,
+    "erp_style": "classic_landscape",
+    "has_logo": false,
+    "logo_seed": 8581053033252506032,
+    "product_table_style": "full_vertical_grid",
+    "product_columns_preset": "standard",
+    "vertical_block_labels": true,
+    "sub_emit_credit": "",
+    "mid_page_credit": "",
+    "footer_left_text": "",
+    "footer_right_text": ""
+  },
+  "doc_formats": {
+    "emit": "cnpj_numeric",
+    "dest": "cpf",
+    "entrega": "cnpj_numeric"
+  },
+  "html": {
+    "n_pages_html": 1,
+    "text_fidelity": 0.969,
+    "style": {
+      "font_type": "times",
+      "big": false,
+      "receipt_pos": "left",
+      "landscape": true,
+      "product_table_style": "full_vertical_grid",
+      "product_columns_preset": "standard",
+      "has_logo": false,
+      "logo_style": "fuel_shield",
+      "display_pis_cofins": true,
+      "invoice_display": "full",
+      "decimals": 4,
+      "sub_emit_credit": "",
+      "mid_page_credit": "",
+      "footer_left_text": "",
+      "footer_right_text": "",
+      "erp_style": "classic_landscape",
+      "margin_mm": 5.0,
+      "md_style": "table"
+    },
+    "occlusion": {
+      "artifacts": [
+        "pos_receipt"
+      ],
+      "occluded_nodes": 11
+    }
+  }
+}

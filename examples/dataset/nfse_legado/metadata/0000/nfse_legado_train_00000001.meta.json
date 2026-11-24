@@ -1,0 +1,33 @@
+{
+  "seed": 6924886768563786940,
+  "doctype": "nfse_legado",
+  "split": "train",
+  "index": 1,
+  "dpi": 150,
+  "image_source": "lib_pdf",
+  "n_pages": 1,
+  "field_errors": [],
+  "label_schema_ok": true,
+  "augmentation": {
+    "seed": 6924886768563786940,
+    "angle_deg": 0.0,
+    "scan_mode": "color_scan",
+    "special_objects_added": [
+      "stamp"
+    ],
+    "boxes_valid": true
+  },
+  "html": {
+    "n_pages_html": 1,
+    "text_fidelity": 1.0,
+    "style": {
+      "derived_from": "pdf_geometry"
+    },
+    "occlusion": {
+      "artifacts": [
+        "stamp"
+      ],
+      "occluded_nodes": 0
+    }
+  }
+}

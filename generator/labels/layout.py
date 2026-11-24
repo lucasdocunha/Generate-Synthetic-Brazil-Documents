@@ -1,5 +1,5 @@
 """Extração de bounding boxes/labels a partir do PDF já renderizado, via
-PyMuPDF — sem tocar em `brazilfiscalreport/` (PLANO_GERADOR.md, "Questões em
+PyMuPDF — sem tocar em `renderers/` (PLANO_GERADOR.md, "Questões em
 aberto" #1, revisitada: em vez de instrumentar `xFPDF`, extraímos geometria
 de texto/imagem/vetor de fora, do PDF finalizado, e casamos com os valores
 fake já conhecidos de `field_values`).
@@ -354,6 +354,35 @@ def flatten_portal_nfe_fields(field_values: dict) -> dict:
             flat["protocolo_autorizacao"] = field_values["protocolo"]["nProt"]
         return flat
     return flatten_danfe_fields(field_values)
+
+
+def flatten_nfse_legado_fields(field_values: dict) -> dict:
+    """Textos exatamente como `renderers/nfse_legado.py` imprime (mesma formatação)."""
+    from renderers.nfse_legado import format_cep_nfse
+    from renderers.utils import format_cpf_cnpj, format_number
+
+    e = field_values["endereco_tomador"]
+    return {
+        "prestador_cnpj": format_cpf_cnpj(field_values["cnpj_prestador"]),
+        "prestador_razao_social": field_values["razao_social_prestador"],
+        "prestador_inscricao_municipal": field_values["inscricao_municipal"],
+        "municipio": field_values["municipality_name"],
+        "ident_numero": field_values["numero_rps"],
+        "ident_lote": str(field_values["numero_lote"]),
+        "data_emissao": _iso_to_br_date(field_values["dEmissao"]),
+        "tomador_documento": format_cpf_cnpj(field_values["cpf_cnpj_tomador"]),
+        "tomador_razao_social": field_values["razao_social_tomador"],
+        "tomador_endereco_logradouro": e["street"],
+        "tomador_endereco_numero": e["number"],
+        "tomador_endereco_bairro": e["neighborhood"],
+        "tomador_endereco_cep": format_cep_nfse(e["cep"]),
+        "tomador_endereco_uf": e["uf"],
+        "servico_codigo": field_values["item_lista_servico"],
+        "servico_descricao": field_values["discriminacao"],
+        "valor_servicos": format_number(field_values["v_serv"], 2),
+        "aliquota": format_number(field_values["aliquota"], 2),
+        "valor_iss": format_number(field_values["v_iss"], 2),
+    }
 
 
 def match_fields(spans, flat_field_values):

@@ -20,3 +20,7 @@ class RunConfig:
     # Fração de CNPJs alfanuméricos (IN RFB 2.229/2024) nos geradores que
     # suportam o parâmetro (hoje: danfe). 0.0 = só numéricos.
     cnpj_alnum_ratio: float = 0.3
+    # HTML/Markdown por amostra (--html). Só para tipos com spec em `htmlgen/`.
+    html: bool = False
+    # Origem da imagem: "lib_pdf" (PDF real de renderers/) ou "html" (Chromium)
+    image_source: str = "lib_pdf"

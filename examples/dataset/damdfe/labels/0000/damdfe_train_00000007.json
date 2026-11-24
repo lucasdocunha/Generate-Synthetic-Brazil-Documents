@@ -1,0 +1,1237 @@
+{
+  "doc_id": "damdfe_train_00000007",
+  "doc_type": "DAMDFE",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/damdfe_train_00000007.xml",
+    "pdf_path": "pdfs/0000/damdfe_train_00000007.pdf",
+    "fixture_template": "tpl_001",
+    "generation_seed": 8878250948593670288,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/damdfe_train_00000007.html",
+    "md_path": "md/0000/damdfe_train_00000007.md",
+    "html_visible_path": "html_visible/0000/damdfe_train_00000007.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 32.664,
+        "y": 53.895,
+        "w": 144.76,
+        "h": 189.259,
+        "unit": "mm"
+      },
+      "text": "SEM VALOR FISCAL"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [
+        "emit_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 9.641,
+        "w": 27.223,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "Atacado de Teixeira LTDA"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [
+        "emit_endereco_logradouro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 12.64,
+        "w": 25.304,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "Alameda de Andrade 691"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [
+        "emit_endereco_bairro",
+        "emit_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 15.642,
+        "w": 21.534,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "Vera Cruz 67241-022"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [
+        "emit_endereco_municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 18.64,
+        "w": 20.714,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "Pindaré-Mirim - MA"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [
+        "emit_cnpj",
+        "emit_IE"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 21.639,
+        "w": 44.932,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "CNPJ:70.096.620/2977-34 IE:237021621007"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [
+        "emit_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 24.641,
+        "w": 38.138,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "RNTRC: TELEFONE:(61) 5534-2059"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.019,
+        "y": 29.64,
+        "w": 81.963,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "DAMDFE - Documento Auxiliar do Manifesto de Documentos Fiscais Eletrônicos"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.999,
+        "y": 32.908,
+        "w": 9.053,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "MODELO"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 10.001,
+        "y": 35.906,
+        "w": 2.117,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "58"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 19.001,
+        "y": 32.908,
+        "w": 5.88,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "SÉRIE"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [
+        "ident_serie"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 21.001,
+        "y": 35.906,
+        "w": 1.058,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "1"
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 27.002,
+        "y": 32.908,
+        "w": 9.172,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "NÚMERO"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [
+        "ident_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.0,
+        "y": 35.906,
+        "w": 6.35,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "338543"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 39.0,
+        "y": 32.908,
+        "w": 2.47,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "FL"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 39.0,
+        "y": 35.906,
+        "w": 2.705,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "1/1"
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 45.0,
+        "y": 32.908,
+        "w": 14.226,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "DATA E HORA"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 43.998,
+        "y": 35.906,
+        "w": 17.7,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "08/07/2024 04:32:21"
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 64.999,
+        "y": 32.908,
+        "w": 11.819,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "UF CARREG"
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [
+        "emit_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 69.0,
+        "y": 35.906,
+        "w": 3.41,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "MA"
+    },
+    {
+      "element_id": "e00020",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 83.002,
+        "y": 32.908,
+        "w": 15.818,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "UF DESCARREG"
+    },
+    {
+      "element_id": "e00021",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 90.001,
+        "y": 35.906,
+        "w": 2.589,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "PR"
+    },
+    {
+      "element_id": "e00022",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 32.775,
+        "w": 23.185,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "CONTROLE DO FISCO"
+    },
+    {
+      "element_id": "e00023",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 130.75,
+        "y": 55.773,
+        "w": 56.308,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "Consulta em https://dfe-portal.svrs.rs.gov.br/MDFE/Consulta"
+    },
+    {
+      "element_id": "e00024",
+      "field_ids": [
+        "chave_acesso"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 130.75,
+        "y": 60.664,
+        "w": 54.328,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "00240770096620297734580010003385431503065053"
+    },
+    {
+      "element_id": "e00025",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 133.752,
+        "y": 64.924,
+        "w": 42.219,
+        "h": 2.932,
+        "unit": "mm"
+      },
+      "text": "PROTOCOLO DE AUTORIZAÇÃO DE USO"
+    },
+    {
+      "element_id": "e00026",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 39.907,
+        "w": 20.697,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "FORMA DE EMISSÃO"
+    },
+    {
+      "element_id": "e00027",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.002,
+        "y": 42.906,
+        "w": 9.172,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "NORMAL"
+    },
+    {
+      "element_id": "e00028",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 39.907,
+        "w": 33.39,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "PREVISÃO DE INICIO DA VIAGEM"
+    },
+    {
+      "element_id": "e00029",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 39.907,
+        "w": 16.112,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "INSC. SUFRAMA"
+    },
+    {
+      "element_id": "e00030",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 17.0,
+        "y": 46.906,
+        "w": 19.399,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TIPO DO EMITENTE"
+    },
+    {
+      "element_id": "e00031",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 49.905,
+        "w": 39.101,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TRANSPORTADOR DE CARGA PRÓPRIA"
+    },
+    {
+      "element_id": "e00032",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 51.999,
+        "y": 46.906,
+        "w": 19.753,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "TIPO DO AMBIENTE"
+    },
+    {
+      "element_id": "e00033",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 53.499,
+        "y": 49.905,
+        "w": 16.813,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "HOMOLOGAÇÃO"
+    },
+    {
+      "element_id": "e00034",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 46.906,
+        "w": 19.463,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "CARGA POSTERIOR"
+    },
+    {
+      "element_id": "e00035",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 32.801,
+        "y": 56.163,
+        "w": 40.4,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "MODAL RODOVIÁRIO DE CARGA"
+    },
+    {
+      "element_id": "e00036",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 36.128,
+        "y": 61.162,
+        "w": 33.747,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES PARA ANTT"
+    },
+    {
+      "element_id": "e00037",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 64.772,
+        "w": 10.571,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "QTD. CT-e"
+    },
+    {
+      "element_id": "e00038",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 64.772,
+        "w": 10.571,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "QTD. NF-e"
+    },
+    {
+      "element_id": "e00039",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 67.774,
+        "w": 1.147,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "1"
+    },
+    {
+      "element_id": "e00040",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 64.772,
+        "w": 13.694,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "PESO TOTAL"
+    },
+    {
+      "element_id": "e00041",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 67.774,
+        "w": 9.745,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "2958.3837"
+    },
+    {
+      "element_id": "e00042",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 64.772,
+        "w": 15.985,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "VALOR TOTAL"
+    },
+    {
+      "element_id": "e00043",
+      "field_ids": [
+        "v_carga"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 67.774,
+        "w": 12.421,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "R$ 14.979,35"
+    },
+    {
+      "element_id": "e00044",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 22.938,
+        "y": 72.161,
+        "w": 14.13,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "AERONAVE"
+    },
+    {
+      "element_id": "e00045",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 77.188,
+        "y": 72.161,
+        "w": 5.625,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "VOO"
+    },
+    {
+      "element_id": "e00046",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 75.664,
+        "w": 21.4,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "NACIONALIDADE"
+    },
+    {
+      "element_id": "e00047",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 79.639,
+        "w": 5.9,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "TEST"
+    },
+    {
+      "element_id": "e00048",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 75.664,
+        "w": 15.501,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "MATRÍCULA"
+    },
+    {
+      "element_id": "e00049",
+      "field_ids": [
+        "aeronave_matricula"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 30.999,
+        "y": 79.639,
+        "w": 9.055,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "PS-A554"
+    },
+    {
+      "element_id": "e00050",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 75.664,
+        "w": 11.248,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "NÚMERO"
+    },
+    {
+      "element_id": "e00051",
+      "field_ids": [
+        "aeronave_voo"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 79.639,
+        "w": 4.939,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "4141"
+    },
+    {
+      "element_id": "e00052",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 75.664,
+        "w": 6.996,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "DATA"
+    },
+    {
+      "element_id": "e00053",
+      "field_ids": [
+        "data_emissao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 81.001,
+        "y": 79.639,
+        "w": 11.251,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "08/07/2024"
+    },
+    {
+      "element_id": "e00054",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.838,
+        "y": 72.161,
+        "w": 16.325,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "AERÓDRONO"
+    },
+    {
+      "element_id": "e00055",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 75.862,
+        "w": 14.543,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "EMBARQUE"
+    },
+    {
+      "element_id": "e00056",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 79.142,
+        "w": 6.035,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "OACI"
+    },
+    {
+      "element_id": "e00057",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 155.998,
+        "y": 75.862,
+        "w": 11.115,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "DESTINO"
+    },
+    {
+      "element_id": "e00058",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 155.998,
+        "y": 79.142,
+        "w": 6.035,
+        "h": 3.294,
+        "unit": "mm"
+      },
+      "text": "OACI"
+    },
+    {
+      "element_id": "e00059",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 92.001,
+        "y": 94.164,
+        "w": 13.582,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "PERCURSO"
+    },
+    {
+      "element_id": "e00060",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 97.774,
+        "w": 2.804,
+        "h": 3.059,
+        "unit": "mm"
+      },
+      "text": "PB"
+    },
+    {
+      "element_id": "e00061",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 76.002,
+        "y": 102.162,
+        "w": 54.735,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES DA COMPOSIÇÃO DA CARGA"
+    },
+    {
+      "element_id": "e00062",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 107.039,
+        "w": 10.239,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00063",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 36.001,
+        "y": 107.039,
+        "w": 60.094,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES DOS DOCS. FISCAIS VINCULADOS AO MANIFESTO"
+    },
+    {
+      "element_id": "e00064",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 98.002,
+        "y": 107.039,
+        "w": 10.239,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00065",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 131.0,
+        "y": 107.039,
+        "w": 60.094,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES DOS DOCS. FISCAIS VINCULADOS AO MANIFESTO"
+    },
+    {
+      "element_id": "e00066",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 110.539,
+        "w": 13.312,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "Siqueira Campos"
+    },
+    {
+      "element_id": "e00067",
+      "field_ids": [
+        "chave_nfe_vinculada"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 36.001,
+        "y": 110.539,
+        "w": 42.686,
+        "h": 2.588,
+        "unit": "mm"
+      },
+      "text": "00240760965046088752550010006006671656569008"
+    },
+    {
+      "element_id": "e00068",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 78.5,
+        "y": 114.163,
+        "w": 44.114,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES SOBRE OS SEGUROS"
+    },
+    {
+      "element_id": "e00069",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 61.002,
+        "y": 154.161,
+        "w": 87.055,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES COMPLEMENTARES DE INTERESSE DO CONTRIBUINTE"
+    },
+    {
+      "element_id": "e00070",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 74.397,
+        "y": 199.161,
+        "w": 65.514,
+        "h": 3.42,
+        "unit": "mm"
+      },
+      "text": "INFORMAÇÕES ADICIONAIS DE INTERESSE DO FISCO"
+    },
+    {
+      "element_id": "e00071",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.001,
+        "y": 202.908,
+        "w": 31.511,
+        "h": 2.824,
+        "unit": "mm"
+      },
+      "text": "Documento emitido por: Marc Demo"
+    }
+  ],
+  "layout": {
+    "special_objects": [
+      {
+        "type": "qrcode",
+        "page": 1,
+        "bbox": {
+          "x": 141.002,
+          "y": 6.999,
+          "w": 25.001,
+          "h": 25.001,
+          "unit": "mm"
+        },
+        "field_id": null
+      },
+      {
+        "type": "pos_receipt",
+        "page": 1,
+        "bbox": {
+          "x": 136.87,
+          "y": 185.641,
+          "w": 55.103,
+          "h": 67.679,
+          "unit": "mm"
+        },
+        "field_id": null,
+        "text": [
+          "getnet",
+          "REDE GETNET - Via Cliente",
+          "ATACADO DE TEIXEIRA LTDA",
+          "ALAMEDA DE ANDRADE 691",
+          "PINDARÉ-MIRIM - MA",
+          "70.096.620/2977-34 CV:63339171",
+          "08/07/2024 10:43:01 AUT:252525",
+          "DOC:705067 TERM:0578028",
+          "ELO            ************8817",
+          "CVAD:576311",
+          "CREDITO A VISTA",
+          "VALOR:         14.979,35"
+        ]
+      },
+      {
+        "type": "signature",
+        "page": 1,
+        "bbox": {
+          "x": 154.137,
+          "y": 259.796,
+          "w": 37.963,
+          "h": 16.761,
+          "unit": "mm"
+        },
+        "field_id": null
+      }
+    ]
+  },
+  "ocr": {
+    "full_text": "SEM VALOR FISCAL\nAtacado de Teixeira LTDA\nAlameda de Andrade 691\nVera Cruz 67241-022\nPindaré-Mirim - MA\nCNPJ:70.096.620/2977-34 IE:237021621007\nRNTRC: TELEFONE:(61) 5534-2059\nDAMDFE - Documento Auxiliar do Manifesto de Documentos Fiscais Eletrônicos\nMODELO\n58\nSÉRIE\n1\nNÚMERO\n338543\nFL\n1/1\nDATA E HORA\n08/07/2024 04:32:21\nUF CARREG\nMA\nUF DESCARREG\nPR\nCONTROLE DO FISCO\nConsulta em https://dfe-portal.svrs.rs.gov.br/MDFE/Consulta\n00240770096620297734580010003385431503065053\nPROTOCOLO DE AUTORIZAÇÃO DE USO\n  \nFORMA DE EMISSÃO\nNORMAL\nPREVISÃO DE INICIO DA VIAGEM\n \nINSC. SUFRAMA\nTIPO DO EMITENTE\nTRANSPORTADOR DE CARGA PRÓPRIA\nTIPO DO AMBIENTE\nHOMOLOGAÇÃO\nCARGA POSTERIOR\nMODAL RODOVIÁRIO DE CARGA\nINFORMAÇÕES PARA ANTT\nQTD. CT-e\nQTD. NF-e\n1\nPESO TOTAL\n2958.3837\nVALOR TOTAL\nR$ 14.979,35\nAERONAVE\nVOO\nNACIONALIDADE\nTEST\nMATRÍCULA\nPS-A554\nNÚMERO\n4141\nDATA\n08/07/2024\nAERÓDRONO\nEMBARQUE\nOACI\nDESTINO\nOACI\nPERCURSO\nPB\nINFORMAÇÕES DA COMPOSIÇÃO DA CARGA\nMUNICÍPIO\nINFORMAÇÕES DOS DOCS. FISCAIS VINCULADOS AO MANIFESTO\nMUNICÍPIO\nINFORMAÇÕES DOS DOCS. FISCAIS VINCULADOS AO MANIFESTO\nSiqueira Campos\n00240760965046088752550010006006671656569008\nINFORMAÇÕES SOBRE OS SEGUROS\nINFORMAÇÕES COMPLEMENTARES DE INTERESSE DO CONTRIBUINTE\nINFORMAÇÕES ADICIONAIS DE INTERESSE DO FISCO\nDocumento emitido por: Marc Demo\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "SEM VALOR FISCAL\nAtacado de Teixeira LTDA\nAlameda de Andrade 691\nVera Cruz 67241-022\nPindaré-Mirim - MA\nCNPJ:70.096.620/2977-34 IE:237021621007\nRNTRC: TELEFONE:(61) 5534-2059\nDAMDFE - Documento Auxiliar do Manifesto de Documentos Fiscais Eletrônicos\nMODELO\n58\nSÉRIE\n1\nNÚMERO\n338543\nFL\n1/1\nDATA E HORA\n08/07/2024 04:32:21\nUF CARREG\nMA\nUF DESCARREG\nPR\nCONTROLE DO FISCO\nConsulta em https://dfe-portal.svrs.rs.gov.br/MDFE/Consulta\n00240770096620297734580010003385431503065053\nPROTOCOLO DE AUTORIZAÇÃO DE USO\n  \nFORMA DE EMISSÃO\nNORMAL\nPREVISÃO DE INICIO DA VIAGEM\n \nINSC. SUFRAMA\nTIPO DO EMITENTE\nTRANSPORTADOR DE CARGA PRÓPRIA\nTIPO DO AMBIENTE\nHOMOLOGAÇÃO\nCARGA POSTERIOR\nMODAL RODOVIÁRIO DE CARGA\nINFORMAÇÕES PARA ANTT\nQTD. CT-e\nQTD. NF-e\n1\nPESO TOTAL\n2958.3837\nVALOR TOTAL\nR$ 14.979,35\nAERONAVE\nVOO\nNACIONALIDADE\nTEST\nMATRÍCULA\nPS-A554\nNÚMERO\n4141\nDATA\n08/07/2024\nAERÓDRONO\nEMBARQUE\nOACI\nDESTINO\nOACI\nPERCURSO\nPB\nINFORMAÇÕES DA COMPOSIÇÃO DA CARGA\nMUNICÍPIO\nINFORMAÇÕES DOS DOCS. FISCAIS VINCULADOS AO MANIFESTO\nMUNICÍPIO\nINFORMAÇÕES DOS DOCS. FISCAIS VINCULADOS AO MANIFESTO\nSiqueira Campos\n00240760965046088752550010006006671656569008\nINFORMAÇÕES SOBRE OS SEGUROS\nINFORMAÇÕES COMPLEMENTARES DE INTERESSE DO CONTRIBUINTE\nINFORMAÇÕES ADICIONAIS DE INTERESSE DO FISCO\nDocumento emitido por: Marc Demo\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 19,
+    "fields_matched_to_bbox": 17,
+    "match_rate": 0.895
+  },
+  "kie": {
+    "issuer": {
+      "cnpj": {
+        "value": "70096620297734",
+        "raw_value": "70096620297734",
+        "bbox_ref": "e00005"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Atacado de Teixeira LTDA",
+        "raw_value": "Atacado de Teixeira LTDA",
+        "bbox_ref": "e00001"
+      },
+      "fantasy_name": {
+        "value": "Comercial Martins ME",
+        "raw_value": "Comercial Martins ME",
+        "bbox_ref": null
+      },
+      "address": {
+        "street": {
+          "value": "Alameda de Andrade",
+          "raw_value": "Alameda de Andrade",
+          "bbox_ref": "e00002"
+        },
+        "municipality": {
+          "value": "Pindaré-Mirim",
+          "raw_value": "Pindaré-Mirim",
+          "bbox_ref": "e00004"
+        },
+        "uf": {
+          "value": "MA",
+          "raw_value": "MA",
+          "bbox_ref": "e00019"
+        },
+        "cep": {
+          "value": "67241022",
+          "raw_value": "67241022",
+          "bbox_ref": "e00003"
+        }
+      }
+    },
+    "document": {
+      "number": {
+        "value": "338543",
+        "raw_value": "338543",
+        "bbox_ref": "e00013"
+      },
+      "series": {
+        "value": "1",
+        "raw_value": "1",
+        "bbox_ref": "e00011"
+      },
+      "issue_date": {
+        "value": "2024-07-08T04:32:21-03:00",
+        "raw_value": "2024-07-08T04:32:21-03:00",
+        "bbox_ref": "e00053"
+      },
+      "access_key": {
+        "value": "00240770096620297734580010003385431503065053",
+        "raw_value": "00240770096620297734580010003385431503065053",
+        "bbox_ref": "e00024"
+      },
+      "environment": {
+        "value": "homologacao",
+        "raw_value": "homologacao",
+        "bbox_ref": null
+      }
+    },
+    "transport": {
+      "modal": {
+        "value": "aereo",
+        "raw_value": "aereo",
+        "bbox_ref": null
+      },
+      "aircraft_registration": {
+        "value": "PS-A554",
+        "raw_value": "PS-A554",
+        "bbox_ref": "e00049"
+      },
+      "flight_number": {
+        "value": "4141",
+        "raw_value": "4141",
+        "bbox_ref": "e00051"
+      }
+    },
+    "cargo": {
+      "value": {
+        "value": "14979.35",
+        "raw_value": 14979.35,
+        "bbox_ref": "e00043"
+      }
+    },
+    "linked_documents": [
+      {
+        "access_key": {
+          "value": "00240760965046088752550010006006671656569008",
+          "raw_value": "00240760965046088752550010006006671656569008",
+          "bbox_ref": "e00067"
+        }
+      }
+    ]
+  },
+  "dpi": 200
+}

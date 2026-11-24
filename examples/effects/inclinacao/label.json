@@ -1,0 +1,41 @@
+{
+  "angle_deg": 3.0,
+  "antes": {
+    "text": "RECEBEMOS DE Serviços de Machado MEI OS PRODUTOS/SERVIÇOS CONSTANTES DA NOTA FISCAL INDICADA ABAIXO. EMISSÃO: 25/07/2023 VALOR",
+    "bbox": {
+      "x": 6.001,
+      "y": 5.398,
+      "w": 163.968,
+      "h": 3.177,
+      "unit": "mm"
+    }
+  },
+  "depois": {
+    "text": "RECEBEMOS DE Serviços de Machado MEI OS PRODUTOS/SERVIÇOS CONSTANTES DA NOTA FISCAL INDICADA ABAIXO. EMISSÃO: 25/07/2023 VALOR",
+    "bbox": {
+      "x": 0.0,
+      "y": 2.194,
+      "w": 162.557,
+      "h": 11.754,
+      "unit": "mm",
+      "obb_points": [
+        [
+          -1.353,
+          10.775
+        ],
+        [
+          162.391,
+          2.194
+        ],
+        [
+          162.557,
+          5.367
+        ],
+        [
+          -1.186,
+          13.948
+        ]
+      ]
+    }
+  }
+}

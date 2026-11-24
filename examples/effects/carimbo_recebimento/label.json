@@ -1,0 +1,46 @@
+{
+  "preset": "stamps_only",
+  "seed": 2026,
+  "augmentation": {
+    "seed": 2026,
+    "angle_deg": 0.0,
+    "scan_mode": "clean_digital",
+    "special_objects_added": [
+      "stamp",
+      "signature"
+    ],
+    "boxes_valid": true
+  },
+  "special_objects": [
+    {
+      "type": "stamp",
+      "subtype": "receipt_stamp",
+      "page": 1,
+      "bbox": {
+        "x": 136.847,
+        "y": 252.231,
+        "w": 50.77,
+        "h": 28.385,
+        "unit": "mm"
+      },
+      "field_id": null,
+      "text": [
+        "RECEBEMOS",
+        "25/07/23",
+        "SERVIÇOS DE MACHADO MEI"
+      ]
+    },
+    {
+      "type": "signature",
+      "page": 1,
+      "bbox": {
+        "x": 101.539,
+        "y": 11.077,
+        "w": 40.385,
+        "h": 16.846,
+        "unit": "mm"
+      },
+      "field_id": null
+    }
+  ]
+}

@@ -1,0 +1,2057 @@
+{
+  "doc_id": "nfse_legado_test_00000002",
+  "doc_type": "NFSE_LEGADO",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/nfse_legado_test_00000002.xml",
+    "pdf_path": "pdfs/0000/nfse_legado_test_00000002.pdf",
+    "fixture_template": "tpl_001",
+    "generation_seed": 5837587929770653049,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/nfse_legado_test_00000002.html",
+    "md_path": "md/0000/nfse_legado_test_00000002.md",
+    "html_visible_path": "html_visible/0000/nfse_legado_test_00000002.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.025,
+        "y": 12.436,
+        "w": 64.128,
+        "h": 6.247,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.025,
+            14.313
+          ],
+          [
+            73.024,
+            12.436
+          ],
+          [
+            73.152,
+            16.806
+          ],
+          [
+            9.153,
+            18.683
+          ]
+        ]
+      },
+      "text": "PREFEITURA MUNICIPAL DE MARAVILHA"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.209,
+        "y": 18.561,
+        "w": 68.921,
+        "h": 5.902,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.209,
+            20.579
+          ],
+          [
+            78.016,
+            18.561
+          ],
+          [
+            78.13,
+            22.446
+          ],
+          [
+            9.322,
+            24.464
+          ]
+        ]
+      },
+      "text": "NOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.384,
+        "y": 24.759,
+        "w": 62.006,
+        "h": 4.966,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.384,
+            26.575
+          ],
+          [
+            71.298,
+            24.759
+          ],
+          [
+            71.39,
+            27.909
+          ],
+          [
+            9.477,
+            29.724
+          ]
+        ]
+      },
+      "text": "Padrão municipal legado (Ginfes v03) - envio de lote de RPS"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.478,
+        "y": 27.775,
+        "w": 68.24,
+        "h": 5.148,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.478,
+            29.773
+          ],
+          [
+            77.626,
+            27.775
+          ],
+          [
+            77.718,
+            30.924
+          ],
+          [
+            9.571,
+            32.923
+          ]
+        ]
+      },
+      "text": "Recibo Provisório de Serviços convertido em NFS-e pela prefeitura"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 128.451,
+        "y": 9.865,
+        "w": 6.713,
+        "h": 2.865,
+        "unit": "mm",
+        "obb_points": [
+          [
+            128.451,
+            10.06
+          ],
+          [
+            135.087,
+            9.865
+          ],
+          [
+            135.165,
+            12.536
+          ],
+          [
+            128.53,
+            12.731
+          ]
+        ]
+      },
+      "text": "Nº RPS"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [
+        "ident_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 128.54,
+        "y": 12.801,
+        "w": 9.525,
+        "h": 4.16,
+        "unit": "mm",
+        "obb_points": [
+          [
+            128.54,
+            13.077
+          ],
+          [
+            137.951,
+            12.801
+          ],
+          [
+            138.065,
+            16.685
+          ],
+          [
+            128.654,
+            16.961
+          ]
+        ]
+      },
+      "text": "826115"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 163.435,
+        "y": 8.882,
+        "w": 5.251,
+        "h": 2.823,
+        "unit": "mm",
+        "obb_points": [
+          [
+            163.435,
+            9.034
+          ],
+          [
+            168.608,
+            8.882
+          ],
+          [
+            168.686,
+            11.553
+          ],
+          [
+            163.514,
+            11.705
+          ]
+        ]
+      },
+      "text": "LOTE"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [
+        "ident_lote"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 163.523,
+        "y": 11.761,
+        "w": 9.525,
+        "h": 4.152,
+        "unit": "mm",
+        "obb_points": [
+          [
+            163.523,
+            12.037
+          ],
+          [
+            172.934,
+            11.761
+          ],
+          [
+            173.048,
+            15.637
+          ],
+          [
+            163.637,
+            15.913
+          ]
+        ]
+      },
+      "text": "308664"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 128.891,
+        "y": 24.523,
+        "w": 18.182,
+        "h": 3.202,
+        "unit": "mm",
+        "obb_points": [
+          [
+            128.891,
+            25.054
+          ],
+          [
+            146.994,
+            24.523
+          ],
+          [
+            147.073,
+            27.193
+          ],
+          [
+            128.969,
+            27.724
+          ]
+        ]
+      },
+      "text": "DATA DE EMISSÃO"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [
+        "data_emissao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 128.979,
+        "y": 27.642,
+        "w": 14.23,
+        "h": 4.29,
+        "unit": "mm",
+        "obb_points": [
+          [
+            128.979,
+            28.056
+          ],
+          [
+            143.095,
+            27.642
+          ],
+          [
+            143.209,
+            31.519
+          ],
+          [
+            129.093,
+            31.933
+          ]
+        ]
+      },
+      "text": "12/12/2024"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.968,
+        "y": 45.451,
+        "w": 33.153,
+        "h": 4.368,
+        "unit": "mm",
+        "obb_points": [
+          [
+            8.968,
+            46.421
+          ],
+          [
+            42.022,
+            45.451
+          ],
+          [
+            42.121,
+            48.85
+          ],
+          [
+            9.068,
+            49.819
+          ]
+        ]
+      },
+      "text": "PRESTADOR DE SERVIÇOS"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.616,
+        "y": 51.127,
+        "w": 14.839,
+        "h": 3.104,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.616,
+            51.56
+          ],
+          [
+            24.377,
+            51.127
+          ],
+          [
+            24.455,
+            53.798
+          ],
+          [
+            9.694,
+            54.231
+          ]
+        ]
+      },
+      "text": "RAZÃO SOCIAL"
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [
+        "prestador_razao_social"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 9.704,
+        "y": 53.646,
+        "w": 31.472,
+        "h": 4.796,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.704,
+            54.565
+          ],
+          [
+            41.063,
+            53.646
+          ],
+          [
+            41.176,
+            57.522
+          ],
+          [
+            9.818,
+            58.442
+          ]
+        ]
+      },
+      "text": "Atacado de Castro LTDA"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.562,
+        "y": 47.467,
+        "w": 9.669,
+        "h": 2.952,
+        "unit": "mm",
+        "obb_points": [
+          [
+            139.562,
+            47.748
+          ],
+          [
+            149.153,
+            47.467
+          ],
+          [
+            149.231,
+            50.138
+          ],
+          [
+            139.64,
+            50.419
+          ]
+        ]
+      },
+      "text": "CPF/CNPJ"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [
+        "prestador_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 139.65,
+        "y": 49.959,
+        "w": 27.238,
+        "h": 4.672,
+        "unit": "mm",
+        "obb_points": [
+          [
+            139.65,
+            50.754
+          ],
+          [
+            166.775,
+            49.959
+          ],
+          [
+            166.888,
+            53.835
+          ],
+          [
+            139.764,
+            54.63
+          ]
+        ]
+      },
+      "text": "82.KAD.JCC/0001-30"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.938,
+        "y": 61.904,
+        "w": 22.274,
+        "h": 3.322,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.938,
+            62.555
+          ],
+          [
+            32.134,
+            61.904
+          ],
+          [
+            32.212,
+            64.575
+          ],
+          [
+            10.017,
+            65.226
+          ]
+        ]
+      },
+      "text": "INSCRIÇÃO MUNICIPAL"
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [
+        "prestador_inscricao_municipal"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 10.027,
+        "y": 65.193,
+        "w": 12.661,
+        "h": 4.244,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.027,
+            65.561
+          ],
+          [
+            22.574,
+            65.193
+          ],
+          [
+            22.688,
+            69.069
+          ],
+          [
+            10.14,
+            69.437
+          ]
+        ]
+      },
+      "text": "41558422"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 69.913,
+        "y": 60.496,
+        "w": 10.315,
+        "h": 2.971,
+        "unit": "mm",
+        "obb_points": [
+          [
+            69.913,
+            60.796
+          ],
+          [
+            80.149,
+            60.496
+          ],
+          [
+            80.228,
+            63.167
+          ],
+          [
+            69.991,
+            63.467
+          ]
+        ]
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [
+        "municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 70.001,
+        "y": 63.443,
+        "w": 12.34,
+        "h": 4.235,
+        "unit": "mm",
+        "obb_points": [
+          [
+            70.001,
+            63.802
+          ],
+          [
+            82.228,
+            63.443
+          ],
+          [
+            82.341,
+            67.319
+          ],
+          [
+            70.115,
+            67.678
+          ]
+        ]
+      },
+      "text": "Maravilha"
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.789,
+        "y": 73.52,
+        "w": 30.409,
+        "h": 4.287,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.789,
+            74.409
+          ],
+          [
+            40.098,
+            73.52
+          ],
+          [
+            40.198,
+            76.918
+          ],
+          [
+            9.889,
+            77.807
+          ]
+        ]
+      },
+      "text": "TOMADOR DE SERVIÇOS"
+    },
+    {
+      "element_id": "e00020",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 10.437,
+        "y": 78.897,
+        "w": 22.275,
+        "h": 3.322,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.437,
+            79.548
+          ],
+          [
+            32.633,
+            78.897
+          ],
+          [
+            32.712,
+            81.568
+          ],
+          [
+            10.515,
+            82.219
+          ]
+        ]
+      },
+      "text": "RAZÃO SOCIAL / NOME"
+    },
+    {
+      "element_id": "e00021",
+      "field_ids": [
+        "tomador_razao_social"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 10.525,
+        "y": 81.555,
+        "w": 34.141,
+        "h": 4.874,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.525,
+            82.553
+          ],
+          [
+            44.552,
+            81.555
+          ],
+          [
+            44.666,
+            85.432
+          ],
+          [
+            10.639,
+            86.43
+          ]
+        ]
+      },
+      "text": "Atacado de Azevedo LTDA"
+    },
+    {
+      "element_id": "e00022",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 140.383,
+        "y": 75.455,
+        "w": 9.669,
+        "h": 2.952,
+        "unit": "mm",
+        "obb_points": [
+          [
+            140.383,
+            75.736
+          ],
+          [
+            149.974,
+            75.455
+          ],
+          [
+            150.052,
+            78.126
+          ],
+          [
+            140.461,
+            78.407
+          ]
+        ]
+      },
+      "text": "CPF/CNPJ"
+    },
+    {
+      "element_id": "e00023",
+      "field_ids": [
+        "tomador_documento"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 140.471,
+        "y": 78.002,
+        "w": 25.365,
+        "h": 4.617,
+        "unit": "mm",
+        "obb_points": [
+          [
+            140.471,
+            78.742
+          ],
+          [
+            165.722,
+            78.002
+          ],
+          [
+            165.836,
+            81.878
+          ],
+          [
+            140.585,
+            82.618
+          ]
+        ]
+      },
+      "text": "93.084.753/5393-91"
+    },
+    {
+      "element_id": "e00024",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 10.759,
+        "y": 90.221,
+        "w": 11.07,
+        "h": 2.993,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.759,
+            90.543
+          ],
+          [
+            21.751,
+            90.221
+          ],
+          [
+            21.829,
+            92.891
+          ],
+          [
+            10.838,
+            93.214
+          ]
+        ]
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00025",
+      "field_ids": [
+        "tomador_endereco_logradouro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 10.848,
+        "y": 92.785,
+        "w": 26.141,
+        "h": 4.64,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.848,
+            93.549
+          ],
+          [
+            36.874,
+            92.785
+          ],
+          [
+            36.988,
+            96.662
+          ],
+          [
+            10.961,
+            97.425
+          ]
+        ]
+      },
+      "text": "Conjunto Breno Dias"
+    },
+    {
+      "element_id": "e00026",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 120.712,
+        "y": 87.065,
+        "w": 8.698,
+        "h": 2.924,
+        "unit": "mm",
+        "obb_points": [
+          [
+            120.712,
+            87.318
+          ],
+          [
+            129.331,
+            87.065
+          ],
+          [
+            129.41,
+            89.736
+          ],
+          [
+            120.79,
+            89.989
+          ]
+        ]
+      },
+      "text": "NÚMERO"
+    },
+    {
+      "element_id": "e00027",
+      "field_ids": [
+        "tomador_endereco_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 120.8,
+        "y": 90.14,
+        "w": 6.388,
+        "h": 4.06,
+        "unit": "mm",
+        "obb_points": [
+          [
+            120.8,
+            90.324
+          ],
+          [
+            127.075,
+            90.14
+          ],
+          [
+            127.188,
+            94.016
+          ],
+          [
+            120.914,
+            94.2
+          ]
+        ]
+      },
+      "text": "1202"
+    },
+    {
+      "element_id": "e00028",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 145.702,
+        "y": 86.361,
+        "w": 7.727,
+        "h": 2.895,
+        "unit": "mm",
+        "obb_points": [
+          [
+            145.702,
+            86.585
+          ],
+          [
+            153.351,
+            86.361
+          ],
+          [
+            153.429,
+            89.032
+          ],
+          [
+            145.781,
+            89.256
+          ]
+        ]
+      },
+      "text": "BAIRRO"
+    },
+    {
+      "element_id": "e00029",
+      "field_ids": [
+        "tomador_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 145.79,
+        "y": 89.209,
+        "w": 13.127,
+        "h": 4.258,
+        "unit": "mm",
+        "obb_points": [
+          [
+            145.79,
+            89.591
+          ],
+          [
+            158.804,
+            89.209
+          ],
+          [
+            158.918,
+            93.085
+          ],
+          [
+            145.904,
+            93.467
+          ]
+        ]
+      },
+      "text": "Vila Oeste"
+    },
+    {
+      "element_id": "e00030",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.082,
+        "y": 101.42,
+        "w": 4.066,
+        "h": 2.788,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.082,
+            101.537
+          ],
+          [
+            15.069,
+            101.42
+          ],
+          [
+            15.147,
+            104.091
+          ],
+          [
+            11.16,
+            104.208
+          ]
+        ]
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00031",
+      "field_ids": [
+        "tomador_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 11.17,
+        "y": 104.148,
+        "w": 13.601,
+        "h": 4.272,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.17,
+            104.544
+          ],
+          [
+            24.657,
+            104.148
+          ],
+          [
+            24.771,
+            108.025
+          ],
+          [
+            11.284,
+            108.42
+          ]
+        ]
+      },
+      "text": "91297-679"
+    },
+    {
+      "element_id": "e00032",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 51.066,
+        "y": 100.289,
+        "w": 2.663,
+        "h": 2.747,
+        "unit": "mm",
+        "obb_points": [
+          [
+            51.066,
+            100.365
+          ],
+          [
+            53.651,
+            100.289
+          ],
+          [
+            53.729,
+            102.96
+          ],
+          [
+            51.144,
+            103.035
+          ]
+        ]
+      },
+      "text": "UF"
+    },
+    {
+      "element_id": "e00033",
+      "field_ids": [
+        "tomador_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 51.154,
+        "y": 103.256,
+        "w": 4.032,
+        "h": 3.991,
+        "unit": "mm",
+        "obb_points": [
+          [
+            51.154,
+            103.371
+          ],
+          [
+            55.072,
+            103.256
+          ],
+          [
+            55.186,
+            107.133
+          ],
+          [
+            51.267,
+            107.248
+          ]
+        ]
+      },
+      "text": "SC"
+    },
+    {
+      "element_id": "e00034",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 71.056,
+        "y": 99.478,
+        "w": 10.315,
+        "h": 2.971,
+        "unit": "mm",
+        "obb_points": [
+          [
+            71.056,
+            99.778
+          ],
+          [
+            81.293,
+            99.478
+          ],
+          [
+            81.371,
+            102.149
+          ],
+          [
+            71.134,
+            102.449
+          ]
+        ]
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00035",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 71.144,
+        "y": 102.426,
+        "w": 12.34,
+        "h": 4.235,
+        "unit": "mm",
+        "obb_points": [
+          [
+            71.144,
+            102.785
+          ],
+          [
+            83.371,
+            102.426
+          ],
+          [
+            83.485,
+            106.303
+          ],
+          [
+            71.258,
+            106.661
+          ]
+        ]
+      },
+      "text": "Maravilha"
+    },
+    {
+      "element_id": "e00036",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 10.932,
+        "y": 112.326,
+        "w": 36.442,
+        "h": 4.464,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.932,
+            113.392
+          ],
+          [
+            47.275,
+            112.326
+          ],
+          [
+            47.374,
+            115.724
+          ],
+          [
+            11.032,
+            116.79
+          ]
+        ]
+      },
+      "text": "DISCRIMINAÇÃO DO SERVIÇO"
+    },
+    {
+      "element_id": "e00037",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.58,
+        "y": 117.75,
+        "w": 26.695,
+        "h": 3.452,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.58,
+            118.531
+          ],
+          [
+            38.197,
+            117.75
+          ],
+          [
+            38.275,
+            120.421
+          ],
+          [
+            11.659,
+            121.202
+          ]
+        ]
+      },
+      "text": "ITEM DA LISTA DE SERVIÇO"
+    },
+    {
+      "element_id": "e00038",
+      "field_ids": [
+        "servico_codigo"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 11.668,
+        "y": 121.33,
+        "w": 7.172,
+        "h": 4.083,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.668,
+            121.537
+          ],
+          [
+            18.726,
+            121.33
+          ],
+          [
+            18.84,
+            125.206
+          ],
+          [
+            11.782,
+            125.413
+          ]
+        ]
+      },
+      "text": "17.05"
+    },
+    {
+      "element_id": "e00039",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 61.562,
+        "y": 116.294,
+        "w": 26.369,
+        "h": 3.442,
+        "unit": "mm",
+        "obb_points": [
+          [
+            61.562,
+            117.065
+          ],
+          [
+            87.852,
+            116.294
+          ],
+          [
+            87.931,
+            118.965
+          ],
+          [
+            61.64,
+            119.736
+          ]
+        ]
+      },
+      "text": "MUNICÍPIO DA PRESTAÇÃO"
+    },
+    {
+      "element_id": "e00040",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 61.65,
+        "y": 119.712,
+        "w": 12.34,
+        "h": 4.235,
+        "unit": "mm",
+        "obb_points": [
+          [
+            61.65,
+            120.071
+          ],
+          [
+            73.877,
+            119.712
+          ],
+          [
+            73.99,
+            123.588
+          ],
+          [
+            61.764,
+            123.947
+          ]
+        ]
+      },
+      "text": "Maravilha"
+    },
+    {
+      "element_id": "e00041",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.909,
+        "y": 129.262,
+        "w": 15.916,
+        "h": 3.135,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.909,
+            129.726
+          ],
+          [
+            27.746,
+            129.262
+          ],
+          [
+            27.824,
+            131.932
+          ],
+          [
+            11.987,
+            132.397
+          ]
+        ]
+      },
+      "text": "DISCRIMINAÇÃO"
+    },
+    {
+      "element_id": "e00042",
+      "field_ids": [
+        "servico_descricao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.014,
+        "y": 132.127,
+        "w": 41.19,
+        "h": 5.081,
+        "unit": "mm",
+        "obb_points": [
+          [
+            12.014,
+            133.332
+          ],
+          [
+            53.091,
+            132.127
+          ],
+          [
+            53.204,
+            136.003
+          ],
+          [
+            12.128,
+            137.208
+          ]
+        ]
+      },
+      "text": "Assessoria e consultoria contabil"
+    },
+    {
+      "element_id": "e00043",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.105,
+        "y": 153.026,
+        "w": 12.032,
+        "h": 3.748,
+        "unit": "mm",
+        "obb_points": [
+          [
+            12.105,
+            153.376
+          ],
+          [
+            24.037,
+            153.026
+          ],
+          [
+            24.137,
+            156.424
+          ],
+          [
+            12.205,
+            156.774
+          ]
+        ]
+      },
+      "text": "VALORES"
+    },
+    {
+      "element_id": "e00044",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.753,
+        "y": 157.74,
+        "w": 26.48,
+        "h": 3.445,
+        "unit": "mm",
+        "obb_points": [
+          [
+            12.753,
+            158.515
+          ],
+          [
+            39.155,
+            157.74
+          ],
+          [
+            39.233,
+            160.411
+          ],
+          [
+            12.831,
+            161.186
+          ]
+        ]
+      },
+      "text": "VALOR DOS SERVIÇOS (R$)"
+    },
+    {
+      "element_id": "e00045",
+      "field_ids": [
+        "valor_servicos"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 12.841,
+        "y": 161.153,
+        "w": 12.661,
+        "h": 4.244,
+        "unit": "mm",
+        "obb_points": [
+          [
+            12.841,
+            161.521
+          ],
+          [
+            25.389,
+            161.153
+          ],
+          [
+            25.502,
+            165.03
+          ],
+          [
+            12.955,
+            165.398
+          ]
+        ]
+      },
+      "text": "20.084,59"
+    },
+    {
+      "element_id": "e00046",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 60.234,
+        "y": 156.449,
+        "w": 23.027,
+        "h": 3.344,
+        "unit": "mm",
+        "obb_points": [
+          [
+            60.234,
+            157.122
+          ],
+          [
+            83.183,
+            156.449
+          ],
+          [
+            83.261,
+            159.12
+          ],
+          [
+            60.312,
+            159.793
+          ]
+        ]
+      },
+      "text": "BASE DE CÁLCULO (R$)"
+    },
+    {
+      "element_id": "e00047",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 60.322,
+        "y": 159.761,
+        "w": 12.661,
+        "h": 4.244,
+        "unit": "mm",
+        "obb_points": [
+          [
+            60.322,
+            160.129
+          ],
+          [
+            72.869,
+            159.761
+          ],
+          [
+            72.983,
+            163.637
+          ],
+          [
+            60.435,
+            164.005
+          ]
+        ]
+      },
+      "text": "20.084,59"
+    },
+    {
+      "element_id": "e00048",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 107.711,
+        "y": 155.328,
+        "w": 13.761,
+        "h": 3.072,
+        "unit": "mm",
+        "obb_points": [
+          [
+            107.711,
+            155.73
+          ],
+          [
+            121.394,
+            155.328
+          ],
+          [
+            121.473,
+            157.999
+          ],
+          [
+            107.789,
+            158.401
+          ]
+        ]
+      },
+      "text": "ALÍQUOTA (%)"
+    },
+    {
+      "element_id": "e00049",
+      "field_ids": [
+        "aliquota"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 107.799,
+        "y": 158.575,
+        "w": 5.603,
+        "h": 4.037,
+        "unit": "mm",
+        "obb_points": [
+          [
+            107.799,
+            158.736
+          ],
+          [
+            113.289,
+            158.575
+          ],
+          [
+            113.403,
+            162.452
+          ],
+          [
+            107.913,
+            162.613
+          ]
+        ]
+      },
+      "text": "5,00"
+    },
+    {
+      "element_id": "e00050",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 155.193,
+        "y": 153.803,
+        "w": 18.29,
+        "h": 3.205,
+        "unit": "mm",
+        "obb_points": [
+          [
+            155.193,
+            154.337
+          ],
+          [
+            173.404,
+            153.803
+          ],
+          [
+            173.482,
+            156.474
+          ],
+          [
+            155.271,
+            157.008
+          ]
+        ]
+      },
+      "text": "VALOR DO ISS (R$)"
+    },
+    {
+      "element_id": "e00051",
+      "field_ids": [
+        "valor_iss"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 155.281,
+        "y": 157.036,
+        "w": 11.093,
+        "h": 4.206,
+        "unit": "mm",
+        "obb_points": [
+          [
+            155.281,
+            157.358
+          ],
+          [
+            166.261,
+            157.036
+          ],
+          [
+            166.375,
+            160.92
+          ],
+          [
+            155.395,
+            161.242
+          ]
+        ]
+      },
+      "text": "1.004,23"
+    },
+    {
+      "element_id": "e00052",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.075,
+        "y": 169.188,
+        "w": 11.071,
+        "h": 2.993,
+        "unit": "mm",
+        "obb_points": [
+          [
+            13.075,
+            169.51
+          ],
+          [
+            24.068,
+            169.188
+          ],
+          [
+            24.146,
+            171.858
+          ],
+          [
+            13.154,
+            172.181
+          ]
+        ]
+      },
+      "text": "ISS RETIDO"
+    },
+    {
+      "element_id": "e00053",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.164,
+        "y": 172.364,
+        "w": 5.287,
+        "h": 4.028,
+        "unit": "mm",
+        "obb_points": [
+          [
+            13.164,
+            172.516
+          ],
+          [
+            18.337,
+            172.364
+          ],
+          [
+            18.451,
+            176.24
+          ],
+          [
+            13.277,
+            176.392
+          ]
+        ]
+      },
+      "text": "Não"
+    },
+    {
+      "element_id": "e00054",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 108.034,
+        "y": 166.147,
+        "w": 19.797,
+        "h": 3.249,
+        "unit": "mm",
+        "obb_points": [
+          [
+            108.034,
+            166.725
+          ],
+          [
+            127.752,
+            166.147
+          ],
+          [
+            127.83,
+            168.817
+          ],
+          [
+            108.112,
+            169.396
+          ]
+        ]
+      },
+      "text": "VALOR LÍQUIDO (R$)"
+    },
+    {
+      "element_id": "e00055",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 108.122,
+        "y": 169.377,
+        "w": 12.662,
+        "h": 4.252,
+        "unit": "mm",
+        "obb_points": [
+          [
+            108.122,
+            169.745
+          ],
+          [
+            120.67,
+            169.377
+          ],
+          [
+            120.784,
+            173.261
+          ],
+          [
+            108.236,
+            173.629
+          ]
+        ]
+      },
+      "text": "20.084,59"
+    },
+    {
+      "element_id": "e00056",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.398,
+        "y": 179.48,
+        "w": 34.992,
+        "h": 3.695,
+        "unit": "mm",
+        "obb_points": [
+          [
+            13.398,
+            180.504
+          ],
+          [
+            48.312,
+            179.48
+          ],
+          [
+            48.39,
+            182.151
+          ],
+          [
+            13.476,
+            183.175
+          ]
+        ]
+      },
+      "text": "OPTANTE PELO SIMPLES NACIONAL"
+    },
+    {
+      "element_id": "e00057",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 13.486,
+        "y": 183.359,
+        "w": 5.287,
+        "h": 4.028,
+        "unit": "mm",
+        "obb_points": [
+          [
+            13.486,
+            183.511
+          ],
+          [
+            18.66,
+            183.359
+          ],
+          [
+            18.774,
+            187.236
+          ],
+          [
+            13.6,
+            187.387
+          ]
+        ]
+      },
+      "text": "Não"
+    },
+    {
+      "element_id": "e00058",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 67.632,
+        "y": 198.895,
+        "w": 77.886,
+        "h": 6.651,
+        "unit": "mm",
+        "obb_points": [
+          [
+            67.632,
+            201.175
+          ],
+          [
+            145.39,
+            198.895
+          ],
+          [
+            145.518,
+            203.265
+          ],
+          [
+            67.76,
+            205.545
+          ]
+        ]
+      },
+      "text": "DOCUMENTO SINTÉTICO - SEM VALIDADE FISCAL"
+    }
+  ],
+  "layout": {
+    "special_objects": []
+  },
+  "ocr": {
+    "full_text": "PREFEITURA MUNICIPAL DE MARAVILHA\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\nPadrão municipal legado (Ginfes v03) - envio de lote de RPS\nRecibo Provisório de Serviços convertido em NFS-e pela prefeitura\nNº RPS\n826115\nLOTE\n308664\nDATA DE EMISSÃO\n12/12/2024\nPRESTADOR DE SERVIÇOS\nRAZÃO SOCIAL\nAtacado de Castro LTDA\nCPF/CNPJ\n82.KAD.JCC/0001-30\nINSCRIÇÃO MUNICIPAL\n41558422\nMUNICÍPIO\nMaravilha\nTOMADOR DE SERVIÇOS\nRAZÃO SOCIAL / NOME\nAtacado de Azevedo LTDA\nCPF/CNPJ\n93.084.753/5393-91\nENDEREÇO\nConjunto Breno Dias\nNÚMERO\n1202\nBAIRRO\nVila Oeste\nCEP\n91297-679\nUF\nSC\nMUNICÍPIO\nMaravilha\nDISCRIMINAÇÃO DO SERVIÇO\nITEM DA LISTA DE SERVIÇO\n17.05\nMUNICÍPIO DA PRESTAÇÃO\nMaravilha\nDISCRIMINAÇÃO\nAssessoria e consultoria contabil\nVALORES\nVALOR DOS SERVIÇOS (R$)\n20.084,59\nBASE DE CÁLCULO (R$)\n20.084,59\nALÍQUOTA (%)\n5,00\nVALOR DO ISS (R$)\n1.004,23\nISS RETIDO\nNão\nVALOR LÍQUIDO (R$)\n20.084,59\nOPTANTE PELO SIMPLES NACIONAL\nNão\nDOCUMENTO SINTÉTICO - SEM VALIDADE FISCAL\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "PREFEITURA MUNICIPAL DE MARAVILHA\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\nPadrão municipal legado (Ginfes v03) - envio de lote de RPS\nRecibo Provisório de Serviços convertido em NFS-e pela prefeitura\nNº RPS\n826115\nLOTE\n308664\nDATA DE EMISSÃO\n12/12/2024\nPRESTADOR DE SERVIÇOS\nRAZÃO SOCIAL\nAtacado de Castro LTDA\nCPF/CNPJ\n82.KAD.JCC/0001-30\nINSCRIÇÃO MUNICIPAL\n41558422\nMUNICÍPIO\nMaravilha\nTOMADOR DE SERVIÇOS\nRAZÃO SOCIAL / NOME\nAtacado de Azevedo LTDA\nCPF/CNPJ\n93.084.753/5393-91\nENDEREÇO\nConjunto Breno Dias\nNÚMERO\n1202\nBAIRRO\nVila Oeste\nCEP\n91297-679\nUF\nSC\nMUNICÍPIO\nMaravilha\nDISCRIMINAÇÃO DO SERVIÇO\nITEM DA LISTA DE SERVIÇO\n17.05\nMUNICÍPIO DA PRESTAÇÃO\nMaravilha\nDISCRIMINAÇÃO\nAssessoria e consultoria contabil\nVALORES\nVALOR DOS SERVIÇOS (R$)\n20.084,59\nBASE DE CÁLCULO (R$)\n20.084,59\nALÍQUOTA (%)\n5,00\nVALOR DO ISS (R$)\n1.004,23\nISS RETIDO\nNão\nVALOR LÍQUIDO (R$)\n20.084,59\nOPTANTE PELO SIMPLES NACIONAL\nNão\nDOCUMENTO SINTÉTICO - SEM VALIDADE FISCAL\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 19,
+    "fields_matched_to_bbox": 19,
+    "match_rate": 1.0
+  },
+  "kie": {
+    "provider": {
+      "cnpj": {
+        "value": "82KADJCC000130",
+        "raw_value": "82KADJCC000130",
+        "bbox_ref": "e00014"
+      },
+      "tax_id_type": "cnpj_alnum",
+      "name": {
+        "value": "Atacado de Castro LTDA",
+        "raw_value": "Atacado de Castro LTDA",
+        "bbox_ref": "e00012"
+      },
+      "inscricao_municipal": {
+        "value": "41558422",
+        "raw_value": "41558422",
+        "bbox_ref": "e00016"
+      },
+      "municipality": {
+        "value": "Maravilha",
+        "raw_value": "Maravilha",
+        "bbox_ref": "e00018"
+      }
+    },
+    "taker": {
+      "document": {
+        "value": "93084753539391",
+        "raw_value": "93084753539391",
+        "bbox_ref": "e00023"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Atacado de Azevedo LTDA",
+        "raw_value": "Atacado de Azevedo LTDA",
+        "bbox_ref": "e00021"
+      }
+    },
+    "document": {
+      "rps_number": {
+        "value": "826115",
+        "raw_value": "826115",
+        "bbox_ref": "e00005"
+      },
+      "batch_number": {
+        "value": "308664",
+        "raw_value": "308664",
+        "bbox_ref": "e00007"
+      },
+      "issue_date": {
+        "value": "2024-12-12T15:40:57",
+        "raw_value": "2024-12-12T15:40:57",
+        "bbox_ref": "e00009"
+      },
+      "environment": {
+        "value": "homologacao",
+        "raw_value": "homologacao",
+        "bbox_ref": null
+      }
+    },
+    "service": {
+      "code": {
+        "value": "17.05",
+        "raw_value": "17.05",
+        "bbox_ref": "e00038"
+      },
+      "description": {
+        "value": "Assessoria e consultoria contabil",
+        "raw_value": "Assessoria e consultoria contabil",
+        "bbox_ref": "e00042"
+      },
+      "value": {
+        "value": "20084.59",
+        "raw_value": 20084.59,
+        "bbox_ref": "e00045"
+      },
+      "iss_rate": {
+        "value": "5.00",
+        "raw_value": 5.0,
+        "bbox_ref": "e00049"
+      },
+      "iss_value": {
+        "value": "1004.23",
+        "raw_value": 1004.23,
+        "bbox_ref": "e00051"
+      }
+    }
+  },
+  "dpi": 150
+}

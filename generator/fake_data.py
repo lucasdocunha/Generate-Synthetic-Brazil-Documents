@@ -17,7 +17,7 @@ from generator import code_tables
 
 _MUNICIPIOS_CSV = (
     Path(__file__).resolve().parent.parent
-    / "brazilfiscalreport"
+    / "renderers"
     / "danfse"
     / "municipios_ibge.csv"
 )
