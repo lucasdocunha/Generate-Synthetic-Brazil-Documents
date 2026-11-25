@@ -1,60 +1,25 @@
-### PREFEITURA MUNICIPAL DE PRESIDENTE CASTELLO BRANCO
-
-NOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e<br>Padrão municipal legado (Ginfes v03) - envio de lote de RPS<br>Recibo Provisório de Serviços convertido em NFS-e pela prefeitura
+PREFEITURA MUNICIPAL DE PRESIDENTE CASTELLO BRANCO Nº 2023/844111 NOTA FISCAL DE SERVIÇOS ELETRÔNICA 03/07/2023 Verificação 953D-E3D1-35B8
 
 | Campo | Valor |
 | --- | --- |
-| Nº RPS | 844111 |
-| DATA DE EMISSÃO | 03/07/2023 |
-| LOTE | 884521 |
-
-## PRESTADOR DE SERVIÇOS
-
-| Campo | Valor |
-| --- | --- |
+|  | PRESTADOR |
+|  | TOMADOR |
 | RAZÃO SOCIAL | Comércio de Oliveira ME |
-| CPF/CNPJ | 25.948.849/4130-37 |
-| INSCRIÇÃO MUNICIPAL | 95198032 |
-| MUNICÍPIO | Presidente Castello Branco |
-
-## TOMADOR DE SERVIÇOS
-
-| Campo | Valor |
-| --- | --- |
-| RAZÃO SOCIAL / NOME | Isabella Ribeiro |
+| NOME / RAZÃO SOCIAL | Isabella Ribeiro |
+| CNPJ | 25.948.849/4130-37 |
 | CPF/CNPJ | 446.204.494-00 |
-| ENDEREÇO | Morro Vieira |
-| NÚMERO | 1248 |
-| BAIRRO | Buritis |
-| CEP | 94823-736 |
-| UF | SC |
+| INSCRIÇÃO MUNICIPAL | 95198032 |
+| ENDEREÇO | Morro Vieira, 1248 - Buritis - CEP 94823-736 - SC |
 | MUNICÍPIO | Presidente Castello Branco |
+| MUNICÍPIO | Presidente Castello Branco |
+|  | DISCRIMINAÇÃO DOS SERVIÇOS - item 01.02 |
+|  | Desenvolvimento de software sob encomenda |
 
-## DISCRIMINAÇÃO DO SERVIÇO
-
-| Campo | Valor |
+| Valor dos serviços (R$) | 20.620,68 |
 | --- | --- |
-| ITEM DA LISTA DE SERVIÇO | 01.02 |
-| MUNICÍPIO DA PRESTAÇÃO | Presidente Castello Branco |
-| DISCRIMINAÇÃO | Desenvolvimento de software sob encomenda |
-|  | VALORES |
-| VALOR DOS SERVIÇOS (R$) | 20.620,68 |
-| BASE DE CÁLCULO (R$) | 20.620,68 |
-| ALÍQUOTA (%) | 3,00 |
-| VALOR DO ISS (R$) | 618,62 |
-| ISS RETIDO | Não |
-| VALOR LÍQUIDO (R$) | 20.620,68 |
-| OPTANTE PELO SIMPLES NACIONAL | Sim |
+| Alíquota 3,00% - Valor do ISS (R$) | 618,62 |
+| Optante pelo Simples Nacional | Sim |
 
-DOCUMENTO SINTÉTICO - SEM VALIDADE FISCAL
+![]()
 
-> **Carimbo (cnpj_stamp)**
-> [25.948.849/4130-37]
-> COMÉRCIO DE OLIVEIRA ME
-> AV. RIO BAHIA, 8600
-> CENTRO - CEP 36880-000
-> PRESIDENTE CASTELLO BRANCO - MG
-
-> **Carimbo (receipt_stamp)**
-> LANÇADO
-> DATA: 03/07/2023
+![]()

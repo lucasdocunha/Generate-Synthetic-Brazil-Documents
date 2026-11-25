@@ -1,0 +1,38 @@
+{
+  "seed": 6485913664401305385,
+  "doctype": "nfse_legado",
+  "split": "train",
+  "index": 0,
+  "dpi": 110,
+  "image_source": "lib_pdf",
+  "n_pages": 1,
+  "field_errors": [],
+  "label_schema_ok": true,
+  "augmentation": {
+    "seed": 6485913664401305385,
+    "angle_deg": 1.77,
+    "scan_mode": "color_scan",
+    "special_objects_added": [
+      "stamp",
+      "stamp"
+    ],
+    "boxes_valid": true
+  },
+  "render": {
+    "city_layout": "generico_tabela"
+  },
+  "html": {
+    "n_pages_html": 1,
+    "text_fidelity": 1.0,
+    "style": {
+      "derived_from": "pdf_geometry"
+    },
+    "occlusion": {
+      "artifacts": [
+        "stamp",
+        "stamp"
+      ],
+      "occluded_nodes": 0
+    }
+  }
+}

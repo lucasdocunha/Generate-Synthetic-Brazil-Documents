@@ -362,7 +362,7 @@ def flatten_nfse_legado_fields(field_values: dict) -> dict:
     from renderers.utils import format_cpf_cnpj, format_number
 
     e = field_values["endereco_tomador"]
-    return {
+    flat = {
         "prestador_cnpj": format_cpf_cnpj(field_values["cnpj_prestador"]),
         "prestador_razao_social": field_values["razao_social_prestador"],
         "prestador_inscricao_municipal": field_values["inscricao_municipal"],
@@ -383,6 +383,9 @@ def flatten_nfse_legado_fields(field_values: dict) -> dict:
         "aliquota": format_number(field_values["aliquota"], 2),
         "valor_iss": format_number(field_values["v_iss"], 2),
     }
+    if field_values.get("_render", {}).get("city_layout", "ginfes") != "ginfes":
+        flat.pop("ident_lote")  # o lote só é impresso no leiaute Ginfes
+    return flat
 
 
 def match_fields(spans, flat_field_values):

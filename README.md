@@ -2,7 +2,7 @@
 
 Gerador de **datasets sintéticos de documentos fiscais brasileiros** para pesquisa em OCR, Document AI e modelos de visão-linguagem (VLMs). Cada amostra traz o **XML fiscal**, o **PDF**, **imagens limpas e degradadas** (scanner, carimbos, comprovantes POS, assinaturas, inclinação), **anotações** (texto com bounding boxes, KIE, objetos de layout) e, para os tipos já suportados, o **HTML e o Markdown** que descrevem a página (par imagem → HTML/MD).
 
-> **Tudo é sintético.** Empresas, CNPJs/CPFs, chaves de acesso, QR Codes e códigos de barras não existem nem têm validade fiscal: ambiente de homologação (`tpAmb=2`), chaves com UF/DV inválidos, domínios `.invalid`, marca d'água "SEM VALOR FISCAL" onde o layout prevê. Não use os arquivos como documento fiscal.
+> **Tudo é sintético.** Empresas, CNPJs/CPFs, chaves de acesso, QR Codes e códigos de barras não existem nem têm validade fiscal: ambiente de homologação (`tpAmb=2`) nos XMLs, chaves com UF/DV inválidos e domínios `.invalid`. Os PDFs/imagens não trazem avisos de "sem valor fiscal". Não use os arquivos como documento fiscal.
 
 ## Origem e contexto
 
@@ -74,7 +74,7 @@ Opções úteis: `--cnpj-alnum-ratio 0.3` (fração de CNPJs alfanuméricos), `-
 | `dacce` | DACCe (carta de correção) | `procEventoNFe` | — | sim (do PDF) |
 | `nfse_legado` | NFS-e legada (Ginfes v03, lote de RPS) | `EnviarLoteRpsEnvio` | 5 serviços, tomador PF/PJ, ISS 2/3/5% | sim (do PDF) |
 
-**Duas formas de gerar o HTML.** *DANFE:* template Jinja a partir do XML, com as mesmas caixas, larguras em mm e presets de ERP do renderizador (`htmlgen/templates/`). *Demais tipos:* o HTML é **derivado da geometria do PDF real** (`htmlgen/pdf2html.py`): as células são as regiões fechadas pelas linhas desenhadas, o texto de cada célula vira campo (`dl/dt/dd`), faixa de título (`h2`), tabela ou parágrafo, e imagens/marca d'água viram `<img alt>`/`<aside>`. O texto bate com a imagem por construção (`text_fidelity` ≈ 1,0); os pares rótulo/valor são heurísticos e, quando o papel de um texto é ambíguo, ele fica como `dd` sem `dt`. O mesmo DOM carrega o estilo absoluto (mm) de cada texto, então renderizado no Chromium reproduz o PDF (`--image-source html`).
+**O HTML-alvo é só estrutura:** `section`/`header`/`h*`, `dl` com `dt`+`dd`, `table` e `p`, sem atributos, `div`, `br` nem `<head>`; logo, QR, código de barras e objetos sobrepostos viram `<img>` vazio. **Duas formas de gerar o HTML.** *DANFE:* template Jinja a partir do XML, com as mesmas caixas, larguras em mm e presets de ERP do renderizador (`htmlgen/templates/`). *Demais tipos:* o HTML é **derivado da geometria do PDF real** (`htmlgen/pdf2html.py`): as células são as regiões fechadas pelas linhas desenhadas, o texto de cada célula vira campo (`dl/dt/dd`), faixa de título (`h2`), tabela ou parágrafo, e imagens/marca d'água viram `<img>` vazio. O texto bate com a imagem por construção (`text_fidelity` ≈ 1,0); os pares rótulo/valor são heurísticos e, quando o papel de um texto é ambíguo, ele fica como `dd` sem `dt`. O mesmo DOM carrega o estilo absoluto (mm) de cada texto, então renderizado no Chromium reproduz o PDF (`--image-source html`).
 
 Novos tipos entram pelo `pipeline/registry.py`: um adaptador em `generator/`, funções de label em `generator/labels/`, um contexto de augmentation em `augmentation/context.py` e (opcional) uma spec de HTML em `htmlgen/`.
 
@@ -116,11 +116,13 @@ Por amostra (`<out>/<doctype>/…`, particionado em subpastas de 10.000):
 - `layout.special_objects[]`: `barcode`, `qrcode`, `logo`, `stamp` (`receipt_stamp`, `cnpj_stamp`), `signature`, `pos_receipt`; stamp/POS trazem `text` com a **transcrição** do objeto.
 - `extraction_stats`: campos conhecidos × casados com uma caixa (`match_rate`); `source`: caminhos e seed.
 
-**Degradações no alvo HTML (`html_visible`).** Carimbos, assinaturas e comprovantes POS são sobrepostos depois do render, então só aparecem no `html_visible`: cada objeto vira `<aside data-kind="pos_receipt|stamp|signature">` com a transcrição, inserido depois do bloco do documento que está acima dele; campos cobertos em ≥ 50% (pela caixa já rotacionada) viram `[ilegível]`. Valores repetidos (ex.: `0,00`) só são marcados quando todas as ocorrências estão cobertas.
+**Degradações no alvo HTML (`html_visible`).** Carimbos, assinaturas e comprovantes POS são sobrepostos depois do render, então só aparecem no `html_visible`: cada objeto vira um `<img>` vazio (só a sinalização; tipo e transcrição ficam em `labels/`), inserido depois do bloco do documento que está acima dele; campos cobertos em ≥ 50% (pela caixa já rotacionada) viram `[ilegível]`. Valores repetidos (ex.: `0,00`) só são marcados quando todas as ocorrências estão cobertas.
 
 **`text_fidelity`:** fração dos tokens do HTML limpo presentes no texto do PDF que gerou a imagem (≈ 0,98 no DANFE, onde há números quebrados em coluna estreita — o que o renderizador original também faz — e 1,0 nos tipos derivados do PDF).
 
-**Exemplos de cada efeito** (carimbos, POS, assinatura, riscos, inclinação, scanner, variante geométrica, oclusão no HTML), com comando e saída real: [`examples/README.md`](examples/README.md). **NFS-e legada** (PDF, imagem, label, KIE e Markdown de 3 amostras): [`examples/nfse_legado.md`](examples/nfse_legado.md).
+**PDFs de exemplo da NFS-e legada por capital** (leiautes de São Paulo, Porto Velho, Fortaleza, Maceió e Rio Branco, reconstruídos a partir de notas reais): [`examples/pdfs/`](examples/pdfs/) — `nfse_sao_paulo.pdf`, `nfse_porto_velho.pdf`, `nfse_fortaleza.pdf`, `nfse_maceio.pdf`, `nfse_rio_branco.pdf`. Os dados são sintéticos; o leiaute é o da prefeitura.
+
+**Exemplos de cada efeito** (carimbos, POS, assinatura, riscos, inclinação, scanner, variante geométrica, oclusão no HTML), com comando e saída real: [`examples/README.md`](examples/README.md). **Um exemplo de cada tipo e variação:** [`examples/tipos.md`](examples/tipos.md). **NFS-e legada** (PDF, imagem, label, KIE e Markdown de 3 amostras): [`examples/nfse_legado.md`](examples/nfse_legado.md).
 
 ## 6. Estrutura do código
 
@@ -161,6 +163,10 @@ img_aug, label, meta = augment_document(
 Os renderizadores PDF em `renderers/` são derivados da biblioteca **[BrazilFiscalReport](https://github.com/Engenere/BrazilFiscalReport)** (Engenere; Edson Bernardino), usada como **referência inicial** deste projeto. O restante (geradores de dados, augmentation, pipeline, labels, HTML) é código novo. Licença **LGPL-3.0** (`LICENSE`); detalhes e alterações em `renderers/NOTICE.md`.
 
 Os bindings XSD da NFS-e legada vêm da biblioteca `nfselib-legacy` (import `nfselib`), usada só para serializar o envelope Ginfes v03 em `generator/nfse_legado.py`.
+
+### Uso para pesquisa
+
+Este projeto é de **pesquisa**. Os dados são **sintéticos** e o código é disponibilizado para **uso livre em pesquisa acadêmica e científica**, por qualquer pessoa, sem uso comercial. Os termos completos estão em [`LICENSE-PESQUISA.md`](LICENSE-PESQUISA.md). Os renderizadores de `renderers/` continuam sob **LGPL-3.0** (`LICENSE`), por serem derivados da biblioteca original.
 
 ## 8. Exemplos práticos
 

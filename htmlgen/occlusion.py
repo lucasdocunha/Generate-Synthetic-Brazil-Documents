@@ -3,7 +3,7 @@
 Camadas do alvo (ver README):
 - `html_clean` : o DOCUMENTO (tudo que o XML diz). Par da imagem limpa.
 - `html_visible`: o que a imagem DEGRADADA mostra. Par de `images_aug/`:
-    * cada artefato vira um `<aside data-kind=...>` com a transcrição, inserido
+    * cada artefato vira um `<img>` vazio (sinalização), inserido
       depois do bloco do documento que está logo acima dele na página;
     * campo coberto por um artefato vira `[ilegível]` (o modelo não deve
       "adivinhar" o que não se enxerga); campos só parcialmente cobertos ficam.
@@ -101,21 +101,12 @@ def apply_degradation(full_html: str, label: dict) -> tuple[str, dict]:
         for i, y in enumerate(anchors):
             if y is not None and y <= yc:
                 pos = i
-        aside = lxml.html.Element("aside")
-        aside.set("data-kind", a["type"])
-        if a.get("subtype"):
-            aside.set("data-subtype", a["subtype"])
-        lines = a.get("text") or ([] if a["type"] != "signature" else ["[assinatura manuscrita]"])
-        if not lines:
-            lines = ["[sem transcrição]"]
-        for ln in lines:
-            p = lxml.html.Element("p")
-            p.text = ln
-            aside.append(p)
+        marker = lxml.html.Element("img")  # só a sinalização: imagem sem conteúdo
+        marker.set("data-kind", a["type"])
         if pos < 0:
-            article.insert(0, aside)
+            article.insert(0, marker)
         else:
-            blocks[pos].addnext(aside)
-            blocks.insert(pos + 1, aside)
+            blocks[pos].addnext(marker)
+            blocks.insert(pos + 1, marker)
             anchors.insert(pos + 1, None)
     return lxml.html.tostring(doc, encoding="unicode", doctype="<!DOCTYPE html>"), report

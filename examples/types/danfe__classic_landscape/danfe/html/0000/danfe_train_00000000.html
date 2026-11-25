@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>DANFE 000.306.446 - Série 3</title>
+<style>
+@page { size: 297mm 210mm; margin: 5.0mm; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #fff; }
+body { font-family: 'Liberation Sans', Arial, Helvetica, sans-serif; font-size: 7.0pt; line-height: 3mm; color: #000; }
+article { width: 100%; padding-left: 19mm; position: relative; }
+section { margin: 0; padding: 0; }
+section > h2 { margin: 0; font-size: 6pt; font-weight: 700; line-height: 3mm; height: 3mm; text-transform: uppercase; }
+dl, dd, dt, p { margin: 0; padding: 0; }
+.row { display: flex; border-top: 0.2mm solid #000; border-left: 0.2mm solid #000; }
+.row + .row { border-top: 0; }
+.f { display: flex; flex-direction: column; min-height: 6mm; padding: 0 1mm; border-right: 0.2mm solid #000; border-bottom: 0.2mm solid #000;
+  flex: 1 1 0; min-width: 0; overflow: hidden; }
+.f[style] { flex: 0 0 auto; }
+.f dt { font-size: 5pt; line-height: 2.8mm; white-space: nowrap; overflow: hidden; }
+.f dd { font-size: 7.0pt; line-height: 3mm; overflow-wrap: anywhere; white-space: pre-line; }
+.f.r dd { text-align: right; }
+.f.b dd { font-weight: 700; text-align: center; }
+.f.h20 { min-height: 20mm; }
+.receipt { display: flex; border: 0.2mm solid #000; height: 17mm; font-size: 5.0pt; }
+.receipt .r-main { flex: 1; display: flex; flex-direction: column; border-right: 0.2mm solid #000; min-width: 0; }
+.receipt .r-main > p { height: 8.5mm; padding: 1mm 1mm 0 1mm; font-size: 5.0pt; line-height: 2.8mm; border-bottom: 0.2mm solid #000; overflow: hidden; }
+.receipt .r-sign { display: flex; flex: 1; }
+.receipt .r-sign .f { border: 0; min-height: 0; padding-top: 0.5mm; }
+.receipt .r-sign .f:first-child { flex: 0 0 40mm; border-right: 0.2mm solid #000; }
+.receipt .r-sign dt { font-size: 5.0pt; }
+.receipt .r-num { flex: 0 0 30mm; text-align: center; font-weight: 700; font-size: 10pt; padding-top: 0.5mm; line-height: 4.4mm; }
+hr.dash { border: 0; border-top: 0.2mm dashed #000; margin: 1mm 0; }
+
+.receipt.left { position: absolute; left: 0; top: 0; width: 19mm; height: 200.0mm; display: block; padding: 1mm; }
+.receipt.left > div { writing-mode: vertical-rl; transform: rotate(180deg); }
+
+header { display: grid; grid-template-columns: 1fr 33mm 88mm; height: 31mm; border: 0.2mm solid #000; }
+header > div { min-width: 0; overflow: hidden; }
+header > div + div { border-left: 0.2mm solid #000; }
+.emit { position: relative; text-align: center; }
+.emit h1 { margin: 1mm 0 0 0; font-size: 12pt; font-weight: 700; line-height: 4.4mm; height: 9mm; overflow: hidden; }
+.emit .addr { position: absolute; left: 0; right: 0; top: 12mm; font-size: 8pt; line-height: 3mm; padding: 0 1mm; }
+.emit img { position: absolute; left: 2mm; top: 10mm; width: 30mm; height: 20mm; object-fit: contain; }
+.emit.has-logo .addr { left: 32mm; padding: 0; }
+.ident h2 { margin: 0; text-align: center; font-size: 12pt; line-height: 4mm; font-weight: 700; }
+.ident .sub { text-align: center; font-size: 7pt; line-height: 2.6mm; }
+.ident .io { position: relative; margin: 0.5mm 0 0 1mm; font-size: 8pt; line-height: 3mm; }
+.ident .io b { position: absolute; right: 3mm; top: 0; width: 5mm; height: 5mm; border: 0.2mm solid #000; text-align: center;
+  font-size: 10pt; line-height: 4mm; }
+.ident .num { margin: 0.5mm 0 0 1mm; font-size: 10pt; font-weight: 700; line-height: 4.5mm; }
+.ident .sf { margin-left: 1mm; font-size: 8pt; font-weight: 700; line-height: 3mm; }
+.code { display: flex; flex-direction: column; }
+.code .bars { height: 10mm; padding: 0.5mm; border-bottom: 0.2mm solid #000; }
+.code .bars img { width: 100%; height: 8.5mm; object-fit: fill; display: block; }
+.code dl .f { border: 0; border-bottom: 0.2mm solid #000; min-height: 6mm; }
+.code .verify { flex: 1; font-size: 10pt; line-height: 4.2mm; text-align: center; padding: 2.5mm 0.5mm 0 0.5mm; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 6.0pt; }
+th { font-size: 5pt; font-weight: 700; text-align: left; vertical-align: top; line-height: 3mm; padding: 0 1mm; border: 0.2mm solid #000; }
+td { vertical-align: top; line-height: 3mm; padding: 0 1mm; border: 0.2mm solid #000; overflow-wrap: anywhere; }
+td.r { text-align: right; }
+thead { display: table-header-group; } tr { break-inside: avoid; }
+table.dups td { font-size: 7.00pt; height: 3mm; }
+td.fill { height: 45.72mm; padding: 0; }
+.credit { text-align: center; font-weight: 700; font-size: 6pt; line-height: 3mm; }
+footer { display: flex; justify-content: space-between; margin-top: 1mm; line-height: 5mm; }
+footer .l { font-size: 6.5pt; } footer .rt { font-size: 7pt; font-weight: 700; }
+</style>
+</head>
+<body>
+<article>
+<section class="receipt left">
+  <div class="r-main">
+    <p>RECEBEMOS DE Serviços de Brito LTDA OS PRODUTOS/SERVIÇOS CONSTANTES DA NOTA FISCAL INDICADA ABAIXO. EMISSÃO: 21/01/2023 VALOR TOTAL: 87.285,16 DESTINATARIO: Atacado de Porto LTDA - Conjunto de Montenegro, 1262, Vila São Gabriel, Cumaru do Norte - PA, CNPJ: 8L.835.OHQ/0001-48</p>
+    <dl class="r-sign">
+      <div class="f"><dt>DATA DE RECEBIMENTO</dt><dd></dd></div>
+      <div class="f"><dt>IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR</dt><dd></dd></div>
+    </dl>
+  </div>
+  <div class="r-num"><p>NF-e</p><p>Nº000.306.446</p><p>SÉRIE 3</p></div>
+</section>
+
+<header>
+  <div class="emit has-logo">
+    <h1>Serviços de Brito LTDA</h1><img src="data:image/png;base64,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" alt="Logotipo de Serviços de Brito LTDA">
+    <p class="addr">Morro Thomas Santos, 330<br>Bloco B<br>Liberdade<br>Piçarra - PA<br>57568-825<br>Fone: (21) 96827-8027<br></p>
+  </div>
+  <div class="ident">
+    <h2>DANFE</h2>
+    <p class="sub">DOCUMENTO AUXILIAR<br>DA NOTA FISCAL<br>ELETRÔNICA</p>
+    <p class="io">0-ENTRADA<br>1-SAÍDA<b>1</b></p>
+    <p class="num">Nº 000.306.446</p>
+    <p class="sf">SÉRIE 3</p>
+    <p class="sf">FOLHA 1/1</p>
+  </div>
+  <div class="code">
+    <div class="bars"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZwogIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nCiAgJ2h0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCc+CjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MS4yNTBtbSIgaGVpZ2h0PSIxMC4wMDBtbSI+CiAgICA8IS0tQXV0b2dlbmVyYXRlZCB3aXRoIHB5dGhvbi1iYXJjb2RlIDAuMTYuMS0tPgogICAgPGcgaWQ9ImJhcmNvZGVfZ3JvdXAiPgogICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHN0eWxlPSJmaWxsOndoaXRlIi8+CiAgICAgICAgPHJlY3QgeD0iMS4wMDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMS43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuMjUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMi41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNzUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMy43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNC41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNS41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNi41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNzUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNy41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iOC4yNTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNzUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iOS4yNTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMTAuMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjExLjAwMG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIxMi4wMDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMTMuMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjI1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjEzLjc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC43NTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIxNC43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMTUuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjE2Ljc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIxNy41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNzUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMTkuMDAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjI1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjE5LjUwMG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIyMC4yNTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjEuMDAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMjEuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjc1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjIyLjUwMG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIyMy4wMDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMjMuNzUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjI1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjI0Ljc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIyNS43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuMjUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMjYuMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjI3Ljc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIyOC41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNzUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMjkuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjMwLjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIzMS4yNTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNzUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMzIuMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjI1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjMzLjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIzNC4wMDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMzQuNzUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjM1Ljc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIzNi43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iMzcuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjM4LjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSIzOS41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNDAuMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjQxLjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI0Mi4yNTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNDMuMDAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjQzLjc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI0NS4wMDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuMjUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNDUuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjI1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjQ2Ljc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI0Ny43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuMjUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNDguMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjc1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjQ5Ljc1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI1MC41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuMjUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNTEuMDAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjc1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjUyLjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI1My4yNTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNTQuMDAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjc1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjU1LjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI1Ni4wMDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNzUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNTcuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjU4LjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI1OC43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuMjUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNTkuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjYwLjUwMG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC43NTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI2MS41MDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNjIuMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIxLjAwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjYzLjUwMG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC41MDBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI2NC4yNTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuMjUwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNjUuNTAwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjUwMG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjY2LjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI2Ny4wMDBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICAgICAgPHJlY3QgeD0iNjguMjUwbW0iIHk9IjEuMDAwbW0iIHdpZHRoPSIwLjc1MG1tIiBoZWlnaHQ9IjguMDAwbW0iIHN0eWxlPSJmaWxsOmJsYWNrOyIvPgogICAgICAgIDxyZWN0IHg9IjY5LjI1MG1tIiB5PSIxLjAwMG1tIiB3aWR0aD0iMC4yNTBtbSIgaGVpZ2h0PSI4LjAwMG1tIiBzdHlsZT0iZmlsbDpibGFjazsiLz4KICAgICAgICA8cmVjdCB4PSI2OS43NTBtbSIgeT0iMS4wMDBtbSIgd2lkdGg9IjAuNTAwbW0iIGhlaWdodD0iOC4wMDBtbSIgc3R5bGU9ImZpbGw6YmxhY2s7Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="Código de barras da chave de acesso"></div>
+    <dl><div class="f b"><dt>CHAVE DE ACESSO</dt><dd>0023 0150 3156 7739 7057 5500 3000 3064 4615 2159 1490</dd></div></dl>
+    <p class="verify">Consulta de autenticidade no portal nacional da NF-e www.nfe.fazenda.gov.br/portal ou no site da Sefaz autorizadora</p>
+  </div>
+</header>
+<dl class="row">
+  <div class="f"><dt>NATUREZA DA OPERAÇÃO</dt><dd>Venda de produção do estabelecimento</dd></div>
+  <div class="f b" style="width: 88mm"><dt>PROTOCOLO DE AUTORIZAÇÃO DE USO</dt><dd></dd></div>
+</dl>
+<dl class="row">
+  <div class="f"><dt>INSCRIÇÃO ESTADUAL</dt><dd>842260390262</dd></div>
+  <div class="f"><dt>INSCRIÇÃO ESTADUAL DO SUBST. TRIB</dt><dd></dd></div>
+  <div class="f"><dt>CNPJ / CPF</dt><dd>50.315.677/3970-57</dd></div>
+</dl>
+
+<section>
+  <h2>Destinatário / Remetente</h2>
+  <dl class="row">
+    <div class="f"><dt>NOME / RAZÃO SOCIAL</dt><dd>Atacado de Porto LTDA</dd></div>
+    <div class="f" style="width: 35mm"><dt>CNPJ / CPF</dt><dd>8L.835.OHQ/0001-48</dd></div>
+    <div class="f" style="width: 30mm"><dt>DATA DA EMISSÃO</dt><dd>21/01/2023</dd></div>
+  </dl>
+  <dl class="row">
+    <div class="f"><dt>ENDEREÇO</dt><dd>Conjunto de Montenegro, 1262</dd></div>
+    <div class="f" style="width: 50mm"><dt>BAIRRO / DISTRITO</dt><dd>Vila São Gabriel</dd></div>
+    <div class="f" style="width: 25mm"><dt>CEP</dt><dd>62263-858</dd></div>
+    <div class="f" style="width: 30mm"><dt>DATA DA ENTRADA / SAÍDA</dt><dd>21/01/2023</dd></div>
+  </dl>
+  <dl class="row">
+    <div class="f"><dt>MUNICÍPIO</dt><dd>Cumaru do Norte</dd></div>
+    <div class="f" style="width: 40mm"><dt>FONE / FAX</dt><dd>(11) 92927-9975</dd></div>
+    <div class="f" style="width: 10mm"><dt>UF</dt><dd>PA</dd></div>
+    <div class="f" style="width: 50mm"><dt>INSCRIÇÃO ESTADUAL</dt><dd>945011357320</dd></div>
+    <div class="f" style="width: 30mm"><dt>HORA DE ENTRADA / SAÍDA</dt><dd>21:15:07</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>Cálculo do imposto</h2>
+  <dl class="row">
+    <div class="f r" style="width: 30mm"><dt>BASE DE CÁLCULO DO ICMS</dt><dd>46.663,42</dd></div>
+    <div class="f r" style="width: 30mm"><dt>VALOR DO ICMS</dt><dd>8.866,05</dd></div>
+    <div class="f r" style="width: 30mm"><dt>BASE DE CÁLCULO DO ICMS ST</dt><dd>0,00</dd></div>
+    <div class="f r" style="width: 30mm"><dt>VALOR DO ICMS ST</dt><dd>0,00</dd></div>
+    <div class="f r" style="width: 30mm"><dt>VALOR APROX. TRIBUTOS</dt><dd>21.256,78</dd></div>
+    <div class="f r"><dt>VALOR TOTAL DOS PRODUTOS</dt><dd>87.285,16</dd></div>
+  </dl>
+  <dl class="row">
+    <div class="f r" style="width: 30mm"><dt>VALOR DO FRETE</dt><dd>0,00</dd></div>
+    <div class="f r" style="width: 30mm"><dt>VALOR DO SEGURO</dt><dd>0,00</dd></div>
+    <div class="f r" style="width: 30mm"><dt>DESCONTO</dt><dd>0,00</dd></div>
+    <div class="f r" style="width: 30mm"><dt>OUTRAS DESPESAS ACESSÓRIAS</dt><dd>0,00</dd></div>
+    <div class="f r" style="width: 30mm"><dt>VALOR DO IPI</dt><dd>0,00</dd></div>
+    <div class="f r"><dt>VALOR TOTAL DA NOTA</dt><dd>87.285,16</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>Transportador / Volumes transportados</h2>
+  <dl class="row">
+    <div class="f"><dt>NOME / RAZÃO SOCIAL</dt><dd>Thiago Barbosa</dd></div>
+    <div class="f" style="width: 28mm"><dt>FRETE POR CONTA</dt><dd>0 - Remetente</dd></div>
+    <div class="f" style="width: 18mm"><dt>CÓDIGO ANTT</dt><dd></dd></div>
+    <div class="f" style="width: 23mm"><dt>PLACA DO VEÍCULO</dt><dd></dd></div>
+    <div class="f" style="width: 8mm"><dt>UF</dt><dd></dd></div>
+    <div class="f" style="width: 30mm"><dt>CNPJ / CPF</dt><dd>587.649.116-01</dd></div>
+  </dl>
+  <dl class="row">
+    <div class="f"><dt>ENDEREÇO</dt><dd>Estação Lopes, 1893</dd></div>
+    <div class="f" style="width: 69mm"><dt>MUNICÍPIO</dt><dd>Martinópole</dd></div>
+    <div class="f" style="width: 8mm"><dt>UF</dt><dd>CE</dd></div>
+    <div class="f" style="width: 30mm"><dt>INSCRIÇÃO ESTADUAL</dt><dd></dd></div>
+  </dl>
+  <dl class="row">
+    <div class="f" style="width: 25mm"><dt>QUANTIDADE</dt><dd>219</dd></div>
+    <div class="f" style="width: 30mm"><dt>ESPÉCIE</dt><dd>CAIXA</dd></div>
+    <div class="f" style="width: 30mm"><dt>MARCA</dt><dd></dd></div>
+    <div class="f" style="width: 45mm"><dt>NUMERAÇÃO</dt><dd>569</dd></div>
+    <div class="f"><dt>PESO BRUTO</dt><dd>16,262</dd></div>
+    <div class="f"><dt>PESO LÍQUIDO</dt><dd>14,781</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>Dados do produto / serviço</h2>
+  <table class="items">
+    <colgroup data-decor><col style="width: 15mm"><col><col style="width: 11mm"><col style="width: 6mm"><col style="width: 7mm"><col style="width: 6mm"><col style="width: 12mm"><col style="width: 13mm"><col style="width: 13mm"><col style="width: 13mm"><col style="width: 10mm"><col style="width: 10mm"><col style="width: 9mm"><col style="width: 8mm">
+    </colgroup>
+    <thead><tr><th>CÓDIGO</th><th>DESCRIÇÃO DOS PRODUTOS / SERVIÇOS</th><th>NCM/SH</th><th>CST</th><th>CFOP</th><th>UN.</th><th>QTD.</th><th>V.UNIT.</th><th>V.TOTAL</th><th>BC.ICMS</th><th>V.ICMS</th><th>V.IPI</th><th>%ICMS</th><th>%IPI</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>4499647</td>
+        <td>Notebook SSD 512GB<br>Lote: 4012920 Qtd: 8,43 Fab: 13/10/2022 Val: 12/10/2025<br>Cor: Azul. Embalagem com 4 unidades.</td>
+        <td>84710727</td>
+        <td>060</td>
+        <td>5102</td>
+        <td>KG</td>
+        <td class="r">9,00</td>
+        <td class="r">2.191,50</td>
+        <td class="r">19.723,50</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+      </tr>
+      <tr>
+        <td>SKU51102</td>
+        <td>Serviço de consultoria mensal</td>
+        <td>99996870</td>
+        <td>000</td>
+        <td>5102</td>
+        <td>LT</td>
+        <td class="r">44,47</td>
+        <td class="r">1.049,34</td>
+        <td class="r">46.663,42</td>
+        <td class="r">46.663,42</td>
+        <td class="r">8.866,05</td>
+        <td class="r">0,00</td>
+        <td class="r">19,00</td>
+        <td class="r">0,00</td>
+      </tr>
+      <tr>
+        <td>2871385</td>
+        <td>Cadeira Escritório<br>Lote de produção 455667.</td>
+        <td>94017656</td>
+        <td>040</td>
+        <td>5102</td>
+        <td>CX</td>
+        <td class="r">33,00</td>
+        <td class="r">633,28</td>
+        <td class="r">20.898,24</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+        <td class="r">0,00</td>
+      </tr>
+      <tr class="fill" data-decor><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+    </tbody>
+  </table>
+</section>
+<section>
+  <h2>Dados adicionais</h2>
+  <dl class="row">
+    <div class="f h20"><dt>INFORMAÇÕES COMPLEMENTARES</dt><dd>Pedido de compra nº 913014. Não gera direito a crédito fiscal de IPI. Mercadoria entregue conforme pedido 928117. Vendedor: Srta. Maria Cecília Sá. Prazo para reclamação de avarias: 7 dias após o recebimento. Pedido de compra nº 259891. Vendedor: Sabrina Monteiro. Referente ao contrato 917341. Mercadoria entregue conforme pedido 262889. Prazo para reclamação de avarias: 7 dias após o recebimento. Mercadoria entregue conforme pedido 237340. Pedido de compra nº 6571. Valor aproximado dos tributos conforme Lei 12.741/2012. Referente ao contrato 745248. Documento emitido por: Caleb Gomes</dd></div>
+    <div class="f h20" style="width: 70mm"><dt>RESERVADO AO FISCO</dt><dd></dd></div>
+  </dl>
+</section>
+</article>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "seed": 3140865229965161092,
+  "doctype": "dacte",
+  "split": "train",
+  "index": 0,
+  "dpi": 110,
+  "image_source": "lib_pdf",
+  "n_pages": 1,
+  "field_errors": [],
+  "label_schema_ok": true,
+  "augmentation": {
+    "seed": 3140865229965161092,
+    "angle_deg": 1.45,
+    "scan_mode": "bw_binarized_scan",
+    "special_objects_added": [],
+    "boxes_valid": true
+  },
+  "doc_formats": {
+    "emit": "cnpj_alnum",
+    "rem": "cnpj_numeric",
+    "exped": "cnpj_numeric",
+    "receb": "cnpj_alnum",
+    "dest": "cnpj_numeric"
+  },
+  "html": {
+    "n_pages_html": 1,
+    "text_fidelity": 1.0,
+    "style": {
+      "derived_from": "pdf_geometry"
+    },
+    "occlusion": {
+      "artifacts": [],
+      "occluded_nodes": 0
+    }
+  }
+}

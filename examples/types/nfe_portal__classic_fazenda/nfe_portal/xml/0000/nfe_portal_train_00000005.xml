@@ -1,0 +1,217 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe>
+    <infNFe versao="4.00" Id="NFe00230255220270884726550010002704321230293602">
+        <ide>
+            <cUF>43</cUF>
+            <cNF>91094286</cNF>
+            <natOp>Venda</natOp>
+            <mod>55</mod>
+            <serie>1</serie>
+            <nNF>270432</nNF>
+            <dhEmi>2023-02-06T11:28:37-03:00</dhEmi>
+            <dhSaiEnt>2023-02-06T11:28:37-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>1</idDest>
+            <cMunFG>4312351</cMunFG>
+            <tpImp>1</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>2</cDV>
+            <tpAmb>2</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>1</indFinal>
+            <indPres>0</indPres>
+            <procEmi>0</procEmi>
+            <verProc>SYNTH-GEN 1.0</verProc>
+        </ide>
+        <emit>
+            <CNPJ>55220270884726</CNPJ>
+            <xNome>Distribuidora de Moreira LTDA</xNome>
+            <xFant>Transportes Nascimento ME</xFant>
+            <enderEmit>
+                <xLgr>Praia Ana Cecília Leão</xLgr>
+                <nro>1538</nro>
+                <xCpl>Ao lado do mercado</xCpl>
+                <xBairro>Barão Homem De Melo 2ª Seção</xBairro>
+                <cMun>4312351</cMun>
+                <xMun>Montauri</xMun>
+                <UF>RS</UF>
+                <CEP>60264525</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>48961581177</fone>
+            </enderEmit>
+            <IE>734225674944</IE>
+            <CRT>3</CRT>
+        </emit>
+        <dest>
+            <CNPJ>67568361809017</CNPJ>
+            <xNome>Comercial Pires ME</xNome>
+            <enderDest>
+                <xLgr>Largo de Rios</xLgr>
+                <nro>1982</nro>
+                <xCpl>Sala 12</xCpl>
+                <xBairro>Bernadete</xBairro>
+                <cMun>4304507</cMun>
+                <xMun>Canguçu</xMun>
+                <UF>RS</UF>
+                <CEP>54845704</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>11990126181</fone>
+            </enderDest>
+            <indIEDest>1</indIEDest>
+            <IE>443575522610</IE>
+            </dest>
+        <det nItem="1">
+            <prod>
+                <cProd>SKU22242</cProd>
+                <cEAN>7890088553066</cEAN>
+                <xProd>Cimento 50kg</xProd>
+                <NCM>25238643</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>LT</uCom>
+                <qCom>52.0000</qCom>
+                <vUnCom>2178.8100000000</vUnCom>
+                <vProd>113298.12</vProd>
+                <cEANTrib>7890088553066</cEANTrib>
+                <uTrib>LT</uTrib>
+                <qTrib>52.0000</qTrib>
+                <vUnTrib>2178.8100000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>18090.09</vTotTrib>
+            <ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>113298.12</vBC><pICMS>7.0000</pICMS><vICMS>7930.87</vICMS></ICMS00></ICMS><IPI><cEnq>999</cEnq><IPINT><CST>51</CST></IPINT></IPI><PIS><PISAliq><CST>01</CST><vBC>113298.12</vBC><pPIS>1.6500</pPIS><vPIS>1869.42</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>113298.12</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>8610.66</vCOFINS></COFINSAliq></COFINS><IBSCBS><CST>000</CST><cClassTrib>000001</cClassTrib><gIBSCBS><vBC>113298.12</vBC><gIBSUF><pIBSUF>0.1000</pIBSUF><vIBSUF>113.30</vIBSUF></gIBSUF><gIBSMun><pIBSMun>0.0000</pIBSMun><vIBSMun>0.00</vIBSMun></gIBSMun><vIBS>113.30</vIBS><gCBS><pCBS>0.9000</pCBS><vCBS>1019.68</vCBS></gCBS></gIBSCBS></IBSCBS></imposto>
+            </det>
+        <det nItem="2">
+            <prod>
+                <cProd>SKU28663</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Serviço de manutenção preventiva</xProd>
+                <NCM>00</NCM>
+                <CFOP>5933</CFOP>
+                <uCom>SV</uCom>
+                <qCom>6.0000</qCom>
+                <vUnCom>4459.6600000000</vUnCom>
+                <vProd>26757.96</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>SV</uTrib>
+                <qTrib>6.0000</qTrib>
+                <vUnTrib>4459.6600000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>5868.94</vTotTrib>
+            <ISSQN><vBC>26757.96</vBC><vAliq>3.0000</vAliq><vISSQN>802.74</vISSQN><cMunFG>4312351</cMunFG><cListServ>14.01</cListServ><indISS>1</indISS><indIncentivo>2</indIncentivo></ISSQN><PIS><PISAliq><CST>01</CST><vBC>26757.96</vBC><pPIS>1.6500</pPIS><vPIS>441.51</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>26757.96</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>2033.60</vCOFINS></COFINSAliq></COFINS><IBSCBS><CST>000</CST><cClassTrib>000001</cClassTrib><gIBSCBS><vBC>26757.96</vBC><gIBSUF><pIBSUF>0.1000</pIBSUF><vIBSUF>26.76</vIBSUF></gIBSUF><gIBSMun><pIBSMun>0.0000</pIBSMun><vIBSMun>0.00</vIBSMun></gIBSMun><vIBS>26.76</vIBS><gCBS><pCBS>0.9000</pCBS><vCBS>240.82</vCBS></gCBS></gIBSCBS></IBSCBS></imposto>
+            </det>
+        <det nItem="3">
+            <prod>
+                <cProd>5180029</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Serviço de manutenção corretiva</xProd>
+                <NCM>00</NCM>
+                <CFOP>5933</CFOP>
+                <uCom>SV</uCom>
+                <qCom>3.0000</qCom>
+                <vUnCom>517.7000000000</vUnCom>
+                <vProd>1553.10</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>SV</uTrib>
+                <qTrib>3.0000</qTrib>
+                <vUnTrib>517.7000000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>265.22</vTotTrib>
+            <ISSQN><vBC>1553.10</vBC><vAliq>2.0000</vAliq><vISSQN>31.06</vISSQN><cMunFG>4312351</cMunFG><cListServ>14.01</cListServ><indISS>1</indISS><indIncentivo>2</indIncentivo></ISSQN><PIS><PISAliq><CST>01</CST><vBC>1553.10</vBC><pPIS>1.6500</pPIS><vPIS>25.63</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>1553.10</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>118.04</vCOFINS></COFINSAliq></COFINS><IBSCBS><CST>000</CST><cClassTrib>000001</cClassTrib><gIBSCBS><vBC>1553.10</vBC><gIBSUF><pIBSUF>0.1000</pIBSUF><vIBSUF>1.55</vIBSUF></gIBSUF><gIBSMun><pIBSMun>0.0000</pIBSMun><vIBSMun>0.00</vIBSMun></gIBSMun><vIBS>1.55</vIBS><gCBS><pCBS>0.9000</pCBS><vCBS>13.98</vCBS></gCBS></gIBSCBS></IBSCBS></imposto>
+            </det>
+        <total>
+            <ICMSTot>
+                <vBC>113298.12</vBC>
+                <vICMS>7930.87</vICMS>
+                <vICMSDeson>0.00</vICMSDeson>
+                <vFCP>0.00</vFCP>
+                <vBCST>0.00</vBCST>
+                <vST>0.00</vST>
+                <vFCPST>0.00</vFCPST>
+                <vFCPSTRet>0.00</vFCPSTRet>
+                <vProd>113298.12</vProd>
+                <vFrete>0.00</vFrete>
+                <vSeg>0.00</vSeg>
+                <vDesc>0.00</vDesc>
+                <vII>0.00</vII>
+                <vIPI>0.00</vIPI>
+                <vIPIDevol>0.00</vIPIDevol>
+                <vPIS>2336.56</vPIS>
+                <vCOFINS>10762.30</vCOFINS>
+                <vOutro>0.00</vOutro>
+                <vNF>141609.18</vNF>
+                <vTotTrib>24224.25</vTotTrib>
+            </ICMSTot>
+            <ISSQNtot>
+                <vServ>28311.06</vServ>
+                <vBC>28311.06</vBC>
+                <vISS>833.80</vISS>
+                <dCompet>2023-02-06</dCompet>
+            </ISSQNtot>
+            <IBSCBSTot>
+                <vBCIBSCBS>141609.18</vBCIBSCBS>
+                <gIBS>
+                    <gIBSUF>
+                        <vDif>0.00</vDif>
+                        <vDevTrib>0.00</vDevTrib>
+                        <vIBSUF>141.61</vIBSUF>
+                    </gIBSUF>
+                    <gIBSMun>
+                        <vDif>0.00</vDif>
+                        <vDevTrib>0.00</vDevTrib>
+                        <vIBSMun>0.00</vIBSMun>
+                    </gIBSMun>
+                    <vIBS>141.61</vIBS>
+                    <vCredPres>0.00</vCredPres>
+                    <vCredPresCondSus>0.00</vCredPresCondSus>
+                </gIBS>
+                <gCBS>
+                    <vDif>0.00</vDif>
+                    <vDevTrib>0.00</vDevTrib>
+                    <vCBS>1274.48</vCBS>
+                    <vCredPres>0.00</vCredPres>
+                    <vCredPresCondSus>0.00</vCredPresCondSus>
+                </gCBS>
+            </IBSCBSTot>
+        </total>
+        <transp>
+            <modFrete>0</modFrete>
+            <transporta>
+                <CNPJ>20133574087596</CNPJ>
+                <xNome>Transportes Vieira EIRELI</xNome>
+                <IE>372103068217</IE>
+                <xEnder>Vale João Lucas Nogueira, 598</xEnder>
+                <xMun>Nova Luzitânia</xMun>
+                <UF>SP</UF>
+            </transporta>
+            <veicTransp>
+                <placa>OGR1W31</placa>
+                <UF>SP</UF>
+                <RNTC>59057400</RNTC>
+            </veicTransp>
+            <vol>
+                <qVol>263</qVol>
+                <esp>CAIXA</esp>
+                <marca>NASCIMENTO</marca>
+                <nVol>8325</nVol>
+                <pesoL>24.571</pesoL>
+                <pesoB>25.927</pesoB>
+            </vol>
+        </transp>
+        <pag>
+            <detPag>
+                <indPag>0</indPag>
+                <tPag>15</tPag>
+                <vPag>141609.18</vPag>
+            </detPag>
+        </pag>
+        <infAdic>
+            <infCpl>Referente ao contrato 782874. Retenção de PIS/COFINS/CSLL conforme legislação vigente. Pedido de compra nº 352783.</infCpl>
+        </infAdic>
+    </infNFe>
+</NFe><protNFe versao="4.00"><infProt><tpAmb>2</tpAmb><verAplic>SYNTH-HOM</verAplic><chNFe>00230255220270884726550010002704321230293602</chNFe><dhRecbto>2023-02-06T11:33:45-03:00</dhRecbto><nProt>100237754301232</nProt><digVal>2nNqJH4uQegEJ4sR6pInzx5PCTD=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

@@ -131,7 +131,7 @@ page("variante_geometrica", "Variante geométrica (`images_geo/`)",
 
 (EX / "oclusao_html.md").write_text(f"""# Oclusão no HTML/Markdown (`html_visible`, `md_visible`)
 
-Carimbo, assinatura e comprovante POS são sobrepostos depois do render, então o HTML do documento (`html_clean`) não os conhece. O `html_visible` descreve **o que a imagem degradada mostra**: cada objeto vira `<aside data-kind="pos_receipt|stamp|signature|watermark">` com a transcrição, inserido depois do bloco do documento que está acima dele, e campos cobertos em ≥ 50% viram `[ilegível]`.
+Carimbo, assinatura e comprovante POS são sobrepostos depois do render, então o HTML do documento (`html_clean`) não os conhece. O `html_visible` descreve **o que a imagem degradada mostra**: cada objeto vira um `<img>` **vazio** (só a sinalização de que há uma imagem ali), inserido depois do bloco do documento que está acima dele, e campos cobertos em ≥ 50% viram `[ilegível]`. O tipo do objeto e a transcrição ficam em `labels/` (`special_objects`).
 
 ## Como gerar
 
@@ -168,16 +168,16 @@ Campos cobertos viram `[ilegível]` (em `html_visible`):
 {snippet_html('oclusao_html/html_visible.html', '[ilegível]', 3, 6)}
 ```
 
-O comprovante, transcrito (`html_visible`):
+O comprovante, sinalizado (`html_visible`):
 
 ```html
-{snippet_html('oclusao_html/html_visible.html', 'data-kind="pos_receipt"', 0, 10)}
+{snippet_html('oclusao_html/html_visible.html', '<img>', 3, 3)}
 ```
 
-No `md_visible`:
+No `md_visible` a imagem aparece como `![]()`:
 
 ```markdown
-{chr(10).join(l for l in (FX / 'oclusao_html/md_visible.md').read_text('utf8').splitlines() if l.startswith('>'))[:700]}
+{chr(10).join(l for l in (FX / 'oclusao_html/md_visible.md').read_text('utf8').splitlines() if 'ilegível' in l or l.startswith('![]'))[:500]}
 ```
 
 Arquivos completos: [`html_clean`](effects/oclusao_html/html_clean.html), [`html_visible`](effects/oclusao_html/html_visible.html), [`md_visible`](effects/oclusao_html/md_visible.md).
@@ -204,5 +204,5 @@ python examples/make_effect_docs.py       # reescreve estes .md com a saída rea
 | Variante geométrica | [variante_geometrica.md](variante_geometrica.md) | `augment_geometric_variant` | `images_geo/` |
 | Oclusão no HTML | [oclusao_html.md](oclusao_html.md) | `apply_degradation` | `html_visible/`, `md_visible/` |
 
-No pipeline (`python -m pipeline.cli generate ...`) os efeitos são sorteados por amostra; `examples/dataset/` traz amostras completas e `examples/pdfs/` os PDFs de referência.
+No pipeline (`python -m pipeline.cli generate ...`) os efeitos são sorteados por amostra; [`tipos.md`](tipos.md) traz um exemplo completo de cada tipo e variação e `examples/pdfs/` os PDFs de referência.
 """, encoding="utf8")

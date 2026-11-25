@@ -1,0 +1,185 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe>
+    <infNFe versao="4.00" Id="NFe00230812417969780484550100007630611270680745">
+        <ide>
+            <cUF>21</cUF>
+            <cNF>25916139</cNF>
+            <natOp>Devolução de venda</natOp>
+            <mod>55</mod>
+            <serie>10</serie>
+            <nNF>763061</nNF>
+            <dhEmi>2023-08-08T21:43:08-03:00</dhEmi>
+            <dhSaiEnt>2023-08-08T21:43:08-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>1</idDest>
+            <cMunFG>2102309</cMunFG>
+            <tpImp>1</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>5</cDV>
+            <tpAmb>2</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>1</indFinal>
+            <indPres>0</indPres>
+            <procEmi>0</procEmi>
+            <verProc>SYNTH-GEN 1.0</verProc>
+        </ide>
+        <emit>
+            <CNPJ>12417969780484</CNPJ>
+            <xNome>Transportes Montenegro EPP</xNome>
+            <xFant>Transportes Peixoto LTDA</xFant>
+            <enderEmit>
+                <xLgr>Trevo Macedo</xLgr>
+                <nro>1316</nro>
+                <xCpl>Ao lado do mercado</xCpl>
+                <xBairro>Marilandia</xBairro>
+                <cMun>2102309</cMun>
+                <xMun>Buriti Bravo</xMun>
+                <UF>MA</UF>
+                <CEP>33398539</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>2140731172</fone>
+            </enderEmit>
+            <IE>662529743400</IE>
+            <CRT>3</CRT>
+        </emit>
+        <dest>
+            <CNPJ>89366218166142</CNPJ>
+            <xNome>Atacado de Carvalho LTDA</xNome>
+            <enderDest>
+                <xLgr>Feira de Dias</xLgr>
+                <nro>1928</nro>
+                <xBairro>Jardim Dos Comerciarios</xBairro>
+                <cMun>2103307</cMun>
+                <xMun>Codó</xMun>
+                <UF>MA</UF>
+                <CEP>24252951</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>4151801590</fone>
+            </enderDest>
+            <indIEDest>1</indIEDest>
+            <IE>458316187713</IE>
+            </dest>
+        <det nItem="1">
+            <prod>
+                <cProd>SKU47581</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Cadeira Gamer</xProd>
+                <NCM>94012036</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>LT</uCom>
+                <qCom>81.0000</qCom>
+                <vUnCom>2196.6600000000</vUnCom>
+                <vProd>177929.46</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>LT</uTrib>
+                <qTrib>81.0000</qTrib>
+                <vUnTrib>2196.6600000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>37523.62</vTotTrib>
+            <ICMS><ICMS90><orig>0</orig><CST>90</CST><modBC>3</modBC><vBC>177929.46</vBC><pICMS>4.0000</pICMS><vICMS>7117.18</vICMS></ICMS90></ICMS><IPI><cEnq>999</cEnq><IPITrib><CST>50</CST><vBC>177929.46</vBC><pIPI>3.2500</pIPI><vIPI>5782.71</vIPI></IPITrib></IPI><PIS><PISAliq><CST>01</CST><vBC>177929.46</vBC><pPIS>1.6500</pPIS><vPIS>2935.84</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>177929.46</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>13522.64</vCOFINS></COFINSAliq></COFINS></imposto>
+            </det>
+        <det nItem="2">
+            <prod>
+                <cProd>CAD-755</cProd>
+                <cEAN>7898957797998</cEAN>
+                <xProd>Cadeira Plástica</xProd>
+                <NCM>94010094</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>KG</uCom>
+                <qCom>5.9468</qCom>
+                <vUnCom>1392.9500000000</vUnCom>
+                <vProd>8283.60</vProd>
+                <cEANTrib>7898957797998</cEANTrib>
+                <uTrib>KG</uTrib>
+                <qTrib>5.9468</qTrib>
+                <vUnTrib>1392.9500000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>2109.41</vTotTrib>
+            <ICMS><ICMS60><orig>0</orig><CST>60</CST><vBCSTRet>10566.54</vBCSTRet><pST>20.0000</pST><vICMSSubstituto>528.33</vICMSSubstituto><vICMSSTRet>2113.31</vICMSSTRet></ICMS60></ICMS><IPI><cEnq>999</cEnq><IPITrib><CST>50</CST><vBC>8283.60</vBC><pIPI>15.0000</pIPI><vIPI>1242.54</vIPI></IPITrib></IPI><PIS><PISAliq><CST>01</CST><vBC>8283.60</vBC><pPIS>1.6500</pPIS><vPIS>136.68</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>8283.60</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>629.55</vCOFINS></COFINSAliq></COFINS></imposto>
+            </det>
+        <det nItem="3">
+            <prod>
+                <cProd>3804615</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Cimento CP II</xProd>
+                <NCM>25235396</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>UN</uCom>
+                <qCom>6.0000</qCom>
+                <vUnCom>1553.3400000000</vUnCom>
+                <vProd>9320.04</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>UN</uTrib>
+                <qTrib>6.0000</qTrib>
+                <vUnTrib>1553.3400000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>1277.81</vTotTrib>
+            <ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>9320.04</vBC><pICMS>7.0000</pICMS><vICMS>652.40</vICMS></ICMS00></ICMS><IPI><cEnq>999</cEnq><IPINT><CST>52</CST></IPINT></IPI><PIS><PISAliq><CST>01</CST><vBC>9320.04</vBC><pPIS>1.6500</pPIS><vPIS>153.78</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>9320.04</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>708.32</vCOFINS></COFINSAliq></COFINS></imposto>
+            <infAdProd>Pedido 136944 item 21.</infAdProd>
+        </det>
+        <total>
+            <ICMSTot>
+                <vBC>187249.50</vBC>
+                <vICMS>7769.58</vICMS>
+                <vICMSDeson>0.00</vICMSDeson>
+                <vFCP>0.00</vFCP>
+                <vBCST>0.00</vBCST>
+                <vST>0.00</vST>
+                <vFCPST>0.00</vFCPST>
+                <vFCPSTRet>0.00</vFCPSTRet>
+                <vProd>195533.10</vProd>
+                <vFrete>0.00</vFrete>
+                <vSeg>0.00</vSeg>
+                <vDesc>0.00</vDesc>
+                <vII>0.00</vII>
+                <vIPI>7025.25</vIPI>
+                <vIPIDevol>0.00</vIPIDevol>
+                <vPIS>3226.30</vPIS>
+                <vCOFINS>14860.51</vCOFINS>
+                <vOutro>0.00</vOutro>
+                <vNF>202558.35</vNF>
+                <vTotTrib>40910.84</vTotTrib>
+            </ICMSTot>
+            </total>
+        <transp>
+            <modFrete>9</modFrete>
+            </transp>
+        <cobr>
+            <fat>
+                <nFat>763061</nFat>
+                <vOrig>202558.35</vOrig>
+                <vDesc>0.00</vDesc>
+                <vLiq>202558.35</vLiq>
+            </fat>
+            <dup>
+                <nDup>001</nDup>
+                <dVenc>2023-09-05</dVenc>
+                <vDup>67519.45</vDup>
+            </dup>
+        <dup>
+                <nDup>002</nDup>
+                <dVenc>2023-10-03</dVenc>
+                <vDup>67519.45</vDup>
+            </dup>
+        <dup>
+                <nDup>003</nDup>
+                <dVenc>2023-10-31</dVenc>
+                <vDup>67519.45</vDup>
+            </dup>
+        </cobr>
+        <pag>
+            <detPag>
+                <indPag>1</indPag>
+                <tPag>15</tPag>
+                <vPag>202558.35</vPag>
+            </detPag>
+        </pag>
+        </infNFe>
+</NFe><protNFe versao="4.00"><infProt><tpAmb>2</tpAmb><verAplic>SYNTH-HOM</verAplic><chNFe>00230812417969780484550100007630611270680745</chNFe><dhRecbto>2023-08-08T21:51:31-03:00</dhRecbto><nProt>100230481266782</nProt><digVal>NvenzikfkcDb6gWFi1wRMZ0actm=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

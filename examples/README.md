@@ -19,6 +19,4 @@ python examples/make_effect_docs.py       # reescreve estes .md com a saída rea
 | Variante geométrica | [variante_geometrica.md](variante_geometrica.md) | `augment_geometric_variant` | `images_geo/` |
 | Oclusão no HTML | [oclusao_html.md](oclusao_html.md) | `apply_degradation` | `html_visible/`, `md_visible/` |
 
-No pipeline (`python -m pipeline.cli generate ...`) os efeitos são sorteados por amostra; `examples/dataset/` traz amostras completas e `examples/pdfs/` os PDFs de referência.
-
-NFS-e legada (Ginfes v03, lote de RPS, sem efeito de degradação próprio): [`nfse_legado.md`](nfse_legado.md), gerado por `python examples/make_nfse_examples.py`.
+No pipeline (`python -m pipeline.cli generate ...`) os efeitos são sorteados por amostra; [`tipos.md`](tipos.md) traz um exemplo completo de cada tipo e variação e `examples/pdfs/` os PDFs de referência.

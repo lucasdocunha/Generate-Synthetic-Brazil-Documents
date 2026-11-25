@@ -17,6 +17,9 @@
     ],
     "boxes_valid": true
   },
+  "render": {
+    "city_layout": "maceio"
+  },
   "html": {
     "n_pages_html": 1,
     "text_fidelity": 1.0,

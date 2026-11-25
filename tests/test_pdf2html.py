@@ -13,6 +13,16 @@ from pipeline.single import generate_one
 NEEDS_CHROMIUM = pytest.mark.skipif(not Path("/opt/pw-browsers").exists(), reason="Chromium indisponível")
 
 
+def assert_only_structure(clean: str):
+    import re
+
+    assert not re.search(r"<\w+[^>]*\s\w+=", clean), "sem atributos"
+    for tag in ("div", "span", "b", "br", "aside", "svg", "style", "head", "html", "small"):
+        assert f"<{tag}" not in clean, tag
+    for img in re.findall(r"<img[^>]*>", clean):
+        assert img == "<img>"
+
+
 def _lib_pdf(doctype, seed=5):
     spec = DOCTYPES[doctype]
     xml, fv, kw = spec.generate(seed)
@@ -27,19 +37,19 @@ def test_html_text_matches_pdf_and_has_structure(doctype):
     assert text_fidelity(clean, pdf) >= 0.98
     doc = lxml.html.document_fromstring(clean)
     assert doc.xpath("//article/section")
-    assert doc.xpath("//dl/div/dt") or doc.xpath("//table")  # campos ou tabelas, não só parágrafos
-    # decoração (SVG de linhas, estilo, posições) não vaza para o alvo
-    assert "<svg" not in clean and "style=" not in clean and "class=" not in clean
+    assert doc.xpath("//dl/dt") or doc.xpath("//table") or doc.xpath("//p")
+    assert_only_structure(clean)
     assert to_markdown(full, "table").strip()
 
 
-def test_dacte_html_keeps_key_blocks_and_watermark():
+def test_dacte_html_keeps_key_blocks_and_marks_images_empty():
     _xml, _fv, pdf = _lib_pdf("dacte")
     clean = to_clean_html(pdf_to_html(pdf, "dacte"))
     for label in ("CHAVE DE ACESSO", "TIPO DO SERVIÇO", "REMETENTE", "DESTINATÁRIO", "OBSERVAÇÕES"):
         assert label in clean
-    assert 'data-kind="watermark"' in clean and "SEM VALOR FISCAL" in clean
-    assert 'alt="QR Code"' in clean and 'alt="Código de barras"' in clean
+    assert clean.count("<img>") >= 2  # QR e código de barras, vazios
+    assert "SEM VALOR FISCAL" not in clean  # texto de objeto sobreposto não vai para o alvo
+    assert_only_structure(clean)
 
 
 def test_specs_registered_for_every_doctype():

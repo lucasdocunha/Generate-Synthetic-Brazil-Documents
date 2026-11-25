@@ -1,0 +1,1526 @@
+{
+  "doc_id": "nfse_legado_train_00000000",
+  "doc_type": "NFSE_LEGADO",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/nfse_legado_train_00000000.xml",
+    "pdf_path": "pdfs/0000/nfse_legado_train_00000000.pdf",
+    "fixture_template": "tpl_001",
+    "generation_seed": 6485913664401305385,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/nfse_legado_train_00000000.html",
+    "md_path": "md/0000/nfse_legado_train_00000000.md",
+    "html_visible_path": "html_visible/0000/nfse_legado_train_00000000.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 57.418,
+        "y": 7.391,
+        "w": 98.244,
+        "h": 6.786,
+        "unit": "mm"
+      },
+      "text": "PREFEITURA MUNICIPAL DE FORTALEZA"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 57.69,
+        "y": 13.035,
+        "w": 97.696,
+        "h": 6.786,
+        "unit": "mm"
+      },
+      "text": "SECRETARIA MUNICIPAL DAS FINANÇAS"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 48.634,
+        "y": 19.032,
+        "w": 115.812,
+        "h": 6.786,
+        "unit": "mm"
+      },
+      "text": "NOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 174.562,
+        "y": 7.493,
+        "w": 20.938,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "Número da"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 178.918,
+        "y": 13.49,
+        "w": 12.23,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "NFS-e"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.264,
+        "y": 26.751,
+        "w": 30.742,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Data e Hora da Emissão"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 16.362,
+        "y": 32.043,
+        "w": 20.546,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Número do RPS"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 88.35,
+        "y": 26.751,
+        "w": 16.626,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Competência"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 82.779,
+        "y": 32.043,
+        "w": 27.762,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "No. NFS-e substituída"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.478,
+        "y": 26.751,
+        "w": 27.607,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Código de Verificação"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 140.85,
+        "y": 32.043,
+        "w": 24.158,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Local da Prestação"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 175.271,
+        "y": 32.043,
+        "w": 23.052,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "FORTALEZA - CE"
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.552,
+        "y": 192.855,
+        "w": 5.118,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "PIS"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 121.708,
+        "y": 233.832,
+        "w": 18.195,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(X) Alíquota %"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.019,
+        "y": 91.96,
+        "w": 12.354,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Telefone"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [
+        "tomador_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 97.54,
+        "y": 54.213,
+        "w": 20.114,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Insc Municipal"
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 121.708,
+        "y": 250.412,
+        "w": 24.548,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(=) Valor do ISS R$"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 168.451,
+        "y": 192.855,
+        "w": 14.113,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "CSLL(R$)"
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.255,
+        "y": 54.213,
+        "w": 13.586,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Município"
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 83.682,
+        "y": 233.832,
+        "w": 30.898,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Opção Simples Nacional"
+    },
+    {
+      "element_id": "e00020",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 103.008,
+        "y": 64.796,
+        "w": 12.354,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Telefone"
+    },
+    {
+      "element_id": "e00021",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 213.723,
+        "w": 35.292,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(-) Desconto Incondicionado"
+    },
+    {
+      "element_id": "e00022",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 91.458,
+        "y": 192.855,
+        "w": 9.347,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "IR(R$)"
+    },
+    {
+      "element_id": "e00023",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 71.55,
+        "y": 96.746,
+        "w": 67.509,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "DISCRIMINAÇÃO DOS SERVIÇOS"
+    },
+    {
+      "element_id": "e00024",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 233.832,
+        "w": 22.744,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Outras Retenções"
+    },
+    {
+      "element_id": "e00025",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 42.33,
+        "y": 64.796,
+        "w": 19.761,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Complemento"
+    },
+    {
+      "element_id": "e00026",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 240.887,
+        "w": 17.094,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(-) ISS Retido"
+    },
+    {
+      "element_id": "e00027",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.878,
+        "y": 81.377,
+        "w": 15.523,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "CPF/CNPJ"
+    },
+    {
+      "element_id": "e00028",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 155.222,
+        "y": 54.268,
+        "w": 23.052,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "FORTALEZA - CE"
+    },
+    {
+      "element_id": "e00029",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 81.996,
+        "y": 220.426,
+        "w": 34.976,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Regime especial Tributação"
+    },
+    {
+      "element_id": "e00030",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 10.58,
+        "y": 91.96,
+        "w": 19.761,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Complemento"
+    },
+    {
+      "element_id": "e00031",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.599,
+        "y": 86.723,
+        "w": 21.02,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Endereço e CEP"
+    },
+    {
+      "element_id": "e00032",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 250.412,
+        "w": 29.255,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(=) Valor Líquido      R$"
+    },
+    {
+      "element_id": "e00033",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 16.563,
+        "y": 199.051,
+        "w": 95.288,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "Detalhamento de Valores - Prestador dos Serviços"
+    },
+    {
+      "element_id": "e00034",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 15.445,
+        "y": 264.418,
+        "w": 10.389,
+        "h": 4.847,
+        "unit": "mm"
+      },
+      "text": "Avisos"
+    },
+    {
+      "element_id": "e00035",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 86.819,
+        "y": 207.021,
+        "w": 24.627,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Natureza Operação"
+    },
+    {
+      "element_id": "e00036",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 67.55,
+        "y": 69.582,
+        "w": 75.506,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "DADOS DO TOMADOR DE SERVIÇOS"
+    },
+    {
+      "element_id": "e00037",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 50.624,
+        "y": 192.855,
+        "w": 11.995,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "COFINS"
+    },
+    {
+      "element_id": "e00038",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 40.386,
+        "y": 59.505,
+        "w": 23.647,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Endereço e CEP"
+    },
+    {
+      "element_id": "e00039",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 95.081,
+        "y": 253.638,
+        "w": 8.097,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "2 - Não"
+    },
+    {
+      "element_id": "e00040",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 39.949,
+        "y": 43.63,
+        "w": 28.054,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Razão Social/Nome"
+    },
+    {
+      "element_id": "e00041",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 43.565,
+        "y": 48.921,
+        "w": 21.526,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Nome Fantasia"
+    },
+    {
+      "element_id": "e00042",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 125.162,
+        "y": 199.051,
+        "w": 73.173,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "Cálculo do ISSQN devido no Município"
+    },
+    {
+      "element_id": "e00043",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 117.74,
+        "y": 91.96,
+        "w": 8.995,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "E-mail"
+    },
+    {
+      "element_id": "e00044",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 95.222,
+        "y": 240.938,
+        "w": 7.821,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1 - Sim"
+    },
+    {
+      "element_id": "e00045",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 207.021,
+        "w": 27.917,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Valor dos Serviços R$"
+    },
+    {
+      "element_id": "e00046",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 142.258,
+        "y": 64.796,
+        "w": 8.995,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "E-mail"
+    },
+    {
+      "element_id": "e00047",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 121.708,
+        "y": 240.887,
+        "w": 13.49,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "ISS a reter"
+    },
+    {
+      "element_id": "e00048",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 99.127,
+        "y": 179.802,
+        "w": 17.291,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Código ART"
+    },
+    {
+      "element_id": "e00049",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 226.776,
+        "w": 28.857,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(-) Retenções Federais"
+    },
+    {
+      "element_id": "e00050",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 74.958,
+        "y": 158.129,
+        "w": 60.689,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "CÓDIGO DE ATIVIDADE CNAE"
+    },
+    {
+      "element_id": "e00051",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 12.076,
+        "y": 179.802,
+        "w": 22.412,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Código da Obra"
+    },
+    {
+      "element_id": "e00052",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 65.197,
+        "y": 37.126,
+        "w": 80.213,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "DADOS DO PRESTADOR DE SERVIÇOS"
+    },
+    {
+      "element_id": "e00053",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 49.438,
+        "y": 170.476,
+        "w": 111.73,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "DETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL"
+    },
+    {
+      "element_id": "e00054",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 128.852,
+        "y": 192.855,
+        "w": 13.583,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "INSS(R$)"
+    },
+    {
+      "element_id": "e00055",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 121.708,
+        "y": 213.723,
+        "w": 39.678,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(-) Deduções Permitidas em Lei"
+    },
+    {
+      "element_id": "e00056",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 63.585,
+        "y": 81.377,
+        "w": 26.994,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Inscrição Municipal"
+    },
+    {
+      "element_id": "e00057",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 123.38,
+        "y": 81.377,
+        "w": 13.586,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Município"
+    },
+    {
+      "element_id": "e00058",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 83.428,
+        "y": 185.646,
+        "w": 43.752,
+        "h": 5.817,
+        "unit": "mm"
+      },
+      "text": "TRIBUTOS FEDERAIS"
+    },
+    {
+      "element_id": "e00059",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 41.099,
+        "y": 54.213,
+        "w": 15.523,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "CPF/CNPJ"
+    },
+    {
+      "element_id": "e00060",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 121.708,
+        "y": 207.021,
+        "w": 27.917,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Valor dos Serviços R$"
+    },
+    {
+      "element_id": "e00061",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 121.708,
+        "y": 220.426,
+        "w": 35.292,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(-) Desconto Incondicionado"
+    },
+    {
+      "element_id": "e00062",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 121.708,
+        "y": 226.776,
+        "w": 20.549,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Base de Cálculo"
+    },
+    {
+      "element_id": "e00063",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 220.426,
+        "w": 33.565,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(-) Desconto Condicionado"
+    },
+    {
+      "element_id": "e00064",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.197,
+        "y": 76.085,
+        "w": 28.054,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Razão Social/Nome"
+    },
+    {
+      "element_id": "e00065",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 177.211,
+        "y": 240.887,
+        "w": 18.816,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "( ) Sim (X) Não"
+    },
+    {
+      "element_id": "e00066",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 33.867,
+        "y": 258.276,
+        "w": 126.816,
+        "h": 2.908,
+        "unit": "mm"
+      },
+      "text": "1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços, no sítio http://iss.fortaleza.ce.gov.br"
+    },
+    {
+      "element_id": "e00067",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 33.867,
+        "y": 260.738,
+        "w": 128.236,
+        "h": 2.908,
+        "unit": "mm"
+      },
+      "text": "2- A autenticidade desta Nota Fiscal poderá ser validada no site http://iss.fortaleza.ce.gov.br/, com a utilização do Código de Verificação."
+    },
+    {
+      "element_id": "e00068",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 33.867,
+        "y": 263.204,
+        "w": 107.88,
+        "h": 2.908,
+        "unit": "mm"
+      },
+      "text": "3- Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de ISS e IPI."
+    },
+    {
+      "element_id": "e00069",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 86.191,
+        "y": 247.237,
+        "w": 25.88,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Incentivador Cultural"
+    },
+    {
+      "element_id": "e00070",
+      "field_ids": [
+        "servico_descricao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 7.761,
+        "y": 102.598,
+        "w": 57.881,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Desenvolvimento de software sob encomenda"
+    },
+    {
+      "element_id": "e00071",
+      "field_ids": [
+        "servico_codigo"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 8.114,
+        "y": 165.04,
+        "w": 65.882,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "01.02 - Desenvolvimento de software sob encomend"
+    },
+    {
+      "element_id": "e00072",
+      "field_ids": [
+        "tomador_documento"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 27.869,
+        "y": 81.432,
+        "w": 19.77,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "446.204.494-00"
+    },
+    {
+      "element_id": "e00073",
+      "field_ids": [
+        "tomador_endereco_logradouro",
+        "tomador_endereco_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 99.18,
+        "y": 86.723,
+        "w": 23.213,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Morro Vieira, 1248"
+    },
+    {
+      "element_id": "e00074",
+      "field_ids": [
+        "tomador_razao_social"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 44.097,
+        "y": 76.14,
+        "w": 19.448,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Isabella Ribeiro"
+    },
+    {
+      "element_id": "e00075",
+      "field_ids": [
+        "data_emissao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 50.2,
+        "y": 26.751,
+        "w": 25.891,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "03/07/2023 01:40:42"
+    },
+    {
+      "element_id": "e00076",
+      "field_ids": [
+        "valor_servicos"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 57.012,
+        "y": 250.358,
+        "w": 14.122,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "20.620,68"
+    },
+    {
+      "element_id": "e00077",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 57.676,
+        "y": 207.021,
+        "w": 12.553,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "20.620,68"
+    },
+    {
+      "element_id": "e00078",
+      "field_ids": [
+        "prestador_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 59.619,
+        "y": 54.268,
+        "w": 25.262,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "25.948.849/4130-37"
+    },
+    {
+      "element_id": "e00079",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 60.226,
+        "y": 226.776,
+        "w": 5.492,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00080",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 60.226,
+        "y": 240.887,
+        "w": 5.492,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00081",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 67.733,
+        "y": 59.559,
+        "w": 23.213,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Morro Vieira, 1248"
+    },
+    {
+      "element_id": "e00082",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.259,
+        "y": 43.79,
+        "w": 57.881,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Desenvolvimento de software sob encomenda"
+    },
+    {
+      "element_id": "e00083",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 93.839,
+        "y": 92.015,
+        "w": 20.865,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(23) 98935-2613"
+    },
+    {
+      "element_id": "e00084",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 117.475,
+        "y": 64.851,
+        "w": 20.865,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "(23) 98935-2613"
+    },
+    {
+      "element_id": "e00085",
+      "field_ids": [
+        "prestador_inscricao_municipal"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 121.356,
+        "y": 54.268,
+        "w": 12.553,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "95198032"
+    },
+    {
+      "element_id": "e00086",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 147.863,
+        "y": 92.015,
+        "w": 33.917,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "comrciodeoli@outlook.com"
+    },
+    {
+      "element_id": "e00087",
+      "field_ids": [
+        "municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 140.053,
+        "y": 81.432,
+        "w": 34.194,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Presidente Castello Branco"
+    },
+    {
+      "element_id": "e00088",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 161.417,
+        "y": 64.851,
+        "w": 33.917,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "comrciodeoli@outlook.com"
+    },
+    {
+      "element_id": "e00089",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 178.675,
+        "y": 26.696,
+        "w": 23.292,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "953D-E3D1-35B"
+    },
+    {
+      "element_id": "e00090",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 180.619,
+        "y": 19.59,
+        "w": 9.807,
+        "h": 4.847,
+        "unit": "mm"
+      },
+      "text": "98485"
+    },
+    {
+      "element_id": "e00091",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 179.444,
+        "y": 207.021,
+        "w": 16.312,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "Presidente C"
+    },
+    {
+      "element_id": "e00092",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 181.324,
+        "y": 226.776,
+        "w": 12.553,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "20.620,68"
+    },
+    {
+      "element_id": "e00093",
+      "field_ids": [
+        "valor_iss"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 182.206,
+        "y": 250.358,
+        "w": 9.709,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "618,62"
+    },
+    {
+      "element_id": "e00094",
+      "field_ids": [
+        "aliquota"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 183.875,
+        "y": 233.832,
+        "w": 5.492,
+        "h": 3.878,
+        "unit": "mm"
+      },
+      "text": "3,00"
+    }
+  ],
+  "layout": {
+    "special_objects": [
+      {
+        "type": "stamp",
+        "subtype": "receipt_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 92.77,
+          "y": 272.538,
+          "w": 49.847,
+          "h": 20.308,
+          "unit": "mm"
+        },
+        "field_id": null,
+        "text": [
+          "LANÇADO",
+          "DATA: 03/07/2023"
+        ]
+      },
+      {
+        "type": "stamp",
+        "subtype": "cnpj_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 118.617,
+          "y": 202.615,
+          "w": 59.77,
+          "h": 31.846,
+          "unit": "mm"
+        },
+        "field_id": "cnpj_prestador",
+        "text": [
+          "[25.948.849/4130-37]",
+          "COMÉRCIO DE OLIVEIRA ME",
+          "AV. RIO BAHIA, 8600",
+          "CENTRO - CEP 36880-000",
+          "PRESIDENTE CASTELLO BRANCO - MG"
+        ]
+      }
+    ]
+  },
+  "ocr": {
+    "full_text": "PREFEITURA MUNICIPAL DE FORTALEZA\nSECRETARIA MUNICIPAL DAS FINANÇAS\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNúmero da\nNFS-e\nData e Hora da Emissão\nNúmero do RPS\nCompetência\nNo. NFS-e substituída\nCódigo de Verificação\nLocal da Prestação\nFORTALEZA - CE\nPIS\n(X) Alíquota %\nTelefone\nInsc Municipal\n(=) Valor do ISS R$\nCSLL(R$)\nMunicípio\nOpção Simples Nacional\nTelefone\n(-) Desconto Incondicionado\nIR(R$)\nDISCRIMINAÇÃO DOS SERVIÇOS\nOutras Retenções\nComplemento\n(-) ISS Retido\nCPF/CNPJ\nFORTALEZA - CE\nRegime especial Tributação\nComplemento\nEndereço e CEP\n(=) Valor Líquido      R$\nDetalhamento de Valores - Prestador dos Serviços\nAvisos\nNatureza Operação\nDADOS DO TOMADOR DE SERVIÇOS\nCOFINS\nEndereço e CEP\n2 - Não\nRazão Social/Nome\nNome Fantasia\nCálculo do ISSQN devido no Município\nE-mail\n1 - Sim\nValor dos Serviços R$\nE-mail\nISS a reter\nCódigo ART\n(-) Retenções Federais\nCÓDIGO DE ATIVIDADE CNAE\nCódigo da Obra\nDADOS DO PRESTADOR DE SERVIÇOS\nDETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL\nINSS(R$)\n(-) Deduções Permitidas em Lei\nInscrição Municipal\nMunicípio\nTRIBUTOS FEDERAIS\nCPF/CNPJ\nValor dos Serviços R$\n(-) Desconto Incondicionado\nBase de Cálculo\n(-) Desconto Condicionado\nRazão Social/Nome\n( ) Sim (X) Não\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços, no sítio http://iss.fortaleza.ce.gov.br\n2- A autenticidade desta Nota Fiscal poderá ser validada no site http://iss.fortaleza.ce.gov.br/, com a utilização do Código de Verificação.\n3- Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de ISS e IPI.\nIncentivador Cultural\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomend\n446.204.494-00\nMorro Vieira, 1248\nIsabella Ribeiro\n03/07/2023 01:40:42\n20.620,68\n20.620,68\n25.948.849/4130-37\n0,00\n0,00\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\n(23) 98935-2613\n(23) 98935-2613\n95198032\ncomrciodeoli@outlook.com\nPresidente Castello Branco\ncomrciodeoli@outlook.com\n953D-E3D1-35B\n98485\nPresidente C\n20.620,68\n618,62\n3,00\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "PREFEITURA MUNICIPAL DE FORTALEZA\nSECRETARIA MUNICIPAL DAS FINANÇAS\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNúmero da\nNFS-e\nData e Hora da Emissão\nNúmero do RPS\nCompetência\nNo. NFS-e substituída\nCódigo de Verificação\nLocal da Prestação\nFORTALEZA - CE\nPIS\n(X) Alíquota %\nTelefone\nInsc Municipal\n(=) Valor do ISS R$\nCSLL(R$)\nMunicípio\nOpção Simples Nacional\nTelefone\n(-) Desconto Incondicionado\nIR(R$)\nDISCRIMINAÇÃO DOS SERVIÇOS\nOutras Retenções\nComplemento\n(-) ISS Retido\nCPF/CNPJ\nFORTALEZA - CE\nRegime especial Tributação\nComplemento\nEndereço e CEP\n(=) Valor Líquido      R$\nDetalhamento de Valores - Prestador dos Serviços\nAvisos\nNatureza Operação\nDADOS DO TOMADOR DE SERVIÇOS\nCOFINS\nEndereço e CEP\n2 - Não\nRazão Social/Nome\nNome Fantasia\nCálculo do ISSQN devido no Município\nE-mail\n1 - Sim\nValor dos Serviços R$\nE-mail\nISS a reter\nCódigo ART\n(-) Retenções Federais\nCÓDIGO DE ATIVIDADE CNAE\nCódigo da Obra\nDADOS DO PRESTADOR DE SERVIÇOS\nDETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL\nINSS(R$)\n(-) Deduções Permitidas em Lei\nInscrição Municipal\nMunicípio\nTRIBUTOS FEDERAIS\nCPF/CNPJ\nValor dos Serviços R$\n(-) Desconto Incondicionado\nBase de Cálculo\n(-) Desconto Condicionado\nRazão Social/Nome\n( ) Sim (X) Não\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços, no sítio http://iss.fortaleza.ce.gov.br\n2- A autenticidade desta Nota Fiscal poderá ser validada no site http://iss.fortaleza.ce.gov.br/, com a utilização do Código de Verificação.\n3- Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de ISS e IPI.\nIncentivador Cultural\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomend\n446.204.494-00\nMorro Vieira, 1248\nIsabella Ribeiro\n03/07/2023 01:40:42\n20.620,68\n20.620,68\n25.948.849/4130-37\n0,00\n0,00\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\n(23) 98935-2613\n(23) 98935-2613\n95198032\ncomrciodeoli@outlook.com\nPresidente Castello Branco\ncomrciodeoli@outlook.com\n953D-E3D1-35B\n98485\nPresidente C\n20.620,68\n618,62\n3,00\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 18,
+    "fields_matched_to_bbox": 14,
+    "match_rate": 0.778
+  },
+  "kie": {
+    "provider": {
+      "cnpj": {
+        "value": "25948849413037",
+        "raw_value": "25948849413037",
+        "bbox_ref": "e00078"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Comércio de Oliveira ME",
+        "raw_value": "Comércio de Oliveira ME",
+        "bbox_ref": null
+      },
+      "inscricao_municipal": {
+        "value": "95198032",
+        "raw_value": "95198032",
+        "bbox_ref": "e00085"
+      },
+      "municipality": {
+        "value": "Presidente Castello Branco",
+        "raw_value": "Presidente Castello Branco",
+        "bbox_ref": "e00087"
+      }
+    },
+    "taker": {
+      "document": {
+        "value": "44620449400",
+        "raw_value": "44620449400",
+        "bbox_ref": "e00072"
+      },
+      "tax_id_type": "cpf",
+      "name": {
+        "value": "Isabella Ribeiro",
+        "raw_value": "Isabella Ribeiro",
+        "bbox_ref": "e00074"
+      }
+    },
+    "document": {
+      "rps_number": {
+        "value": "844111",
+        "raw_value": "844111",
+        "bbox_ref": null
+      },
+      "batch_number": {
+        "value": "884521",
+        "raw_value": "884521",
+        "bbox_ref": null
+      },
+      "issue_date": {
+        "value": "2023-07-03T01:40:42",
+        "raw_value": "2023-07-03T01:40:42",
+        "bbox_ref": "e00075"
+      },
+      "environment": {
+        "value": "homologacao",
+        "raw_value": "homologacao",
+        "bbox_ref": null
+      }
+    },
+    "service": {
+      "code": {
+        "value": "01.02",
+        "raw_value": "01.02",
+        "bbox_ref": "e00071"
+      },
+      "description": {
+        "value": "Desenvolvimento de software sob encomenda",
+        "raw_value": "Desenvolvimento de software sob encomenda",
+        "bbox_ref": "e00070"
+      },
+      "value": {
+        "value": "20620.68",
+        "raw_value": 20620.68,
+        "bbox_ref": "e00076"
+      },
+      "iss_rate": {
+        "value": "3.00",
+        "raw_value": 3.0,
+        "bbox_ref": "e00094"
+      },
+      "iss_value": {
+        "value": "618.62",
+        "raw_value": 618.62,
+        "bbox_ref": "e00093"
+      }
+    }
+  },
+  "dpi": 110
+}

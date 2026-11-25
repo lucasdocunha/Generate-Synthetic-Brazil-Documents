@@ -240,8 +240,8 @@ class Damdfe(xFPDF):
         is_protocol_available = self.prot_mdfe is not None
 
         # Exit early if no watermark is needed
-        if is_production_environment and is_protocol_available:
-            return
+        # dado sintético: sem marca d'água "SEM VALOR FISCAL"
+        return
 
         self.set_font(self.default_font, "B", 60)
         watermark_text = "SEM VALOR FISCAL"

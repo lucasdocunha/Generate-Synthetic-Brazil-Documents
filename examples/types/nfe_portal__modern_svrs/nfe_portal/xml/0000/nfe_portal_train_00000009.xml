@@ -1,0 +1,187 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe>
+    <infNFe versao="4.00" Id="NFe00240642111621414917550010001203841224854222">
+        <ide>
+            <cUF>35</cUF>
+            <cNF>96926919</cNF>
+            <natOp>Venda de produção do estabelecimento</natOp>
+            <mod>55</mod>
+            <serie>1</serie>
+            <nNF>120384</nNF>
+            <dhEmi>2024-06-25T11:50:43-03:00</dhEmi>
+            <dhSaiEnt>2024-06-25T11:50:43-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>2</idDest>
+            <cMunFG>3550209</cMunFG>
+            <tpImp>2</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>2</cDV>
+            <tpAmb>2</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>1</indFinal>
+            <indPres>9</indPres>
+            <procEmi>0</procEmi>
+            <verProc>SYNTH-GEN 1.0</verProc>
+        </ide>
+        <emit>
+            <CNPJ>42111621414917</CNPJ>
+            <xNome>Comércio de Cunha LTDA</xNome>
+            <xFant>Comercial da Luz LTDA</xFant>
+            <enderEmit>
+                <xLgr>Setor Almeida</xLgr>
+                <nro>242</nro>
+                <xCpl>Fundos</xCpl>
+                <xBairro>Flavio De Oliveira</xBairro>
+                <cMun>3550209</cMun>
+                <xMun>São Miguel Arcanjo</xMun>
+                <UF>SP</UF>
+                <CEP>13441615</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>21910595694</fone>
+            </enderEmit>
+            <IE>528211389370</IE>
+            <CRT>1</CRT>
+        </emit>
+        <dest>
+            <CNPJ>CMGXGCMD000387</CNPJ>
+            <xNome>Distribuidora de Santos S.A.</xNome>
+            <enderDest>
+                <xLgr>Estrada Costa</xLgr>
+                <nro>782</nro>
+                <xCpl>Fundos</xCpl>
+                <xBairro>São Bento</xBairro>
+                <cMun>4320354</cMun>
+                <xMun>Sentinela do Sul</xMun>
+                <UF>RS</UF>
+                <CEP>86592792</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>21977432288</fone>
+            </enderDest>
+            <indIEDest>1</indIEDest>
+            <IE>685049957786</IE>
+            </dest>
+        <det nItem="1">
+            <prod>
+                <cProd>3963858</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Serviço de consultoria mensal</xProd>
+                <NCM>99994974</NCM>
+                <CFOP>6102</CFOP>
+                <uCom>UN</uCom>
+                <qCom>87.0000</qCom>
+                <vUnCom>611.0300000000</vUnCom>
+                <vProd>53159.61</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>UN</uTrib>
+                <qTrib>87.0000</qTrib>
+                <vUnTrib>611.0300000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>6496.65</vTotTrib>
+            <ICMS><ICMSSN102><orig>0</orig><CSOSN>300</CSOSN></ICMSSN102></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS><IBSCBS><CST>000</CST><cClassTrib>000001</cClassTrib><gIBSCBS><vBC>53159.61</vBC><gIBSUF><pIBSUF>0.1000</pIBSUF><vIBSUF>53.16</vIBSUF></gIBSUF><gIBSMun><pIBSMun>0.0000</pIBSMun><vIBSMun>0.00</vIBSMun></gIBSMun><vIBS>53.16</vIBS><gCBS><pCBS>0.9000</pCBS><vCBS>478.44</vCBS></gCBS></gIBSCBS></IBSCBS></imposto>
+            </det>
+        <total>
+            <ICMSTot>
+                <vBC>0.00</vBC>
+                <vICMS>0.00</vICMS>
+                <vICMSDeson>0.00</vICMSDeson>
+                <vFCP>0.00</vFCP>
+                <vBCST>0.00</vBCST>
+                <vST>0.00</vST>
+                <vFCPST>0.00</vFCPST>
+                <vFCPSTRet>0.00</vFCPSTRet>
+                <vProd>53159.61</vProd>
+                <vFrete>0.00</vFrete>
+                <vSeg>0.00</vSeg>
+                <vDesc>0.00</vDesc>
+                <vII>0.00</vII>
+                <vIPI>0.00</vIPI>
+                <vIPIDevol>0.00</vIPIDevol>
+                <vPIS>0.00</vPIS>
+                <vCOFINS>0.00</vCOFINS>
+                <vOutro>0.00</vOutro>
+                <vNF>53159.61</vNF>
+                <vTotTrib>6496.65</vTotTrib>
+            </ICMSTot>
+            <IBSCBSTot>
+                <vBCIBSCBS>53159.61</vBCIBSCBS>
+                <gIBS>
+                    <gIBSUF>
+                        <vDif>0.00</vDif>
+                        <vDevTrib>0.00</vDevTrib>
+                        <vIBSUF>53.16</vIBSUF>
+                    </gIBSUF>
+                    <gIBSMun>
+                        <vDif>0.00</vDif>
+                        <vDevTrib>0.00</vDevTrib>
+                        <vIBSMun>0.00</vIBSMun>
+                    </gIBSMun>
+                    <vIBS>53.16</vIBS>
+                    <vCredPres>0.00</vCredPres>
+                    <vCredPresCondSus>0.00</vCredPresCondSus>
+                </gIBS>
+                <gCBS>
+                    <vDif>0.00</vDif>
+                    <vDevTrib>0.00</vDevTrib>
+                    <vCBS>478.44</vCBS>
+                    <vCredPres>0.00</vCredPres>
+                    <vCredPresCondSus>0.00</vCredPresCondSus>
+                </gCBS>
+            </IBSCBSTot>
+        </total>
+        <transp>
+            <modFrete>0</modFrete>
+            <transporta>
+                <CNPJ>SJ1KJG0N000108</CNPJ>
+                <xNome>Transportes Leão S.A.</xNome>
+                <IE>273327671354</IE>
+                <xEnder>Travessa Macedo, 836</xEnder>
+                <xMun>Coronel Xavier Chaves</xMun>
+                <UF>MG</UF>
+            </transporta>
+            <veicTransp>
+                <placa>YRY8A93</placa>
+                <UF>MG</UF>
+                <RNTC>12255040</RNTC>
+            </veicTransp>
+            <vol>
+                <qVol>267</qVol>
+                <esp>CAIXA</esp>
+                <pesoL>105.559</pesoL>
+                <pesoB>108.180</pesoB>
+            </vol>
+        </transp>
+        <cobr>
+            <fat>
+                <nFat>120384</nFat>
+                <vOrig>53159.61</vOrig>
+                <vDesc>0.00</vDesc>
+                <vLiq>53159.61</vLiq>
+            </fat>
+            <dup>
+                <nDup>001</nDup>
+                <dVenc>2024-07-02</dVenc>
+                <vDup>17719.87</vDup>
+            </dup>
+        <dup>
+                <nDup>002</nDup>
+                <dVenc>2024-07-16</dVenc>
+                <vDup>17719.87</vDup>
+            </dup>
+        <dup>
+                <nDup>003</nDup>
+                <dVenc>2024-07-30</dVenc>
+                <vDup>17719.87</vDup>
+            </dup>
+        </cobr>
+        <pag>
+            <detPag>
+                <indPag>1</indPag>
+                <tPag>15</tPag>
+                <vPag>53159.61</vPag>
+            </detPag>
+        </pag>
+        </infNFe>
+</NFe><protNFe versao="4.00"><infProt><tpAmb>2</tpAmb><verAplic>SYNTH-HOM</verAplic><chNFe>00240642111621414917550010001203841224854222</chNFe><dhRecbto>2024-06-25T11:54:18-03:00</dhRecbto><nProt>100247190949471</nProt><digVal>oFCWOTEwJ/IZqs1fBPrs/pLM+v9=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

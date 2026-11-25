@@ -1,0 +1,44 @@
+<ns0:NFSe xmlns:ns0="http://www.sped.fazenda.gov.br/nfse">
+    <ns0:infNFSe versao="1.01" Id="NFS70200188879693240964624994225410629683476621667584">
+        <ns0:xLocEmi>Cascavel</ns0:xLocEmi>
+        <ns0:xLocPrestacao>Cascavel</ns0:xLocPrestacao>
+        <ns0:nNFSe>368151</ns0:nNFSe>
+        <ns0:verAplic>SefinNacional_1.6.0</ns0:verAplic>
+        <ns0:ambGer>2</ns0:ambGer>
+        <ns0:tpEmis>1</ns0:tpEmis>
+        <ns0:procEmi>1</ns0:procEmi>
+        <ns0:cStat>100</ns0:cStat>
+        <ns0:dhProc>2025-05-26T05:34:57-03:00</ns0:dhProc>
+        <ns0:nDFSe>117997</ns0:nDFSe>
+        <ns0:emit>
+            <ns0:CNPJ>0TXRDHTJ000184</ns0:CNPJ>
+            <ns0:xNome>Distribuidora de Caldeira MEI</ns0:xNome>
+        </ns0:emit>
+        <ns0:valores>
+            <ns0:vLiq>9944.57</ns0:vLiq>
+        </ns0:valores>
+        <ns0:DPS versao="1.00">
+            <ns0:infDPS Id="DPS666">
+                <ns0:tpAmb>2</ns0:tpAmb>
+                <ns0:dhEmi>2025-05-26T05:34:57-03:00</ns0:dhEmi>
+                <ns0:nDPS>368151</ns0:nDPS>
+                <ns0:serie>1</ns0:serie>
+                <ns0:dCompet>2025-05-26</ns0:dCompet>
+                <ns0:prest>
+                    <ns0:CNPJ>0TXRDHTJ000184</ns0:CNPJ>
+                </ns0:prest>
+                <ns0:serv>
+                    <ns0:cServ>
+                        <ns0:cTribNac>140501</ns0:cTribNac>
+                        <ns0:xDescServ>Serviço de manutenção e reparo predial</ns0:xDescServ>
+                    </ns0:cServ>
+                </ns0:serv>
+                <ns0:valores>
+                    <ns0:vServPrest>
+                        <ns0:vServ>9944.57</ns0:vServ>
+                    </ns0:vServPrest>
+                </ns0:valores>
+            </ns0:infDPS>
+        </ns0:DPS>
+    </ns0:infNFSe>
+</ns0:NFSe>

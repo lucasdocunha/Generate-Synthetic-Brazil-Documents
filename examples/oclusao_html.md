@@ -1,6 +1,6 @@
 # Oclusão no HTML/Markdown (`html_visible`, `md_visible`)
 
-Carimbo, assinatura e comprovante POS são sobrepostos depois do render, então o HTML do documento (`html_clean`) não os conhece. O `html_visible` descreve **o que a imagem degradada mostra**: cada objeto vira `<aside data-kind="pos_receipt|stamp|signature|watermark">` com a transcrição, inserido depois do bloco do documento que está acima dele, e campos cobertos em ≥ 50% viram `[ilegível]`.
+Carimbo, assinatura e comprovante POS são sobrepostos depois do render, então o HTML do documento (`html_clean`) não os conhece. O `html_visible` descreve **o que a imagem degradada mostra**: cada objeto vira um `<img>` **vazio** (só a sinalização de que há uma imagem ali), inserido depois do bloco do documento que está acima dele, e campos cobertos em ≥ 50% viram `[ilegível]`. O tipo do objeto e a transcrição ficam em `labels/` (`special_objects`).
 
 ## Como gerar
 
@@ -40,50 +40,38 @@ Relatório (`meta.html.occlusion`):
 Campos cobertos viram `[ilegível]` (em `html_visible`):
 
 ```html
-              <td>CX</td>
-              <td>8,00</td>
-              <td>141,70</td>
-              <td>[ilegível]</td>
-              <td>[ilegível]</td>
-              <td>[ilegível]</td>
-              <td>0,00</td>
-              <td>[ilegível]</td>
-              <td>0,00</td>
+          <td>CX</td>
+          <td>8,00</td>
+          <td>141,70</td>
+          <td>[ilegível]</td>
+          <td>[ilegível]</td>
+          <td>[ilegível]</td>
+          <td>0,00</td>
+          <td>[ilegível]</td>
+          <td>0,00</td>
 ```
 
-O comprovante, transcrito (`html_visible`):
+O comprovante, sinalizado (`html_visible`):
 
 ```html
-      <aside data-kind="pos_receipt">
-        <p>cielo</p>
-        <p>REDE CIELO - Via Cliente</p>
-        <p>SERVIÇOS DE MACHADO MEI</p>
-        <p>PRAIA NICOLE PASTOR 646</p>
-        <p>MATINA - BA</p>
-        <p>TK.SCX.EIV/5THQ-33 CV:39968745</p>
-        <p>25/07/2023 17:39:35 AUT:541046</p>
-        <p>DOC:921426 TERM:0700381</p>
-        <p>MASTERCARD            ************9975</p>
+    <p>Nº000.223.602</p>
+    <p>SÉRIE 1</p>
+  </section>
+  <img>
+  <header>
+    <h1>Serviços de Machado MEI</h1>
 ```
 
-No `md_visible`:
+No `md_visible` a imagem aparece como `![]()`:
 
 ```markdown
-> **Assinatura**
-> [assinatura manuscrita]
-> **Comprovante de cartão (POS)**
-> cielo
-> REDE CIELO - Via Cliente
-> SERVIÇOS DE MACHADO MEI
-> PRAIA NICOLE PASTOR 646
-> MATINA - BA
-> TK.SCX.EIV/5THQ-33 CV:39968745
-> 25/07/2023 17:39:35 AUT:541046
-> DOC:921426 TERM:0700381
-> MASTERCARD ************9975
-> CVAD:983322
-> DEBITO A VISTA
-> VALOR: 182.903,64
+![]()
+![]()
+![]()
+| CAB-643 | Cabo elétrico flexível | 85442155 | 210 | 5102 | CX | 8,00 | 141,70 | [ilegível] | [ilegível] | [ilegível] | 0,00 | [ilegível] | 0,00 |
+| SKU91599 | Serviço de instalação hidráulica | 00 |  | 5933 | SV | 6,00 | 3.312,11 | [ilegível] | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| SKU84385 | Parafuso Aço carbono | 73185096 | 000 | 5102 | LT | 5,00 | 65,74 | [ilegível] | [ilegível] | [ilegível] | 0,00 | [ilegível] | 0,00 |
+| SER-854 | Serviço de instalação elétrica Garantia de
 ```
 
 Arquivos completos: [`html_clean`](effects/oclusao_html/html_clean.html), [`html_visible`](effects/oclusao_html/html_visible.html), [`md_visible`](effects/oclusao_html/md_visible.md).

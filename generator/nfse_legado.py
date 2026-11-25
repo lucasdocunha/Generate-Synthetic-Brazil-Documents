@@ -44,7 +44,12 @@ _SERVICE_CATALOG = [
 ]
 
 
-def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO):
+from renderers.nfse_cidades import CITY_LAYOUTS  # noqa: E402
+
+CITY_STYLES = ["ginfes", *CITY_LAYOUTS]
+
+
+def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNUM_RATIO, city_layout=None):
     rng = random.Random(seed)
     faker = Faker("pt_BR")
     faker.seed_instance(seed)
@@ -149,5 +154,7 @@ def generate_nfse_legado(seed=None, cnpj_alnum_ratio=fake_data.DEFAULT_CNPJ_ALNU
         "aliquota": float(aliquota),
         "v_serv": v_serv,
         "v_iss": v_iss,
+        # layout impresso (estilo de prefeitura); RNG próprio para não alterar o resto da amostra
+        "_render": {"city_layout": city_layout or random.Random(f"city:{seed}").choice(CITY_STYLES)},
     }
     return xml_str, field_values

@@ -919,7 +919,7 @@ class Danfse(xFPDF):
             self.set_font(self.default_font, "B", 9)
             self.set_text_color(255, 0, 0)
             self.set_xy(self._col(1), y0 + 8.8)
-            self.cell(w=self.colw * 2, h=2.6, text=TXT_NO_LEGAL_VALIDITY, align="C")
+            pass  # dado sintético: sem o aviso "SEM VALIDADE JURÍDICA"
             self.set_text_color(0, 0, 0)
 
         header = self.data["header"]

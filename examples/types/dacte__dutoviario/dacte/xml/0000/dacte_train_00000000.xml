@@ -1,0 +1,192 @@
+<ns0:CTe xmlns:ns0="http://www.portalfiscal.inf.br/cte">
+  <ns0:infCte versao="4.00" Id="CTe002504J1FNUD7M000114570010008862001590951037">
+    <ns0:ide>
+      <ns0:cUF>29</ns0:cUF>
+      <ns0:cCT>57000111</ns0:cCT>
+      <ns0:CFOP>5352</ns0:CFOP>
+      <ns0:natOp>Prestação de serviço de transporte</ns0:natOp>
+      <ns0:mod>57</ns0:mod>
+      <ns0:serie>1</ns0:serie>
+      <ns0:nCT>886200</ns0:nCT>
+      <ns0:dhEmi>2025-04-17T15:44:18-03:00</ns0:dhEmi>
+      <ns0:tpImp>1</ns0:tpImp>
+      <ns0:tpEmis>1</ns0:tpEmis>
+      <ns0:cDV>7</ns0:cDV>
+      <ns0:tpAmb>2</ns0:tpAmb>
+      <ns0:tpCTe>0</ns0:tpCTe>
+      <ns0:procEmi>0</ns0:procEmi>
+      <ns0:verProc>Odoo Brasil OCA v14</ns0:verProc>
+      <ns0:cMunEnv>3550308</ns0:cMunEnv>
+      <ns0:xMunEnv>São Paulo</ns0:xMunEnv>
+      <ns0:UFEnv>SP</ns0:UFEnv>
+      <ns0:modal>05</ns0:modal>
+      <ns0:tpServ>0</ns0:tpServ>
+      <ns0:cMunIni>2910206</ns0:cMunIni>
+      <ns0:xMunIni>Dom Macedo Costa</ns0:xMunIni>
+      <ns0:UFIni>BA</ns0:UFIni>
+      <ns0:cMunFim>3138351</ns0:cMunFim>
+      <ns0:xMunFim>Leme do Prado</ns0:xMunFim>
+      <ns0:UFFim>MG</ns0:UFFim>
+      <ns0:retira>1</ns0:retira>
+      <ns0:indIEToma>1</ns0:indIEToma>
+      <ns0:toma3>
+        <ns0:toma>3</ns0:toma>
+      </ns0:toma3>
+    </ns0:ide>
+    <ns0:compl>
+      <ns0:xObs>Documento emitido por: Marc Demo</ns0:xObs>
+      <ns0:ObsFisco xCampo="Usuário emissor">
+        <ns0:xTexto>Documento emitido por: Marc Demo</ns0:xTexto>
+      </ns0:ObsFisco>
+    </ns0:compl>
+    <ns0:emit>
+      <ns0:CNPJ>J1FNUD7M000114</ns0:CNPJ>
+      <ns0:IE>316554004692</ns0:IE>
+      <ns0:xNome>Atacado de Cassiano LTDA</ns0:xNome>
+      <ns0:xFant>Transportes Sales LTDA</ns0:xFant>
+      <ns0:enderEmit>
+        <ns0:xLgr>Lagoa Almeida</ns0:xLgr>
+        <ns0:nro>274</ns0:nro>
+        <ns0:xBairro>Itaipu</ns0:xBairro>
+        <ns0:cMun>2910206</ns0:cMun>
+        <ns0:xMun>Dom Macedo Costa</ns0:xMun>
+        <ns0:CEP>73673236</ns0:CEP>
+        <ns0:UF>BA</ns0:UF>
+        <ns0:fone>8120249628</ns0:fone>
+      </ns0:enderEmit>
+      <ns0:CRT>3</ns0:CRT>
+    </ns0:emit>
+    <ns0:rem>
+      <ns0:CNPJ>24748759216986</ns0:CNPJ>
+      <ns0:IE>833120912370</ns0:IE>
+      <ns0:xNome>Comercial da Costa LTDA</ns0:xNome>
+      <ns0:xFant>Comércio de Cavalcanti EIRELI</ns0:xFant>
+      <ns0:fone>48940896675</ns0:fone>
+      <ns0:enderReme>
+        <ns0:xLgr>Viaduto de Freitas</ns0:xLgr>
+        <ns0:nro>1680</ns0:nro>
+        <ns0:xBairro>Vila Oeste</ns0:xBairro>
+        <ns0:cMun>2404705</ns0:cMun>
+        <ns0:xMun>Ipanguaçu</ns0:xMun>
+        <ns0:CEP>81738955</ns0:CEP>
+        <ns0:UF>RN</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderReme>
+      <ns0:email>hcostela@pires.gov.br</ns0:email>
+    </ns0:rem>
+    <ns0:exped>
+      <ns0:CNPJ>50378731344903</ns0:CNPJ>
+      <ns0:IE>743134396203</ns0:IE>
+      <ns0:xNome>Distribuidora de Santos LTDA</ns0:xNome>
+      <ns0:fone>21955015921</ns0:fone>
+      <ns0:enderExped>
+        <ns0:xLgr>Pátio Davi Lucas Guerra</ns0:xLgr>
+        <ns0:nro>1274</ns0:nro>
+        <ns0:xBairro>São Jorge 2ª Seção</ns0:xBairro>
+        <ns0:cMun>3170206</ns0:cMun>
+        <ns0:xMun>Uberlândia</ns0:xMun>
+        <ns0:CEP>35090683</ns0:CEP>
+        <ns0:UF>MG</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderExped>
+      <ns0:email>mariahabreu@carvalho.net</ns0:email>
+    </ns0:exped>
+    <ns0:receb>
+      <ns0:CNPJ>HJA2KS3G000233</ns0:CNPJ>
+      <ns0:IE>781082353082</ns0:IE>
+      <ns0:xNome>Transportes Sales LTDA</ns0:xNome>
+      <ns0:fone>47946733384</ns0:fone>
+      <ns0:enderReceb>
+        <ns0:xLgr>Rua Fogaça</ns0:xLgr>
+        <ns0:nro>1835</ns0:nro>
+        <ns0:xCpl>Fundos</ns0:xCpl>
+        <ns0:xBairro>Conjunto Serra Verde</ns0:xBairro>
+        <ns0:cMun>4315313</ns0:cMun>
+        <ns0:xMun>Quatro Irmãos</ns0:xMun>
+        <ns0:CEP>80444934</ns0:CEP>
+        <ns0:UF>RS</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderReceb>
+      <ns0:email>mariana48@ferreira.gov.br</ns0:email>
+    </ns0:receb>
+    <ns0:dest>
+      <ns0:CNPJ>54666424925361</ns0:CNPJ>
+      <ns0:IE>194195490255</ns0:IE>
+      <ns0:xNome>Transportes Castro S.A.</ns0:xNome>
+      <ns0:fone>3154859884</ns0:fone>
+      <ns0:ISUF>101362102</ns0:ISUF>
+      <ns0:enderDest>
+        <ns0:xLgr>Pátio Nunes</ns0:xLgr>
+        <ns0:nro>1590</ns0:nro>
+        <ns0:xCpl />
+        <ns0:xBairro>Vila Rica</ns0:xBairro>
+        <ns0:cMun>3138351</ns0:cMun>
+        <ns0:xMun>Leme do Prado</ns0:xMun>
+        <ns0:CEP>77496694</ns0:CEP>
+        <ns0:UF>MG</ns0:UF>
+        <ns0:cPais>1058</ns0:cPais>
+        <ns0:xPais>Brasil</ns0:xPais>
+      </ns0:enderDest>
+      <ns0:email>xsales@pires.net</ns0:email>
+    </ns0:dest>
+    <ns0:vPrest>
+      <ns0:vTPrest>578.26</ns0:vTPrest>
+      <ns0:vRec>578.26</ns0:vRec>
+      <ns0:Comp>
+        <ns0:xNome>Frete</ns0:xNome>
+        <ns0:vComp>578.26</ns0:vComp>
+      </ns0:Comp>
+    </ns0:vPrest>
+    <ns0:imp>
+      <ns0:ICMS>
+        <ns0:ICMS00>
+          <ns0:CST>00</ns0:CST>
+          <ns0:vBC>578.26</ns0:vBC>
+          <ns0:pICMS>7.00</ns0:pICMS>
+          <ns0:vICMS>40.48</ns0:vICMS>
+        </ns0:ICMS00>
+      </ns0:ICMS>
+    </ns0:imp>
+    <ns0:infCTeNorm>
+      <ns0:infCarga>
+        <ns0:vCarga>39686.30</ns0:vCarga>
+        <ns0:proPred>Produtos eletrônicos</ns0:proPred>
+        <ns0:xOutCat>Other Product Data</ns0:xOutCat>
+        <ns0:infQ>
+          <ns0:cUnid>00</ns0:cUnid>
+          <ns0:tpMed>Volume</ns0:tpMed>
+          <ns0:qCarga>1000.0000</ns0:qCarga>
+        </ns0:infQ>
+        <ns0:infQ>
+          <ns0:cUnid>01</ns0:cUnid>
+          <ns0:tpMed>Peso Bruto</ns0:tpMed>
+          <ns0:qCarga>500.0000</ns0:qCarga>
+        </ns0:infQ>
+        <ns0:infQ>
+          <ns0:cUnid>03</ns0:cUnid>
+          <ns0:tpMed>Unidade</ns0:tpMed>
+          <ns0:qCarga>2.0000</ns0:qCarga>
+        </ns0:infQ>
+        <ns0:vCargaAverb>39686.30</ns0:vCargaAverb>
+      </ns0:infCarga>
+      <ns0:infDoc>
+        <ns0:infNFe>
+          <ns0:chave>41190806117473000150550010000586251016759484</ns0:chave>
+        </ns0:infNFe>
+      </ns0:infDoc>
+      <ns0:infModal versaoModal="4.00">
+        <ns0:duto>
+          <ns0:vTar>1500.000000</ns0:vTar>
+          <ns0:dIni>2024-01-01</ns0:dIni>
+          <ns0:dFim>2024-12-31</ns0:dFim>
+        </ns0:duto>
+      </ns0:infModal>
+    </ns0:infCTeNorm>
+  </ns0:infCte>
+  <ns0:infCTeSupl>
+    <ns0:qrCodCTe>https://consulta.dominio-sintetico.invalid/cte?chCTe=002504J1FNUD7M000114570010008862001590951037&amp;tpAmb=2&amp;nProt=425842395822177</ns0:qrCodCTe>
+  </ns0:infCTeSupl>
+</ns0:CTe>

@@ -1,0 +1,74 @@
+{
+  "seed": 1270636370297768855,
+  "doctype": "nfe_portal",
+  "split": "train",
+  "index": 6,
+  "dpi": 110,
+  "image_source": "lib_pdf",
+  "n_pages": 2,
+  "field_errors": [],
+  "label_schema_ok": true,
+  "augmentation": {
+    "seed": 1270636370297768855,
+    "angle_deg": 1.71,
+    "scan_mode": "color_scan",
+    "special_objects_added": [
+      "stamp",
+      "stamp"
+    ],
+    "boxes_valid": true
+  },
+  "template_id": "tpl_002",
+  "profile": {
+    "regime": "simples",
+    "dest_pj": true,
+    "transporta": false,
+    "veiculo": false,
+    "cobr": false,
+    "retirada": false,
+    "entrega": false,
+    "frete_seguro_outros": false,
+    "desconto": false,
+    "ipi_tributado": false,
+    "special_items": false,
+    "issqn": false,
+    "ibs_cbs": false,
+    "inf_ad_prod_rate": 0.3,
+    "inf_cpl": true,
+    "nfe_proc": true,
+    "n_items": 3,
+    "landscape": false,
+    "receipt_bottom": false,
+    "font_courier": false,
+    "font_helvetica": false,
+    "font_big": false,
+    "display_pis_cofins": false,
+    "duplicates_only": false,
+    "decimals": 4,
+    "has_logo": true,
+    "erp_style": "minimal_open",
+    "vertical_block_labels": false
+  },
+  "render": {
+    "portal_variant": "classic_fazenda",
+    "decimals": 4
+  },
+  "doc_formats": {
+    "emit": "cnpj_alnum",
+    "dest": "cnpj_numeric"
+  },
+  "html": {
+    "n_pages_html": 2,
+    "text_fidelity": 1.0,
+    "style": {
+      "derived_from": "pdf_geometry"
+    },
+    "occlusion": {
+      "artifacts": [
+        "stamp",
+        "stamp"
+      ],
+      "occluded_nodes": 0
+    }
+  }
+}

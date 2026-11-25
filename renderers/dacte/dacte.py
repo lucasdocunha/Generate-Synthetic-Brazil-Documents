@@ -179,8 +179,7 @@ class Dacte(xFPDF):
                 watermark_text = "CANCELADA - SEM VALOR FISCAL"
                 font_size = 45
 
-        elif not is_production_environment or not is_protocol_available:
-            watermark_text = "SEM VALOR FISCAL"
+        # dado sintético: sem marca d'água "SEM VALOR FISCAL" (só CANCELADA, se pedida)
 
         if watermark_text:
             self.set_font(self.default_font, "B", font_size)

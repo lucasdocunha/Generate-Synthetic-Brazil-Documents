@@ -1,0 +1,197 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe>
+    <infNFe versao="4.00" Id="NFe00230809617777806813551010004488781086786252">
+        <ide>
+            <cUF>29</cUF>
+            <cNF>76202358</cNF>
+            <natOp>Venda</natOp>
+            <mod>55</mod>
+            <serie>101</serie>
+            <nNF>448878</nNF>
+            <dhEmi>2023-08-15T06:33:53-03:00</dhEmi>
+            <dhSaiEnt>2023-08-15T06:33:53-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>2</idDest>
+            <cMunFG>2901700</cMunFG>
+            <tpImp>1</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>2</cDV>
+            <tpAmb>2</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>1</indFinal>
+            <indPres>2</indPres>
+            <procEmi>0</procEmi>
+            <verProc>SYNTH-GEN 1.0</verProc>
+        </ide>
+        <emit>
+            <CNPJ>09617777806813</CNPJ>
+            <xNome>Atacado de Novais ME</xNome>
+            <xFant>Distribuidora de Gomes LTDA</xFant>
+            <enderEmit>
+                <xLgr>Recanto de Pereira</xLgr>
+                <nro>1946</nro>
+                <xCpl>Ao lado do mercado</xCpl>
+                <xBairro>Universitário</xBairro>
+                <cMun>2901700</cMun>
+                <xMun>Antônio Cardoso</xMun>
+                <UF>BA</UF>
+                <CEP>52766668</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>1955854512</fone>
+            </enderEmit>
+            <IE>250960083042</IE>
+            <CRT>1</CRT>
+        </emit>
+        <dest>
+            <CPF>39965774270</CPF>
+            <xNome>Maria Sophia da Paz</xNome>
+            <enderDest>
+                <xLgr>Loteamento de Gonçalves</xLgr>
+                <nro>1403</nro>
+                <xCpl>Sala 12</xCpl>
+                <xBairro>Vila Antena Montanhês</xBairro>
+                <cMun>4312674</cMun>
+                <xMun>Nicolau Vergueiro</xMun>
+                <UF>RS</UF>
+                <CEP>86722734</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>6147271509</fone>
+            </enderDest>
+            <indIEDest>9</indIEDest>
+            <email>joao-vitordias@vargas.edu.br</email>
+        </dest>
+        <det nItem="1">
+            <prod>
+                <cProd>SER-943</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Serviço de consultoria avulso</xProd>
+                <NCM>99999350</NCM>
+                <CFOP>6102</CFOP>
+                <uCom>UN</uCom>
+                <qCom>18.0000</qCom>
+                <vUnCom>1745.5400000000</vUnCom>
+                <vProd>31419.72</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>UN</uTrib>
+                <qTrib>18.0000</qTrib>
+                <vUnTrib>1745.5400000000</vUnTrib>
+                <vFrete>1200.62</vFrete>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>10316.19</vTotTrib>
+            <ICMS><ICMSSN102><orig>0</orig><CSOSN>400</CSOSN></ICMSSN102></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS></imposto>
+            </det>
+        <det nItem="2">
+            <prod>
+                <cProd>6122302</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Camiseta Dry-fit</xProd>
+                <NCM>61094284</NCM>
+                <CFOP>6102</CFOP>
+                <uCom>DZ</uCom>
+                <qCom>21.0000</qCom>
+                <vUnCom>921.3700000000</vUnCom>
+                <vProd>19348.77</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>DZ</uTrib>
+                <qTrib>21.0000</qTrib>
+                <vUnTrib>921.3700000000</vUnTrib>
+                <vFrete>739.36</vFrete>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>4358.92</vTotTrib>
+            <ICMS><ICMSSN500><orig>0</orig><CSOSN>500</CSOSN></ICMSSN500></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS></imposto>
+            </det>
+        <det nItem="3">
+            <prod>
+                <cProd>3186308</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Serviço de consultoria avulso</xProd>
+                <NCM>99993947</NCM>
+                <CFOP>6102</CFOP>
+                <uCom>DZ</uCom>
+                <qCom>53.0000</qCom>
+                <vUnCom>1740.2200000000</vUnCom>
+                <vProd>92231.66</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>DZ</uTrib>
+                <qTrib>53.0000</qTrib>
+                <vUnTrib>1740.2200000000</vUnTrib>
+                <vFrete>3524.40</vFrete>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>30048.74</vTotTrib>
+            <ICMS><ICMSSN102><orig>0</orig><CSOSN>400</CSOSN></ICMSSN102></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS></imposto>
+            <infAdProd>Item sujeito a substituição tributária.</infAdProd>
+        </det>
+        <total>
+            <ICMSTot>
+                <vBC>0.00</vBC>
+                <vICMS>0.00</vICMS>
+                <vICMSDeson>0.00</vICMSDeson>
+                <vFCP>0.00</vFCP>
+                <vBCST>0.00</vBCST>
+                <vST>0.00</vST>
+                <vFCPST>0.00</vFCPST>
+                <vFCPSTRet>0.00</vFCPSTRet>
+                <vProd>143000.15</vProd>
+                <vFrete>5464.38</vFrete>
+                <vSeg>0.00</vSeg>
+                <vDesc>0.00</vDesc>
+                <vII>0.00</vII>
+                <vIPI>0.00</vIPI>
+                <vIPIDevol>0.00</vIPIDevol>
+                <vPIS>0.00</vPIS>
+                <vCOFINS>0.00</vCOFINS>
+                <vOutro>0.00</vOutro>
+                <vNF>148464.53</vNF>
+                <vTotTrib>44723.85</vTotTrib>
+            </ICMSTot>
+            </total>
+        <transp>
+            <modFrete>9</modFrete>
+            </transp>
+        <cobr>
+            <fat>
+                <nFat>448878/4</nFat>
+                <vOrig>148464.53</vOrig>
+                <vDesc>0.00</vDesc>
+                <vLiq>148464.53</vLiq>
+            </fat>
+            <dup>
+                <nDup>001</nDup>
+                <dVenc>2023-09-14</dVenc>
+                <vDup>37116.13</vDup>
+            </dup>
+        <dup>
+                <nDup>002</nDup>
+                <dVenc>2023-10-12</dVenc>
+                <vDup>37116.13</vDup>
+            </dup>
+        <dup>
+                <nDup>003</nDup>
+                <dVenc>2023-11-09</dVenc>
+                <vDup>37116.13</vDup>
+            </dup>
+        <dup>
+                <nDup>004</nDup>
+                <dVenc>2023-12-07</dVenc>
+                <vDup>37116.14</vDup>
+            </dup>
+        </cobr>
+        <pag>
+            <detPag>
+                <indPag>1</indPag>
+                <tPag>15</tPag>
+                <vPag>148464.53</vPag>
+            </detPag>
+        </pag>
+        <infAdic>
+            <infCpl>Prazo para reclamação de avarias: 7 dias após o recebimento. Documento emitido por ME ou EPP optante pelo Simples Nacional. Pedido de compra nº 442627. Valor aproximado dos tributos conforme Lei 12.741/2012. Retenção de PIS/COFINS/CSLL conforme legislação vigente. Pedido de compra nº 653675.</infCpl>
+        </infAdic>
+    </infNFe>
+</NFe><protNFe versao="4.00"><infProt><tpAmb>2</tpAmb><verAplic>SYNTH-HOM</verAplic><chNFe>00230809617777806813551010004488781086786252</chNFe><dhRecbto>2023-08-15T06:39:46-03:00</dhRecbto><nProt>100236733351421</nProt><digVal>IvxSu6J8z/emhjaO1j2H6uz7b3C=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

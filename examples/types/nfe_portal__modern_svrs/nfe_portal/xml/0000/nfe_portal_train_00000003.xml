@@ -1,0 +1,191 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe>
+    <infNFe versao="4.00" Id="NFe0025098ZNZ2IXV000110551010004581051192449198">
+        <ide>
+            <cUF>32</cUF>
+            <cNF>24721730</cNF>
+            <natOp>Venda</natOp>
+            <mod>55</mod>
+            <serie>101</serie>
+            <nNF>458105</nNF>
+            <dhEmi>2025-09-27T20:07:07-03:00</dhEmi>
+            <dhSaiEnt>2025-09-27T20:07:07-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>1</idDest>
+            <cMunFG>3200169</cMunFG>
+            <tpImp>1</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>8</cDV>
+            <tpAmb>2</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>1</indFinal>
+            <indPres>9</indPres>
+            <procEmi>0</procEmi>
+            <verProc>SYNTH-GEN 1.0</verProc>
+        </ide>
+        <emit>
+            <CNPJ>8ZNZ2IXV000110</CNPJ>
+            <xNome>Comercial Correia EIRELI</xNome>
+            <xFant>Comercial Aragão EPP</xFant>
+            <enderEmit>
+                <xLgr>Jardim da Rosa</xLgr>
+                <nro>1933</nro>
+                <xBairro>Braúnas</xBairro>
+                <cMun>3200169</cMun>
+                <xMun>Água Doce do Norte</xMun>
+                <UF>ES</UF>
+                <CEP>68719139</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>81944330904</fone>
+            </enderEmit>
+            <IE>494472114236</IE>
+            <CRT>3</CRT>
+        </emit>
+        <dest>
+            <CPF>68611321603</CPF>
+            <xNome>Sra. Carolina Pires</xNome>
+            <enderDest>
+                <xLgr>Setor Vieira</xLgr>
+                <nro>1398</nro>
+                <xCpl>Fundos</xCpl>
+                <xBairro>Boa União 1ª Seção</xBairro>
+                <cMun>3201902</cMun>
+                <xMun>Domingos Martins</xMun>
+                <UF>ES</UF>
+                <CEP>74826970</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>2134449161</fone>
+            </enderDest>
+            <indIEDest>9</indIEDest>
+            <email>xmendonca@teixeira.com</email>
+        </dest>
+        <det nItem="1">
+            <prod>
+                <cProd>PAR-783</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Parafuso Latão</xProd>
+                <NCM>73184234</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>M</uCom>
+                <qCom>62.0000</qCom>
+                <vUnCom>1440.7100000000</vUnCom>
+                <vProd>89324.02</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>M</uTrib>
+                <qTrib>62.0000</qTrib>
+                <vUnTrib>1440.7100000000</vUnTrib>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>32067.55</vTotTrib>
+            <ICMS><ICMS20><orig>0</orig><CST>20</CST><modBC>3</modBC><pRedBC>61.1100</pRedBC><vBC>34738.11</vBC><pICMS>17.0000</pICMS><vICMS>5905.48</vICMS></ICMS20></ICMS><IPI><cEnq>999</cEnq><IPINT><CST>54</CST></IPINT></IPI><PIS><PISAliq><CST>01</CST><vBC>89324.02</vBC><pPIS>0.6500</pPIS><vPIS>580.61</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>89324.02</vBC><pCOFINS>3.0000</pCOFINS><vCOFINS>2679.72</vCOFINS></COFINSAliq></COFINS><IBSCBS><CST>000</CST><cClassTrib>000001</cClassTrib><gIBSCBS><vBC>89324.02</vBC><gIBSUF><pIBSUF>0.1000</pIBSUF><vIBSUF>89.32</vIBSUF></gIBSUF><gIBSMun><pIBSMun>0.0000</pIBSMun><vIBSMun>0.00</vIBSMun></gIBSMun><vIBS>89.32</vIBS><gCBS><pCBS>0.9000</pCBS><vCBS>803.92</vCBS></gCBS></gIBSCBS></IBSCBS></imposto>
+            </det>
+        <total>
+            <ICMSTot>
+                <vBC>34738.11</vBC>
+                <vICMS>5905.48</vICMS>
+                <vICMSDeson>0.00</vICMSDeson>
+                <vFCP>0.00</vFCP>
+                <vBCST>0.00</vBCST>
+                <vST>0.00</vST>
+                <vFCPST>0.00</vFCPST>
+                <vFCPSTRet>0.00</vFCPSTRet>
+                <vProd>89324.02</vProd>
+                <vFrete>0.00</vFrete>
+                <vSeg>0.00</vSeg>
+                <vDesc>0.00</vDesc>
+                <vII>0.00</vII>
+                <vIPI>0.00</vIPI>
+                <vIPIDevol>0.00</vIPIDevol>
+                <vPIS>580.61</vPIS>
+                <vCOFINS>2679.72</vCOFINS>
+                <vOutro>0.00</vOutro>
+                <vNF>89324.02</vNF>
+                <vTotTrib>32067.55</vTotTrib>
+            </ICMSTot>
+            <IBSCBSTot>
+                <vBCIBSCBS>89324.02</vBCIBSCBS>
+                <gIBS>
+                    <gIBSUF>
+                        <vDif>0.00</vDif>
+                        <vDevTrib>0.00</vDevTrib>
+                        <vIBSUF>89.32</vIBSUF>
+                    </gIBSUF>
+                    <gIBSMun>
+                        <vDif>0.00</vDif>
+                        <vDevTrib>0.00</vDevTrib>
+                        <vIBSMun>0.00</vIBSMun>
+                    </gIBSMun>
+                    <vIBS>89.32</vIBS>
+                    <vCredPres>0.00</vCredPres>
+                    <vCredPresCondSus>0.00</vCredPresCondSus>
+                </gIBS>
+                <gCBS>
+                    <vDif>0.00</vDif>
+                    <vDevTrib>0.00</vDevTrib>
+                    <vCBS>803.92</vCBS>
+                    <vCredPres>0.00</vCredPres>
+                    <vCredPresCondSus>0.00</vCredPresCondSus>
+                </gCBS>
+            </IBSCBSTot>
+        </total>
+        <transp>
+            <modFrete>0</modFrete>
+            <transporta>
+                <CNPJ>LOOWKQY3000233</CNPJ>
+                <xNome>Transportes Rocha ME</xNome>
+                <IE>153258690466</IE>
+                <xEnder>Condomínio de da Mata, 132</xEnder>
+                <xMun>Ribeirão Claro</xMun>
+                <UF>PR</UF>
+            </transporta>
+            <veicTransp>
+                <placa>QBC6I94</placa>
+                <UF>PR</UF>
+                <RNTC>50575907</RNTC>
+            </veicTransp>
+            <vol>
+                <qVol>107</qVol>
+                <esp>CAIXA</esp>
+                <nVol>7655</nVol>
+                <pesoL>101.977</pesoL>
+                <pesoB>108.136</pesoB>
+            </vol>
+        </transp>
+        <cobr>
+            <fat>
+                <nFat>458105/1</nFat>
+                <vOrig>89324.02</vOrig>
+                <vDesc>0.00</vDesc>
+                <vLiq>89324.02</vLiq>
+            </fat>
+            <dup>
+                <nDup>001</nDup>
+                <dVenc>2025-10-27</dVenc>
+                <vDup>29774.67</vDup>
+            </dup>
+        <dup>
+                <nDup>002</nDup>
+                <dVenc>2025-11-11</dVenc>
+                <vDup>29774.67</vDup>
+            </dup>
+        <dup>
+                <nDup>003</nDup>
+                <dVenc>2025-11-26</dVenc>
+                <vDup>29774.68</vDup>
+            </dup>
+        </cobr>
+        <pag>
+            <detPag>
+                <indPag>1</indPag>
+                <tPag>15</tPag>
+                <vPag>89324.02</vPag>
+            </detPag>
+        </pag>
+        <infAdic>
+            <infAdFisco>Documento emitido por: João Pedro Correia</infAdFisco>
+            <infCpl>Não gera direito a crédito fiscal de IPI. Valor aproximado dos tributos conforme Lei 12.741/2012. Valor aproximado dos tributos conforme Lei 12.741/2012.</infCpl>
+        </infAdic>
+    </infNFe>
+</NFe><protNFe versao="4.00"><infProt><tpAmb>2</tpAmb><verAplic>SYNTH-HOM</verAplic><chNFe>0025098ZNZ2IXV000110551010004581051192449198</chNFe><dhRecbto>2025-09-27T20:13:38-03:00</dhRecbto><nProt>100255801946811</nProt><digVal>H9JPZ9rHrMCUQnu2bp6Z3fde5ig=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

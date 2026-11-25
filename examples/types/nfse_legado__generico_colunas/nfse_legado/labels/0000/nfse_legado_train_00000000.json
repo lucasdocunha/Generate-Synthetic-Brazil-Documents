@@ -1,0 +1,1230 @@
+{
+  "doc_id": "nfse_legado_train_00000000",
+  "doc_type": "NFSE_LEGADO",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/nfse_legado_train_00000000.xml",
+    "pdf_path": "pdfs/0000/nfse_legado_train_00000000.pdf",
+    "fixture_template": "tpl_001",
+    "generation_seed": 6485913664401305385,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/nfse_legado_train_00000000.html",
+    "md_path": "md/0000/nfse_legado_train_00000000.md",
+    "html_visible_path": "html_visible/0000/nfse_legado_train_00000000.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 10.813,
+        "y": 11.373,
+        "w": 98.164,
+        "h": 7.399,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.813,
+            14.402
+          ],
+          [
+            108.842,
+            11.373
+          ],
+          [
+            108.977,
+            15.743
+          ],
+          [
+            10.948,
+            18.772
+          ]
+        ]
+      },
+      "text": "PREFEITURA MUNICIPAL DE PRESIDENTE CASTELLO BRANCO"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.044,
+        "y": 19.885,
+        "w": 64.677,
+        "h": 6.354,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.044,
+            21.88
+          ],
+          [
+            75.586,
+            19.885
+          ],
+          [
+            75.721,
+            24.245
+          ],
+          [
+            11.179,
+            26.24
+          ]
+        ]
+      },
+      "text": "NOTA FISCAL DE SERVIÇOS ELETRÔNICA"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [
+        "ident_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 164.771,
+        "y": 8.238,
+        "w": 28.104,
+        "h": 6.205,
+        "unit": "mm",
+        "obb_points": [
+          [
+            164.771,
+            9.101
+          ],
+          [
+            192.71,
+            8.238
+          ],
+          [
+            192.875,
+            13.579
+          ],
+          [
+            164.936,
+            14.443
+          ]
+        ]
+      },
+      "text": "Nº 2023/844111"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [
+        "data_emissao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 178.833,
+        "y": 16.034,
+        "w": 14.235,
+        "h": 4.312,
+        "unit": "mm",
+        "obb_points": [
+          [
+            178.833,
+            16.471
+          ],
+          [
+            192.948,
+            16.034
+          ],
+          [
+            193.068,
+            19.91
+          ],
+          [
+            178.953,
+            20.347
+          ]
+        ]
+      },
+      "text": "03/07/2023"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 156.108,
+        "y": 21.031,
+        "w": 37.118,
+        "h": 5.019,
+        "unit": "mm",
+        "obb_points": [
+          [
+            156.108,
+            22.174
+          ],
+          [
+            193.106,
+            21.031
+          ],
+          [
+            193.226,
+            24.907
+          ],
+          [
+            156.227,
+            26.05
+          ]
+        ]
+      },
+      "text": "Verificação 953D-E3D1-35B8"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.533,
+        "y": 37.264,
+        "w": 15.601,
+        "h": 3.877,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.533,
+            37.743
+          ],
+          [
+            25.029,
+            37.264
+          ],
+          [
+            25.134,
+            40.662
+          ],
+          [
+            9.638,
+            41.141
+          ]
+        ]
+      },
+      "text": "PRESTADOR"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 106.487,
+        "y": 34.353,
+        "w": 12.856,
+        "h": 3.792,
+        "unit": "mm",
+        "obb_points": [
+          [
+            106.487,
+            34.747
+          ],
+          [
+            119.238,
+            34.353
+          ],
+          [
+            119.343,
+            37.751
+          ],
+          [
+            106.592,
+            38.145
+          ]
+        ]
+      },
+      "text": "TOMADOR"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.186,
+        "y": 42.259,
+        "w": 14.842,
+        "h": 3.127,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.186,
+            42.715
+          ],
+          [
+            23.946,
+            42.259
+          ],
+          [
+            24.028,
+            44.93
+          ],
+          [
+            9.268,
+            45.386
+          ]
+        ]
+      },
+      "text": "RAZÃO SOCIAL"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [
+        "prestador_razao_social"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 9.279,
+        "y": 44.752,
+        "w": 31.468,
+        "h": 4.845,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.279,
+            45.721
+          ],
+          [
+            40.627,
+            44.752
+          ],
+          [
+            40.747,
+            48.628
+          ],
+          [
+            9.399,
+            49.597
+          ]
+        ]
+      },
+      "text": "Comércio de Oliveira ME"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 106.14,
+        "y": 39.033,
+        "w": 22.278,
+        "h": 3.357,
+        "unit": "mm",
+        "obb_points": [
+          [
+            106.14,
+            39.719
+          ],
+          [
+            128.335,
+            39.033
+          ],
+          [
+            128.418,
+            41.704
+          ],
+          [
+            106.222,
+            42.39
+          ]
+        ]
+      },
+      "text": "NOME / RAZÃO SOCIAL"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [
+        "tomador_razao_social"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 106.232,
+        "y": 42.124,
+        "w": 19.559,
+        "h": 4.477,
+        "unit": "mm",
+        "obb_points": [
+          [
+            106.232,
+            42.724
+          ],
+          [
+            125.671,
+            42.124
+          ],
+          [
+            125.791,
+            46.0
+          ],
+          [
+            106.352,
+            46.601
+          ]
+        ]
+      },
+      "text": "Isabella Ribeiro"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 9.526,
+        "y": 53.549,
+        "w": 5.255,
+        "h": 2.831,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.526,
+            53.709
+          ],
+          [
+            14.698,
+            53.549
+          ],
+          [
+            14.781,
+            56.22
+          ],
+          [
+            9.608,
+            56.379
+          ]
+        ]
+      },
+      "text": "CNPJ"
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [
+        "prestador_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 9.618,
+        "y": 55.935,
+        "w": 25.37,
+        "h": 4.656,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.618,
+            56.715
+          ],
+          [
+            34.868,
+            55.935
+          ],
+          [
+            34.988,
+            59.811
+          ],
+          [
+            9.738,
+            60.591
+          ]
+        ]
+      },
+      "text": "25.948.849/4130-37"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 106.479,
+        "y": 50.416,
+        "w": 9.673,
+        "h": 2.967,
+        "unit": "mm",
+        "obb_points": [
+          [
+            106.479,
+            50.713
+          ],
+          [
+            116.07,
+            50.416
+          ],
+          [
+            116.152,
+            53.087
+          ],
+          [
+            106.562,
+            53.383
+          ]
+        ]
+      },
+      "text": "CPF/CNPJ"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [
+        "tomador_documento"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 106.572,
+        "y": 53.109,
+        "w": 19.88,
+        "h": 4.487,
+        "unit": "mm",
+        "obb_points": [
+          [
+            106.572,
+            53.719
+          ],
+          [
+            126.333,
+            53.109
+          ],
+          [
+            126.453,
+            56.985
+          ],
+          [
+            106.692,
+            57.595
+          ]
+        ]
+      },
+      "text": "446.204.494-00"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [
+        "tomador_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 9.865,
+        "y": 64.018,
+        "w": 22.277,
+        "h": 3.357,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.865,
+            64.704
+          ],
+          [
+            32.06,
+            64.018
+          ],
+          [
+            32.142,
+            66.688
+          ],
+          [
+            9.948,
+            67.374
+          ]
+        ]
+      },
+      "text": "INSCRIÇÃO MUNICIPAL"
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [
+        "prestador_inscricao_municipal"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 9.958,
+        "y": 67.321,
+        "w": 12.667,
+        "h": 4.264,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.958,
+            67.709
+          ],
+          [
+            22.505,
+            67.321
+          ],
+          [
+            22.625,
+            71.197
+          ],
+          [
+            10.078,
+            71.585
+          ]
+        ]
+      },
+      "text": "95198032"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 106.819,
+        "y": 61.368,
+        "w": 11.073,
+        "h": 3.01,
+        "unit": "mm",
+        "obb_points": [
+          [
+            106.819,
+            61.707
+          ],
+          [
+            117.81,
+            61.368
+          ],
+          [
+            117.892,
+            64.039
+          ],
+          [
+            106.902,
+            64.378
+          ]
+        ]
+      },
+      "text": "ENDEREÇO"
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [
+        "tomador_endereco_logradouro",
+        "tomador_endereco_numero",
+        "tomador_endereco_bairro",
+        "tomador_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 106.912,
+        "y": 62.78,
+        "w": 62.67,
+        "h": 5.809,
+        "unit": "mm",
+        "obb_points": [
+          [
+            106.912,
+            64.713
+          ],
+          [
+            169.462,
+            62.78
+          ],
+          [
+            169.582,
+            66.656
+          ],
+          [
+            107.032,
+            68.589
+          ]
+        ]
+      },
+      "text": "Morro Vieira, 1248 - Buritis - CEP 94823-736 - SC"
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 10.205,
+        "y": 75.382,
+        "w": 10.319,
+        "h": 2.987,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.205,
+            75.698
+          ],
+          [
+            20.441,
+            75.382
+          ],
+          [
+            20.524,
+            78.053
+          ],
+          [
+            10.288,
+            78.369
+          ]
+        ]
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00020",
+      "field_ids": [
+        "municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 10.298,
+        "y": 77.648,
+        "w": 34.297,
+        "h": 4.932,
+        "unit": "mm",
+        "obb_points": [
+          [
+            10.298,
+            78.704
+          ],
+          [
+            44.476,
+            77.648
+          ],
+          [
+            44.595,
+            81.524
+          ],
+          [
+            10.418,
+            82.58
+          ]
+        ]
+      },
+      "text": "Presidente Castello Branco"
+    },
+    {
+      "element_id": "e00021",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 107.159,
+        "y": 72.386,
+        "w": 10.319,
+        "h": 2.987,
+        "unit": "mm",
+        "obb_points": [
+          [
+            107.159,
+            72.702
+          ],
+          [
+            117.395,
+            72.386
+          ],
+          [
+            117.477,
+            75.057
+          ],
+          [
+            107.241,
+            75.373
+          ]
+        ]
+      },
+      "text": "MUNICÍPIO"
+    },
+    {
+      "element_id": "e00022",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 107.252,
+        "y": 74.652,
+        "w": 34.297,
+        "h": 4.932,
+        "unit": "mm",
+        "obb_points": [
+          [
+            107.252,
+            75.708
+          ],
+          [
+            141.429,
+            74.652
+          ],
+          [
+            141.549,
+            78.528
+          ],
+          [
+            107.371,
+            79.584
+          ]
+        ]
+      },
+      "text": "Presidente Castello Branco"
+    },
+    {
+      "element_id": "e00023",
+      "field_ids": [
+        "servico_codigo"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 11.171,
+        "y": 89.058,
+        "w": 53.868,
+        "h": 5.06,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.171,
+            90.72
+          ],
+          [
+            64.934,
+            89.058
+          ],
+          [
+            65.039,
+            92.457
+          ],
+          [
+            11.276,
+            94.118
+          ]
+        ]
+      },
+      "text": "DISCRIMINAÇÃO DOS SERVIÇOS - item 01.02"
+    },
+    {
+      "element_id": "e00024",
+      "field_ids": [
+        "servico_descricao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 11.349,
+        "y": 94.693,
+        "w": 57.973,
+        "h": 5.664,
+        "unit": "mm",
+        "obb_points": [
+          [
+            11.349,
+            96.481
+          ],
+          [
+            69.202,
+            94.693
+          ],
+          [
+            69.322,
+            98.569
+          ],
+          [
+            11.468,
+            100.357
+          ]
+        ]
+      },
+      "text": "Desenvolvimento de software sob encomenda"
+    },
+    {
+      "element_id": "e00025",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.435,
+        "y": 130.647,
+        "w": 31.474,
+        "h": 4.853,
+        "unit": "mm",
+        "obb_points": [
+          [
+            14.435,
+            131.616
+          ],
+          [
+            45.789,
+            130.647
+          ],
+          [
+            45.909,
+            134.532
+          ],
+          [
+            14.555,
+            135.5
+          ]
+        ]
+      },
+      "text": "Valor dos serviços (R$)"
+    },
+    {
+      "element_id": "e00026",
+      "field_ids": [
+        "valor_servicos"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 176.651,
+        "y": 125.576,
+        "w": 15.835,
+        "h": 5.34,
+        "unit": "mm",
+        "obb_points": [
+          [
+            176.651,
+            126.06
+          ],
+          [
+            192.336,
+            125.576
+          ],
+          [
+            192.486,
+            130.431
+          ],
+          [
+            176.801,
+            130.916
+          ]
+        ]
+      },
+      "text": "20.620,68"
+    },
+    {
+      "element_id": "e00027",
+      "field_ids": [
+        "aliquota"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 14.652,
+        "y": 137.16,
+        "w": 47.147,
+        "h": 5.337,
+        "unit": "mm",
+        "obb_points": [
+          [
+            14.652,
+            138.613
+          ],
+          [
+            61.678,
+            137.16
+          ],
+          [
+            61.798,
+            141.044
+          ],
+          [
+            14.772,
+            142.497
+          ]
+        ]
+      },
+      "text": "Alíquota 3,00%  -  Valor do ISS (R$)"
+    },
+    {
+      "element_id": "e00028",
+      "field_ids": [
+        "valor_iss"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 181.768,
+        "y": 132.571,
+        "w": 10.933,
+        "h": 5.189,
+        "unit": "mm",
+        "obb_points": [
+          [
+            181.768,
+            132.904
+          ],
+          [
+            192.551,
+            132.571
+          ],
+          [
+            192.701,
+            137.427
+          ],
+          [
+            181.918,
+            137.76
+          ]
+        ]
+      },
+      "text": "618,62"
+    },
+    {
+      "element_id": "e00029",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.868,
+        "y": 144.33,
+        "w": 41.505,
+        "h": 5.163,
+        "unit": "mm",
+        "obb_points": [
+          [
+            14.868,
+            145.609
+          ],
+          [
+            56.253,
+            144.33
+          ],
+          [
+            56.373,
+            148.214
+          ],
+          [
+            14.988,
+            149.493
+          ]
+        ]
+      },
+      "text": "Optante pelo Simples Nacional"
+    },
+    {
+      "element_id": "e00030",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 187.309,
+        "y": 139.823,
+        "w": 5.599,
+        "h": 4.529,
+        "unit": "mm",
+        "obb_points": [
+          [
+            187.309,
+            139.992
+          ],
+          [
+            192.774,
+            139.823
+          ],
+          [
+            192.909,
+            144.183
+          ],
+          [
+            187.444,
+            144.352
+          ]
+        ]
+      },
+      "text": "Sim"
+    }
+  ],
+  "layout": {
+    "special_objects": [
+      {
+        "type": "stamp",
+        "subtype": "receipt_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 93.385,
+          "y": 167.06,
+          "w": 50.45,
+          "h": 21.838,
+          "unit": "mm",
+          "obb_points": [
+            [
+              93.385,
+              168.599
+            ],
+            [
+              143.208,
+              167.06
+            ],
+            [
+              143.836,
+              187.358
+            ],
+            [
+              94.013,
+              188.898
+            ]
+          ]
+        },
+        "field_id": null,
+        "text": [
+          "LANÇADO",
+          "DATA: 03/07/2023"
+        ]
+      },
+      {
+        "type": "stamp",
+        "subtype": "cnpj_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 121.608,
+          "y": 243.225,
+          "w": 60.725,
+          "h": 33.677,
+          "unit": "mm",
+          "obb_points": [
+            [
+              121.608,
+              245.071
+            ],
+            [
+              181.349,
+              243.225
+            ],
+            [
+              182.333,
+              275.056
+            ],
+            [
+              122.591,
+              276.902
+            ]
+          ]
+        },
+        "field_id": "cnpj_prestador",
+        "text": [
+          "[25.948.849/4130-37]",
+          "COMÉRCIO DE OLIVEIRA ME",
+          "AV. RIO BAHIA, 8600",
+          "CENTRO - CEP 36880-000",
+          "PRESIDENTE CASTELLO BRANCO - MG"
+        ]
+      }
+    ]
+  },
+  "ocr": {
+    "full_text": "PREFEITURA MUNICIPAL DE PRESIDENTE CASTELLO BRANCO\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA\nNº 2023/844111\n03/07/2023\nVerificação 953D-E3D1-35B8\nPRESTADOR\nTOMADOR\nRAZÃO SOCIAL\nComércio de Oliveira ME\nNOME / RAZÃO SOCIAL\nIsabella Ribeiro\nCNPJ\n25.948.849/4130-37\nCPF/CNPJ\n446.204.494-00\nINSCRIÇÃO MUNICIPAL\n95198032\nENDEREÇO\nMorro Vieira, 1248 - Buritis - CEP 94823-736 - SC\nMUNICÍPIO\nPresidente Castello Branco\nMUNICÍPIO\nPresidente Castello Branco\nDISCRIMINAÇÃO DOS SERVIÇOS - item 01.02\nDesenvolvimento de software sob encomenda\nValor dos serviços (R$)\n20.620,68\nAlíquota 3,00%  -  Valor do ISS (R$)\n618,62\nOptante pelo Simples Nacional\nSim\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "PREFEITURA MUNICIPAL DE PRESIDENTE CASTELLO BRANCO\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA\nNº 2023/844111\n03/07/2023\nVerificação 953D-E3D1-35B8\nPRESTADOR\nTOMADOR\nRAZÃO SOCIAL\nComércio de Oliveira ME\nNOME / RAZÃO SOCIAL\nIsabella Ribeiro\nCNPJ\n25.948.849/4130-37\nCPF/CNPJ\n446.204.494-00\nINSCRIÇÃO MUNICIPAL\n95198032\nENDEREÇO\nMorro Vieira, 1248 - Buritis - CEP 94823-736 - SC\nMUNICÍPIO\nPresidente Castello Branco\nMUNICÍPIO\nPresidente Castello Branco\nDISCRIMINAÇÃO DOS SERVIÇOS - item 01.02\nDesenvolvimento de software sob encomenda\nValor dos serviços (R$)\n20.620,68\nAlíquota 3,00%  -  Valor do ISS (R$)\n618,62\nOptante pelo Simples Nacional\nSim\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 18,
+    "fields_matched_to_bbox": 18,
+    "match_rate": 1.0
+  },
+  "kie": {
+    "provider": {
+      "cnpj": {
+        "value": "25948849413037",
+        "raw_value": "25948849413037",
+        "bbox_ref": "e00012"
+      },
+      "tax_id_type": "cnpj",
+      "name": {
+        "value": "Comércio de Oliveira ME",
+        "raw_value": "Comércio de Oliveira ME",
+        "bbox_ref": "e00008"
+      },
+      "inscricao_municipal": {
+        "value": "95198032",
+        "raw_value": "95198032",
+        "bbox_ref": "e00016"
+      },
+      "municipality": {
+        "value": "Presidente Castello Branco",
+        "raw_value": "Presidente Castello Branco",
+        "bbox_ref": "e00020"
+      }
+    },
+    "taker": {
+      "document": {
+        "value": "44620449400",
+        "raw_value": "44620449400",
+        "bbox_ref": "e00014"
+      },
+      "tax_id_type": "cpf",
+      "name": {
+        "value": "Isabella Ribeiro",
+        "raw_value": "Isabella Ribeiro",
+        "bbox_ref": "e00010"
+      }
+    },
+    "document": {
+      "rps_number": {
+        "value": "844111",
+        "raw_value": "844111",
+        "bbox_ref": "e00002"
+      },
+      "batch_number": {
+        "value": "884521",
+        "raw_value": "884521",
+        "bbox_ref": null
+      },
+      "issue_date": {
+        "value": "2023-07-03T01:40:42",
+        "raw_value": "2023-07-03T01:40:42",
+        "bbox_ref": "e00003"
+      },
+      "environment": {
+        "value": "homologacao",
+        "raw_value": "homologacao",
+        "bbox_ref": null
+      }
+    },
+    "service": {
+      "code": {
+        "value": "01.02",
+        "raw_value": "01.02",
+        "bbox_ref": "e00023"
+      },
+      "description": {
+        "value": "Desenvolvimento de software sob encomenda",
+        "raw_value": "Desenvolvimento de software sob encomenda",
+        "bbox_ref": "e00024"
+      },
+      "value": {
+        "value": "20620.68",
+        "raw_value": 20620.68,
+        "bbox_ref": "e00026"
+      },
+      "iss_rate": {
+        "value": "3.00",
+        "raw_value": 3.0,
+        "bbox_ref": "e00027"
+      },
+      "iss_value": {
+        "value": "618.62",
+        "raw_value": 618.62,
+        "bbox_ref": "e00028"
+      }
+    }
+  },
+  "dpi": 110
+}

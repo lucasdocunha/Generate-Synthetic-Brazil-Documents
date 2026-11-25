@@ -11,20 +11,19 @@ Nº000.223.602
 
 SÉRIE 1
 
-> **Assinatura**
-> [assinatura manuscrita]
+![]()
 
 # Serviços de Machado MEI
 
-![Logotipo de Serviços de Machado MEI]()
+![]()
 
-Praia Nicole Pastor, 646<br>Sala 12<br>Custodinha<br>Matina - BA<br>68224-295<br>Fone: (21) 3640-1766<br>xpert v3.5 - xpert.invalid
+Praia Nicole Pastor, 646 Sala 12 Custodinha Matina - BA 68224-295 Fone: (21) 3640-1766 xpert v3.5 - xpert.invalid
 
 ## DANFE
 
-DOCUMENTO AUXILIAR<br>DA NOTA FISCAL<br>ELETRÔNICA
+DOCUMENTO AUXILIAR DA NOTA FISCAL ELETRÔNICA
 
-0-ENTRADA<br>1-SAÍDA **1**
+0-ENTRADA 1-SAÍDA1
 
 Nº 000.223.602
 
@@ -32,7 +31,7 @@ SÉRIE 1
 
 FOLHA 1/1
 
-![Código de barras da chave de acesso]()
+![]()
 
 | Campo | Valor |
 | --- | --- |
@@ -123,29 +122,16 @@ Consulta de autenticidade no portal nacional da NF-e www.nfe.fazenda.gov.br/port
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 6336159 | Serviço de instalação de equipamento | 00 |  | 5933 | SV | 4,00 | 156,30 | 625,20 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
 | SER-333 | Serviço de manutenção preventiva | 00 |  | 5933 | SV | 7,00 | 979,51 | 6.856,57 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
-| SKU51883 | Serviço de instalação elétrica<br>Item sujeito a substituição tributária. | 00 |  | 5933 | SV | 9,00 | 1.047,22 | 9.424,98 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
-| 6670141 | Cabo elétrico 100m<br>Item sujeito a substituição tributária. | 85449772 | 020 | 5102 | UN | 33,00 | 716,74 | 23.652,42 | 9.198,43 | 1.103,81 | 0,00 | 12,00 | 0,00 |
+| SKU51883 | Serviço de instalação elétrica Item sujeito a substituição tributária. | 00 |  | 5933 | SV | 9,00 | 1.047,22 | 9.424,98 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| 6670141 | Cabo elétrico 100m Item sujeito a substituição tributária. | 85449772 | 020 | 5102 | UN | 33,00 | 716,74 | 23.652,42 | 9.198,43 | 1.103,81 | 0,00 | 12,00 | 0,00 |
 | SKU81517 | Camiseta Algodão | 61093341 | 200 | 5102 | UN | 28,41 | 2.557,49 | 72.655,73 | 72.655,73 | 13.804,59 | 0,00 | 19,00 | 0,00 |
 | CAB-643 | Cabo elétrico flexível | 85442155 | 210 | 5102 | CX | 8,00 | 141,70 | [ilegível] | [ilegível] | [ilegível] | 0,00 | [ilegível] | 0,00 |
 | SKU91599 | Serviço de instalação hidráulica | 00 |  | 5933 | SV | 6,00 | 3.312,11 | [ilegível] | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
 | SKU84385 | Parafuso Aço carbono | 73185096 | 000 | 5102 | LT | 5,00 | 65,74 | [ilegível] | [ilegível] | [ilegível] | 0,00 | [ilegível] | 0,00 |
-| SER-854 | Serviço de instalação elétrica<br>Garantia de 12 meses contra defeitos de fabricação. | 00 |  | 5933 | SV | 8,00 | 2.766,79 | [ilegível] | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
-| 607840 | Notebook 8GB RAM<br>Lote de produção 26927. | 84719384 | 040 | 5102 | KG | 10,00 | 2.613,56 | [ilegível] | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
-|  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| SER-854 | Serviço de instalação elétrica Garantia de 12 meses contra defeitos de fabricação. | 00 |  | 5933 | SV | 8,00 | 2.766,79 | [ilegível] | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| 607840 | Notebook 8GB RAM Lote de produção 26927. | 84719384 | 040 | 5102 | KG | 10,00 | 2.613,56 | [ilegível] | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
 
-> **Comprovante de cartão (POS)**
-> cielo
-> REDE CIELO - Via Cliente
-> SERVIÇOS DE MACHADO MEI
-> PRAIA NICOLE PASTOR 646
-> MATINA - BA
-> TK.SCX.EIV/5THQ-33 CV:39968745
-> 25/07/2023 17:39:35 AUT:541046
-> DOC:921426 TERM:0700381
-> MASTERCARD ************9975
-> CVAD:983322
-> DEBITO A VISTA
-> VALOR: 182.903,64
+![]()
 
 ## Cálculo do ISSQN
 

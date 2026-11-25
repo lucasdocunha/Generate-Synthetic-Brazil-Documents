@@ -1,0 +1,864 @@
+{
+  "doc_id": "dacce_train_00000000",
+  "doc_type": "DACCE",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/dacce_train_00000000.xml",
+    "pdf_path": "pdfs/0000/dacce_train_00000000.pdf",
+    "fixture_template": "tpl_001",
+    "generation_seed": 1906438922824733059,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/dacce_train_00000000.html",
+    "md_path": "md/0000/dacce_train_00000000.md",
+    "html_visible_path": "html_visible/0000/dacce_train_00000000.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [
+        "emitente_nome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 26.699,
+        "y": 17.602,
+        "w": 33.943,
+        "h": 6.762,
+        "unit": "mm",
+        "obb_points": [
+          [
+            26.699,
+            19.514
+          ],
+          [
+            60.367,
+            17.602
+          ],
+          [
+            60.643,
+            22.452
+          ],
+          [
+            26.975,
+            24.364
+          ]
+        ]
+      },
+      "text": "Comercial Viana ME"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 30.392,
+        "y": 26.301,
+        "w": 27.473,
+        "h": 5.419,
+        "unit": "mm",
+        "obb_points": [
+          [
+            30.392,
+            27.849
+          ],
+          [
+            57.645,
+            26.301
+          ],
+          [
+            57.865,
+            30.173
+          ],
+          [
+            30.612,
+            31.721
+          ]
+        ]
+      },
+      "text": "Parque de Dias, 1793"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [
+        "emitente_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 40.72,
+        "y": 30.869,
+        "w": 7.267,
+        "h": 4.272,
+        "unit": "mm",
+        "obb_points": [
+          [
+            40.72,
+            31.269
+          ],
+          [
+            47.767,
+            30.869
+          ],
+          [
+            47.987,
+            34.74
+          ],
+          [
+            40.94,
+            35.14
+          ]
+        ]
+      },
+      "text": "Alpes"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [
+        "emitente_cidade",
+        "emitente_uf",
+        "emitente_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 24.58,
+        "y": 33.934,
+        "w": 40.003,
+        "h": 6.131,
+        "unit": "mm",
+        "obb_points": [
+          [
+            24.58,
+            36.193
+          ],
+          [
+            64.363,
+            33.934
+          ],
+          [
+            64.582,
+            37.805
+          ],
+          [
+            24.799,
+            40.064
+          ]
+        ]
+      },
+      "text": "Machadinho - RS 71989375812"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 110.254,
+        "y": 8.716,
+        "w": 52.928,
+        "h": 7.84,
+        "unit": "mm",
+        "obb_points": [
+          [
+            110.254,
+            11.706
+          ],
+          [
+            162.906,
+            8.716
+          ],
+          [
+            163.182,
+            13.567
+          ],
+          [
+            110.53,
+            16.556
+          ]
+        ]
+      },
+      "text": "Representação Gráfica de CC-e"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 115.493,
+        "y": 13.343,
+        "w": 43.402,
+        "h": 6.743,
+        "unit": "mm",
+        "obb_points": [
+          [
+            115.493,
+            15.794
+          ],
+          [
+            158.652,
+            13.343
+          ],
+          [
+            158.896,
+            17.635
+          ],
+          [
+            115.737,
+            20.086
+          ]
+        ]
+      },
+      "text": "(Carta de Correção Eletrônica)"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 85.132,
+        "y": 23.326,
+        "w": 80.741,
+        "h": 8.444,
+        "unit": "mm",
+        "obb_points": [
+          [
+            85.132,
+            27.898
+          ],
+          [
+            165.653,
+            23.326
+          ],
+          [
+            165.873,
+            27.198
+          ],
+          [
+            85.352,
+            31.77
+          ]
+        ]
+      },
+      "text": "ID do Evento: 1101104224020831351700014255001000015293"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [
+        "data_evento"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 85.415,
+        "y": 30.595,
+        "w": 40.631,
+        "h": 6.166,
+        "unit": "mm",
+        "obb_points": [
+          [
+            85.415,
+            32.889
+          ],
+          [
+            125.826,
+            30.595
+          ],
+          [
+            126.046,
+            34.466
+          ],
+          [
+            85.635,
+            36.761
+          ]
+        ]
+      },
+      "text": "Criado em: 18/02/2025 07:49:10"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [
+        "n_prot"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 85.699,
+        "y": 32.263,
+        "w": 99.21,
+        "h": 9.493,
+        "unit": "mm",
+        "obb_points": [
+          [
+            85.699,
+            37.884
+          ],
+          [
+            184.689,
+            32.263
+          ],
+          [
+            184.909,
+            36.135
+          ],
+          [
+            85.919,
+            41.756
+          ]
+        ]
+      },
+      "text": "Protocolo: 864176409713431 - Registrado na SEFAZ em: 18/02/2025 07:49:10"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.443,
+        "y": 43.696,
+        "w": 168.407,
+        "h": 13.422,
+        "unit": "mm",
+        "obb_points": [
+          [
+            6.443,
+            53.246
+          ],
+          [
+            174.63,
+            43.696
+          ],
+          [
+            174.85,
+            47.568
+          ],
+          [
+            6.663,
+            57.118
+          ]
+        ]
+      },
+      "text": "De acordo com as determinações legais vigentes, vimos por meio desta comunicar-lhe que a Nota Fiscal, abaixo referenciada, contêm"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.67,
+        "y": 47.6,
+        "w": 169.976,
+        "h": 13.511,
+        "unit": "mm",
+        "obb_points": [
+          [
+            6.67,
+            57.24
+          ],
+          [
+            176.427,
+            47.6
+          ],
+          [
+            176.646,
+            51.472
+          ],
+          [
+            6.89,
+            61.112
+          ]
+        ]
+      },
+      "text": "irregularidades que estão destacadas e suas respectivas correções, solicitamos que sejam aplicadas essas correções ao executar seus"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 6.897,
+        "y": 59.794,
+        "w": 25.587,
+        "h": 5.312,
+        "unit": "mm",
+        "obb_points": [
+          [
+            6.897,
+            61.234
+          ],
+          [
+            32.264,
+            59.794
+          ],
+          [
+            32.484,
+            63.666
+          ],
+          [
+            7.117,
+            65.106
+          ]
+        ]
+      },
+      "text": "lançamentos fiscais."
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [
+        "chave_nfe"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 125.811,
+        "y": 70.231,
+        "w": 67.362,
+        "h": 7.202,
+        "unit": "mm",
+        "obb_points": [
+          [
+            125.811,
+            74.045
+          ],
+          [
+            192.981,
+            70.231
+          ],
+          [
+            193.174,
+            73.619
+          ],
+          [
+            126.004,
+            77.433
+          ]
+        ]
+      },
+      "text": "0025 0262 8148 4347 6348 5500 1000 1033 3612 9433 1987"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [
+        "dest_cnpj"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 7.565,
+        "y": 69.664,
+        "w": 59.094,
+        "h": 7.706,
+        "unit": "mm",
+        "obb_points": [
+          [
+            7.565,
+            73.005
+          ],
+          [
+            66.412,
+            69.664
+          ],
+          [
+            66.659,
+            74.029
+          ],
+          [
+            7.813,
+            77.37
+          ]
+        ]
+      },
+      "text": "CNPJ Destinatário:  62.814.843/4763-48"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 7.849,
+        "y": 74.915,
+        "w": 54.516,
+        "h": 7.447,
+        "unit": "mm",
+        "obb_points": [
+          [
+            7.849,
+            77.996
+          ],
+          [
+            62.117,
+            74.915
+          ],
+          [
+            62.365,
+            79.28
+          ],
+          [
+            8.097,
+            82.361
+          ]
+        ]
+      },
+      "text": "Nota Fiscal: 000.103.336 - Série: 001"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.472,
+        "y": 85.878,
+        "w": 54.731,
+        "h": 6.436,
+        "unit": "mm",
+        "obb_points": [
+          [
+            8.472,
+            88.975
+          ],
+          [
+            63.013,
+            85.878
+          ],
+          [
+            63.203,
+            89.216
+          ],
+          [
+            8.662,
+            92.313
+          ]
+        ]
+      },
+      "text": "Este é um evento fictício criado para fins de teste."
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 8.379,
+        "y": 101.471,
+        "w": 62.593,
+        "h": 7.905,
+        "unit": "mm",
+        "obb_points": [
+          [
+            8.379,
+            105.011
+          ],
+          [
+            70.725,
+            101.471
+          ],
+          [
+            70.973,
+            105.836
+          ],
+          [
+            8.627,
+            109.376
+          ]
+        ]
+      },
+      "text": "CORREÇÕES A SEREM CONSIDERADAS"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [
+        "xcorrecao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 9.717,
+        "y": 105.275,
+        "w": 99.24,
+        "h": 9.986,
+        "unit": "mm",
+        "obb_points": [
+          [
+            9.717,
+            110.896
+          ],
+          [
+            108.709,
+            105.275
+          ],
+          [
+            108.957,
+            109.64
+          ],
+          [
+            9.965,
+            115.261
+          ]
+        ]
+      },
+      "text": "Correção do endereço do destinatário informado na nota original."
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 30.069,
+        "y": 260.181,
+        "w": 160.272,
+        "h": 12.903,
+        "unit": "mm",
+        "obb_points": [
+          [
+            30.069,
+            269.269
+          ],
+          [
+            190.124,
+            260.181
+          ],
+          [
+            190.341,
+            263.996
+          ],
+          [
+            30.286,
+            273.084
+          ]
+        ]
+      },
+      "text": "Este documento é uma representação gráfica da CC-e e foi impresso apenas para sua informação e não possue validade fiscal."
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 35.858,
+        "y": 264.49,
+        "w": 149.148,
+        "h": 12.272,
+        "unit": "mm",
+        "obb_points": [
+          [
+            35.858,
+            272.947
+          ],
+          [
+            184.789,
+            264.49
+          ],
+          [
+            185.006,
+            268.305
+          ],
+          [
+            36.075,
+            276.762
+          ]
+        ]
+      },
+      "text": "A CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos portais das SEFAZ."
+    }
+  ],
+  "layout": {
+    "special_objects": [
+      {
+        "type": "barcode",
+        "page": 1,
+        "bbox": {
+          "x": 125.033,
+          "y": 55.4,
+          "w": 67.159,
+          "h": 10.837,
+          "unit": "mm",
+          "obb_points": [
+            [
+              125.033,
+              59.191
+            ],
+            [
+              191.791,
+              55.4
+            ],
+            [
+              192.192,
+              62.447
+            ],
+            [
+              125.433,
+              66.237
+            ]
+          ]
+        },
+        "field_id": "chave_acesso"
+      },
+      {
+        "type": "stamp",
+        "subtype": "receipt_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 151.964,
+          "y": 252.273,
+          "w": 50.441,
+          "h": 30.882,
+          "unit": "mm",
+          "obb_points": [
+            [
+              151.964,
+              255.047
+            ],
+            [
+              200.809,
+              252.273
+            ],
+            [
+              202.405,
+              280.382
+            ],
+            [
+              153.56,
+              283.156
+            ]
+          ]
+        },
+        "field_id": null,
+        "text": [
+          "Recebemos",
+          "Em 18 de 02 de 2025"
+        ]
+      },
+      {
+        "type": "stamp",
+        "subtype": "cnpj_stamp",
+        "page": 1,
+        "bbox": {
+          "x": 140.796,
+          "y": 205.537,
+          "w": 62.71,
+          "h": 36.632,
+          "unit": "mm",
+          "obb_points": [
+            [
+              140.796,
+              208.991
+            ],
+            [
+              201.622,
+              205.537
+            ],
+            [
+              203.506,
+              238.715
+            ],
+            [
+              142.68,
+              242.169
+            ]
+          ]
+        },
+        "field_id": "autor_cnpj",
+        "text": [
+          "[50.660.135/1087-88]",
+          "COMERCIAL VIANA ME",
+          "PARQUE DE DIAS, 1793, 8600",
+          "ALPES - CEP 36880-000",
+          "MACHADINHO - RS"
+        ]
+      }
+    ]
+  },
+  "ocr": {
+    "full_text": "Comercial Viana ME\nParque de Dias, 1793\nAlpes\nMachadinho - RS 71989375812\nRepresentação Gráfica de CC-e\n(Carta de Correção Eletrônica)\nID do Evento: 1101104224020831351700014255001000015293\nCriado em: 18/02/2025 07:49:10\nProtocolo: 864176409713431 - Registrado na SEFAZ em: 18/02/2025 07:49:10\nDe acordo com as determinações legais vigentes, vimos por meio desta comunicar-lhe que a Nota Fiscal, abaixo referenciada, contêm\nirregularidades que estão destacadas e suas respectivas correções, solicitamos que sejam aplicadas essas correções ao executar seus\nlançamentos fiscais.\n0025 0262 8148 4347 6348 5500 1000 1033 3612 9433 1987\nCNPJ Destinatário:  62.814.843/4763-48\nNota Fiscal: 000.103.336 - Série: 001\nEste é um evento fictício criado para fins de teste.\nCORREÇÕES A SEREM CONSIDERADAS\nCorreção do endereço do destinatário informado na nota original.\nEste documento é uma representação gráfica da CC-e e foi impresso apenas para sua informação e não possue validade fiscal.\nA CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos portais das SEFAZ.\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "Comercial Viana ME\nParque de Dias, 1793\nAlpes\nMachadinho - RS 71989375812\nRepresentação Gráfica de CC-e\n(Carta de Correção Eletrônica)\nID do Evento: 1101104224020831351700014255001000015293\nCriado em: 18/02/2025 07:49:10\nProtocolo: 864176409713431 - Registrado na SEFAZ em: 18/02/2025 07:49:10\nDe acordo com as determinações legais vigentes, vimos por meio desta comunicar-lhe que a Nota Fiscal, abaixo referenciada, contêm\nirregularidades que estão destacadas e suas respectivas correções, solicitamos que sejam aplicadas essas correções ao executar seus\nlançamentos fiscais.\n0025 0262 8148 4347 6348 5500 1000 1033 3612 9433 1987\nCNPJ Destinatário:  62.814.843/4763-48\nNota Fiscal: 000.103.336 - Série: 001\nEste é um evento fictício criado para fins de teste.\nCORREÇÕES A SEREM CONSIDERADAS\nCorreção do endereço do destinatário informado na nota original.\nEste documento é uma representação gráfica da CC-e e foi impresso apenas para sua informação e não possue validade fiscal.\nA CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos portais das SEFAZ.\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 11,
+    "fields_matched_to_bbox": 10,
+    "match_rate": 0.909
+  },
+  "kie": {
+    "issuer": {
+      "name": {
+        "value": "Comercial Viana ME",
+        "raw_value": "Comercial Viana ME",
+        "bbox_ref": "e00000"
+      },
+      "municipality": {
+        "value": "Machadinho",
+        "raw_value": "Machadinho",
+        "bbox_ref": "e00003"
+      },
+      "uf": {
+        "value": "RS",
+        "raw_value": "RS",
+        "bbox_ref": "e00003"
+      },
+      "phone": {
+        "value": "71989375812",
+        "raw_value": "71989375812",
+        "bbox_ref": "e00003"
+      }
+    },
+    "event": {
+      "related_access_key": {
+        "value": "00250262814843476348550010001033361294331987",
+        "raw_value": "00250262814843476348550010001033361294331987",
+        "bbox_ref": "e00012"
+      },
+      "author_cnpj": {
+        "value": "50660135108788",
+        "raw_value": "50660135108788",
+        "bbox_ref": null
+      },
+      "author_tax_id_type": "cnpj",
+      "recipient_cnpj": {
+        "value": "62814843476348",
+        "raw_value": "62814843476348",
+        "bbox_ref": "e00013"
+      },
+      "recipient_tax_id_type": "cnpj",
+      "event_date": {
+        "value": "2025-02-18T07:49:10-03:00",
+        "raw_value": "2025-02-18T07:49:10-03:00",
+        "bbox_ref": "e00007"
+      },
+      "correction_text": {
+        "value": "Correção do endereço do destinatário informado na nota original.",
+        "raw_value": "Correção do endereço do destinatário informado na nota original.",
+        "bbox_ref": "e00017"
+      },
+      "protocol": {
+        "value": "864176409713431",
+        "raw_value": "864176409713431",
+        "bbox_ref": "e00008"
+      }
+    }
+  },
+  "dpi": 110
+}

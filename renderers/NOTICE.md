@@ -14,3 +14,11 @@ o visual real dos PDFs/imagens do dataset sintético.
   remoção de documentação, CLI e testes da lib; ajustes para os presets de ERP, Portal NF-e,
   CNPJ alfanumérico e DANFSe usados pelo gerador. O restante do repositório (geradores de dados,
   augmentation, pipeline, labels, HTML) é código novo deste projeto.
+
+## Moldes de NFS-e das capitais
+
+`renderers/nfse_cidades_specs/*.json` guardam apenas geometria (linhas, retângulos, posições e
+tamanhos de fonte) e **rótulos fixos de formulário** medidos em notas fiscais públicas (cota
+parlamentar da Câmara dos Deputados) de São Paulo, Porto Velho, Fortaleza, Maceió e Rio Branco,
+gerados por `tools/build_nfse_specs.py`. Nenhum dado variável (nomes, valores, documentos) nem
+brasão/logo é guardado; os valores impressos são sintéticos.

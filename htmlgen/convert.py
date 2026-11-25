@@ -55,34 +55,45 @@ def logo_uri(name: str, logo_style: str | None, rng: random.Random) -> str:
 
 # ------------------------------------------------------------------ clean html
 
-_KEEP_ATTRS = {"alt", "lang", "colspan", "rowspan", "charset", "data-kind", "data-subtype"}
+def _simplify(doc):
+    """Reduz o DOM à ESTRUTURA: article > section/header/h*/dl(dt,dd)/table/p/img.
 
-
-def to_clean_html(full_html: str) -> str:
-    """Remove a camada de estilo, preservando só semântica + texto.
-
-    - tira <style>, class, style, id e src (imagens viram só `alt`);
-    - achata <span>/<b> sem significado estrutural.
-    """
-    doc = lxml.html.document_fromstring(full_html)
-    for el in doc.xpath("//style | //*[@data-decor]"):
+    Sem head/doctype, sem atributos, sem div/span/b/small/br. Imagens (logo, QR,
+    barcode) e objetos sobrepostos (<aside>: carimbo, POS, assinatura, marca
+    d'água) viram `<img>` vazio — só a sinalização de que há uma imagem ali."""
+    for el in doc.xpath("//style | //script | //*[@data-decor]"):
         el.getparent().remove(el)
-    for el in doc.iter():
-        if not isinstance(el.tag, str):
-            continue
-        for a in list(el.attrib):
-            if a not in _KEEP_ATTRS:
-                del el.attrib[a]
-    for el in doc.xpath("//span"):
+    for el in doc.xpath("//aside"):
+        img = lxml.html.Element("img")
+        img.tail = el.tail
+        el.getparent().replace(el, img)
+    for br in doc.xpath("//br"):
+        br.tail = " " + (br.tail or "")
+        br.drop_tag()
+    for el in doc.xpath("//span | //b | //small | //div | //strong | //i"):
         el.drop_tag()
     for el in doc.iter():
         if isinstance(el.tag, str):
-            if el.text is not None and not el.text.strip():
-                el.text = None
-            if el.tail is not None and not el.tail.strip():
-                el.tail = None
-    etree.indent(doc, space="  ")
-    return "<!DOCTYPE html>\n" + etree.tostring(doc, encoding="unicode", method="html")
+            el.attrib.clear()
+    article = doc.find(".//article")
+    root = article if article is not None else doc.find("body")
+    for el in root.iter():
+        if not isinstance(el.tag, str):
+            continue
+        if el.text is not None:
+            el.text = " ".join(el.text.split()) or None
+        if el.tail is not None:
+            el.tail = " ".join(el.tail.split()) or None
+    for p in root.xpath(".//p[not(normalize-space()) and not(.//img)]"):
+        p.getparent().remove(p)
+    return root
+
+
+def to_clean_html(full_html: str) -> str:
+    """HTML-alvo só com estrutura (ver `_simplify`)."""
+    root = _simplify(lxml.html.document_fromstring(full_html))
+    etree.indent(root, space="  ")
+    return etree.tostring(root, encoding="unicode", method="html").rstrip() + "\n"
 
 
 # -------------------------------------------------------------------- markdown
@@ -98,7 +109,7 @@ def _inline(el) -> str:
             sep = " " if "".join(parts) and not "".join(parts).endswith(" ") else ""
             parts.append(f"{sep}**{_inline(ch).strip()}**")
         elif tag == "img":
-            parts.append(f"![{ch.get('alt', '')}]()")
+            parts.append("![]()")
         else:
             parts.append(_inline(ch))
         parts.append(ch.tail or "")
@@ -118,12 +129,20 @@ def _table_md(rows: list[list[str]], header: list[str], aligns: list[str]) -> st
 
 
 def _collect_fields(dl_list) -> list[tuple[str, str]]:
+    """Pares (dt, dd): dt e dd são irmãos; dd/dt isolados viram par com o outro vazio."""
     out = []
     for dl in dl_list:
-        for f in dl:
-            dt, dd = f.find("dt"), f.find("dd")
-            if dt is not None or dd is not None:
-                out.append((_inline(dt) if dt is not None else "", _inline(dd) if dd is not None else ""))
+        pending = None
+        for ch in dl:
+            if ch.tag == "dt":
+                if pending is not None:
+                    out.append((pending, ""))
+                pending = _inline(ch)
+            elif ch.tag == "dd":
+                out.append((pending or "", _inline(ch)))
+                pending = None
+        if pending is not None:
+            out.append((pending, ""))
     return out
 
 
@@ -155,34 +174,24 @@ def _walk(el, md_style: str, out: list[str]):
         elif tag == "p":
             out.append(_inline(ch))
         elif tag == "img":
-            out.append(f"![{ch.get('alt', '')}]()")
+            out.append("![]()")
         elif tag == "table" and not ch.findall("./thead/tr/th"):
             cells = [_inline(td) for td in ch.iter("td")]
             out.append("\n".join(f"- {c}" for c in cells if c))
         elif tag == "table":
             ths = ch.findall("./thead/tr/th")
             header = [_inline(t) for t in ths]
-            aligns = [("r" if "r" in (t.get("class") or "").split() else "") for t in ths]
+            aligns = ["" for _ in ths]
             rows = [[_cell(td) for td in tr.findall("td")] for tr in ch.findall("./tbody/tr")]
             out.append(_table_md(rows, header, aligns))
-        elif tag == "aside":
-            from htmlgen.occlusion import KIND_TITLE
-
-            title = KIND_TITLE.get(ch.get("data-kind", ""), "Elemento")
-            sub = f" ({ch.get('data-subtype')})" if ch.get("data-subtype") else ""
-            body = [_inline(p) for p in ch.findall("p")]
-            out.append("\n".join([f"> **{title}{sub}**"] + [f"> {b}" for b in body]))
-        elif tag in ("div", "section", "header", "article"):
+        elif tag in ("section", "header", "article"):
             _walk(ch, md_style, out)
     flush()
 
 
 def to_markdown(html: str, md_style: str = "table") -> str:
-    """Markdown GFM derivado da árvore do HTML. Recebe o HTML COMPLETO (as
-    classes r/c só servem para alinhar colunas numéricas; o texto é idêntico
-    ao do HTML limpo)."""
-    doc = lxml.html.document_fromstring(html)
-    body = doc.find("body")
+    """Markdown GFM derivado da estrutura simplificada (aceita HTML completo ou limpo)."""
+    root = _simplify(lxml.html.document_fromstring(html))
     out: list[str] = []
-    _walk(body, md_style, out)
+    _walk(root, md_style, out)
     return "\n\n".join(x for x in out if x.strip()) + "\n"

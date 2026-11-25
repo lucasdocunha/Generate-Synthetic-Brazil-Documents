@@ -1,0 +1,2763 @@
+{
+  "doc_id": "nfe_portal_train_00000003",
+  "doc_type": "NFE_PORTAL",
+  "schema_version": "0.3-nfe-variants-alnum-cnpj",
+  "source": {
+    "xml_path": "xml/0000/nfe_portal_train_00000003.xml",
+    "pdf_path": "pdfs/0000/nfe_portal_train_00000003.pdf",
+    "fixture_template": "tpl_002",
+    "generation_seed": 772749565904449189,
+    "image_source": "lib_pdf",
+    "html_path": "html_clean/0000/nfe_portal_train_00000003.html",
+    "md_path": "md/0000/nfe_portal_train_00000003.md",
+    "html_visible_path": "html_visible/0000/nfe_portal_train_00000003.html"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    },
+    {
+      "page_number": 2,
+      "size_mm": {
+        "w": 210.002,
+        "h": 297.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "e00000",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 17.0,
+        "y": 10.111,
+        "w": 11.995,
+        "h": 8.744,
+        "unit": "mm"
+      },
+      "text": "NFe"
+    },
+    {
+      "element_id": "e00001",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 32.999,
+        "y": 11.04,
+        "w": 15.878,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Nota Fiscal"
+    },
+    {
+      "element_id": "e00002",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 32.999,
+        "y": 14.741,
+        "w": 14.116,
+        "h": 4.362,
+        "unit": "mm"
+      },
+      "text": "Eletrônica"
+    },
+    {
+      "element_id": "e00003",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.0,
+        "y": 23.1,
+        "w": 20.04,
+        "h": 3.4,
+        "unit": "mm"
+      },
+      "text": "Chave de acesso"
+    },
+    {
+      "element_id": "e00004",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 161.001,
+        "y": 23.1,
+        "w": 14.135,
+        "h": 3.4,
+        "unit": "mm"
+      },
+      "text": "Versão XML"
+    },
+    {
+      "element_id": "e00005",
+      "field_ids": [
+        "chave_acesso",
+        "fatura_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 11.0,
+        "y": 26.948,
+        "w": 77.507,
+        "h": 3.635,
+        "unit": "mm"
+      },
+      "text": "00-2509-8Z.NZ2.IXV/0001-10-55-101-000.458.105-119.244.919-8"
+    },
+    {
+      "element_id": "e00006",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 161.001,
+        "y": 26.948,
+        "w": 5.149,
+        "h": 3.635,
+        "unit": "mm"
+      },
+      "text": "4.00"
+    },
+    {
+      "element_id": "e00007",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 11.0,
+        "y": 34.903,
+        "w": 7.447,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "NF-e"
+    },
+    {
+      "element_id": "e00008",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 42.904,
+        "w": 22.722,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Dados da NF-e"
+    },
+    {
+      "element_id": "e00009",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 49.902,
+        "w": 15.06,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Número NF-e"
+    },
+    {
+      "element_id": "e00010",
+      "field_ids": [
+        "ident_numero"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 53.585,
+        "w": 8.238,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "458105"
+    },
+    {
+      "element_id": "e00011",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 103.999,
+        "y": 49.902,
+        "w": 19.198,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Data de Emissão"
+    },
+    {
+      "element_id": "e00012",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 103.999,
+        "y": 53.585,
+        "w": 29.656,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "27/09/2025 20:07:07-03:00"
+    },
+    {
+      "element_id": "e00013",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 64.402,
+        "w": 22.35,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Dados Básicos"
+    },
+    {
+      "element_id": "e00014",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 71.404,
+        "w": 8.396,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Modelo"
+    },
+    {
+      "element_id": "e00015",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 75.087,
+        "w": 2.746,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "55"
+    },
+    {
+      "element_id": "e00016",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 39.0,
+        "y": 71.404,
+        "w": 5.868,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Série"
+    },
+    {
+      "element_id": "e00017",
+      "field_ids": [
+        "ident_serie"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 39.0,
+        "y": 75.087,
+        "w": 4.119,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "101"
+    },
+    {
+      "element_id": "e00018",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 64.001,
+        "y": 71.404,
+        "w": 9.063,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Número"
+    },
+    {
+      "element_id": "e00019",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 64.001,
+        "y": 75.087,
+        "w": 8.238,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "458105"
+    },
+    {
+      "element_id": "e00020",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 96.001,
+        "y": 71.404,
+        "w": 19.198,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Data de Emissão"
+    },
+    {
+      "element_id": "e00021",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 96.001,
+        "y": 75.087,
+        "w": 29.656,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "27/09/2025 20:07:07-03:00"
+    },
+    {
+      "element_id": "e00022",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 141.002,
+        "y": 71.404,
+        "w": 21.863,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Data Saída/Entrada"
+    },
+    {
+      "element_id": "e00023",
+      "field_ids": [
+        "data_emissao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 141.002,
+        "y": 75.087,
+        "w": 12.357,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "27/09/2025"
+    },
+    {
+      "element_id": "e00024",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 170.998,
+        "y": 71.404,
+        "w": 21.861,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor Total da Nota"
+    },
+    {
+      "element_id": "e00025",
+      "field_ids": [
+        "total_vnf",
+        "total_vprod",
+        "item_1_vtotal"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 170.998,
+        "y": 75.087,
+        "w": 10.984,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "89.324,02"
+    },
+    {
+      "element_id": "e00026",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 85.904,
+        "w": 13.225,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Emitente"
+    },
+    {
+      "element_id": "e00027",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 92.902,
+        "w": 6.398,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "CNPJ"
+    },
+    {
+      "element_id": "e00028",
+      "field_ids": [
+        "emit_cnpj_cpf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 96.585,
+        "w": 22.647,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "8Z.NZ2.IXV/0001-10"
+    },
+    {
+      "element_id": "e00029",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 92.902,
+        "w": 23.464,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Nome / Razão Social"
+    },
+    {
+      "element_id": "e00030",
+      "field_ids": [
+        "emit_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 96.585,
+        "w": 28.404,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Comercial Correia EIRELI"
+    },
+    {
+      "element_id": "e00031",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 141.002,
+        "y": 92.902,
+        "w": 21.199,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Inscrição Estadual"
+    },
+    {
+      "element_id": "e00032",
+      "field_ids": [
+        "emit_IE"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 141.002,
+        "y": 96.585,
+        "w": 16.476,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "494472114236"
+    },
+    {
+      "element_id": "e00033",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 178.999,
+        "y": 92.902,
+        "w": 3.198,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "UF"
+    },
+    {
+      "element_id": "e00034",
+      "field_ids": [
+        "emit_endereco_uf",
+        "dest_endereco_uf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 178.999,
+        "y": 96.585,
+        "w": 3.294,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "ES"
+    },
+    {
+      "element_id": "e00035",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 107.402,
+        "w": 17.88,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Destinatário"
+    },
+    {
+      "element_id": "e00036",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 114.404,
+        "w": 4.798,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "CPF"
+    },
+    {
+      "element_id": "e00037",
+      "field_ids": [
+        "dest_cnpj_cpf"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 118.087,
+        "w": 17.298,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "686.113.216-03"
+    },
+    {
+      "element_id": "e00038",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 114.404,
+        "w": 23.464,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Nome / Razão Social"
+    },
+    {
+      "element_id": "e00039",
+      "field_ids": [
+        "dest_xNome"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 56.0,
+        "y": 118.087,
+        "w": 20.721,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Sra. Carolina Pires"
+    },
+    {
+      "element_id": "e00040",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 141.002,
+        "y": 114.404,
+        "w": 21.199,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Inscrição Estadual"
+    },
+    {
+      "element_id": "e00041",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 178.999,
+        "y": 114.404,
+        "w": 3.198,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "UF"
+    },
+    {
+      "element_id": "e00042",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 178.999,
+        "y": 118.087,
+        "w": 3.294,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "ES"
+    },
+    {
+      "element_id": "e00043",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 122.902,
+        "w": 23.595,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Destino da operação"
+    },
+    {
+      "element_id": "e00044",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 126.585,
+        "w": 22.786,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1 - Operação Interna"
+    },
+    {
+      "element_id": "e00045",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 73.999,
+        "y": 122.902,
+        "w": 19.726,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Consumidor final"
+    },
+    {
+      "element_id": "e00046",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 73.999,
+        "y": 126.585,
+        "w": 7.821,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1 - Sim"
+    },
+    {
+      "element_id": "e00047",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 133.999,
+        "y": 122.902,
+        "w": 27.861,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Presença do Comprador"
+    },
+    {
+      "element_id": "e00048",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 133.999,
+        "y": 126.585,
+        "w": 26.351,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1 - Operação presencial"
+    },
+    {
+      "element_id": "e00049",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 137.403,
+        "w": 12.849,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Emissão"
+    },
+    {
+      "element_id": "e00050",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 144.404,
+        "w": 10.8,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Processo"
+    },
+    {
+      "element_id": "e00051",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 148.087,
+        "w": 56.405,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0 - Emissão de NF-e com aplicativo do Contribuinte"
+    },
+    {
+      "element_id": "e00052",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 144.404,
+        "w": 23.065,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Versão do Processo"
+    },
+    {
+      "element_id": "e00053",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 148.087,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "4.01"
+    },
+    {
+      "element_id": "e00054",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 116.999,
+        "y": 144.404,
+        "w": 15.598,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Tipo Emissão"
+    },
+    {
+      "element_id": "e00055",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 116.999,
+        "y": 148.087,
+        "w": 11.525,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1 - Normal"
+    },
+    {
+      "element_id": "e00056",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 157.0,
+        "y": 144.404,
+        "w": 11.865,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Finalidade"
+    },
+    {
+      "element_id": "e00057",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 157.0,
+        "y": 148.087,
+        "w": 17.289,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1 - NF-e normal"
+    },
+    {
+      "element_id": "e00058",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 152.902,
+        "w": 25.33,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Natureza da Operação"
+    },
+    {
+      "element_id": "e00059",
+      "field_ids": [
+        "natureza_operacao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 156.586,
+        "w": 7.139,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Venda"
+    },
+    {
+      "element_id": "e00060",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 152.902,
+        "w": 20.263,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Tipo da Operação"
+    },
+    {
+      "element_id": "e00061",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 156.586,
+        "w": 10.021,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1 - Saída"
+    },
+    {
+      "element_id": "e00062",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 116.999,
+        "y": 152.902,
+        "w": 24.394,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Forma de Pagamento"
+    },
+    {
+      "element_id": "e00063",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 116.999,
+        "y": 156.586,
+        "w": 10.979,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0 - À vista"
+    },
+    {
+      "element_id": "e00064",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 157.0,
+        "y": 152.902,
+        "w": 23.862,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Digest Value da NF-e"
+    },
+    {
+      "element_id": "e00065",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 157.0,
+        "y": 156.586,
+        "w": 34.444,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "H9JPZ9rHrMCUQnu2bp6Z3fde"
+    },
+    {
+      "element_id": "e00066",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 167.403,
+        "w": 86.979,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Situação  [AUTORIZADA]    Ambiente  [HOMOLOGAÇÃO]"
+    },
+    {
+      "element_id": "e00067",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 174.404,
+        "w": 18.795,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Eventos da NF-e"
+    },
+    {
+      "element_id": "e00068",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 178.088,
+        "w": 28.137,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Autorizado o uso da NF-e"
+    },
+    {
+      "element_id": "e00069",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 174.404,
+        "w": 11.196,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Protocolo"
+    },
+    {
+      "element_id": "e00070",
+      "field_ids": [
+        "protocolo_autorizacao"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 79.001,
+        "y": 178.088,
+        "w": 20.595,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "100255801946811"
+    },
+    {
+      "element_id": "e00071",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.001,
+        "y": 174.404,
+        "w": 12.664,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Data / Hora"
+    },
+    {
+      "element_id": "e00072",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 139.001,
+        "y": 178.088,
+        "w": 32.95,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "27/09/2025 às 20:13:38-03:00"
+    },
+    {
+      "element_id": "e00073",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 188.901,
+        "w": 28.5,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Dados do Emitente"
+    },
+    {
+      "element_id": "e00074",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 195.902,
+        "w": 23.464,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Nome / Razão Social"
+    },
+    {
+      "element_id": "e00075",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 199.586,
+        "w": 28.404,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Comercial Correia EIRELI"
+    },
+    {
+      "element_id": "e00076",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 195.902,
+        "w": 17.063,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Nome Fantasia"
+    },
+    {
+      "element_id": "e00077",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 199.586,
+        "w": 25.388,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Comercial Aragão EPP"
+    },
+    {
+      "element_id": "e00078",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 204.404,
+        "w": 6.398,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "CNPJ"
+    },
+    {
+      "element_id": "e00079",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 208.088,
+        "w": 22.647,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "8Z.NZ2.IXV/0001-10"
+    },
+    {
+      "element_id": "e00080",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 204.404,
+        "w": 10.932,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Endereço"
+    },
+    {
+      "element_id": "e00081",
+      "field_ids": [
+        "emit_endereco_logradouro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 208.088,
+        "w": 24.156,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Jardim da Rosa, 1933"
+    },
+    {
+      "element_id": "e00082",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 212.903,
+        "w": 17.462,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Bairro / Distrito"
+    },
+    {
+      "element_id": "e00083",
+      "field_ids": [
+        "emit_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 216.586,
+        "w": 9.196,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Braúnas"
+    },
+    {
+      "element_id": "e00084",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 212.903,
+        "w": 4.932,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00085",
+      "field_ids": [
+        "emit_endereco_cep"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 216.586,
+        "w": 11.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "68719-139"
+    },
+    {
+      "element_id": "e00086",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 221.401,
+        "w": 11.196,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Município"
+    },
+    {
+      "element_id": "e00087",
+      "field_ids": [
+        "emit_endereco_municipio"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 225.085,
+        "w": 34.18,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "3200169 - Água Doce do Norte"
+    },
+    {
+      "element_id": "e00088",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 221.401,
+        "w": 9.864,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Telefone"
+    },
+    {
+      "element_id": "e00089",
+      "field_ids": [
+        "emit_fone"
+      ],
+      "role": "content",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 225.085,
+        "w": 18.257,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "(81) 94433-0904"
+    },
+    {
+      "element_id": "e00090",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 229.903,
+        "w": 3.198,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "UF"
+    },
+    {
+      "element_id": "e00091",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 14.002,
+        "y": 233.587,
+        "w": 3.294,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "ES"
+    },
+    {
+      "element_id": "e00092",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 229.903,
+        "w": 21.199,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Inscrição Estadual"
+    },
+    {
+      "element_id": "e00093",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 105.999,
+        "y": 233.587,
+        "w": 16.476,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "494472114236"
+    },
+    {
+      "element_id": "e00094",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 11.902,
+        "w": 52.342,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Dados do Destinatário / Remetente"
+    },
+    {
+      "element_id": "e00095",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 18.903,
+        "w": 23.464,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Nome / Razão Social"
+    },
+    {
+      "element_id": "e00096",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 22.587,
+        "w": 20.721,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Sra. Carolina Pires"
+    },
+    {
+      "element_id": "e00097",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 18.903,
+        "w": 13.196,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "CNPJ / CPF"
+    },
+    {
+      "element_id": "e00098",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 22.587,
+        "w": 17.298,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "686.113.216-03"
+    },
+    {
+      "element_id": "e00099",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 27.402,
+        "w": 10.932,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Endereço"
+    },
+    {
+      "element_id": "e00100",
+      "field_ids": [
+        "dest_endereco_logradouro"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 31.085,
+        "w": 19.765,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Setor Vieira, 1398"
+    },
+    {
+      "element_id": "e00101",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 27.402,
+        "w": 17.462,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Bairro / Distrito"
+    },
+    {
+      "element_id": "e00102",
+      "field_ids": [
+        "dest_endereco_bairro"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 31.085,
+        "w": 22.19,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Boa União 1ª Seção"
+    },
+    {
+      "element_id": "e00103",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 35.904,
+        "w": 4.932,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "CEP"
+    },
+    {
+      "element_id": "e00104",
+      "field_ids": [
+        "dest_endereco_cep"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 39.587,
+        "w": 11.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "74826-970"
+    },
+    {
+      "element_id": "e00105",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 35.904,
+        "w": 11.196,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Município"
+    },
+    {
+      "element_id": "e00106",
+      "field_ids": [
+        "dest_endereco_municipio"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 39.587,
+        "w": 31.703,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "3201902 - Domingos Martins"
+    },
+    {
+      "element_id": "e00107",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 44.402,
+        "w": 9.864,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Telefone"
+    },
+    {
+      "element_id": "e00108",
+      "field_ids": [
+        "dest_fone"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 48.085,
+        "w": 16.884,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "(21) 3444-9161"
+    },
+    {
+      "element_id": "e00109",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 44.402,
+        "w": 3.198,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "UF"
+    },
+    {
+      "element_id": "e00110",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 48.085,
+        "w": 3.294,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "ES"
+    },
+    {
+      "element_id": "e00111",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 58.902,
+        "w": 46.94,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Dados dos Produtos e Serviços"
+    },
+    {
+      "element_id": "e00112",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 65.904,
+        "w": 14.396,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Item 1 - Cód."
+    },
+    {
+      "element_id": "e00113",
+      "field_ids": [
+        "item_1_codigo"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 69.587,
+        "w": 10.019,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "PAR-783"
+    },
+    {
+      "element_id": "e00114",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 36.001,
+        "y": 65.904,
+        "w": 11.467,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Descrição"
+    },
+    {
+      "element_id": "e00115",
+      "field_ids": [
+        "item_1_descricao"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 36.001,
+        "y": 69.587,
+        "w": 16.748,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Parafuso Latão"
+    },
+    {
+      "element_id": "e00116",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 101.999,
+        "y": 65.904,
+        "w": 5.462,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "NCM"
+    },
+    {
+      "element_id": "e00117",
+      "field_ids": [
+        "item_1_ncm"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 101.999,
+        "y": 69.587,
+        "w": 10.984,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "73184234"
+    },
+    {
+      "element_id": "e00118",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 124.001,
+        "y": 65.904,
+        "w": 6.664,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "CFOP"
+    },
+    {
+      "element_id": "e00119",
+      "field_ids": [
+        "item_1_cfop"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 124.001,
+        "y": 69.587,
+        "w": 5.492,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "5102"
+    },
+    {
+      "element_id": "e00120",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 140.0,
+        "y": 65.904,
+        "w": 5.997,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Unid."
+    },
+    {
+      "element_id": "e00121",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 140.0,
+        "y": 69.587,
+        "w": 2.057,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "M"
+    },
+    {
+      "element_id": "e00122",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 154.002,
+        "y": 65.904,
+        "w": 4.798,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Qtd."
+    },
+    {
+      "element_id": "e00123",
+      "field_ids": [
+        "item_1_qtd"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 154.002,
+        "y": 69.587,
+        "w": 8.925,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "62,0000"
+    },
+    {
+      "element_id": "e00124",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 176.001,
+        "y": 65.904,
+        "w": 10.663,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor(R$)"
+    },
+    {
+      "element_id": "e00125",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 176.001,
+        "y": 69.587,
+        "w": 10.984,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "89.324,02"
+    },
+    {
+      "element_id": "e00126",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 74.402,
+        "w": 27.995,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor Unitário Comercial"
+    },
+    {
+      "element_id": "e00127",
+      "field_ids": [
+        "item_1_vunit"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 78.086,
+        "w": 12.357,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "1.440,7100"
+    },
+    {
+      "element_id": "e00128",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 58.999,
+        "y": 74.402,
+        "w": 26.258,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Código EAN Comercial"
+    },
+    {
+      "element_id": "e00129",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 58.999,
+        "y": 78.086,
+        "w": 11.937,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "SEM GTIN"
+    },
+    {
+      "element_id": "e00130",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 103.999,
+        "y": 74.402,
+        "w": 21.595,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Unidade Tributável"
+    },
+    {
+      "element_id": "e00131",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 103.999,
+        "y": 78.086,
+        "w": 2.057,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "M"
+    },
+    {
+      "element_id": "e00132",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 148.999,
+        "y": 74.402,
+        "w": 25.327,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Quantidade Tributável"
+    },
+    {
+      "element_id": "e00133",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 148.999,
+        "y": 78.086,
+        "w": 8.925,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "62,0000"
+    },
+    {
+      "element_id": "e00134",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 88.903,
+        "w": 105.039,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Totais — Imposto Sobre Circulação de Mercadorias e Serviços (ICMS)"
+    },
+    {
+      "element_id": "e00135",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 95.904,
+        "w": 25.196,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Base de Cálculo ICMS"
+    },
+    {
+      "element_id": "e00136",
+      "field_ids": [
+        "total_vbc"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 99.587,
+        "w": 10.984,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "34.738,11"
+    },
+    {
+      "element_id": "e00137",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 60.0,
+        "y": 95.904,
+        "w": 16.262,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor do ICMS"
+    },
+    {
+      "element_id": "e00138",
+      "field_ids": [
+        "total_vicms",
+        "item_1_vicms"
+      ],
+      "role": "content",
+      "page": 2,
+      "bbox": {
+        "x": 60.0,
+        "y": 99.587,
+        "w": 9.611,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "5.905,48"
+    },
+    {
+      "element_id": "e00139",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 95.904,
+        "w": 28.928,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Base de Cálculo ICMS ST"
+    },
+    {
+      "element_id": "e00140",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 99.587,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00141",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 152.001,
+        "y": 95.904,
+        "w": 27.726,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor ICMS Substituição"
+    },
+    {
+      "element_id": "e00142",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 152.001,
+        "y": 99.587,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00143",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 104.402,
+        "w": 28.525,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor Total dos Produtos"
+    },
+    {
+      "element_id": "e00144",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 108.086,
+        "w": 10.984,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "89.324,02"
+    },
+    {
+      "element_id": "e00145",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 60.0,
+        "y": 104.402,
+        "w": 16.13,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor do Frete"
+    },
+    {
+      "element_id": "e00146",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 60.0,
+        "y": 108.086,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00147",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 104.402,
+        "w": 18.529,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor do Seguro"
+    },
+    {
+      "element_id": "e00148",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 108.086,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00149",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 152.001,
+        "y": 104.402,
+        "w": 19.599,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Outras Despesas"
+    },
+    {
+      "element_id": "e00150",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 152.001,
+        "y": 108.086,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00151",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 112.904,
+        "w": 19.597,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor Total do IPI"
+    },
+    {
+      "element_id": "e00152",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 116.588,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00153",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 60.0,
+        "y": 112.904,
+        "w": 21.062,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor Total da NFe"
+    },
+    {
+      "element_id": "e00154",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 60.0,
+        "y": 116.588,
+        "w": 10.984,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "89.324,02"
+    },
+    {
+      "element_id": "e00155",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 112.904,
+        "w": 30.26,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor Total dos Descontos"
+    },
+    {
+      "element_id": "e00156",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 105.999,
+        "y": 116.588,
+        "w": 4.806,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00157",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 152.001,
+        "y": 112.904,
+        "w": 25.196,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Valor do PIS / COFINS"
+    },
+    {
+      "element_id": "e00158",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 152.001,
+        "y": 116.588,
+        "w": 19.222,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "580,61 / 2.679,72"
+    },
+    {
+      "element_id": "e00159",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 127.401,
+        "w": 34.643,
+        "h": 4.605,
+        "unit": "mm"
+      },
+      "text": "Informações Adicionais"
+    },
+    {
+      "element_id": "e00160",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 134.403,
+        "w": 11.467,
+        "h": 3.303,
+        "unit": "mm"
+      },
+      "text": "Descrição"
+    },
+    {
+      "element_id": "e00161",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 14.002,
+        "y": 138.086,
+        "w": 72.056,
+        "h": 3.393,
+        "unit": "mm"
+      },
+      "text": "Não gera direito a crédito fiscal de IPI. Valor aproximado dos tribu"
+    },
+    {
+      "element_id": "e00162",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 2,
+      "bbox": {
+        "x": 101.544,
+        "y": 150.148,
+        "w": 6.911,
+        "h": 3.635,
+        "unit": "mm"
+      },
+      "text": "Voltar"
+    }
+  ],
+  "layout": {
+    "special_objects": []
+  },
+  "ocr": {
+    "full_text": "NFe\nNota Fiscal\nEletrônica\nChave de acesso\nVersão XML\n00-2509-8Z.NZ2.IXV/0001-10-55-101-000.458.105-119.244.919-8\n4.00\nNF-e\nDados da NF-e\nNúmero NF-e\n458105\nData de Emissão\n27/09/2025 20:07:07-03:00\nDados Básicos\nModelo\n55\nSérie\n101\nNúmero\n458105\nData de Emissão\n27/09/2025 20:07:07-03:00\nData Saída/Entrada\n27/09/2025\nValor Total da Nota\n89.324,02\nEmitente\nCNPJ\n8Z.NZ2.IXV/0001-10\nNome / Razão Social\nComercial Correia EIRELI\nInscrição Estadual\n494472114236\nUF\nES\nDestinatário\nCPF\n686.113.216-03\nNome / Razão Social\nSra. Carolina Pires\nInscrição Estadual\nUF\nES\nDestino da operação\n1 - Operação Interna\nConsumidor final\n1 - Sim\nPresença do Comprador\n1 - Operação presencial\nEmissão\nProcesso\n0 - Emissão de NF-e com aplicativo do Contribuinte\nVersão do Processo\n4.01\nTipo Emissão\n1 - Normal\nFinalidade\n1 - NF-e normal\nNatureza da Operação\nVenda\nTipo da Operação\n1 - Saída\nForma de Pagamento\n0 - À vista\nDigest Value da NF-e\nH9JPZ9rHrMCUQnu2bp6Z3fde\nSituação  [AUTORIZADA]    Ambiente  [HOMOLOGAÇÃO]\nEventos da NF-e\nAutorizado o uso da NF-e\nProtocolo\n100255801946811\nData / Hora\n27/09/2025 às 20:13:38-03:00\nDados do Emitente\nNome / Razão Social\nComercial Correia EIRELI\nNome Fantasia\nComercial Aragão EPP\nCNPJ\n8Z.NZ2.IXV/0001-10\nEndereço\nJardim da Rosa, 1933\nBairro / Distrito\nBraúnas\nCEP\n68719-139\nMunicípio\n3200169 - Água Doce do Norte\nTelefone\n(81) 94433-0904\nUF\nES\nInscrição Estadual\n494472114236\n\nDados do Destinatário / Remetente\nNome / Razão Social\nSra. Carolina Pires\nCNPJ / CPF\n686.113.216-03\nEndereço\nSetor Vieira, 1398\nBairro / Distrito\nBoa União 1ª Seção\nCEP\n74826-970\nMunicípio\n3201902 - Domingos Martins\nTelefone\n(21) 3444-9161\nUF\nES\nDados dos Produtos e Serviços\nItem 1 - Cód.\nPAR-783\nDescrição\nParafuso Latão\nNCM\n73184234\nCFOP\n5102\nUnid.\nM\nQtd.\n62,0000\nValor(R$)\n89.324,02\nValor Unitário Comercial\n1.440,7100\nCódigo EAN Comercial\nSEM GTIN\nUnidade Tributável\nM\nQuantidade Tributável\n62,0000\nTotais — Imposto Sobre Circulação de Mercadorias e Serviços (ICMS)\nBase de Cálculo ICMS\n34.738,11\nValor do ICMS\n5.905,48\nBase de Cálculo ICMS ST\n0,00\nValor ICMS Substituição\n0,00\nValor Total dos Produtos\n89.324,02\nValor do Frete\n0,00\nValor do Seguro\n0,00\nOutras Despesas\n0,00\nValor Total do IPI\n0,00\nValor Total da NFe\n89.324,02\nValor Total dos Descontos\n0,00\nValor do PIS / COFINS\n580,61 / 2.679,72\nInformações Adicionais\nDescrição\nNão gera direito a crédito fiscal de IPI. Valor aproximado dos tribu\nVoltar\n",
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "NFe\nNota Fiscal\nEletrônica\nChave de acesso\nVersão XML\n00-2509-8Z.NZ2.IXV/0001-10-55-101-000.458.105-119.244.919-8\n4.00\nNF-e\nDados da NF-e\nNúmero NF-e\n458105\nData de Emissão\n27/09/2025 20:07:07-03:00\nDados Básicos\nModelo\n55\nSérie\n101\nNúmero\n458105\nData de Emissão\n27/09/2025 20:07:07-03:00\nData Saída/Entrada\n27/09/2025\nValor Total da Nota\n89.324,02\nEmitente\nCNPJ\n8Z.NZ2.IXV/0001-10\nNome / Razão Social\nComercial Correia EIRELI\nInscrição Estadual\n494472114236\nUF\nES\nDestinatário\nCPF\n686.113.216-03\nNome / Razão Social\nSra. Carolina Pires\nInscrição Estadual\nUF\nES\nDestino da operação\n1 - Operação Interna\nConsumidor final\n1 - Sim\nPresença do Comprador\n1 - Operação presencial\nEmissão\nProcesso\n0 - Emissão de NF-e com aplicativo do Contribuinte\nVersão do Processo\n4.01\nTipo Emissão\n1 - Normal\nFinalidade\n1 - NF-e normal\nNatureza da Operação\nVenda\nTipo da Operação\n1 - Saída\nForma de Pagamento\n0 - À vista\nDigest Value da NF-e\nH9JPZ9rHrMCUQnu2bp6Z3fde\nSituação  [AUTORIZADA]    Ambiente  [HOMOLOGAÇÃO]\nEventos da NF-e\nAutorizado o uso da NF-e\nProtocolo\n100255801946811\nData / Hora\n27/09/2025 às 20:13:38-03:00\nDados do Emitente\nNome / Razão Social\nComercial Correia EIRELI\nNome Fantasia\nComercial Aragão EPP\nCNPJ\n8Z.NZ2.IXV/0001-10\nEndereço\nJardim da Rosa, 1933\nBairro / Distrito\nBraúnas\nCEP\n68719-139\nMunicípio\n3200169 - Água Doce do Norte\nTelefone\n(81) 94433-0904\nUF\nES\nInscrição Estadual\n494472114236\n"
+      },
+      {
+        "page_number": 2,
+        "text": "Dados do Destinatário / Remetente\nNome / Razão Social\nSra. Carolina Pires\nCNPJ / CPF\n686.113.216-03\nEndereço\nSetor Vieira, 1398\nBairro / Distrito\nBoa União 1ª Seção\nCEP\n74826-970\nMunicípio\n3201902 - Domingos Martins\nTelefone\n(21) 3444-9161\nUF\nES\nDados dos Produtos e Serviços\nItem 1 - Cód.\nPAR-783\nDescrição\nParafuso Latão\nNCM\n73184234\nCFOP\n5102\nUnid.\nM\nQtd.\n62,0000\nValor(R$)\n89.324,02\nValor Unitário Comercial\n1.440,7100\nCódigo EAN Comercial\nSEM GTIN\nUnidade Tributável\nM\nQuantidade Tributável\n62,0000\nTotais — Imposto Sobre Circulação de Mercadorias e Serviços (ICMS)\nBase de Cálculo ICMS\n34.738,11\nValor do ICMS\n5.905,48\nBase de Cálculo ICMS ST\n0,00\nValor ICMS Substituição\n0,00\nValor Total dos Produtos\n89.324,02\nValor do Frete\n0,00\nValor do Seguro\n0,00\nOutras Despesas\n0,00\nValor Total do IPI\n0,00\nValor Total da NFe\n89.324,02\nValor Total dos Descontos\n0,00\nValor do PIS / COFINS\n580,61 / 2.679,72\nInformações Adicionais\nDescrição\nNão gera direito a crédito fiscal de IPI. Valor aproximado dos tribu\nVoltar\n"
+      }
+    ]
+  },
+  "extraction_stats": {
+    "fields_total": 53,
+    "fields_matched_to_bbox": 36,
+    "match_rate": 0.679
+  },
+  "kie": {
+    "issuer": {
+      "cnpj": {
+        "value": "8ZNZ2IXV000110",
+        "raw_value": "8ZNZ2IXV000110",
+        "bbox_ref": "e00028"
+      },
+      "tax_id_type": "cnpj_alnum",
+      "name": {
+        "value": "Comercial Correia EIRELI",
+        "raw_value": "Comercial Correia EIRELI",
+        "bbox_ref": "e00030"
+      },
+      "fantasy_name": {
+        "value": "Comercial Aragão EPP",
+        "raw_value": "Comercial Aragão EPP",
+        "bbox_ref": null
+      },
+      "state_registration": {
+        "value": "494472114236",
+        "raw_value": "494472114236",
+        "bbox_ref": "e00032"
+      },
+      "tax_regime_crt": "normal",
+      "address": {
+        "street": {
+          "value": "Jardim da Rosa",
+          "raw_value": "Jardim da Rosa",
+          "bbox_ref": "e00081"
+        },
+        "number": {
+          "value": "1933",
+          "raw_value": "1933",
+          "bbox_ref": null
+        },
+        "neighborhood": {
+          "value": "Braúnas",
+          "raw_value": "Braúnas",
+          "bbox_ref": "e00083"
+        },
+        "municipality": {
+          "value": "Água Doce do Norte",
+          "raw_value": "Água Doce do Norte",
+          "bbox_ref": "e00087"
+        },
+        "uf": {
+          "value": "ES",
+          "raw_value": "ES",
+          "bbox_ref": "e00034"
+        },
+        "cep": {
+          "value": "68719139",
+          "raw_value": "68719139",
+          "bbox_ref": "e00085"
+        }
+      }
+    },
+    "recipient": {
+      "tax_id": {
+        "value": "68611321603",
+        "raw_value": "68611321603",
+        "bbox_ref": "e00037"
+      },
+      "tax_id_type": "cpf",
+      "name": {
+        "value": "Sra. Carolina Pires",
+        "raw_value": "Sra. Carolina Pires",
+        "bbox_ref": "e00039"
+      },
+      "state_registration": null,
+      "address": {
+        "street": {
+          "value": "Setor Vieira",
+          "raw_value": "Setor Vieira",
+          "bbox_ref": "e00100"
+        },
+        "number": {
+          "value": "1398",
+          "raw_value": "1398",
+          "bbox_ref": null
+        },
+        "neighborhood": {
+          "value": "Boa União 1ª Seção",
+          "raw_value": "Boa União 1ª Seção",
+          "bbox_ref": "e00102"
+        },
+        "municipality": {
+          "value": "Domingos Martins",
+          "raw_value": "Domingos Martins",
+          "bbox_ref": "e00106"
+        },
+        "uf": {
+          "value": "ES",
+          "raw_value": "ES",
+          "bbox_ref": "e00034"
+        },
+        "cep": {
+          "value": "74826970",
+          "raw_value": "74826970",
+          "bbox_ref": "e00104"
+        }
+      }
+    },
+    "pickup": null,
+    "delivery": null,
+    "document": {
+      "number": {
+        "value": "458105",
+        "raw_value": "458105",
+        "bbox_ref": "e00010"
+      },
+      "series": {
+        "value": "101",
+        "raw_value": "101",
+        "bbox_ref": "e00017"
+      },
+      "issue_date": {
+        "value": "2025-09-27T20:07:07-03:00",
+        "raw_value": "2025-09-27T20:07:07-03:00",
+        "bbox_ref": "e00023"
+      },
+      "access_key": {
+        "value": "0025098ZNZ2IXV000110551010004581051192449198",
+        "raw_value": "0025098ZNZ2IXV000110551010004581051192449198",
+        "bbox_ref": "e00005"
+      },
+      "environment": {
+        "value": "homologacao",
+        "raw_value": "homologacao",
+        "bbox_ref": null
+      },
+      "nature_of_operation": {
+        "value": "Venda",
+        "raw_value": "Venda",
+        "bbox_ref": "e00059"
+      },
+      "authorization_protocol": {
+        "value": "100255801946811",
+        "raw_value": "100255801946811",
+        "bbox_ref": "e00070"
+      }
+    },
+    "totals": {
+      "total_value": {
+        "value": "89324.02",
+        "raw_value": 89324.02,
+        "bbox_ref": "e00025"
+      },
+      "products_value": {
+        "value": "89324.02",
+        "raw_value": 89324.02,
+        "bbox_ref": "e00025"
+      },
+      "icms_base": {
+        "value": "34738.11",
+        "raw_value": 34738.11,
+        "bbox_ref": "e00136"
+      },
+      "icms_total": {
+        "value": "5905.48",
+        "raw_value": 5905.48,
+        "bbox_ref": "e00138"
+      },
+      "icms_st_base": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "icms_st_total": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "ipi_total": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "discount": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "freight": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "insurance": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "other_expenses": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "approx_taxes": {
+        "value": "32067.55",
+        "raw_value": 32067.55,
+        "bbox_ref": null
+      },
+      "services_value": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      },
+      "iss_total": {
+        "value": "0.00",
+        "raw_value": 0.0,
+        "bbox_ref": null
+      }
+    },
+    "carrier": {
+      "freight_mode": "0",
+      "tax_id": {
+        "value": "LOOWKQY3000233",
+        "raw_value": "LOOWKQY3000233",
+        "bbox_ref": null
+      },
+      "tax_id_type": "cnpj_alnum",
+      "name": {
+        "value": "Transportes Rocha ME",
+        "raw_value": "Transportes Rocha ME",
+        "bbox_ref": null
+      },
+      "state_registration": {
+        "value": "153258690466",
+        "raw_value": "153258690466",
+        "bbox_ref": null
+      },
+      "address": {
+        "value": "Condomínio de da Mata, 132",
+        "raw_value": "Condomínio de da Mata, 132",
+        "bbox_ref": null
+      },
+      "municipality": {
+        "value": "Ribeirão Claro",
+        "raw_value": "Ribeirão Claro",
+        "bbox_ref": null
+      },
+      "vehicle_plate": {
+        "value": "QBC6I94",
+        "raw_value": "QBC6I94",
+        "bbox_ref": null
+      },
+      "volumes": {
+        "quantity": {
+          "value": "107",
+          "raw_value": "107",
+          "bbox_ref": null
+        },
+        "species": {
+          "value": "CAIXA",
+          "raw_value": "CAIXA",
+          "bbox_ref": null
+        },
+        "gross_weight": {
+          "value": "108.136",
+          "raw_value": "108.136",
+          "bbox_ref": null
+        },
+        "net_weight": {
+          "value": "101.977",
+          "raw_value": "101.977",
+          "bbox_ref": null
+        }
+      }
+    },
+    "billing": {
+      "invoice_number": {
+        "value": "458105/1",
+        "raw_value": "458105/1",
+        "bbox_ref": "e00005"
+      },
+      "installments": [
+        {
+          "number": "001",
+          "due_date": "2025-10-27",
+          "value": "29774.67",
+          "bbox_ref": null
+        },
+        {
+          "number": "002",
+          "due_date": "2025-11-11",
+          "value": "29774.67",
+          "bbox_ref": null
+        },
+        {
+          "number": "003",
+          "due_date": "2025-11-26",
+          "value": "29774.68",
+          "bbox_ref": null
+        }
+      ]
+    },
+    "items": [
+      {
+        "index": 1,
+        "code": {
+          "value": "PAR-783",
+          "raw_value": "PAR-783",
+          "bbox_ref": "e00113"
+        },
+        "description": {
+          "value": "Parafuso Latão",
+          "raw_value": "Parafuso Latão",
+          "bbox_ref": "e00115"
+        },
+        "ncm": {
+          "value": "73184234",
+          "raw_value": "73184234",
+          "bbox_ref": "e00117"
+        },
+        "cfop": {
+          "value": "5102",
+          "raw_value": "5102",
+          "bbox_ref": "e00119"
+        },
+        "cst_csosn": {
+          "value": "020",
+          "raw_value": "020",
+          "bbox_ref": null
+        },
+        "unit": {
+          "value": "M",
+          "raw_value": "M",
+          "bbox_ref": null
+        },
+        "quantity": {
+          "value": "62.0000",
+          "raw_value": 62.0,
+          "bbox_ref": "e00123"
+        },
+        "unit_price": {
+          "value": "1440.7100000000",
+          "raw_value": 1440.71,
+          "bbox_ref": "e00127"
+        },
+        "total_price": {
+          "value": "89324.02",
+          "raw_value": 89324.02,
+          "bbox_ref": "e00025"
+        },
+        "icms_value": {
+          "value": "5905.48",
+          "raw_value": 5905.48,
+          "bbox_ref": "e00138"
+        },
+        "ipi_value": {
+          "value": "0.00",
+          "raw_value": "0.00",
+          "bbox_ref": null
+        },
+        "additional_info": null
+      }
+    ]
+  },
+  "dpi": 110
+}

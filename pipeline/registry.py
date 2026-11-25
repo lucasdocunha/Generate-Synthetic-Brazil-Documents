@@ -30,6 +30,7 @@ def nfse_legado_render_kwargs(field_values):
     return {
         "razao_social_prestador": field_values["razao_social_prestador"],
         "municipality_name": field_values["municipality_name"],
+        "city_layout": field_values.get("_render", {}).get("city_layout", "ginfes"),
     }
 
 

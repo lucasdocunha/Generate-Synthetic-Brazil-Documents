@@ -10,8 +10,8 @@ Gerado por `python examples/make_nfse_examples.py` (seed 2026, HTML/Markdown inc
 | Amostra | Split | `match_rate` | `text_fidelity` |
 |---|---|---|---|
 | `nfse_legado_train_00000000` | train | 1.00 | 1.00 |
-| `nfse_legado_train_00000001` | train | 1.00 | 1.00 |
-| `nfse_legado_test_00000002` | test | 1.00 | 1.00 |
+| `nfse_legado_train_00000001` | train | 0.61 | 1.00 |
+| `nfse_legado_test_00000002` | test | 0.61 | 1.00 |
 
 ## 1. PDF e imagem
 
@@ -65,12 +65,12 @@ Cada campo é casado com o span de texto do PDF (`match_rate` = 1,0 quando todos
 Primeiras linhas com campo casado (`x y w h` em mm):
 
 ```
- 128.3   12.7    9.5   4.2  ident_numero           844111
- 163.3   11.7    9.5   4.2  ident_lote             884521
- 128.8   27.6   14.2   4.3  data_emissao           03/07/2023
-   9.6   53.7   31.5   4.8  prestador_razao_social Comércio de Oliveira ME
- 139.5   49.9   25.4   4.7  prestador_cnpj         25.948.849/4130-37
-   9.9   65.3   12.7   4.3  prestador_inscricao_municipal 95198032
+ 164.8    8.2   28.1   6.2  ident_numero           Nº 2023/844111
+ 178.8   16.0   14.2   4.3  data_emissao           03/07/2023
+   9.3   44.8   31.5   4.8  prestador_razao_social Comércio de Oliveira ME
+ 106.2   42.1   19.6   4.5  tomador_razao_social   Isabella Ribeiro
+   9.6   55.9   25.4   4.7  prestador_cnpj         25.948.849/4130-37
+ 106.6   53.1   19.9   4.5  tomador_documento      446.204.494-00
 ```
 
 ## 4. KIE
@@ -83,13 +83,13 @@ Primeiras linhas com campo casado (`x y w h` em mm):
     "cnpj": {
       "value": "25948849413037",
       "raw_value": "25948849413037",
-      "bbox_ref": "e00014"
+      "bbox_ref": "e00012"
     },
     "tax_id_type": "cnpj",
     "name": {
       "value": "Comércio de Oliveira ME",
       "raw_value": "Comércio de Oliveira ME",
-      "bbox_ref": "e00012"
+      "bbox_ref": "e00008"
     },
     "inscricao_municipal": {
       "value": "95198032",
@@ -99,37 +99,37 @@ Primeiras linhas com campo casado (`x y w h` em mm):
     "municipality": {
       "value": "Presidente Castello Branco",
       "raw_value": "Presidente Castello Branco",
-      "bbox_ref": "e00018"
+      "bbox_ref": "e00020"
     }
   },
   "taker": {
     "document": {
       "value": "44620449400",
       "raw_value": "44620449400",
-      "bbox_ref": "e00023"
+      "bbox_ref": "e00014"
     },
     "tax_id_type": "cpf",
     "name": {
       "value": "Isabella Ribeiro",
       "raw_value": "Isabella Ribeiro",
-      "bbox_ref": "e00021"
+      "bbox_ref": "e00010"
     }
   },
   "document": {
     "rps_number": {
       "value": "844111",
       "raw_value": "844111",
-      "bbox_ref": "e00005"
+      "bbox_ref": "e00002"
     },
     "batch_number": {
       "value": "884521",
       "raw_value": "884521",
-      "bbox_ref": "e00007"
+      "bbox_ref": null
     },
     "issue_date": {
       "value": "2023-07-03T01:40:42",
       "raw_value": "2023-07-03T01:40:42",
-      "bbox_ref": "e00009"
+      "bbox_ref": "e00003"
     },
     "environment": {
       "value": "homologacao",
@@ -141,27 +141,27 @@ Primeiras linhas com campo casado (`x y w h` em mm):
     "code": {
       "value": "01.02",
       "raw_value": "01.02",
-      "bbox_ref": "e00038"
+      "bbox_ref": "e00023"
     },
     "description": {
       "value": "Desenvolvimento de software sob encomenda",
       "raw_value": "Desenvolvimento de software sob encomenda",
-      "bbox_ref": "e00042"
+      "bbox_ref": "e00024"
     },
     "value": {
       "value": "20620.68",
       "raw_value": 20620.68,
-      "bbox_ref": "e00045"
+      "bbox_ref": "e00026"
     },
     "iss_rate": {
       "value": "3.00",
       "raw_value": 3.0,
-      "bbox_ref": "e00049"
+      "bbox_ref": "e00027"
     },
     "iss_value": {
       "value": "618.62",
       "raw_value": 618.62,
-      "bbox_ref": "e00051"
+      "bbox_ref": "e00028"
     }
   }
 }
@@ -172,36 +172,31 @@ Primeiras linhas com campo casado (`x y w h` em mm):
 `md_visible/0000/nfse_legado_train_00000000.md`, primeiras linhas:
 
 ```markdown
-### PREFEITURA MUNICIPAL DE PRESIDENTE CASTELLO BRANCO
-
-NOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e<br>Padrão municipal legado (Ginfes v03) - envio de lote de RPS<br>Recibo Provisório de Serviços convertido em NFS-e pela prefeitura
+PREFEITURA MUNICIPAL DE PRESIDENTE CASTELLO BRANCO Nº 2023/844111 NOTA FISCAL DE SERVIÇOS ELETRÔNICA 03/07/2023 Verificação 953D-E3D1-35B8
 
 | Campo | Valor |
 | --- | --- |
-| Nº RPS | 844111 |
-| DATA DE EMISSÃO | 03/07/2023 |
-| LOTE | 884521 |
-
-## PRESTADOR DE SERVIÇOS
-
-| Campo | Valor |
-| --- | --- |
+|  | PRESTADOR |
+|  | TOMADOR |
 | RAZÃO SOCIAL | Comércio de Oliveira ME |
-| CPF/CNPJ | 25.948.849/4130-37 |
-| INSCRIÇÃO MUNICIPAL | 95198032 |
-| MUNICÍPIO | Presidente Castello Branco |
-
-## TOMADOR DE SERVIÇOS
-
-| Campo | Valor |
-| --- | --- |
-| RAZÃO SOCIAL / NOME | Isabella Ribeiro |
+| NOME / RAZÃO SOCIAL | Isabella Ribeiro |
+| CNPJ | 25.948.849/4130-37 |
 | CPF/CNPJ | 446.204.494-00 |
-| ENDEREÇO | Morro Vieira |
-| NÚMERO | 1248 |
-| BAIRRO | Buritis |
-| CEP | 94823-736 |
-| UF | SC |
+| INSCRIÇÃO MUNICIPAL | 95198032 |
+| ENDEREÇO | Morro Vieira, 1248 - Buritis - CEP 94823-736 - SC |
+| MUNICÍPIO | Presidente Castello Branco |
+| MUNICÍPIO | Presidente Castello Branco |
+|  | DISCRIMINAÇÃO DOS SERVIÇOS - item 01.02 |
+|  | Desenvolvimento de software sob encomenda |
+
+| Valor dos serviços (R$) | 20.620,68 |
+| --- | --- |
+| Alíquota 3,00% - Valor do ISS (R$) | 618,62 |
+| Optante pelo Simples Nacional | Sim |
+
+![]()
+
+![]()
 ```
 
 O HTML limpo (`html_clean/`) segue a mesma ordem de blocos do PDF, e `html_visible/` marca os

@@ -92,7 +92,7 @@ def test_renderer_produces_single_page_pdf():
 
     doc = fitz.open(stream=pdf, filetype="pdf")
     assert doc.page_count == 1
-    assert "SEM VALIDADE FISCAL" in doc[0].get_text()
+    assert "SEM VALIDADE FISCAL" not in doc[0].get_text()  # sem avisos de validade
 
 
 def test_flatten_matches_pdf_text_for_every_field():
@@ -101,7 +101,8 @@ def test_flatten_matches_pdf_text_for_every_field():
     from generator.labels.layout import flatten_nfse_legado_fields
 
     spec = DOCTYPES["nfse_legado"]
-    xml_str, field_values, render_kwargs = spec.generate(4)
+    xml_str, field_values, render_kwargs = spec.generate(4, city_layout="ginfes")
+    render_kwargs = {**render_kwargs, "city_layout": "ginfes"}
     pdf = bytes(spec.render(xml_str, render_kwargs).output())
     text = fitz.open(stream=pdf, filetype="pdf")[0].get_text()
     for field_id, value in flatten_nfse_legado_fields(field_values).items():
@@ -119,7 +120,8 @@ def test_pipeline_nfse_legado_fully_matched(tmp_path):
     from pipeline.single import generate_one
 
     row = generate_one("nfse_legado", "train", 0, 9, tmp_path, dpi_options=(110,), force=True)
-    assert row and row["match_rate"] == 1.0 and row["n_pages"] == 1
+    # capitais usam moldes de notas reais (nem todo campo do XML é impresso): match alto, não total
+    assert row and row["match_rate"] >= 0.6 and row["n_pages"] == 1
     assert row["has_html"] is False
     label = json.loads(next((tmp_path / "nfse_legado" / "labels").rglob("*.json")).read_text())
     assert label["doc_type"] == "NFSE_LEGADO"

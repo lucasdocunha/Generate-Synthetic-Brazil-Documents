@@ -1,0 +1,203 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe>
+    <infNFe versao="4.00" Id="NFe00241254048406455173551010007345771714925407">
+        <ide>
+            <cUF>31</cUF>
+            <cNF>84332667</cNF>
+            <natOp>Venda de produção do estabelecimento</natOp>
+            <mod>55</mod>
+            <serie>101</serie>
+            <nNF>734577</nNF>
+            <dhEmi>2024-12-10T06:04:57-03:00</dhEmi>
+            <dhSaiEnt>2024-12-10T06:04:57-03:00</dhSaiEnt>
+            <tpNF>1</tpNF>
+            <idDest>1</idDest>
+            <cMunFG>3143906</cMunFG>
+            <tpImp>1</tpImp>
+            <tpEmis>1</tpEmis>
+            <cDV>7</cDV>
+            <tpAmb>2</tpAmb>
+            <finNFe>1</finNFe>
+            <indFinal>0</indFinal>
+            <indPres>2</indPres>
+            <procEmi>0</procEmi>
+            <verProc>SYNTH-GEN 1.0</verProc>
+        </ide>
+        <emit>
+            <CNPJ>54048406455173</CNPJ>
+            <xNome>Comércio de Pinto LTDA</xNome>
+            <xFant>Transportes da Mata ME</xFant>
+            <enderEmit>
+                <xLgr>Ladeira Pacheco</xLgr>
+                <nro>1273</nro>
+                <xCpl>Fundos</xCpl>
+                <xBairro>Bonsucesso</xBairro>
+                <cMun>3143906</cMun>
+                <xMun>Muriaé</xMun>
+                <UF>MG</UF>
+                <CEP>29805725</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>8546600502</fone>
+            </enderEmit>
+            <IE>926819398024</IE>
+            <CRT>1</CRT>
+        </emit>
+        <dest>
+            <CNPJ>20072594664071</CNPJ>
+            <xNome>Distribuidora de Mendes LTDA</xNome>
+            <enderDest>
+                <xLgr>Setor Manuela da Cunha</xLgr>
+                <nro>1704</nro>
+                <xCpl>Bloco B</xCpl>
+                <xBairro>São Jorge 1ª Seção</xBairro>
+                <cMun>3159407</cMun>
+                <xMun>Santa Rita de Ibitipoca</xMun>
+                <UF>MG</UF>
+                <CEP>76757339</CEP>
+                <cPais>1058</cPais>
+                <xPais>Brasil</xPais>
+                <fone>1159309837</fone>
+            </enderDest>
+            <indIEDest>1</indIEDest>
+            <IE>617080198408</IE>
+            <email>sophiacardoso@da.br</email>
+        </dest>
+        <det nItem="1">
+            <prod>
+                <cProd>CAB-399</cProd>
+                <cEAN>7899690909945</cEAN>
+                <xProd>Cabo elétrico flexível</xProd>
+                <NCM>85441114</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>PC</uCom>
+                <qCom>17.0000</qCom>
+                <vUnCom>303.7700000000</vUnCom>
+                <vProd>5164.09</vProd>
+                <cEANTrib>7899690909945</cEANTrib>
+                <uTrib>PC</uTrib>
+                <qTrib>17.0000</qTrib>
+                <vUnTrib>303.7700000000</vUnTrib>
+                <vDesc>241.09</vDesc>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>869.49</vTotTrib>
+            <ICMS><ICMSSN900><orig>0</orig><CSOSN>900</CSOSN><modBC>3</modBC><vBC>5164.09</vBC><pICMS>12.0000</pICMS><vICMS>619.69</vICMS></ICMSSN900></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS></imposto>
+            </det>
+        <det nItem="2">
+            <prod>
+                <cProd>4368838</cProd>
+                <cEAN>SEM GTIN</cEAN>
+                <xProd>Serviço de consultoria avulso</xProd>
+                <NCM>99997080</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>PCT</uCom>
+                <qCom>39.4726</qCom>
+                <vUnCom>1873.2600000000</vUnCom>
+                <vProd>73942.44</vProd>
+                <cEANTrib>SEM GTIN</cEANTrib>
+                <uTrib>PCT</uTrib>
+                <qTrib>39.4726</qTrib>
+                <vUnTrib>1873.2600000000</vUnTrib>
+                <vDesc>3452.02</vDesc>
+                <indTot>1</indTot>
+            </prod>
+            <imposto>
+                <vTotTrib>20810.46</vTotTrib>
+            <ICMS><ICMSSN102><orig>0</orig><CSOSN>300</CSOSN></ICMSSN102></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS></imposto>
+            </det>
+        <det nItem="3">
+            <prod>
+                <cProd>3567032</cProd>
+                <cEAN>7898350185279</cEAN>
+                <xProd>Cadeira Escritório</xProd>
+                <NCM>94016651</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>UN</uCom>
+                <qCom>97.0000</qCom>
+                <vUnCom>2695.8100000000</vUnCom>
+                <vProd>261493.57</vProd>
+                <cEANTrib>7898350185279</cEANTrib>
+                <uTrib>UN</uTrib>
+                <qTrib>97.0000</qTrib>
+                <vUnTrib>2695.8100000000</vUnTrib>
+                <vDesc>12207.90</vDesc>
+                <indTot>1</indTot>
+            <rastro><nLote>79267179</nLote><qLote>81.111</qLote><dFab>2023-11-27</dFab><dVal>2026-11-26</dVal></rastro></prod>
+            <imposto>
+                <vTotTrib>92008.63</vTotTrib>
+            <ICMS><ICMSSN500><orig>0</orig><CSOSN>500</CSOSN></ICMSSN500></ICMS><PIS><PISOutr><CST>99</CST><vBC>0.00</vBC><pPIS>0.0000</pPIS><vPIS>0.00</vPIS></PISOutr></PIS><COFINS><COFINSOutr><CST>99</CST><vBC>0.00</vBC><pCOFINS>0.0000</pCOFINS><vCOFINS>0.00</vCOFINS></COFINSOutr></COFINS></imposto>
+            <infAdProd>Pedido 619612 item 6.</infAdProd>
+        </det>
+        <total>
+            <ICMSTot>
+                <vBC>5164.09</vBC>
+                <vICMS>619.69</vICMS>
+                <vICMSDeson>0.00</vICMSDeson>
+                <vFCP>0.00</vFCP>
+                <vBCST>0.00</vBCST>
+                <vST>0.00</vST>
+                <vFCPST>0.00</vFCPST>
+                <vFCPSTRet>0.00</vFCPSTRet>
+                <vProd>340600.10</vProd>
+                <vFrete>0.00</vFrete>
+                <vSeg>0.00</vSeg>
+                <vDesc>15901.01</vDesc>
+                <vII>0.00</vII>
+                <vIPI>0.00</vIPI>
+                <vIPIDevol>0.00</vIPIDevol>
+                <vPIS>0.00</vPIS>
+                <vCOFINS>0.00</vCOFINS>
+                <vOutro>0.00</vOutro>
+                <vNF>324699.09</vNF>
+                <vTotTrib>113688.58</vTotTrib>
+            </ICMSTot>
+            </total>
+        <transp>
+            <modFrete>1</modFrete>
+            <transporta>
+                <CNPJ>95506018663879</CNPJ>
+                <xNome>Transportes da Paz LTDA</xNome>
+                <IE>864964985514</IE>
+                <xEnder>Avenida Ian Cunha, 714</xEnder>
+                <xMun>Tenente Ananias</xMun>
+                <UF>RN</UF>
+            </transporta>
+            <veicTransp>
+                <placa>EQB7W94</placa>
+                <UF>RN</UF>
+                <RNTC>54291887</RNTC>
+            </veicTransp>
+            <vol>
+                <qVol>66</qVol>
+                <esp>SACO</esp>
+                <nVol>5339</nVol>
+                <pesoL>117.206</pesoL>
+                <pesoB>124.934</pesoB>
+            </vol>
+        </transp>
+        <cobr>
+            <fat>
+                <nFat>734577</nFat>
+                <vOrig>324699.09</vOrig>
+                <vDesc>0.00</vDesc>
+                <vLiq>324699.09</vLiq>
+            </fat>
+            <dup>
+                <nDup>001</nDup>
+                <dVenc>2025-01-09</dVenc>
+                <vDup>324699.09</vDup>
+            </dup>
+        </cobr>
+        <pag>
+            <detPag>
+                <indPag>1</indPag>
+                <tPag>15</tPag>
+                <vPag>324699.09</vPag>
+            </detPag>
+        </pag>
+        <infAdic>
+            <infAdFisco>Documento emitido por: Alexandre Cassiano</infAdFisco>
+            </infAdic>
+    </infNFe>
+</NFe><protNFe versao="4.00"><infProt><tpAmb>2</tpAmb><verAplic>SYNTH-HOM</verAplic><chNFe>00241254048406455173551010007345771714925407</chNFe><dhRecbto>2024-12-10T06:07:30-03:00</dhRecbto><nProt>100248023561311</nProt><digVal>vSRXNBisGcCc4PN1+zl0L77fedg=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

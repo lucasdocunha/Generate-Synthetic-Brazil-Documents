@@ -95,7 +95,7 @@ class DanfeConfig:
         default_factory=ProductDescriptionConfig
     )
     footer_stamp: FooterStamp = field(default_factory=FooterStamp)
-    display_homologation_dest_warning: bool = True
+    display_homologation_dest_warning: bool = False
     product_table_style: ProductTableStyle = ProductTableStyle.FULL_FRAME
     product_columns_preset: ProductColumnsPreset = ProductColumnsPreset.STANDARD
     vertical_block_labels: bool = False
