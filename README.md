@@ -122,6 +122,8 @@ Por amostra (`<out>/<doctype>/…`, particionado em subpastas de 10.000):
 
 **PDFs de exemplo da NFS-e legada por capital** (leiautes de São Paulo, Porto Velho, Fortaleza, Maceió e Rio Branco, reconstruídos a partir de notas reais): [`examples/pdfs/`](examples/pdfs/) — `nfse_sao_paulo.pdf`, `nfse_porto_velho.pdf`, `nfse_fortaleza.pdf`, `nfse_maceio.pdf`, `nfse_rio_branco.pdf`. Os dados são sintéticos; o leiaute é o da prefeitura.
 
+**Galeria visual** de todos os tipos, variações e efeitos (74 imagens, limpa × degradada, antes × depois): [`examples/galeria.md`](examples/galeria.md).
+
 **Exemplos de cada efeito** (carimbos, POS, assinatura, riscos, inclinação, scanner, variante geométrica, oclusão no HTML), com comando e saída real: [`examples/README.md`](examples/README.md). **Um exemplo de cada tipo e variação:** [`examples/tipos.md`](examples/tipos.md). **NFS-e legada** (PDF, imagem, label, KIE e Markdown de 3 amostras): [`examples/nfse_legado.md`](examples/nfse_legado.md).
 
 ## 6. Estrutura do código

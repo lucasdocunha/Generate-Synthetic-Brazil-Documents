@@ -1,5 +1,7 @@
 # Exemplos dos efeitos de degradação
 
+> Galeria visual de todos os tipos, variações e efeitos: [`galeria.md`](galeria.md) (gerada por `make_galeria.py`).
+
 Um exemplo de cada efeito, gerado do mesmo DANFE com seed fixa. Regenerar tudo:
 
 ```bash
