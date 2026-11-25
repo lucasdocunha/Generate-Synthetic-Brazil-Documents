@@ -49,7 +49,7 @@ def _context(spec, slot):
 
 def _value(slot, label, sec, d, rng):
     L = label
-    if slot.get("lines", 1) > 1 or slot["len"] > 170 or "DISCRIMINA" in L:
+    if slot.get("lines", 1) > 1 or "DISCRIMINA" in L or (slot["len"] > 170 and not re.search(r"RAZAO|NOME", L)):
         return d["disc"]
     t = slot["type"]
     person = {"P": ("prest", "prest_doc"), "T": ("tom", "tom_doc"), "I": ("", "")}.get(sec, ("prest", "prest_doc"))
@@ -59,6 +59,8 @@ def _value(slot, label, sec, d, rng):
         return d["nota_seq"]
     if "VERIFICACAO" in L:
         return d["cod"]
+    if "OBRA" in L:  # número do endereço não é inscrição de obra
+        return ""
     if "COMPETENCIA" in L:
         return d["comp"]
     if "RPS" in L or "SUBSTITU" in L:
@@ -102,7 +104,7 @@ def _value(slot, label, sec, d, rng):
     if re.search(r"VALOR|TOTAL|LIQUIDO|SERVICO", L) and t == "money":
         return d["valor"]
     if "CODIGO" in L and ("SERVICO" in L or "ATIVIDADE" in L):
-        return f"{d['item']} - {d['disc'][:40]}"
+        return f"{d['item']} - {d['disc']}"
     # por tipo
     if t == "money":
         return d["valor"] if slot["n"] and "VALOR" in L else "0,00"
@@ -114,7 +116,7 @@ def _value(slot, label, sec, d, rng):
 
 
 def _fit(pdf, txt, w):
-    w = max(w * 1.3 + 4, 0)  # tolera excesso (fontes diferentes)
+    """Corta o texto até caber em w (na fonte atual)."""
     while txt and pdf.get_string_width(txt) > w:
         txt = txt[:-1]
     return txt
@@ -145,13 +147,22 @@ def render_spec(pdf, city: str, d: dict):
         pdf.set_dash_pattern(dash=0, gap=0)
     pdf.set_draw_color(0, 0, 0)
 
+    drawn = []
     def text(x, y, w, txt, size, bold, font, color, align="L"):
-        pdf.set_font(_FAM.get(font, "Helvetica"), "B" if bold else "", size)
+        fam, style = _FAM.get(font, "Helvetica"), "B" if bold else ""
         pdf.set_text_color(*from_rgb(color or 0))
-        if w:
+        if w:  # diminui a fonte até caber; só corta se nem o menor tamanho couber
+            pdf.set_font(fam, style, size)
+            while size > 5 and pdf.get_string_width(txt) > w:
+                size -= 0.25
+                pdf.set_font(fam, style, size)
             txt = _fit(pdf, txt, w)
+        pdf.set_font(fam, style, size)
         tw = pdf.get_string_width(txt)
         xx = x if align == "L" or not w else (x + w - tw if align == "R" else x + (w - tw) / 2)
+        if any(t == txt and abs(dx - xx) < 2 and abs(dy - y) < 2 for dx, dy, t in drawn):  # mesmo texto no mesmo lugar
+            return
+        drawn.append((xx, y, txt))
         pdf.text(xx, y, txt)
 
     # --- rótulos fixos
@@ -159,21 +170,36 @@ def render_spec(pdf, city: str, d: dict):
         text(f["x"], f["y"], 0, f["text"], f["size"], f["bold"], f["font"], f["color"])
 
     # --- campos de valor
+    iss_shown = False  # a nota traz um único valor de ISS; campos extras de ISS ficam vazios
     for s in spec["slots"]:
         label, sec = _context(spec, s)
         val = _value(s, label, sec, d, rng) or ""
+        if re.search(r"\bISS", label) and val:  # \b: não pega EMISSAO
+            val, iss_shown = ("" if iss_shown else val), True
+        if not label and s["x0"] > 180:  # campo sem rótulo na borda direita: fica de fora
+            val = ""
         if s.get("lines", 1) > 1:
+            # o bloco de texto para antes de um rótulo fixo que esteja ao lado dele
+            x1 = min([s["x1"]] + [f["x"] - 1 for f in spec["fixed"]
+                                  if s["top"] <= f["y"] <= s["bot"] and s["x0"] + 1 < f["x"] < s["x1"]])
             pdf.set_font(_FAM.get(s["font"], "Helvetica"), "B" if s["bold"] else "", s["size"])
             pdf.set_text_color(*from_rgb(s["color"] or 0))
             lh = (s["bot"] - s["top"]) / s["lines"]
             pdf.set_xy(s["x0"], s["top"])
             maxh = s["bot"] - s["top"] + 8
-            lines = pdf.multi_cell(s["x1"] - s["x0"], lh, val, dry_run=True, output="LINES")
+            lines = pdf.multi_cell(x1 - s["x0"], lh, val, dry_run=True, output="LINES")
             keep = int(maxh // lh)
             pdf.set_xy(s["x0"], s["top"])
-            pdf.multi_cell(s["x1"] - s["x0"], lh, " ".join(lines[:keep]) if len(lines) > keep else val)
+            pdf.multi_cell(x1 - s["x0"], lh, " ".join(lines[:keep]) if len(lines) > keep else val)
         else:
             wlim = (s["x1"] - s["x0"]) if s["type"] != "text" else min(max(s["x1"] - s["x0"], 70), 204 - s["x0"])
+            # o campo para antes do próximo rótulo na mesma linha, se sobrar espaço útil (>= 12 mm)
+            right = [f["x"] for f in spec["fixed"] if abs(f["y"] - s["y"]) < 3 and f["x"] > s["x0"] + 1]
+            cap = min([204] + right) - s["x0"] - 1
+            if cap >= 12 and (cap < wlim or ("SERVICO" in label and "CODIGO" in label)):
+                wlim = cap
+            elif re.fullmatch(r"[\d.,]+", val):  # valor numérico não pode ser cortado: dá uma largura mínima
+                wlim = max(wlim, 10)
             text(s["x0"], s["y"], wlim, val, s["size"], s["bold"], s["font"], s["color"], s["align"])
     pdf.set_text_color(0, 0, 0)
 

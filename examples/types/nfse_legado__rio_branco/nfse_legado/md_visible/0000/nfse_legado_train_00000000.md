@@ -24,10 +24,14 @@ Cidade: RIO BRANCO CEP: 94823-736
 | --- | --- |
 |  | Dados do Tomador de Serviços |
 |  | Nome/Razão Social: Isabella Ribeiro |
-|  | CPF/CNPJ: Desenvolvimento de software sob encomenda |
+
+CPF/CNPJ: Desenvolvimento de software sob
+
+| Campo | Valor |
+| --- | --- |
 |  | Insc. Municipal: |
 |  | Insc. Estadual/RG: |
-|  | Endereço: |
+|  | Endereço: encomenda |
 |  | Bairro: |
 |  | Cidade: Presidente Castello Branco |
 |  | Presidente Castello Branco |
@@ -43,7 +47,7 @@ Desenvolvimento de software sob encomenda
 |  | Desenvolvimento de software sob encomenda Serviço: |
 |  | 0,00 |
 |  | 0,00 |
-|  | Alíquota (%) Valor ISS (R$) 3,00 3,00 |
+|  | Alíquota (%) Valor ISS (R$) |
 |  | Total (R$) 20.620,68 |
 
 VALOR TOTAL DA NOTA: R$ 20.620,68
@@ -55,19 +59,13 @@ VALOR TOTAL DA NOTA: R$ 20.620,68
 |  | PIS(R$) |
 |  | CONFINS(R$) 0,00 |
 |  | CSLL(R$) 0,00 |
-|  | IRRF(R$) |
-
-0,00 0,00
-
-| Campo | Valor |
-| --- | --- |
+|  | IRRF(R$) 0,00 |
 |  | ISSQN (R$) |
 |  | Outras Retenções (R$) |
 |  | Total de Retenções 618,62 |
 |  | Descontos Condicionados 0,00 |
-|  | Valor Líquido da Nota 0,00 20.620,68 |
 
-0,00
+Valor Líquido da Nota 0,00 20.620,68 0,00
 
 | Campo | Valor |
 | --- | --- |

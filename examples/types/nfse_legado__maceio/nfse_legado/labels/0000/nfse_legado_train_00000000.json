@@ -887,9 +887,9 @@
       "page": 1,
       "bbox": {
         "x": 22.225,
-        "y": 84.374,
-        "w": 19.77,
-        "h": 3.878,
+        "y": 84.469,
+        "w": 19.152,
+        "h": 3.757,
         "unit": "mm"
       },
       "text": "446.204.494-00"
@@ -914,7 +914,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 22.655,
+        "x": 27.164,
         "y": 191.971,
         "w": 5.492,
         "h": 3.878,
@@ -928,7 +928,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 25.125,
+        "x": 29.633,
         "y": 210.139,
         "w": 5.492,
         "h": 3.878,
@@ -988,13 +988,13 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 87.891,
+        "x": 100.503,
         "y": 109.245,
-        "w": 65.882,
+        "w": 67.451,
         "h": 3.878,
         "unit": "mm"
       },
-      "text": "01.02 - Desenvolvimento de software sob encomend"
+      "text": "01.02 - Desenvolvimento de software sob encomenda"
     },
     {
       "element_id": "e00069",
@@ -1002,7 +1002,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 64.989,
+        "x": 69.497,
         "y": 192.147,
         "w": 5.492,
         "h": 3.878,
@@ -1016,7 +1016,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 74.69,
+        "x": 79.199,
         "y": 209.963,
         "w": 5.492,
         "h": 3.878,
@@ -1030,7 +1030,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 107.675,
+        "x": 112.183,
         "y": 192.147,
         "w": 5.492,
         "h": 3.878,
@@ -1062,10 +1062,10 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 111.831,
-        "y": 162.564,
-        "w": 18.83,
-        "h": 5.829,
+        "x": 112.028,
+        "y": 162.658,
+        "w": 18.438,
+        "h": 5.708,
         "unit": "mm"
       },
       "text": "20.620,68"
@@ -1076,7 +1076,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 127.078,
+        "x": 131.586,
         "y": 209.963,
         "w": 5.492,
         "h": 3.878,
@@ -1106,7 +1106,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 161.35,
+        "x": 160.849,
         "y": 35.082,
         "w": 25.057,
         "h": 4.362,
@@ -1148,7 +1148,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 150.008,
+        "x": 154.517,
         "y": 192.147,
         "w": 5.492,
         "h": 3.878,
@@ -1164,7 +1164,7 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 150.082,
+        "x": 152.534,
         "y": 8.879,
         "w": 9.415,
         "h": 3.878,
@@ -1178,10 +1178,10 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 174.946,
-        "y": 222.919,
-        "w": 10.984,
-        "h": 3.393,
+        "x": 175.338,
+        "y": 223.108,
+        "w": 10.2,
+        "h": 3.151,
         "unit": "mm"
       },
       "text": "20.620,68"
@@ -1193,9 +1193,9 @@
       "page": 1,
       "bbox": {
         "x": 175.465,
-        "y": 230.15,
-        "w": 10.984,
-        "h": 3.393,
+        "y": 230.34,
+        "w": 10.2,
+        "h": 3.151,
         "unit": "mm"
       },
       "text": "20.620,68"
@@ -1220,7 +1220,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 177.525,
+        "x": 182.033,
         "y": 209.963,
         "w": 5.492,
         "h": 3.878,
@@ -1234,7 +1234,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 177.691,
+        "x": 182.884,
         "y": 216.216,
         "w": 4.806,
         "h": 3.393,
@@ -1266,7 +1266,7 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 175.122,
+        "x": 180.315,
         "y": 244.085,
         "w": 7.552,
         "h": 3.393,
@@ -1296,7 +1296,7 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 191.41,
+        "x": 190.909,
         "y": 97.25,
         "w": 3.92,
         "h": 3.878,
@@ -1310,7 +1310,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 186.168,
+        "x": 190.676,
         "y": 191.971,
         "w": 5.492,
         "h": 3.878,
@@ -1385,11 +1385,11 @@
     ]
   },
   "ocr": {
-    "full_text": "Valor das Deduções (R$)\nOutras Retenções (R$)\nDescontos Incondicionados (R$)\nDescontos Condicionados  (R$)\nNatureza Operação\nLocal da Prestação\nISSQN a Reter\n( ) Sim (X) Não\nOpção Simples Nacional\nRegime Especial Tributação\n0-Nenhum\nRetenções Federais (R$)\nValor Líquido (R$)\nBase de Cálculo (R$)\nAlíquota\nValor do ISSQN (R$)\nDados do Prestador de Serviço\nTel:\nTel:\nCódigo do Serviço / Atividade\nEndereço:\nPREFEITURA MUNICIPAL DE MACEIÓ\nSECRETARIA MUNICIPAL DE ECONOMIA\nCódigo Verificação RPS\nNúmero do RPS\nNFS-e Substituída\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNº NFS-e:\nData e Hora de Emissão\nCod Verificação NFS-e\nCompetencia:\nRazão Social/Nome:\nMunicípio:\nUF:\nAL\nDados do Tomador de Serviço\nCNPJ/CPF:\nRazão Social/Nome:\nEndereço:\nCCM:\nMunicípio:\nUF:\nValor Total (R$):\nCCM:\nEmail:\nCódigo da Obra\nCódigo ART\nDetalhamento Específico da Construção Civil\nAvisos\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador do Serviço.\n3 - Documento emitido por ME ou EPP optante pelo Simples Nacional.Não gera direito a crédito fiscal de ISS e IPI.\nEmail:\nDeduções / Descontos / Outras Retenções\nPIS  (R$)\nCOFINS  (R$)\nIR  (R$)\nINSS  (R$)\nCSLL  (R$)\nTributos Federais\nDiscriminação dos Serviços\nDesenvolvimento de software sob encomenda\n446.204.494-00\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nDesenvolvimento de software sob encomenda\nComércio de Oliveira ME\n01.02 - Desenvolvimento de software sob encomend\n0,00\n0,00\n0,00\n95198032\n20.620,68\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\ncomrciodeoli@outlook.com\n07/2023\n0,00\n844111\n20.620,68\n20.620,68\n(23) 98935-2613\n0,00\n0,00\n3,00\n618,62\n(23) 98935-2613\nSC\n0,00\n",
+    "full_text": "Valor das Deduções (R$)\nOutras Retenções (R$)\nDescontos Incondicionados (R$)\nDescontos Condicionados  (R$)\nNatureza Operação\nLocal da Prestação\nISSQN a Reter\n( ) Sim (X) Não\nOpção Simples Nacional\nRegime Especial Tributação\n0-Nenhum\nRetenções Federais (R$)\nValor Líquido (R$)\nBase de Cálculo (R$)\nAlíquota\nValor do ISSQN (R$)\nDados do Prestador de Serviço\nTel:\nTel:\nCódigo do Serviço / Atividade\nEndereço:\nPREFEITURA MUNICIPAL DE MACEIÓ\nSECRETARIA MUNICIPAL DE ECONOMIA\nCódigo Verificação RPS\nNúmero do RPS\nNFS-e Substituída\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNº NFS-e:\nData e Hora de Emissão\nCod Verificação NFS-e\nCompetencia:\nRazão Social/Nome:\nMunicípio:\nUF:\nAL\nDados do Tomador de Serviço\nCNPJ/CPF:\nRazão Social/Nome:\nEndereço:\nCCM:\nMunicípio:\nUF:\nValor Total (R$):\nCCM:\nEmail:\nCódigo da Obra\nCódigo ART\nDetalhamento Específico da Construção Civil\nAvisos\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador do Serviço.\n3 - Documento emitido por ME ou EPP optante pelo Simples Nacional.Não gera direito a crédito fiscal de ISS e IPI.\nEmail:\nDeduções / Descontos / Outras Retenções\nPIS  (R$)\nCOFINS  (R$)\nIR  (R$)\nINSS  (R$)\nCSLL  (R$)\nTributos Federais\nDiscriminação dos Serviços\nDesenvolvimento de software sob encomenda\n446.204.494-00\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nDesenvolvimento de software sob encomenda\nComércio de Oliveira ME\n01.02 - Desenvolvimento de software sob encomenda\n0,00\n0,00\n0,00\n95198032\n20.620,68\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\ncomrciodeoli@outlook.com\n07/2023\n0,00\n844111\n20.620,68\n20.620,68\n(23) 98935-2613\n0,00\n0,00\n3,00\n618,62\n(23) 98935-2613\nSC\n0,00\n",
     "pages": [
       {
         "page_number": 1,
-        "text": "Valor das Deduções (R$)\nOutras Retenções (R$)\nDescontos Incondicionados (R$)\nDescontos Condicionados  (R$)\nNatureza Operação\nLocal da Prestação\nISSQN a Reter\n( ) Sim (X) Não\nOpção Simples Nacional\nRegime Especial Tributação\n0-Nenhum\nRetenções Federais (R$)\nValor Líquido (R$)\nBase de Cálculo (R$)\nAlíquota\nValor do ISSQN (R$)\nDados do Prestador de Serviço\nTel:\nTel:\nCódigo do Serviço / Atividade\nEndereço:\nPREFEITURA MUNICIPAL DE MACEIÓ\nSECRETARIA MUNICIPAL DE ECONOMIA\nCódigo Verificação RPS\nNúmero do RPS\nNFS-e Substituída\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNº NFS-e:\nData e Hora de Emissão\nCod Verificação NFS-e\nCompetencia:\nRazão Social/Nome:\nMunicípio:\nUF:\nAL\nDados do Tomador de Serviço\nCNPJ/CPF:\nRazão Social/Nome:\nEndereço:\nCCM:\nMunicípio:\nUF:\nValor Total (R$):\nCCM:\nEmail:\nCódigo da Obra\nCódigo ART\nDetalhamento Específico da Construção Civil\nAvisos\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador do Serviço.\n3 - Documento emitido por ME ou EPP optante pelo Simples Nacional.Não gera direito a crédito fiscal de ISS e IPI.\nEmail:\nDeduções / Descontos / Outras Retenções\nPIS  (R$)\nCOFINS  (R$)\nIR  (R$)\nINSS  (R$)\nCSLL  (R$)\nTributos Federais\nDiscriminação dos Serviços\nDesenvolvimento de software sob encomenda\n446.204.494-00\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nDesenvolvimento de software sob encomenda\nComércio de Oliveira ME\n01.02 - Desenvolvimento de software sob encomend\n0,00\n0,00\n0,00\n95198032\n20.620,68\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\ncomrciodeoli@outlook.com\n07/2023\n0,00\n844111\n20.620,68\n20.620,68\n(23) 98935-2613\n0,00\n0,00\n3,00\n618,62\n(23) 98935-2613\nSC\n0,00\n"
+        "text": "Valor das Deduções (R$)\nOutras Retenções (R$)\nDescontos Incondicionados (R$)\nDescontos Condicionados  (R$)\nNatureza Operação\nLocal da Prestação\nISSQN a Reter\n( ) Sim (X) Não\nOpção Simples Nacional\nRegime Especial Tributação\n0-Nenhum\nRetenções Federais (R$)\nValor Líquido (R$)\nBase de Cálculo (R$)\nAlíquota\nValor do ISSQN (R$)\nDados do Prestador de Serviço\nTel:\nTel:\nCódigo do Serviço / Atividade\nEndereço:\nPREFEITURA MUNICIPAL DE MACEIÓ\nSECRETARIA MUNICIPAL DE ECONOMIA\nCódigo Verificação RPS\nNúmero do RPS\nNFS-e Substituída\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNº NFS-e:\nData e Hora de Emissão\nCod Verificação NFS-e\nCompetencia:\nRazão Social/Nome:\nMunicípio:\nUF:\nAL\nDados do Tomador de Serviço\nCNPJ/CPF:\nRazão Social/Nome:\nEndereço:\nCCM:\nMunicípio:\nUF:\nValor Total (R$):\nCCM:\nEmail:\nCódigo da Obra\nCódigo ART\nDetalhamento Específico da Construção Civil\nAvisos\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador do Serviço.\n3 - Documento emitido por ME ou EPP optante pelo Simples Nacional.Não gera direito a crédito fiscal de ISS e IPI.\nEmail:\nDeduções / Descontos / Outras Retenções\nPIS  (R$)\nCOFINS  (R$)\nIR  (R$)\nINSS  (R$)\nCSLL  (R$)\nTributos Federais\nDiscriminação dos Serviços\nDesenvolvimento de software sob encomenda\n446.204.494-00\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nDesenvolvimento de software sob encomenda\nComércio de Oliveira ME\n01.02 - Desenvolvimento de software sob encomenda\n0,00\n0,00\n0,00\n95198032\n20.620,68\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\ncomrciodeoli@outlook.com\n07/2023\n0,00\n844111\n20.620,68\n20.620,68\n(23) 98935-2613\n0,00\n0,00\n3,00\n618,62\n(23) 98935-2613\nSC\n0,00\n"
       }
     ]
   },

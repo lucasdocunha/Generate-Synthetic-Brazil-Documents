@@ -1030,11 +1030,11 @@
       "bbox": {
         "x": 8.114,
         "y": 165.04,
-        "w": 65.882,
+        "w": 67.451,
         "h": 3.878,
         "unit": "mm"
       },
-      "text": "01.02 - Desenvolvimento de software sob encomend"
+      "text": "01.02 - Desenvolvimento de software sob encomenda"
     },
     {
       "element_id": "e00072",
@@ -1045,9 +1045,9 @@
       "page": 1,
       "bbox": {
         "x": 27.869,
-        "y": 81.432,
-        "w": 19.77,
-        "h": 3.878,
+        "y": 81.526,
+        "w": 19.152,
+        "h": 3.757,
         "unit": "mm"
       },
       "text": "446.204.494-00"
@@ -1094,9 +1094,9 @@
       "page": 1,
       "bbox": {
         "x": 50.2,
-        "y": 26.751,
-        "w": 25.891,
-        "h": 3.878,
+        "y": 26.846,
+        "w": 25.082,
+        "h": 3.757,
         "unit": "mm"
       },
       "text": "03/07/2023 01:40:42"
@@ -1109,10 +1109,10 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 57.012,
-        "y": 250.358,
-        "w": 14.122,
-        "h": 4.362,
+        "x": 58.191,
+        "y": 250.926,
+        "w": 11.769,
+        "h": 3.635,
         "unit": "mm"
       },
       "text": "20.620,68"
@@ -1123,10 +1123,10 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 57.676,
-        "y": 207.021,
-        "w": 12.553,
-        "h": 3.878,
+        "x": 58.854,
+        "y": 207.589,
+        "w": 10.2,
+        "h": 3.151,
         "unit": "mm"
       },
       "text": "20.620,68"
@@ -1140,9 +1140,9 @@
       "page": 1,
       "bbox": {
         "x": 59.619,
-        "y": 54.268,
-        "w": 25.262,
-        "h": 3.878,
+        "y": 54.363,
+        "w": 24.472,
+        "h": 3.757,
         "unit": "mm"
       },
       "text": "25.948.849/4130-37"
@@ -1153,7 +1153,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 60.226,
+        "x": 64.735,
         "y": 226.776,
         "w": 5.492,
         "h": 3.878,
@@ -1167,7 +1167,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 60.226,
+        "x": 64.735,
         "y": 240.887,
         "w": 5.492,
         "h": 3.878,
@@ -1283,7 +1283,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 161.417,
+        "x": 160.916,
         "y": 64.851,
         "w": 33.917,
         "h": 3.878,
@@ -1298,12 +1298,12 @@
       "page": 1,
       "bbox": {
         "x": 178.675,
-        "y": 26.696,
-        "w": 23.292,
-        "h": 4.362,
+        "y": 28.024,
+        "w": 15.313,
+        "h": 2.666,
         "unit": "mm"
       },
-      "text": "953D-E3D1-35B"
+      "text": "953D-E3D1-35B8"
     },
     {
       "element_id": "e00090",
@@ -1311,7 +1311,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 180.619,
+        "x": 181.204,
         "y": 19.59,
         "w": 9.807,
         "h": 4.847,
@@ -1325,46 +1325,16 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 179.444,
-        "y": 207.021,
-        "w": 16.312,
-        "h": 3.878,
-        "unit": "mm"
-      },
-      "text": "Presidente C"
-    },
-    {
-      "element_id": "e00092",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 181.324,
-        "y": 226.776,
-        "w": 12.553,
-        "h": 3.878,
+        "x": 182.503,
+        "y": 227.345,
+        "w": 10.2,
+        "h": 3.151,
         "unit": "mm"
       },
       "text": "20.620,68"
     },
     {
-      "element_id": "e00093",
-      "field_ids": [
-        "valor_iss"
-      ],
-      "role": "content",
-      "page": 1,
-      "bbox": {
-        "x": 182.206,
-        "y": 250.358,
-        "w": 9.709,
-        "h": 4.362,
-        "unit": "mm"
-      },
-      "text": "618,62"
-    },
-    {
-      "element_id": "e00094",
+      "element_id": "e00092",
       "field_ids": [
         "aliquota"
       ],
@@ -1422,18 +1392,18 @@
     ]
   },
   "ocr": {
-    "full_text": "PREFEITURA MUNICIPAL DE FORTALEZA\nSECRETARIA MUNICIPAL DAS FINANÇAS\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNúmero da\nNFS-e\nData e Hora da Emissão\nNúmero do RPS\nCompetência\nNo. NFS-e substituída\nCódigo de Verificação\nLocal da Prestação\nFORTALEZA - CE\nPIS\n(X) Alíquota %\nTelefone\nInsc Municipal\n(=) Valor do ISS R$\nCSLL(R$)\nMunicípio\nOpção Simples Nacional\nTelefone\n(-) Desconto Incondicionado\nIR(R$)\nDISCRIMINAÇÃO DOS SERVIÇOS\nOutras Retenções\nComplemento\n(-) ISS Retido\nCPF/CNPJ\nFORTALEZA - CE\nRegime especial Tributação\nComplemento\nEndereço e CEP\n(=) Valor Líquido      R$\nDetalhamento de Valores - Prestador dos Serviços\nAvisos\nNatureza Operação\nDADOS DO TOMADOR DE SERVIÇOS\nCOFINS\nEndereço e CEP\n2 - Não\nRazão Social/Nome\nNome Fantasia\nCálculo do ISSQN devido no Município\nE-mail\n1 - Sim\nValor dos Serviços R$\nE-mail\nISS a reter\nCódigo ART\n(-) Retenções Federais\nCÓDIGO DE ATIVIDADE CNAE\nCódigo da Obra\nDADOS DO PRESTADOR DE SERVIÇOS\nDETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL\nINSS(R$)\n(-) Deduções Permitidas em Lei\nInscrição Municipal\nMunicípio\nTRIBUTOS FEDERAIS\nCPF/CNPJ\nValor dos Serviços R$\n(-) Desconto Incondicionado\nBase de Cálculo\n(-) Desconto Condicionado\nRazão Social/Nome\n( ) Sim (X) Não\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços, no sítio http://iss.fortaleza.ce.gov.br\n2- A autenticidade desta Nota Fiscal poderá ser validada no site http://iss.fortaleza.ce.gov.br/, com a utilização do Código de Verificação.\n3- Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de ISS e IPI.\nIncentivador Cultural\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomend\n446.204.494-00\nMorro Vieira, 1248\nIsabella Ribeiro\n03/07/2023 01:40:42\n20.620,68\n20.620,68\n25.948.849/4130-37\n0,00\n0,00\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\n(23) 98935-2613\n(23) 98935-2613\n95198032\ncomrciodeoli@outlook.com\nPresidente Castello Branco\ncomrciodeoli@outlook.com\n953D-E3D1-35B\n98485\nPresidente C\n20.620,68\n618,62\n3,00\n",
+    "full_text": "PREFEITURA MUNICIPAL DE FORTALEZA\nSECRETARIA MUNICIPAL DAS FINANÇAS\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNúmero da\nNFS-e\nData e Hora da Emissão\nNúmero do RPS\nCompetência\nNo. NFS-e substituída\nCódigo de Verificação\nLocal da Prestação\nFORTALEZA - CE\nPIS\n(X) Alíquota %\nTelefone\nInsc Municipal\n(=) Valor do ISS R$\nCSLL(R$)\nMunicípio\nOpção Simples Nacional\nTelefone\n(-) Desconto Incondicionado\nIR(R$)\nDISCRIMINAÇÃO DOS SERVIÇOS\nOutras Retenções\nComplemento\n(-) ISS Retido\nCPF/CNPJ\nFORTALEZA - CE\nRegime especial Tributação\nComplemento\nEndereço e CEP\n(=) Valor Líquido      R$\nDetalhamento de Valores - Prestador dos Serviços\nAvisos\nNatureza Operação\nDADOS DO TOMADOR DE SERVIÇOS\nCOFINS\nEndereço e CEP\n2 - Não\nRazão Social/Nome\nNome Fantasia\nCálculo do ISSQN devido no Município\nE-mail\n1 - Sim\nValor dos Serviços R$\nE-mail\nISS a reter\nCódigo ART\n(-) Retenções Federais\nCÓDIGO DE ATIVIDADE CNAE\nCódigo da Obra\nDADOS DO PRESTADOR DE SERVIÇOS\nDETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL\nINSS(R$)\n(-) Deduções Permitidas em Lei\nInscrição Municipal\nMunicípio\nTRIBUTOS FEDERAIS\nCPF/CNPJ\nValor dos Serviços R$\n(-) Desconto Incondicionado\nBase de Cálculo\n(-) Desconto Condicionado\nRazão Social/Nome\n( ) Sim (X) Não\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços, no sítio http://iss.fortaleza.ce.gov.br\n2- A autenticidade desta Nota Fiscal poderá ser validada no site http://iss.fortaleza.ce.gov.br/, com a utilização do Código de Verificação.\n3- Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de ISS e IPI.\nIncentivador Cultural\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomenda\n446.204.494-00\nMorro Vieira, 1248\nIsabella Ribeiro\n03/07/2023 01:40:42\n20.620,68\n20.620,68\n25.948.849/4130-37\n0,00\n0,00\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\n(23) 98935-2613\n(23) 98935-2613\n95198032\ncomrciodeoli@outlook.com\nPresidente Castello Branco\ncomrciodeoli@outlook.com\n953D-E3D1-35B8\n98485\n20.620,68\n3,00\n",
     "pages": [
       {
         "page_number": 1,
-        "text": "PREFEITURA MUNICIPAL DE FORTALEZA\nSECRETARIA MUNICIPAL DAS FINANÇAS\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNúmero da\nNFS-e\nData e Hora da Emissão\nNúmero do RPS\nCompetência\nNo. NFS-e substituída\nCódigo de Verificação\nLocal da Prestação\nFORTALEZA - CE\nPIS\n(X) Alíquota %\nTelefone\nInsc Municipal\n(=) Valor do ISS R$\nCSLL(R$)\nMunicípio\nOpção Simples Nacional\nTelefone\n(-) Desconto Incondicionado\nIR(R$)\nDISCRIMINAÇÃO DOS SERVIÇOS\nOutras Retenções\nComplemento\n(-) ISS Retido\nCPF/CNPJ\nFORTALEZA - CE\nRegime especial Tributação\nComplemento\nEndereço e CEP\n(=) Valor Líquido      R$\nDetalhamento de Valores - Prestador dos Serviços\nAvisos\nNatureza Operação\nDADOS DO TOMADOR DE SERVIÇOS\nCOFINS\nEndereço e CEP\n2 - Não\nRazão Social/Nome\nNome Fantasia\nCálculo do ISSQN devido no Município\nE-mail\n1 - Sim\nValor dos Serviços R$\nE-mail\nISS a reter\nCódigo ART\n(-) Retenções Federais\nCÓDIGO DE ATIVIDADE CNAE\nCódigo da Obra\nDADOS DO PRESTADOR DE SERVIÇOS\nDETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL\nINSS(R$)\n(-) Deduções Permitidas em Lei\nInscrição Municipal\nMunicípio\nTRIBUTOS FEDERAIS\nCPF/CNPJ\nValor dos Serviços R$\n(-) Desconto Incondicionado\nBase de Cálculo\n(-) Desconto Condicionado\nRazão Social/Nome\n( ) Sim (X) Não\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços, no sítio http://iss.fortaleza.ce.gov.br\n2- A autenticidade desta Nota Fiscal poderá ser validada no site http://iss.fortaleza.ce.gov.br/, com a utilização do Código de Verificação.\n3- Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de ISS e IPI.\nIncentivador Cultural\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomend\n446.204.494-00\nMorro Vieira, 1248\nIsabella Ribeiro\n03/07/2023 01:40:42\n20.620,68\n20.620,68\n25.948.849/4130-37\n0,00\n0,00\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\n(23) 98935-2613\n(23) 98935-2613\n95198032\ncomrciodeoli@outlook.com\nPresidente Castello Branco\ncomrciodeoli@outlook.com\n953D-E3D1-35B\n98485\nPresidente C\n20.620,68\n618,62\n3,00\n"
+        "text": "PREFEITURA MUNICIPAL DE FORTALEZA\nSECRETARIA MUNICIPAL DAS FINANÇAS\nNOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e\nNúmero da\nNFS-e\nData e Hora da Emissão\nNúmero do RPS\nCompetência\nNo. NFS-e substituída\nCódigo de Verificação\nLocal da Prestação\nFORTALEZA - CE\nPIS\n(X) Alíquota %\nTelefone\nInsc Municipal\n(=) Valor do ISS R$\nCSLL(R$)\nMunicípio\nOpção Simples Nacional\nTelefone\n(-) Desconto Incondicionado\nIR(R$)\nDISCRIMINAÇÃO DOS SERVIÇOS\nOutras Retenções\nComplemento\n(-) ISS Retido\nCPF/CNPJ\nFORTALEZA - CE\nRegime especial Tributação\nComplemento\nEndereço e CEP\n(=) Valor Líquido      R$\nDetalhamento de Valores - Prestador dos Serviços\nAvisos\nNatureza Operação\nDADOS DO TOMADOR DE SERVIÇOS\nCOFINS\nEndereço e CEP\n2 - Não\nRazão Social/Nome\nNome Fantasia\nCálculo do ISSQN devido no Município\nE-mail\n1 - Sim\nValor dos Serviços R$\nE-mail\nISS a reter\nCódigo ART\n(-) Retenções Federais\nCÓDIGO DE ATIVIDADE CNAE\nCódigo da Obra\nDADOS DO PRESTADOR DE SERVIÇOS\nDETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL\nINSS(R$)\n(-) Deduções Permitidas em Lei\nInscrição Municipal\nMunicípio\nTRIBUTOS FEDERAIS\nCPF/CNPJ\nValor dos Serviços R$\n(-) Desconto Incondicionado\nBase de Cálculo\n(-) Desconto Condicionado\nRazão Social/Nome\n( ) Sim (X) Não\n1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços, no sítio http://iss.fortaleza.ce.gov.br\n2- A autenticidade desta Nota Fiscal poderá ser validada no site http://iss.fortaleza.ce.gov.br/, com a utilização do Código de Verificação.\n3- Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de ISS e IPI.\nIncentivador Cultural\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomenda\n446.204.494-00\nMorro Vieira, 1248\nIsabella Ribeiro\n03/07/2023 01:40:42\n20.620,68\n20.620,68\n25.948.849/4130-37\n0,00\n0,00\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\n(23) 98935-2613\n(23) 98935-2613\n95198032\ncomrciodeoli@outlook.com\nPresidente Castello Branco\ncomrciodeoli@outlook.com\n953D-E3D1-35B8\n98485\n20.620,68\n3,00\n"
       }
     ]
   },
   "extraction_stats": {
     "fields_total": 18,
-    "fields_matched_to_bbox": 14,
-    "match_rate": 0.778
+    "fields_matched_to_bbox": 13,
+    "match_rate": 0.722
   },
   "kie": {
     "provider": {
@@ -1513,12 +1483,12 @@
       "iss_rate": {
         "value": "3.00",
         "raw_value": 3.0,
-        "bbox_ref": "e00094"
+        "bbox_ref": "e00092"
       },
       "iss_value": {
         "value": "618.62",
         "raw_value": 618.62,
-        "bbox_ref": "e00093"
+        "bbox_ref": null
       }
     }
   },

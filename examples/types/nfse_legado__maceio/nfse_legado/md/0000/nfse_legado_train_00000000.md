@@ -57,7 +57,7 @@ Código do Serviço / Atividade
 
 | Campo | Valor |
 | --- | --- |
-|  | 01.02 - Desenvolvimento de software sob encomend |
+|  | 01.02 - Desenvolvimento de software sob encomenda |
 
 Discriminação dos Serviços
 

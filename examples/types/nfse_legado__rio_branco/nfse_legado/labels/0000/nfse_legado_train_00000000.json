@@ -1601,9 +1601,9 @@
       "page": 1,
       "bbox": {
         "x": 26.881,
-        "y": 83.582,
-        "w": 57.973,
-        "h": 5.664,
+        "y": 84.677,
+        "w": 22.537,
+        "h": 4.569,
         "unit": "mm",
         "obb_points": [
           [
@@ -1611,12 +1611,12 @@
             85.37
           ],
           [
-            84.734,
-            83.582
+            49.298,
+            84.677
           ],
           [
-            84.854,
-            87.458
+            49.418,
+            88.553
           ],
           [
             27.001,
@@ -1624,10 +1624,138 @@
           ]
         ]
       },
-      "text": "Desenvolvimento de software sob encomenda"
+      "text": "Desenvolvimento"
     },
     {
       "element_id": "e00050",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 51.819,
+        "y": 84.478,
+        "w": 4.041,
+        "h": 3.997,
+        "unit": "mm",
+        "obb_points": [
+          [
+            51.819,
+            84.599
+          ],
+          [
+            55.74,
+            84.478
+          ],
+          [
+            55.86,
+            88.354
+          ],
+          [
+            51.939,
+            88.475
+          ]
+        ]
+      },
+      "text": "de"
+    },
+    {
+      "element_id": "e00051",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 58.261,
+        "y": 84.046,
+        "w": 11.564,
+        "h": 4.23,
+        "unit": "mm",
+        "obb_points": [
+          [
+            58.261,
+            84.4
+          ],
+          [
+            69.705,
+            84.046
+          ],
+          [
+            69.825,
+            87.923
+          ],
+          [
+            58.381,
+            88.276
+          ]
+        ]
+      },
+      "text": "software"
+    },
+    {
+      "element_id": "e00052",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 72.226,
+        "y": 83.828,
+        "w": 4.667,
+        "h": 4.017,
+        "unit": "mm",
+        "obb_points": [
+          [
+            72.226,
+            83.969
+          ],
+          [
+            76.773,
+            83.828
+          ],
+          [
+            76.893,
+            87.704
+          ],
+          [
+            72.346,
+            87.845
+          ]
+        ]
+      },
+      "text": "sob"
+    },
+    {
+      "element_id": "e00053",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 27.006,
+        "y": 88.969,
+        "w": 14.859,
+        "h": 4.332,
+        "unit": "mm",
+        "obb_points": [
+          [
+            27.006,
+            89.425
+          ],
+          [
+            41.745,
+            88.969
+          ],
+          [
+            41.865,
+            92.846
+          ],
+          [
+            27.126,
+            93.301
+          ]
+        ]
+      },
+      "text": "encomenda"
+    },
+    {
+      "element_id": "e00054",
       "field_ids": [
         "municipio"
       ],
@@ -1661,7 +1789,7 @@
       "text": "Presidente Castello Branco"
     },
     {
-      "element_id": "e00051",
+      "element_id": "e00055",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -1693,7 +1821,7 @@
       "text": "Desenvolvimento de software sob encomenda"
     },
     {
-      "element_id": "e00052",
+      "element_id": "e00056",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -1725,7 +1853,7 @@
       "text": "0,00"
     },
     {
-      "element_id": "e00053",
+      "element_id": "e00057",
       "field_ids": [
         "valor_iss"
       ],
@@ -1759,7 +1887,7 @@
       "text": "618,62"
     },
     {
-      "element_id": "e00054",
+      "element_id": "e00058",
       "field_ids": [
         "tomador_razao_social"
       ],
@@ -1793,7 +1921,7 @@
       "text": "Isabella Ribeiro"
     },
     {
-      "element_id": "e00055",
+      "element_id": "e00059",
       "field_ids": [
         "tomador_endereco_logradouro",
         "tomador_endereco_numero"
@@ -1828,7 +1956,7 @@
       "text": "Morro Vieira, 1248"
     },
     {
-      "element_id": "e00056",
+      "element_id": "e00060",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -1860,7 +1988,7 @@
       "text": "Desenvolvimento de software sob encomenda"
     },
     {
-      "element_id": "e00057",
+      "element_id": "e00061",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -1892,7 +2020,7 @@
       "text": "Desenvolvimento de software sob"
     },
     {
-      "element_id": "e00058",
+      "element_id": "e00062",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -1924,7 +2052,7 @@
       "text": "encomenda"
     },
     {
-      "element_id": "e00059",
+      "element_id": "e00063",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -1956,7 +2084,7 @@
       "text": "Presidente Castello Branco"
     },
     {
-      "element_id": "e00060",
+      "element_id": "e00064",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -1988,7 +2116,7 @@
       "text": "0,00"
     },
     {
-      "element_id": "e00061",
+      "element_id": "e00065",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -2020,7 +2148,7 @@
       "text": "0,00"
     },
     {
-      "element_id": "e00062",
+      "element_id": "e00066",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -2052,7 +2180,7 @@
       "text": "0,00"
     },
     {
-      "element_id": "e00063",
+      "element_id": "e00067",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -2084,7 +2212,7 @@
       "text": "0,00"
     },
     {
-      "element_id": "e00064",
+      "element_id": "e00068",
       "field_ids": [
         "prestador_inscricao_municipal"
       ],
@@ -2118,109 +2246,75 @@
       "text": "95198032"
     },
     {
-      "element_id": "e00065",
+      "element_id": "e00069",
       "field_ids": [
         "valor_servicos"
       ],
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 131.962,
-        "y": 159.814,
-        "w": 14.25,
-        "h": 4.796,
+        "x": 131.976,
+        "y": 160.348,
+        "w": 12.271,
+        "h": 4.131,
         "unit": "mm",
         "obb_points": [
           [
-            131.962,
-            160.25
+            131.976,
+            160.724
           ],
           [
-            146.077,
-            159.814
+            144.132,
+            160.348
           ],
           [
-            146.212,
-            164.174
+            144.248,
+            164.103
           ],
           [
-            132.097,
-            164.61
+            132.092,
+            164.479
           ]
         ]
       },
       "text": "20.620,68"
     },
     {
-      "element_id": "e00066",
+      "element_id": "e00070",
       "field_ids": [
         "tomador_endereco_cep"
       ],
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 132.896,
-        "y": 64.405,
-        "w": 13.606,
-        "h": 4.293,
+        "x": 132.904,
+        "y": 64.728,
+        "w": 12.331,
+        "h": 3.89,
         "unit": "mm",
         "obb_points": [
           [
-            132.896,
-            64.821
+            132.904,
+            65.105
           ],
           [
-            146.382,
-            64.405
+            145.127,
+            64.728
           ],
           [
-            146.502,
-            68.281
+            145.235,
+            68.24
           ],
           [
-            133.015,
-            68.698
+            133.013,
+            68.618
           ]
         ]
       },
       "text": "94823-736"
     },
     {
-      "element_id": "e00067",
-      "field_ids": [
-        "aliquota"
-      ],
-      "role": "content",
-      "page": 1,
-      "bbox": {
-        "x": 154.232,
-        "y": 150.464,
-        "w": 5.609,
-        "h": 4.046,
-        "unit": "mm",
-        "obb_points": [
-          [
-            154.232,
-            150.633
-          ],
-          [
-            159.722,
-            150.464
-          ],
-          [
-            159.842,
-            154.34
-          ],
-          [
-            154.352,
-            154.51
-          ]
-        ]
-      },
-      "text": "3,00"
-    },
-    {
-      "element_id": "e00068",
+      "element_id": "e00071",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
@@ -2252,7 +2346,7 @@
       "text": "95198032"
     },
     {
-      "element_id": "e00069",
+      "element_id": "e00072",
       "field_ids": [
         "tomador_endereco_bairro"
       ],
@@ -2286,232 +2380,136 @@
       "text": "Buritis"
     },
     {
-      "element_id": "e00070",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 199.557,
-        "y": 180.828,
-        "w": 5.609,
-        "h": 4.046,
-        "unit": "mm",
-        "obb_points": [
-          [
-            199.557,
-            180.998
-          ],
-          [
-            205.046,
-            180.828
-          ],
-          [
-            205.166,
-            184.704
-          ],
-          [
-            199.677,
-            184.874
-          ]
-        ]
-      },
-      "text": "0,00"
-    },
-    {
-      "element_id": "e00071",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 199.927,
-        "y": 192.818,
-        "w": 5.609,
-        "h": 4.046,
-        "unit": "mm",
-        "obb_points": [
-          [
-            199.927,
-            192.987
-          ],
-          [
-            205.417,
-            192.818
-          ],
-          [
-            205.537,
-            196.694
-          ],
-          [
-            200.047,
-            196.863
-          ]
-        ]
-      },
-      "text": "0,00"
-    },
-    {
-      "element_id": "e00072",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 164.278,
-        "y": 150.153,
-        "w": 5.609,
-        "h": 4.046,
-        "unit": "mm",
-        "obb_points": [
-          [
-            164.278,
-            150.323
-          ],
-          [
-            169.767,
-            150.153
-          ],
-          [
-            169.887,
-            154.029
-          ],
-          [
-            164.397,
-            154.199
-          ]
-        ]
-      },
-      "text": "3,00"
-    },
-    {
       "element_id": "e00073",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 198.559,
+        "y": 180.859,
+        "w": 5.609,
+        "h": 4.046,
+        "unit": "mm",
+        "obb_points": [
+          [
+            198.559,
+            181.029
+          ],
+          [
+            204.049,
+            180.859
+          ],
+          [
+            204.169,
+            184.735
+          ],
+          [
+            198.679,
+            184.905
+          ]
+        ]
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00074",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 198.93,
+        "y": 192.848,
+        "w": 5.609,
+        "h": 4.046,
+        "unit": "mm",
+        "obb_points": [
+          [
+            198.93,
+            193.018
+          ],
+          [
+            204.419,
+            192.848
+          ],
+          [
+            204.539,
+            196.725
+          ],
+          [
+            199.05,
+            196.894
+          ]
+        ]
+      },
+      "text": "0,00"
+    },
+    {
+      "element_id": "e00075",
       "field_ids": [
         "data_emissao"
       ],
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 169.241,
-        "y": 21.96,
-        "w": 26.31,
-        "h": 4.693,
+        "x": 169.256,
+        "y": 22.559,
+        "w": 22.198,
+        "h": 3.96,
         "unit": "mm",
         "obb_points": [
           [
-            169.241,
-            22.77
+            169.256,
+            23.242
           ],
           [
-            195.431,
-            21.96
+            191.352,
+            22.559
           ],
           [
-            195.551,
-            25.845
+            191.453,
+            25.836
           ],
           [
-            169.361,
-            26.654
+            169.357,
+            26.519
           ]
         ]
       },
       "text": "03/07/2023 01:40:42"
     },
     {
-      "element_id": "e00074",
+      "element_id": "e00076",
       "field_ids": [
         "ident_numero"
       ],
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 172.391,
-        "y": 10.785,
-        "w": 16.678,
-        "h": 7.307,
+        "x": 176.034,
+        "y": 13.053,
+        "w": 9.828,
+        "h": 4.306,
         "unit": "mm",
         "obb_points": [
           [
-            172.391,
-            11.294
+            176.034,
+            13.353
           ],
           [
-            188.859,
-            10.785
+            185.738,
+            13.053
           ],
           [
-            189.069,
-            17.583
+            185.862,
+            17.059
           ],
           [
-            172.601,
-            18.092
+            176.157,
+            17.359
           ]
         ]
       },
       "text": "844111"
-    },
-    {
-      "element_id": "e00075",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 185.43,
-        "y": 149.282,
-        "w": 12.667,
-        "h": 4.264,
-        "unit": "mm",
-        "obb_points": [
-          [
-            185.43,
-            149.669
-          ],
-          [
-            197.978,
-            149.282
-          ],
-          [
-            198.097,
-            153.158
-          ],
-          [
-            185.55,
-            153.545
-          ]
-        ]
-      },
-      "text": "20.620,68"
-    },
-    {
-      "element_id": "e00076",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 186.782,
-        "y": 193.006,
-        "w": 12.667,
-        "h": 4.264,
-        "unit": "mm",
-        "obb_points": [
-          [
-            186.782,
-            193.393
-          ],
-          [
-            199.329,
-            193.006
-          ],
-          [
-            199.448,
-            196.882
-          ],
-          [
-            186.901,
-            197.27
-          ]
-        ]
-      },
-      "text": "20.620,68"
     },
     {
       "element_id": "e00077",
@@ -2519,31 +2517,63 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 199.557,
-        "y": 180.828,
-        "w": 5.609,
-        "h": 4.046,
+        "x": 187.406,
+        "y": 149.755,
+        "w": 10.688,
+        "h": 3.598,
         "unit": "mm",
         "obb_points": [
           [
-            199.557,
-            180.998
+            187.406,
+            150.082
           ],
           [
-            205.046,
-            180.828
+            197.993,
+            149.755
           ],
           [
-            205.166,
-            184.704
+            198.094,
+            153.026
           ],
           [
-            199.677,
-            184.874
+            187.507,
+            153.353
           ]
         ]
       },
-      "text": "0,00"
+      "text": "20.620,68"
+    },
+    {
+      "element_id": "e00078",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 188.757,
+        "y": 193.479,
+        "w": 10.688,
+        "h": 3.598,
+        "unit": "mm",
+        "obb_points": [
+          [
+            188.757,
+            193.807
+          ],
+          [
+            199.344,
+            193.479
+          ],
+          [
+            199.445,
+            196.75
+          ],
+          [
+            188.858,
+            197.077
+          ]
+        ]
+      },
+      "text": "20.620,68"
     }
   ],
   "layout": {
@@ -2684,18 +2714,18 @@
     ]
   },
   "ocr": {
-    "full_text": "Secretaria Municipal de Finanças\nNFS-e n°:\nEmitida em:\nPrefeitura do Município de Rio Branco\nRua Rui Barbosa, 285 – Centro - Rio Branco/AC - CEP: 69.900-901\nDados do Prestador de Serviço\nRazão Social:\nNome Fantasia:\nCNPJ:\nInscrição Municipal:\nEndereço:\nCidade:\nRIO BRANCO\nE-mail:\nBairro:\nCEP:\nDados do Tomador de Serviços\nNome/Razão Social:\nInsc. Municipal:\nCPF/CNPJ:\nInsc. Estadual/RG:\nEndereço:\nBairro:\nCidade:\nE-mail:\nTelefone:\nDiscriminação do Serviço/Dados Adicionais\nServiço:\nRIO BRANCO - AC\nLocal de Prestação\nAlíquota (%) Valor ISS (R$)\nTotal (R$)\nVALOR TOTAL DA NOTA: R$\nRetenções / Descontos\nINSS(R$)\nPIS(R$)\nCONFINS(R$)\nCSLL(R$)\nIRRF(R$)\nISSQN (R$)\nOutras Retenções (R$)\nTotal de Retenções\nValor Líquido da Nota\nOutras Informações\nUtilize o leitor de QR Code\nDescontos Condicionados\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\n0,00\nDesenvolvimento de software sob encomenda\nPresidente Castello Branco\nDesenvolvimento de software sob encomenda\n0,00\n618,62\nIsabella Ribeiro\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob\nencomenda\nPresidente Castello Branco\n0,00\n0,00\n0,00\n0,00\n95198032\n20.620,68\n94823-736\n3,00\n95198032\nBuritis\n0,00\n0,00\n3,00\n03/07/2023 01:40:42\n844111\n20.620,68\n20.620,68\n0,00\n",
+    "full_text": "Secretaria Municipal de Finanças\nNFS-e n°:\nEmitida em:\nPrefeitura do Município de Rio Branco\nRua Rui Barbosa, 285 – Centro - Rio Branco/AC - CEP: 69.900-901\nDados do Prestador de Serviço\nRazão Social:\nNome Fantasia:\nCNPJ:\nInscrição Municipal:\nEndereço:\nCidade:\nRIO BRANCO\nE-mail:\nBairro:\nCEP:\nDados do Tomador de Serviços\nNome/Razão Social:\nInsc. Municipal:\nCPF/CNPJ:\nInsc. Estadual/RG:\nEndereço:\nBairro:\nCidade:\nE-mail:\nTelefone:\nDiscriminação do Serviço/Dados Adicionais\nServiço:\nRIO BRANCO - AC\nLocal de Prestação\nAlíquota (%) Valor ISS (R$)\nTotal (R$)\nVALOR TOTAL DA NOTA: R$\nRetenções / Descontos\nINSS(R$)\nPIS(R$)\nCONFINS(R$)\nCSLL(R$)\nIRRF(R$)\nISSQN (R$)\nOutras Retenções (R$)\nTotal de Retenções\nValor Líquido da Nota\nOutras Informações\nUtilize o leitor de QR Code\nDescontos Condicionados\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\n0,00\nDesenvolvimento \nde \nsoftware \nsob\nencomenda\nPresidente Castello Branco\nDesenvolvimento de software sob encomenda\n0,00\n618,62\nIsabella Ribeiro\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob\nencomenda\nPresidente Castello Branco\n0,00\n0,00\n0,00\n0,00\n95198032\n20.620,68\n94823-736\n95198032\nBuritis\n0,00\n0,00\n03/07/2023 01:40:42\n844111\n20.620,68\n20.620,68\n",
     "pages": [
       {
         "page_number": 1,
-        "text": "Secretaria Municipal de Finanças\nNFS-e n°:\nEmitida em:\nPrefeitura do Município de Rio Branco\nRua Rui Barbosa, 285 – Centro - Rio Branco/AC - CEP: 69.900-901\nDados do Prestador de Serviço\nRazão Social:\nNome Fantasia:\nCNPJ:\nInscrição Municipal:\nEndereço:\nCidade:\nRIO BRANCO\nE-mail:\nBairro:\nCEP:\nDados do Tomador de Serviços\nNome/Razão Social:\nInsc. Municipal:\nCPF/CNPJ:\nInsc. Estadual/RG:\nEndereço:\nBairro:\nCidade:\nE-mail:\nTelefone:\nDiscriminação do Serviço/Dados Adicionais\nServiço:\nRIO BRANCO - AC\nLocal de Prestação\nAlíquota (%) Valor ISS (R$)\nTotal (R$)\nVALOR TOTAL DA NOTA: R$\nRetenções / Descontos\nINSS(R$)\nPIS(R$)\nCONFINS(R$)\nCSLL(R$)\nIRRF(R$)\nISSQN (R$)\nOutras Retenções (R$)\nTotal de Retenções\nValor Líquido da Nota\nOutras Informações\nUtilize o leitor de QR Code\nDescontos Condicionados\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\n0,00\nDesenvolvimento de software sob encomenda\nPresidente Castello Branco\nDesenvolvimento de software sob encomenda\n0,00\n618,62\nIsabella Ribeiro\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob\nencomenda\nPresidente Castello Branco\n0,00\n0,00\n0,00\n0,00\n95198032\n20.620,68\n94823-736\n3,00\n95198032\nBuritis\n0,00\n0,00\n3,00\n03/07/2023 01:40:42\n844111\n20.620,68\n20.620,68\n0,00\n"
+        "text": "Secretaria Municipal de Finanças\nNFS-e n°:\nEmitida em:\nPrefeitura do Município de Rio Branco\nRua Rui Barbosa, 285 – Centro - Rio Branco/AC - CEP: 69.900-901\nDados do Prestador de Serviço\nRazão Social:\nNome Fantasia:\nCNPJ:\nInscrição Municipal:\nEndereço:\nCidade:\nRIO BRANCO\nE-mail:\nBairro:\nCEP:\nDados do Tomador de Serviços\nNome/Razão Social:\nInsc. Municipal:\nCPF/CNPJ:\nInsc. Estadual/RG:\nEndereço:\nBairro:\nCidade:\nE-mail:\nTelefone:\nDiscriminação do Serviço/Dados Adicionais\nServiço:\nRIO BRANCO - AC\nLocal de Prestação\nAlíquota (%) Valor ISS (R$)\nTotal (R$)\nVALOR TOTAL DA NOTA: R$\nRetenções / Descontos\nINSS(R$)\nPIS(R$)\nCONFINS(R$)\nCSLL(R$)\nIRRF(R$)\nISSQN (R$)\nOutras Retenções (R$)\nTotal de Retenções\nValor Líquido da Nota\nOutras Informações\nUtilize o leitor de QR Code\nDescontos Condicionados\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\n0,00\nDesenvolvimento \nde \nsoftware \nsob\nencomenda\nPresidente Castello Branco\nDesenvolvimento de software sob encomenda\n0,00\n618,62\nIsabella Ribeiro\nMorro Vieira, 1248\nDesenvolvimento de software sob encomenda\nDesenvolvimento de software sob\nencomenda\nPresidente Castello Branco\n0,00\n0,00\n0,00\n0,00\n95198032\n20.620,68\n94823-736\n95198032\nBuritis\n0,00\n0,00\n03/07/2023 01:40:42\n844111\n20.620,68\n20.620,68\n"
       }
     ]
   },
   "extraction_stats": {
     "fields_total": 18,
-    "fields_matched_to_bbox": 14,
-    "match_rate": 0.778
+    "fields_matched_to_bbox": 13,
+    "match_rate": 0.722
   },
   "kie": {
     "provider": {
@@ -2713,12 +2743,12 @@
       "inscricao_municipal": {
         "value": "95198032",
         "raw_value": "95198032",
-        "bbox_ref": "e00064"
+        "bbox_ref": "e00068"
       },
       "municipality": {
         "value": "Presidente Castello Branco",
         "raw_value": "Presidente Castello Branco",
-        "bbox_ref": "e00050"
+        "bbox_ref": "e00054"
       }
     },
     "taker": {
@@ -2731,14 +2761,14 @@
       "name": {
         "value": "Isabella Ribeiro",
         "raw_value": "Isabella Ribeiro",
-        "bbox_ref": "e00054"
+        "bbox_ref": "e00058"
       }
     },
     "document": {
       "rps_number": {
         "value": "844111",
         "raw_value": "844111",
-        "bbox_ref": "e00074"
+        "bbox_ref": "e00076"
       },
       "batch_number": {
         "value": "884521",
@@ -2748,7 +2778,7 @@
       "issue_date": {
         "value": "2023-07-03T01:40:42",
         "raw_value": "2023-07-03T01:40:42",
-        "bbox_ref": "e00073"
+        "bbox_ref": "e00075"
       },
       "environment": {
         "value": "homologacao",
@@ -2770,17 +2800,17 @@
       "value": {
         "value": "20620.68",
         "raw_value": 20620.68,
-        "bbox_ref": "e00065"
+        "bbox_ref": "e00069"
       },
       "iss_rate": {
         "value": "3.00",
         "raw_value": 3.0,
-        "bbox_ref": "e00067"
+        "bbox_ref": null
       },
       "iss_value": {
         "value": "618.62",
         "raw_value": 618.62,
-        "bbox_ref": "e00053"
+        "bbox_ref": "e00057"
       }
     }
   },

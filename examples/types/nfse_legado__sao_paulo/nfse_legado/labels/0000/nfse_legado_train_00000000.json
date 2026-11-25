@@ -1409,9 +1409,9 @@
       "page": 1,
       "bbox": {
         "x": 12.99,
-        "y": 212.195,
-        "w": 70.194,
-        "h": 6.05,
+        "y": 212.147,
+        "w": 71.762,
+        "h": 6.098,
         "unit": "mm",
         "obb_points": [
           [
@@ -1419,12 +1419,12 @@
             214.36
           ],
           [
-            83.064,
-            212.195
+            84.632,
+            212.147
           ],
           [
-            83.184,
-            216.079
+            84.752,
+            216.031
           ],
           [
             13.11,
@@ -1432,7 +1432,7 @@
           ]
         ]
       },
-      "text": "01.02 - Desenvolvimento de software sob encomend"
+      "text": "01.02 - Desenvolvimento de software sob encomenda"
     },
     {
       "element_id": "e00044",
@@ -1507,31 +1507,31 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 24.196,
-        "y": 205.888,
-        "w": 4.041,
-        "h": 4.005,
+        "x": 31.512,
+        "y": 205.614,
+        "w": 5.609,
+        "h": 4.054,
         "unit": "mm",
         "obb_points": [
           [
-            24.196,
-            206.009
+            31.512,
+            205.783
           ],
           [
-            28.117,
-            205.888
+            37.002,
+            205.614
           ],
           [
-            28.237,
-            209.772
+            37.122,
+            209.498
           ],
           [
-            24.316,
-            209.893
+            31.632,
+            209.667
           ]
         ]
       },
-      "text": "0,0"
+      "text": "0,00"
     },
     {
       "element_id": "e00047",
@@ -1771,31 +1771,31 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 55.832,
-        "y": 204.911,
-        "w": 4.041,
-        "h": 4.005,
+        "x": 63.148,
+        "y": 204.636,
+        "w": 5.609,
+        "h": 4.054,
         "unit": "mm",
         "obb_points": [
           [
-            55.832,
-            205.032
+            63.148,
+            204.806
           ],
           [
-            59.753,
-            204.911
+            68.638,
+            204.636
           ],
           [
-            59.873,
-            208.795
+            68.758,
+            208.52
           ],
           [
-            55.952,
-            208.916
+            63.268,
+            208.69
           ]
         ]
       },
-      "text": "0,0"
+      "text": "0,00"
     },
     {
       "element_id": "e00055",
@@ -1871,31 +1871,31 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 87.468,
-        "y": 203.933,
-        "w": 4.041,
-        "h": 4.005,
+        "x": 94.781,
+        "y": 203.658,
+        "w": 5.609,
+        "h": 4.054,
         "unit": "mm",
         "obb_points": [
           [
-            87.468,
-            204.054
+            94.781,
+            203.828
           ],
           [
-            91.389,
-            203.933
+            100.27,
+            203.658
           ],
           [
-            91.509,
-            207.817
+            100.39,
+            207.543
           ],
           [
-            87.588,
-            207.938
+            94.901,
+            207.712
           ]
         ]
       },
-      "text": "0,0"
+      "text": "0,00"
     },
     {
       "element_id": "e00058",
@@ -1937,38 +1937,6 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 103.241,
-        "y": 227.432,
-        "w": 4.825,
-        "h": 4.03,
-        "unit": "mm",
-        "obb_points": [
-          [
-            103.241,
-            227.577
-          ],
-          [
-            107.945,
-            227.432
-          ],
-          [
-            108.065,
-            231.316
-          ],
-          [
-            103.361,
-            231.461
-          ]
-        ]
-      },
-      "text": "124"
-    },
-    {
-      "element_id": "e00060",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
         "x": 111.818,
         "y": 76.595,
         "w": 37.197,
@@ -1996,36 +1964,68 @@
       "text": "comrciodeoli@outlook.com"
     },
     {
+      "element_id": "e00060",
+      "field_ids": [],
+      "role": "unlabeled",
+      "page": 1,
+      "bbox": {
+        "x": 126.417,
+        "y": 202.681,
+        "w": 5.609,
+        "h": 4.054,
+        "unit": "mm",
+        "obb_points": [
+          [
+            126.417,
+            202.85
+          ],
+          [
+            131.906,
+            202.681
+          ],
+          [
+            132.026,
+            206.565
+          ],
+          [
+            126.537,
+            206.735
+          ]
+        ]
+      },
+      "text": "0,00"
+    },
+    {
       "element_id": "e00061",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 119.1,
-        "y": 202.955,
-        "w": 4.041,
-        "h": 4.005,
+        "x": 158.053,
+        "y": 201.703,
+        "w": 5.609,
+        "h": 4.054,
         "unit": "mm",
         "obb_points": [
           [
-            119.1,
-            203.077
+            158.053,
+            201.873
           ],
           [
-            123.022,
-            202.955
+            163.542,
+            201.703
           ],
           [
-            123.142,
-            206.84
+            163.662,
+            205.587
           ],
           [
-            119.22,
-            206.961
+            158.173,
+            205.757
           ]
         ]
       },
-      "text": "0,0"
+      "text": "0,00"
     },
     {
       "element_id": "e00062",
@@ -2033,100 +2033,68 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 150.736,
-        "y": 201.978,
-        "w": 4.041,
-        "h": 4.005,
-        "unit": "mm",
-        "obb_points": [
-          [
-            150.736,
-            202.099
-          ],
-          [
-            154.657,
-            201.978
-          ],
-          [
-            154.778,
-            205.862
-          ],
-          [
-            150.856,
-            205.983
-          ]
-        ]
-      },
-      "text": "0,0"
-    },
-    {
-      "element_id": "e00063",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 177.412,
-        "y": 225.115,
+        "x": 176.911,
+        "y": 225.131,
         "w": 5.609,
         "h": 4.054,
         "unit": "mm",
         "obb_points": [
           [
-            177.412,
-            225.285
+            176.911,
+            225.301
           ],
           [
-            182.902,
-            225.115
+            182.401,
+            225.131
           ],
           [
-            183.022,
-            229.0
+            182.521,
+            229.015
           ],
           [
-            177.532,
-            229.169
+            177.032,
+            229.185
           ]
         ]
       },
       "text": "0,00"
     },
     {
-      "element_id": "e00064",
+      "element_id": "e00063",
       "field_ids": [
         "valor_iss"
       ],
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 154.457,
-        "y": 217.723,
+        "x": 157.289,
+        "y": 217.636,
         "w": 8.746,
         "h": 4.151,
         "unit": "mm",
         "obb_points": [
           [
-            154.457,
-            217.99
+            157.289,
+            217.902
           ],
           [
-            163.083,
-            217.723
+            165.914,
+            217.636
           ],
           [
-            163.203,
-            221.607
+            166.035,
+            221.52
           ],
           [
-            154.577,
-            221.874
+            157.409,
+            221.786
           ]
         ]
       },
       "text": "618,62"
     },
     {
-      "element_id": "e00065",
+      "element_id": "e00064",
       "field_ids": [
         "prestador_inscricao_municipal"
       ],
@@ -2160,7 +2128,7 @@
       "text": "95198032"
     },
     {
-      "element_id": "e00066",
+      "element_id": "e00065",
       "field_ids": [
         "data_emissao"
       ],
@@ -2194,7 +2162,7 @@
       "text": "03/07/2023 01:40:42"
     },
     {
-      "element_id": "e00067",
+      "element_id": "e00066",
       "field_ids": [
         "ident_numero"
       ],
@@ -2228,100 +2196,36 @@
       "text": "844111"
     },
     {
-      "element_id": "e00068",
+      "element_id": "e00067",
       "field_ids": [],
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 169.12,
-        "y": 26.578,
+        "x": 168.62,
+        "y": 26.593,
         "w": 28.172,
         "h": 5.722,
         "unit": "mm",
         "obb_points": [
           [
-            169.12,
-            27.444
+            168.62,
+            27.459
           ],
           [
-            197.142,
-            26.578
+            196.641,
+            26.593
           ],
           [
-            197.292,
-            31.434
+            196.791,
+            31.449
           ],
           [
-            169.271,
-            32.299
+            168.77,
+            32.315
           ]
         ]
       },
       "text": "953D-E3D1-35B8"
-    },
-    {
-      "element_id": "e00069",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 187.439,
-        "y": 213.478,
-        "w": 7.653,
-        "h": 3.625,
-        "unit": "mm",
-        "obb_points": [
-          [
-            187.439,
-            213.711
-          ],
-          [
-            194.987,
-            213.478
-          ],
-          [
-            195.092,
-            216.869
-          ],
-          [
-            187.543,
-            217.102
-          ]
-        ]
-      },
-      "text": "618,62"
-    },
-    {
-      "element_id": "e00070",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 195.553,
-        "y": 216.55,
-        "w": 5.609,
-        "h": 4.054,
-        "unit": "mm",
-        "obb_points": [
-          [
-            195.553,
-            216.72
-          ],
-          [
-            201.043,
-            216.55
-          ],
-          [
-            201.163,
-            220.434
-          ],
-          [
-            195.673,
-            220.604
-          ]
-        ]
-      },
-      "text": "0,00"
     }
   ],
   "layout": {
@@ -2432,11 +2336,11 @@
     ]
   },
   "ocr": {
-    "full_text": "PREFEITURA DO MUNICÍPIO DE SÃO PAULO\nSECRETARIA MUNICIPAL DA FAZENDA\nNOTA FISCAL ELETRÔNICA DE SERVIÇOS - NFS-e\nNúmero da Nota\nData e Hora de Emissão\nCódigo de Verificação\nPRESTADOR DE SERVIÇOS\nCPF/CNPJ:\nInscrição Municipal:\nNome/Razão Social:\nEndereço:\nMunicípio: São Paulo\nUF: SP\nTOMADOR DE SERVIÇOS\nNome/Razão Social:\nCPF/CNPJ:\nInscrição Municipal:\nEndereço:\nMunicípio:\nUF:\nE-mail:\nINTERMEDIÁRIO DE SERVIÇOS\nCPF/CNPJ:\nNome/Razão Social:\nDISCRIMINAÇÃO DE SERVIÇOS\nINSS (R$)\nIRRF (R$)\nCSLL (R$)\nCOFINS (R$)\nPIS/PASEP (R$)\nIPI (R$)\nCódigo do Serviço\nValor Total das Deduções (R$)\nBase de Cálculo (R$)\nAlíquota (%)\nValor do ISS (R$)\nMunicípio de Prestação do Serviço\nNúmero Inscrição da Obra\nValor Aproximado dos Tributos / Fonte\nOUTRAS INFORMAÇÕES\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomend\nDesenvolvimento de software sob encomenda\nMorro Vieira, 1248\n0,0\nPresidente Castello Branco\n446.204.494-00\nIsabella Ribeiro\n0,00\nPresidente Castello Branco\nMorro Vieira, 1248\n25.948.849/4130-37\n0,0\nComércio de Oliveira ME\n20.620,68\n0,0\nSC\n124\ncomrciodeoli@outlook.com\n0,0\n0,0\n0,00\n618,62\n95198032\n03/07/2023 01:40:42\n844111\n953D-E3D1-35B8\n618,62\n0,00\n",
+    "full_text": "PREFEITURA DO MUNICÍPIO DE SÃO PAULO\nSECRETARIA MUNICIPAL DA FAZENDA\nNOTA FISCAL ELETRÔNICA DE SERVIÇOS - NFS-e\nNúmero da Nota\nData e Hora de Emissão\nCódigo de Verificação\nPRESTADOR DE SERVIÇOS\nCPF/CNPJ:\nInscrição Municipal:\nNome/Razão Social:\nEndereço:\nMunicípio: São Paulo\nUF: SP\nTOMADOR DE SERVIÇOS\nNome/Razão Social:\nCPF/CNPJ:\nInscrição Municipal:\nEndereço:\nMunicípio:\nUF:\nE-mail:\nINTERMEDIÁRIO DE SERVIÇOS\nCPF/CNPJ:\nNome/Razão Social:\nDISCRIMINAÇÃO DE SERVIÇOS\nINSS (R$)\nIRRF (R$)\nCSLL (R$)\nCOFINS (R$)\nPIS/PASEP (R$)\nIPI (R$)\nCódigo do Serviço\nValor Total das Deduções (R$)\nBase de Cálculo (R$)\nAlíquota (%)\nValor do ISS (R$)\nMunicípio de Prestação do Serviço\nNúmero Inscrição da Obra\nValor Aproximado dos Tributos / Fonte\nOUTRAS INFORMAÇÕES\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\nMorro Vieira, 1248\n0,00\nPresidente Castello Branco\n446.204.494-00\nIsabella Ribeiro\n0,00\nPresidente Castello Branco\nMorro Vieira, 1248\n25.948.849/4130-37\n0,00\nComércio de Oliveira ME\n20.620,68\n0,00\nSC\ncomrciodeoli@outlook.com\n0,00\n0,00\n0,00\n618,62\n95198032\n03/07/2023 01:40:42\n844111\n953D-E3D1-35B8\n",
     "pages": [
       {
         "page_number": 1,
-        "text": "PREFEITURA DO MUNICÍPIO DE SÃO PAULO\nSECRETARIA MUNICIPAL DA FAZENDA\nNOTA FISCAL ELETRÔNICA DE SERVIÇOS - NFS-e\nNúmero da Nota\nData e Hora de Emissão\nCódigo de Verificação\nPRESTADOR DE SERVIÇOS\nCPF/CNPJ:\nInscrição Municipal:\nNome/Razão Social:\nEndereço:\nMunicípio: São Paulo\nUF: SP\nTOMADOR DE SERVIÇOS\nNome/Razão Social:\nCPF/CNPJ:\nInscrição Municipal:\nEndereço:\nMunicípio:\nUF:\nE-mail:\nINTERMEDIÁRIO DE SERVIÇOS\nCPF/CNPJ:\nNome/Razão Social:\nDISCRIMINAÇÃO DE SERVIÇOS\nINSS (R$)\nIRRF (R$)\nCSLL (R$)\nCOFINS (R$)\nPIS/PASEP (R$)\nIPI (R$)\nCódigo do Serviço\nValor Total das Deduções (R$)\nBase de Cálculo (R$)\nAlíquota (%)\nValor do ISS (R$)\nMunicípio de Prestação do Serviço\nNúmero Inscrição da Obra\nValor Aproximado dos Tributos / Fonte\nOUTRAS INFORMAÇÕES\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomend\nDesenvolvimento de software sob encomenda\nMorro Vieira, 1248\n0,0\nPresidente Castello Branco\n446.204.494-00\nIsabella Ribeiro\n0,00\nPresidente Castello Branco\nMorro Vieira, 1248\n25.948.849/4130-37\n0,0\nComércio de Oliveira ME\n20.620,68\n0,0\nSC\n124\ncomrciodeoli@outlook.com\n0,0\n0,0\n0,00\n618,62\n95198032\n03/07/2023 01:40:42\n844111\n953D-E3D1-35B8\n618,62\n0,00\n"
+        "text": "PREFEITURA DO MUNICÍPIO DE SÃO PAULO\nSECRETARIA MUNICIPAL DA FAZENDA\nNOTA FISCAL ELETRÔNICA DE SERVIÇOS - NFS-e\nNúmero da Nota\nData e Hora de Emissão\nCódigo de Verificação\nPRESTADOR DE SERVIÇOS\nCPF/CNPJ:\nInscrição Municipal:\nNome/Razão Social:\nEndereço:\nMunicípio: São Paulo\nUF: SP\nTOMADOR DE SERVIÇOS\nNome/Razão Social:\nCPF/CNPJ:\nInscrição Municipal:\nEndereço:\nMunicípio:\nUF:\nE-mail:\nINTERMEDIÁRIO DE SERVIÇOS\nCPF/CNPJ:\nNome/Razão Social:\nDISCRIMINAÇÃO DE SERVIÇOS\nINSS (R$)\nIRRF (R$)\nCSLL (R$)\nCOFINS (R$)\nPIS/PASEP (R$)\nIPI (R$)\nCódigo do Serviço\nValor Total das Deduções (R$)\nBase de Cálculo (R$)\nAlíquota (%)\nValor do ISS (R$)\nMunicípio de Prestação do Serviço\nNúmero Inscrição da Obra\nValor Aproximado dos Tributos / Fonte\nOUTRAS INFORMAÇÕES\nDesenvolvimento de software sob encomenda\n01.02 - Desenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\nMorro Vieira, 1248\n0,00\nPresidente Castello Branco\n446.204.494-00\nIsabella Ribeiro\n0,00\nPresidente Castello Branco\nMorro Vieira, 1248\n25.948.849/4130-37\n0,00\nComércio de Oliveira ME\n20.620,68\n0,00\nSC\ncomrciodeoli@outlook.com\n0,00\n0,00\n0,00\n618,62\n95198032\n03/07/2023 01:40:42\n844111\n953D-E3D1-35B8\n"
       }
     ]
   },
@@ -2461,7 +2365,7 @@
       "inscricao_municipal": {
         "value": "95198032",
         "raw_value": "95198032",
-        "bbox_ref": "e00065"
+        "bbox_ref": "e00064"
       },
       "municipality": {
         "value": "Presidente Castello Branco",
@@ -2486,7 +2390,7 @@
       "rps_number": {
         "value": "844111",
         "raw_value": "844111",
-        "bbox_ref": "e00067"
+        "bbox_ref": "e00066"
       },
       "batch_number": {
         "value": "884521",
@@ -2496,7 +2400,7 @@
       "issue_date": {
         "value": "2023-07-03T01:40:42",
         "raw_value": "2023-07-03T01:40:42",
-        "bbox_ref": "e00066"
+        "bbox_ref": "e00065"
       },
       "environment": {
         "value": "homologacao",
@@ -2528,7 +2432,7 @@
       "iss_value": {
         "value": "618.62",
         "raw_value": 618.62,
-        "bbox_ref": "e00064"
+        "bbox_ref": "e00063"
       }
     }
   },

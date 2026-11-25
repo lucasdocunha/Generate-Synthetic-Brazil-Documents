@@ -36,20 +36,19 @@ NOTA FISCAL ELETRÔNICA DE SERVIÇOS - NFS-e
 | E-mail: | comrciodeoli@outlook.com |
 |  | INTERMEDIÁRIO DE SERVIÇOS CPF/CNPJ: Nome/Razão Social: |
 |  | DISCRIMINAÇÃO DE SERVIÇOS Desenvolvimento de software sob encomenda |
-| INSS (R$) | 0,0 |
-| IRRF (R$) | 0,0 |
-| CSLL (R$) | 0,0 |
-| COFINS (R$) | 0,0 |
-| PIS/PASEP (R$) | 0,0 |
+| INSS (R$) | 0,00 |
+| IRRF (R$) | 0,00 |
+| CSLL (R$) | 0,00 |
+| COFINS (R$) | 0,00 |
+| PIS/PASEP (R$) | 0,00 |
 |  | IPI (R$) |
-| Código do Serviço | 01.02 - Desenvolvimento de software sob encomend |
+| Código do Serviço | 01.02 - Desenvolvimento de software sob encomenda |
 |  | Valor Total das Deduções (R$) |
 | Base de Cálculo (R$) | 20.620,68 |
 | Alíquota (%) | 0,00 |
 | Valor do ISS (R$) | 618,62 |
-| 618,62 | 0,00 |
 |  | Município de Prestação do Serviço |
-| Número Inscrição da Obra | Presidente Castello Branco 124 |
+| Número Inscrição da Obra | Presidente Castello Branco |
 | Valor Aproximado dos Tributos / Fonte | 0,00 |
 |  | OUTRAS INFORMAÇÕES Desenvolvimento de software sob encomenda |
 

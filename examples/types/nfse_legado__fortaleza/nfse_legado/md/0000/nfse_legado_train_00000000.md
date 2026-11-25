@@ -6,7 +6,7 @@ NOTA FISCAL ELETRÔNICA DE SERVIÇO - NFS-e
 
 98485
 
-Data e Hora da Emissão 03/07/2023 01:40:42 Competência Código de Verificação 953D-E3D1-35B
+Data e Hora da Emissão 03/07/2023 01:40:42 Competência Código de Verificação 953D-E3D1-35B8
 
 Número do RPS No. NFS-e substituída Local da Prestação FORTALEZA - CE
 
@@ -38,7 +38,7 @@ Desenvolvimento de software sob encomenda
 
 CÓDIGO DE ATIVIDADE CNAE
 
-01.02 - Desenvolvimento de software sob encomend
+01.02 - Desenvolvimento de software sob encomenda
 
 DETALHAMENTO ESPECÍFICO DA CONSTRUÇÃO CIVIL
 
@@ -50,7 +50,7 @@ PIS COFINS IR(R$) INSS(R$) CSLL(R$)
 
 Detalhamento de Valores - Prestador dos Serviços Cálculo do ISSQN devido no Município
 
-Valor dos Serviços R$ 20.620,68 Natureza Operação Valor dos Serviços R$ Presidente C
+Valor dos Serviços R$ 20.620,68 Natureza Operação Valor dos Serviços R$
 
 (-) Desconto Incondicionado (-) Deduções Permitidas em Lei
 
@@ -64,7 +64,7 @@ Outras Retenções Opção Simples Nacional (X) Alíquota % 3,00
 
 Incentivador Cultural
 
-(=) Valor Líquido R$ 20.620,68 (=) Valor do ISS R$ 618,62
+(=) Valor Líquido R$ 20.620,68 (=) Valor do ISS R$
 
 2 - Não
 

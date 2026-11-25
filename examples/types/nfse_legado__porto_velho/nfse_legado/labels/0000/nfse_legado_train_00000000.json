@@ -691,9 +691,9 @@
       "page": 1,
       "bbox": {
         "x": 12.347,
-        "y": 42.524,
-        "w": 32.364,
-        "h": 4.847,
+        "y": 43.188,
+        "w": 26.7,
+        "h": 3.999,
         "unit": "mm"
       },
       "text": "03/07/2023 01:40:42"
@@ -754,13 +754,13 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 72.009,
+        "x": 73.949,
         "y": 148.816,
-        "w": 65.882,
+        "w": 67.451,
         "h": 3.878,
         "unit": "mm"
       },
-      "text": "01.02 - Desenvolvimento de software sob encomend"
+      "text": "01.02 - Desenvolvimento de software sob encomenda"
     },
     {
       "element_id": "e00052",
@@ -798,7 +798,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 75.625,
+        "x": 71.346,
         "y": 199.612,
         "w": 4.119,
         "h": 2.908,
@@ -830,7 +830,7 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 75.177,
+        "x": 66.135,
         "y": 85.351,
         "w": 7.84,
         "h": 3.878,
@@ -902,7 +902,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 107.022,
+        "x": 87.044,
         "y": 199.612,
         "w": 4.119,
         "h": 2.908,
@@ -944,7 +944,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 139.831,
+        "x": 120.205,
         "y": 184.443,
         "w": 4.119,
         "h": 2.908,
@@ -1034,10 +1034,10 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 151.694,
-        "y": 67.712,
-        "w": 25.262,
-        "h": 3.878,
+        "x": 152.09,
+        "y": 67.807,
+        "w": 24.472,
+        "h": 3.757,
         "unit": "mm"
       },
       "text": "25.948.849/4130-37"
@@ -1051,9 +1051,9 @@
       "page": 1,
       "bbox": {
         "x": 151.694,
-        "y": 110.046,
-        "w": 19.77,
-        "h": 3.878,
+        "y": 110.52,
+        "w": 16.681,
+        "h": 3.272,
         "unit": "mm"
       },
       "text": "446.204.494-00"
@@ -1064,7 +1064,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 161.339,
+        "x": 162.271,
         "y": 188.397,
         "w": 6.865,
         "h": 4.847,
@@ -1081,9 +1081,9 @@
       "page": 1,
       "bbox": {
         "x": 165.806,
-        "y": 127.684,
-        "w": 13.493,
-        "h": 3.878,
+        "y": 127.874,
+        "w": 12.65,
+        "h": 3.635,
         "unit": "mm"
       },
       "text": "94823-736"
@@ -1096,7 +1096,7 @@
       "role": "content",
       "page": 1,
       "bbox": {
-        "x": 181.102,
+        "x": 180.601,
         "y": 39.857,
         "w": 9.415,
         "h": 3.886,
@@ -1110,7 +1110,7 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 183.903,
+        "x": 183.402,
         "y": 199.612,
         "w": 4.119,
         "h": 2.908,
@@ -1125,9 +1125,9 @@
       "page": 1,
       "bbox": {
         "x": 170.85,
-        "y": 283.295,
-        "w": 19.651,
-        "h": 2.915,
+        "y": 283.389,
+        "w": 18.832,
+        "h": 2.793,
         "unit": "mm"
       },
       "text": "03/07/2023 01:40:42"
@@ -1138,27 +1138,13 @@
       "role": "unlabeled",
       "page": 1,
       "bbox": {
-        "x": 176.95,
+        "x": 176.449,
         "y": 50.793,
         "w": 22.428,
         "h": 3.886,
         "unit": "mm"
       },
       "text": "953D-E3D1-35B8"
-    },
-    {
-      "element_id": "e00078",
-      "field_ids": [],
-      "role": "unlabeled",
-      "page": 1,
-      "bbox": {
-        "x": 195.792,
-        "y": 283.284,
-        "w": 1.177,
-        "h": 2.908,
-        "unit": "mm"
-      },
-      "text": "2"
     }
   ],
   "layout": {
@@ -1215,11 +1201,11 @@
     ]
   },
   "ocr": {
-    "full_text": "Prefeitura do Município de Porto Velho\nSecretaria Municipal de Fazenda - SEMFAZ\nNúmero da Nota\nCódigo de Verificação\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\n- NOTA PORTOVELHENSE -\nCompetência\nPorto Velho/RO\nExigível\nPRESTADOR DOS SERVIÇOS\nNome/Razão Social\nCNPJ\nInscrição Municipal\nCEP\nNúmero:\nBairro\nComplemento\nPORTO VELHO\nCidade\nRO\nUF\nEmail\nTOMADOR DE SERVIÇOS/DESTINÁRIO\nNome/Razão Social\nCNPJ/CPF\nEndereço\nNúmero:\nComplemento\nCEP\nEmail\nInscrição Municipal\nBRASIL\nPaís\nCÓDIGO DO SERVIÇO\nDISCRIMINAÇÃO DOS SERVIÇOS\nAlíquota (%)\nBase de Cálculo (R$)\nCrédito (R$)\nISSQN Retido (R$)\nRETENÇÕES FEDERAIS\nCSLL (R$)\nIR (R$)\nPIS (R$)\nVALOR TOTAL DO SERVIÇO\nInformações Complementares:\nSecretaria Municipal de Fazenda - SEMFAZ\nAvenida 7 de Setembro, 744 - Centro. CEP 76801-096 - Porto Velho, RO\n03/07/2023 01:40:42\n95198032\nIsabella Ribeiro\nMorro Vieira, 1248\n01.02 - Desenvolvimento de software sob encomend\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nBuritis\ncomrciodeoli@outlook.com\ncomrciodeoli@outlook.com\n3,00\n0,00\n0,00\n07/2023\n0,00\n3,00\n1248\n1248\n0,00\n0,00\n20.620,68\n25.948.849/4130-37\n446.204.494-00\n0,00\n94823-736\n844111\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\n2\n",
+    "full_text": "Prefeitura do Município de Porto Velho\nSecretaria Municipal de Fazenda - SEMFAZ\nNúmero da Nota\nCódigo de Verificação\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\n- NOTA PORTOVELHENSE -\nCompetência\nPorto Velho/RO\nExigível\nPRESTADOR DOS SERVIÇOS\nNome/Razão Social\nCNPJ\nInscrição Municipal\nCEP\nNúmero:\nBairro\nComplemento\nPORTO VELHO\nCidade\nRO\nUF\nEmail\nTOMADOR DE SERVIÇOS/DESTINÁRIO\nNome/Razão Social\nCNPJ/CPF\nEndereço\nNúmero:\nComplemento\nCEP\nEmail\nInscrição Municipal\nBRASIL\nPaís\nCÓDIGO DO SERVIÇO\nDISCRIMINAÇÃO DOS SERVIÇOS\nAlíquota (%)\nBase de Cálculo (R$)\nCrédito (R$)\nISSQN Retido (R$)\nRETENÇÕES FEDERAIS\nCSLL (R$)\nIR (R$)\nPIS (R$)\nVALOR TOTAL DO SERVIÇO\nInformações Complementares:\nSecretaria Municipal de Fazenda - SEMFAZ\nAvenida 7 de Setembro, 744 - Centro. CEP 76801-096 - Porto Velho, RO\n03/07/2023 01:40:42\n95198032\nIsabella Ribeiro\nMorro Vieira, 1248\n01.02 - Desenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nBuritis\ncomrciodeoli@outlook.com\ncomrciodeoli@outlook.com\n3,00\n0,00\n0,00\n07/2023\n0,00\n3,00\n1248\n1248\n0,00\n0,00\n20.620,68\n25.948.849/4130-37\n446.204.494-00\n0,00\n94823-736\n844111\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\n",
     "pages": [
       {
         "page_number": 1,
-        "text": "Prefeitura do Município de Porto Velho\nSecretaria Municipal de Fazenda - SEMFAZ\nNúmero da Nota\nCódigo de Verificação\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\n- NOTA PORTOVELHENSE -\nCompetência\nPorto Velho/RO\nExigível\nPRESTADOR DOS SERVIÇOS\nNome/Razão Social\nCNPJ\nInscrição Municipal\nCEP\nNúmero:\nBairro\nComplemento\nPORTO VELHO\nCidade\nRO\nUF\nEmail\nTOMADOR DE SERVIÇOS/DESTINÁRIO\nNome/Razão Social\nCNPJ/CPF\nEndereço\nNúmero:\nComplemento\nCEP\nEmail\nInscrição Municipal\nBRASIL\nPaís\nCÓDIGO DO SERVIÇO\nDISCRIMINAÇÃO DOS SERVIÇOS\nAlíquota (%)\nBase de Cálculo (R$)\nCrédito (R$)\nISSQN Retido (R$)\nRETENÇÕES FEDERAIS\nCSLL (R$)\nIR (R$)\nPIS (R$)\nVALOR TOTAL DO SERVIÇO\nInformações Complementares:\nSecretaria Municipal de Fazenda - SEMFAZ\nAvenida 7 de Setembro, 744 - Centro. CEP 76801-096 - Porto Velho, RO\n03/07/2023 01:40:42\n95198032\nIsabella Ribeiro\nMorro Vieira, 1248\n01.02 - Desenvolvimento de software sob encomend\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nBuritis\ncomrciodeoli@outlook.com\ncomrciodeoli@outlook.com\n3,00\n0,00\n0,00\n07/2023\n0,00\n3,00\n1248\n1248\n0,00\n0,00\n20.620,68\n25.948.849/4130-37\n446.204.494-00\n0,00\n94823-736\n844111\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\n2\n"
+        "text": "Prefeitura do Município de Porto Velho\nSecretaria Municipal de Fazenda - SEMFAZ\nNúmero da Nota\nCódigo de Verificação\nNOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\n- NOTA PORTOVELHENSE -\nCompetência\nPorto Velho/RO\nExigível\nPRESTADOR DOS SERVIÇOS\nNome/Razão Social\nCNPJ\nInscrição Municipal\nCEP\nNúmero:\nBairro\nComplemento\nPORTO VELHO\nCidade\nRO\nUF\nEmail\nTOMADOR DE SERVIÇOS/DESTINÁRIO\nNome/Razão Social\nCNPJ/CPF\nEndereço\nNúmero:\nComplemento\nCEP\nEmail\nInscrição Municipal\nBRASIL\nPaís\nCÓDIGO DO SERVIÇO\nDISCRIMINAÇÃO DOS SERVIÇOS\nAlíquota (%)\nBase de Cálculo (R$)\nCrédito (R$)\nISSQN Retido (R$)\nRETENÇÕES FEDERAIS\nCSLL (R$)\nIR (R$)\nPIS (R$)\nVALOR TOTAL DO SERVIÇO\nInformações Complementares:\nSecretaria Municipal de Fazenda - SEMFAZ\nAvenida 7 de Setembro, 744 - Centro. CEP 76801-096 - Porto Velho, RO\n03/07/2023 01:40:42\n95198032\nIsabella Ribeiro\nMorro Vieira, 1248\n01.02 - Desenvolvimento de software sob encomenda\nDesenvolvimento de software sob encomenda\n0,00\n0,00\nComércio de Oliveira ME\nBuritis\ncomrciodeoli@outlook.com\ncomrciodeoli@outlook.com\n3,00\n0,00\n0,00\n07/2023\n0,00\n3,00\n1248\n1248\n0,00\n0,00\n20.620,68\n25.948.849/4130-37\n446.204.494-00\n0,00\n94823-736\n844111\n0,00\n03/07/2023 01:40:42\n953D-E3D1-35B8\n"
       }
     ]
   },

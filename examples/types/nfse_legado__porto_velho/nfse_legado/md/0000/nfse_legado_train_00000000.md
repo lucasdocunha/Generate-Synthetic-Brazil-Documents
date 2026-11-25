@@ -44,7 +44,7 @@ Número da Nota 844111 Código de Verificação 953D-E3D1-35B8
 
 | Campo | Valor |
 | --- | --- |
-|  | 01.02 - Desenvolvimento de software sob encomend |
+|  | 01.02 - Desenvolvimento de software sob encomenda |
 
 ## DISCRIMINAÇÃO DOS SERVIÇOS
 
@@ -55,7 +55,8 @@ Número da Nota 844111 Código de Verificação 953D-E3D1-35B8
 |  | 20.620,68 |
 |  | Base de Cálculo (R$) |
 |  | Alíquota (%) |
-|  | ISSQN Retido (R$) 3,00 |
+|  | 3,00 |
+|  | ISSQN Retido (R$) |
 |  | Crédito (R$) |
 |  | 3,00 |
 |  | 0,00 |
@@ -67,7 +68,8 @@ Número da Nota 844111 Código de Verificação 953D-E3D1-35B8
 | --- | --- |
 |  | PIS (R$) |
 |  | 0,00 |
-|  | IR (R$) 0,00 |
+|  | 0,00 |
+|  | IR (R$) |
 |  | CSLL (R$) |
 |  | 0,00 |
 |  | 0,00 |
@@ -76,4 +78,4 @@ Número da Nota 844111 Código de Verificação 953D-E3D1-35B8
 |  | 0,00 |
 |  | Informações Complementares: |
 
-Secretaria Municipal de Fazenda - SEMFAZ Avenida 7 de Setembro, 744 - Centro. CEP 76801-096 - Porto Velho, RO 03/07/2023 01:40:42 2
+Secretaria Municipal de Fazenda - SEMFAZ Avenida 7 de Setembro, 744 - Centro. CEP 76801-096 - Porto Velho, RO 03/07/2023 01:40:42
